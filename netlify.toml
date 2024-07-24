@@ -2,11 +2,4 @@
 from = "/*"
 to = "/index.html"
 status = 200
-
-   resolve: 'gatsby-plugin-purgecss',
-   options: {
-     develop: false, 
-     purgeOnly: [''], 
-     ignore: ['swiper/']
-   },
  

@@ -18,9 +18,10 @@ import Footer from '../../components/footer/footer';
 SwiperCore.use([Navigation, Pagination, Autoplay, EffectFade]);
 export default function HomePage() {
   let [show, setShow] = useState(false);
-
+  let [height , setHeight] = useState(0)
   const up = useRef(null);
   const containerP6 = useRef(null);
+
   useEffect(() => {
     let slt = document.querySelectorAll('.target');
 
@@ -39,6 +40,18 @@ export default function HomePage() {
       });
     });
   }, []);
+  setInterval(() => {
+    
+    if(height < -400) {
+      setHeight(height += 600)
+    }
+      
+      setHeight(height -= 100)
+    
+    
+  } , 3000)
+console.log(height);
+
 
   return (
     <div className='home-page'>
@@ -47,98 +60,87 @@ export default function HomePage() {
           <Header />
         </div>
         <div ref={up} className='container-p2 '>
-          <Swiper
-            loop={true}
-            autoplay={{
-              delay: 4000,
-              disableOnInteraction: false,
-            }}
-            spaceBetween={0}
-            slidesPerView={1}
-            modules={[EffectFade, Navigation, Pagination]}>
-            <SwiperSlide>
-              <div className='img1 image'>
-                <div className='text'>
-                  <h1>Welcome to Danesh Web</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Facilis veniam autem doloribus nulla doloremque aut illo rem
-                    nam non explicabo delectus, officiis qui minima at, dolore
-                    corrupti ut, illum ea.
-                  </p>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='img2 image'></div>
+          {console.log(height)}
+          <div style={{transform: `translatey(${height}%)`}} className='context-1 c'>
+            <div className='img1 image'>
               <div className='text'>
-                <h1>lalalalalalal</h1>
+                <h1>Welcome to Danesh Web</h1>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptates doloribus hic fugit beatae eaque voluptate. Saepe
-                  perspiciatis, consectetur, ut nulla accusamus eum, incidunt
-                  tempore at illum cumque qui voluptas animi!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis veniam autem doloribus nulla doloremque aut illo rem
+                  nam non explicabo delectus, officiis qui minima at, dolore
+                  corrupti ut, illum ea.
                 </p>
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='img3 image'></div>
+            </div>
+          </div>
+          <div style={{transform: `translatey(${height}%)`}} className='context-2 c'>
+            <div className='img2 image'></div>
+            <div className='text'>
+              <h1>lalalalalalal</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptates doloribus hic fugit beatae eaque voluptate. Saepe
+                perspiciatis, consectetur, ut nulla accusamus eum, incidunt
+                tempore at illum cumque qui voluptas animi!
+              </p>
+            </div>
+          </div>
+          <div style={{transform: `translatey(${height}%)`}} className='context-3 c'>
+            <div className='img3 image'></div>
+            <div className='text'>
+              <h1>bababababababababa</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptatem, velit ad ex laudantium totam nam saepe alias vero,
+                eveniet distinctio qui! Laboriosam est reprehenderit amet culpa
+                pariatur ipsam accusamus quos.
+              </p>
+            </div>
+          </div>
+          <div style={{transform: `translatey(${height}%)`}} className='context-4 c'>
+            <div className='img4 image'></div>
+            <div className='text'>
+              <h1>bababababababababa</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptatem, velit ad ex laudantium totam nam saepe alias vero,
+                eveniet distinctio qui! Laboriosam est reprehenderit amet culpa
+                pariatur ipsam accusamus quos.
+              </p>
+            </div>
+          </div>
+          <div style={{transform: `translatey(${height}%)`}} className='context-5 c'>
+            <div className='img5 image'></div>
+            <div className='text'>
+              <h1>bababababababababa</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptatem, velit ad ex laudantium totam nam saepe alias vero,
+                eveniet distinctio qui! Laboriosam est reprehenderit amet culpa
+                pariatur ipsam accusamus quos. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Illum ipsum vero totam dicta quia,
+                praesentium molestiae mollitia itaque hic accusantium atque ad
+                aperiam sit, reiciendis quae repellendus quisquam odio facilis!
+              </p>
+            </div>
+          </div>
+          <div style={{transform: `translatey(${height}%)`}} className='context-6 c'>
+            <div className='img6 image'>
               <div className='text'>
                 <h1>bababababababababa</h1>
                 <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Voluptatem, velit ad ex laudantium totam nam saepe alias vero,
                   eveniet distinctio qui! Laboriosam est reprehenderit amet
-                  culpa pariatur ipsam accusamus quos.
+                  culpa pariatur ipsam accusamus quos. Lorem ipsum dolor, sit
+                  amet consectetur adipisicing elit. Non voluptatibus, ratione
+                  sequi quas, quae amet corrupti cum, in magni itaque magnam
+                  voluptate eaque id sed ut nulla! Sunt, doloribus dolore?
                 </p>
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='img4 image'></div>
-              <div className='text'>
-                <h1>bababababababababa</h1>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Voluptatem, velit ad ex laudantium totam nam saepe alias vero,
-                  eveniet distinctio qui! Laboriosam est reprehenderit amet
-                  culpa pariatur ipsam accusamus quos.
-                </p>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='img5 image'></div>
-              <div className='text'>
-                <h1>bababababababababa</h1>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Voluptatem, velit ad ex laudantium totam nam saepe alias vero,
-                  eveniet distinctio qui! Laboriosam est reprehenderit amet
-                  culpa pariatur ipsam accusamus quos. Lorem ipsum dolor sit
-                  amet consectetur adipisicing elit. Illum ipsum vero totam
-                  dicta quia, praesentium molestiae mollitia itaque hic
-                  accusantium atque ad aperiam sit, reiciendis quae repellendus
-                  quisquam odio facilis!
-                </p>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className='img6 image'>
-                <div className='text'>
-                  <h1>bababababababababa</h1>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Voluptatem, velit ad ex laudantium totam nam saepe alias
-                    vero, eveniet distinctio qui! Laboriosam est reprehenderit
-                    amet culpa pariatur ipsam accusamus quos. Lorem ipsum dolor,
-                    sit amet consectetur adipisicing elit. Non voluptatibus,
-                    ratione sequi quas, quae amet corrupti cum, in magni itaque
-                    magnam voluptate eaque id sed ut nulla! Sunt, doloribus
-                    dolore?
-                  </p>
-                </div>
-              </div>
-            </SwiperSlide>
-          </Swiper>
+            </div>
+          </div>
         </div>
         <div className='container-p3 target'>
           <div className='wrapper'>
@@ -337,7 +339,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className='row2 row'>
-                <div className='job2'  />
+                <div className='job2' />
                 <h2>balalaaaaaa</h2>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.

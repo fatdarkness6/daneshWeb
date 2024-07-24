@@ -19,6 +19,7 @@
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "express": "^4.19.2",
+    "gatsby-plugin-purgecss": "^6.2.1",
     "mongoose": "^8.5.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

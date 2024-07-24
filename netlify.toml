@@ -2,3 +2,11 @@
 from = "/*"
 to = "/index.html"
 status = 200
+{
+   resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
+   options: {
+     develop: false, // Activates purging in npm run develop
+     purgeOnly: [''], // applies purging only on the bulma css file
+     ignore: ['swiper/']
+   },
+ }

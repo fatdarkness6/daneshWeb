@@ -32,27 +32,26 @@ export default function HomePage() {
         if (top < 700) {
           e.classList.add('active');
         }
-        if (containerP6.current.getBoundingClientRect().top <= 0) {
+        if (containerP6.current?.getBoundingClientRect().top <= 0) {
           setShow(true);
         } else {
           setShow(false);
         }
       });
     });
-  }, []);
-  setInterval(() => {
+
+    setInterval(() => {
     
-    if(height < -400) {
-      setHeight(height += 600)
-    }
+      if(height < -400) {
+        setHeight(height += 600)
+      }
+        
+        setHeight(height -= 100)
       
-      setHeight(height -= 100)
-    
-    
-  } , 3000)
-console.log(height);
-
-
+      
+    } , 3000)
+  }, []);
+  
   return (
     <div className='home-page'>
       <div className='home-page-content'>

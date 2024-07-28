@@ -7,6 +7,8 @@ export default function Header() {
   let lastScrollTop = 0;
   let header = useRef(null);
   const [scrollDirection, setScrollDirection] = useState(null);
+  let [active, setActive] = useState(false);
+
   useEffect(() => {
     window.addEventListener('scroll', function () {
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -35,18 +37,54 @@ export default function Header() {
           <div className='header-menu '>
             <div className='header-menu-text flex-alignCenter gap-30'>
               <Link to='/'>
-              <h3>Home</h3>
-            </Link>
-
-            <h3>About Us</h3>
-            <h3>Contact Us</h3>
-            <h3>News </h3>
+                <h3>Home</h3>
+              </Link>
+              <Link to='/aboutUs'>
+                <h3>About Us</h3>
+              </Link>
+              <h3>Contact Us</h3>
+              <h3>News</h3>
             </div>
-            
-            <div className='header-menu-btn'>
-              <div/>
-              <div/>
-              <div/>
+
+            <div
+              onClick={() => {
+                setActive(!active);
+              }}
+              className='header-menu-btn'>
+              <div />
+              <div />
+              <div />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id={active ? "show" : "dontShow"} className='hambergerMenu'>
+        <div className='hambergerMenu-content'>
+          <div className='hambergerMenu-content-logo'>
+            <h2>Menu</h2>
+            <div id={active ? "normal" : "notNormal"} onClick={() => {
+              setActive(false);
+            }} className='x'>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div className='hambergerMenu-content-menuItems'>
+            <div className='hambergerMenu-content-homePage'>
+              <Link to='/'>
+                <h3>Home</h3>
+              </Link>
+            </div>
+            <div className='hambergerMenu-content-aboutUsPage'>
+              <Link to='/aboutUs'>
+                <h3>About Us</h3>
+              </Link>
+            </div>
+            <div className='hambergerMenu-content-contactUsPage'>
+              <h3>Contact Us</h3>
+            </div>
+            <div className='hambergerMenu-content-newsPage'>
+              <h3>News</h3>
             </div>
           </div>
         </div>

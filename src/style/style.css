@@ -901,9 +901,27 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 10px;
+    gap: 20px;
     margin-top: 20px;
     padding: 20px;
+}
+.hambergerMenu .hambergerMenu-content-menuItems div {
+    border-bottom: 2px solid #000;
+    width: 100%;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.hambergerMenu .hambergerMenu-content-menuItems a {
+    color: #000;
+    
+}
+.hambergerMenu .hambergerMenu-content-menuItems  h3 {
+    font-size: 25px;
+    transition: all 0.5s;
+}
+.hambergerMenu .hambergerMenu-content-menuItems div:hover h3 {
+    transform: translateX(20px);
 }
 .hambergerMenu .hambergerMenu-content-logo {
     display: flex;
@@ -939,6 +957,7 @@
 .hambergerMenu .hambergerMenu-content-logo .x#notNormal div:nth-child(2) {
     transform: rotate(0deg);
 }
+
 
 
 

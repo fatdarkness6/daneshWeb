@@ -1,6 +1,6 @@
 import Footer from '../../components/footer/footer';
 import Header from '../../components/header/header';
-
+import { Link } from'react-router-dom';
 export default function AboutUsPage() {
   return (
     <div className='aboutUs-page'>
@@ -18,7 +18,10 @@ export default function AboutUsPage() {
                 dignissimos, et illum. Accusamus corrupti voluptatibus quis?
                 Necessitatibus, sint. Sequi, sunt. Odit.
               </p>
-              <button>Contact Us</button>
+
+              <button >
+                <Link style = {{color: 'white'}} to='/contactUs'>Contact Us</Link>
+              </button>
             </div>
             <div className='aboutUs-content-p2'>
               <div className='customers'>
@@ -154,8 +157,10 @@ export default function AboutUsPage() {
               </div>
               <div className='aboutUs-content-p2'>
                 <div className='aboutUs-content-p2-card'>
-                  <div className='icons'><i class='fa-solid fa-mug-hot'></i></div>
-                  
+                  <div className='icons'>
+                    <i class='fa-solid fa-mug-hot'></i>
+                  </div>
+
                   <h3>New Project</h3>
                   <div className='absolute'>
                     <ul>
@@ -183,7 +188,7 @@ export default function AboutUsPage() {
 
                 <div className='aboutUs-content-p2-card'>
                   <div className='icons'>
-                  <i class="fa-solid fa-envelope"></i>
+                    <i class='fa-solid fa-envelope'></i>
                   </div>
                   <h3>Danesh Groupe</h3>
                   <div className='absolute'>
@@ -196,8 +201,11 @@ export default function AboutUsPage() {
                   </div>
                 </div>
                 <div className='aboutUs-content-p2-card'>
-                  <div className='icons'> <i class="fa-solid fa-scroll"></i></div>
-                 
+                  <div className='icons'>
+                    {' '}
+                    <i class='fa-solid fa-scroll'></i>
+                  </div>
+
                   <h3>Our Company</h3>
                   <div className='absolute'>
                     <ul>

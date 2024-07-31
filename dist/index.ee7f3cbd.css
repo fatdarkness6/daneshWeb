@@ -137,7 +137,9 @@
 
 .c {
   width: 100%;
+  height: 100%;
   transition: all .8s;
+  position: absolute;
 }
 
 .image:after {
@@ -1077,6 +1079,38 @@
 
 .hambergerMenu .hambergerMenu-content-logo .x#notNormal div:first-child, .hambergerMenu .hambergerMenu-content-logo .x#notNormal div:nth-child(2) {
   transform: rotate(0);
+}
+
+.contactUsPage .container-p2 {
+  background-image: url("cloud4c-company-contact-1Desktop.8a01d417.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  margin-top: 50px;
+  position: relative;
+}
+
+.contactUsPage .container-p2 .absolute-h1 {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+.contactUsPage .container-p2 .absolute-h1 h1 {
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  font-family: Franklin Gothic Medium, Arial Narrow, Arial, sans-serif;
+  font-size: 2rem;
+}
+
+.contactUsPage .container-p2 .absolute-h1 h4 {
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  font-family: Franklin Gothic Medium, Arial Narrow, Arial, sans-serif;
+  font-size: 1.2rem;
 }
 
 @media only screen and (width <= 1650px) {

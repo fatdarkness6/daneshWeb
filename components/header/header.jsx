@@ -42,7 +42,10 @@ export default function Header() {
               <Link to='/aboutUs'>
                 <h3>About Us</h3>
               </Link>
-              <h3>Contact Us</h3>
+              <Link to='/contactUs'>
+                <h3>Contact Us</h3>
+              </Link>
+
               <h3>News</h3>
             </div>
 
@@ -58,13 +61,16 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div id={active ? "show" : "dontShow"} className='hambergerMenu'>
+      <div id={active ? 'show' : 'dontShow'} className='hambergerMenu'>
         <div className='hambergerMenu-content'>
           <div className='hambergerMenu-content-logo'>
             <h2>Menu</h2>
-            <div id={active ? "normal" : "notNormal"} onClick={() => {
-              setActive(false);
-            }} className='x'>
+            <div
+              id={active ? 'normal' : 'notNormal'}
+              onClick={() => {
+                setActive(false);
+              }}
+              className='x'>
               <div></div>
               <div></div>
             </div>

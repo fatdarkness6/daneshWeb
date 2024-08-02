@@ -34457,7 +34457,6 @@ function HomePage() {
                         className: "container-p2 ",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                // style={{ transform: `translateY(${height}%)` }}
                                 className: "context-1 c",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "img1 image",
@@ -34495,7 +34494,6 @@ function HomePage() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                // style={{ transform: `translatey(${height}%)` }}
                                 className: "context-2 c",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34535,7 +34533,6 @@ function HomePage() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                // style={{ transform: `translatey(${height}%)` }}
                                 className: "context-3 c",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34575,7 +34572,6 @@ function HomePage() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                // style={{ transform: `translatey(${height}%)` }}
                                 className: "context-4 c",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34615,7 +34611,6 @@ function HomePage() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                // style={{ transform: `translatey(${height}%)` }}
                                 className: "context-5 c",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34655,7 +34650,6 @@ function HomePage() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                // style={{ transform: `translatey(${height}%)` }}
                                 className: "context-6 c",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "img6 image",
@@ -41559,21 +41553,21 @@ function ContactUsPage() {
                             className: "contactUsPage-container-p3-content",
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "contactUsPage-container-p3-content-p1"
+                                    className: "contactUsPage-container-p3-content p1"
                                 }, void 0, false, {
                                     fileName: "pages/contactUsPage/contactUsPage.jsx",
                                     lineNumber: 23,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "contactUsPage-container-p3-content-p2"
+                                    className: "contactUsPage-container-p3-content p2"
                                 }, void 0, false, {
                                     fileName: "pages/contactUsPage/contactUsPage.jsx",
                                     lineNumber: 26,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "contactUsPage-container-p3-content-p3"
+                                    className: "contactUsPage-container-p3-content p3"
                                 }, void 0, false, {
                                     fileName: "pages/contactUsPage/contactUsPage.jsx",
                                     lineNumber: 29,

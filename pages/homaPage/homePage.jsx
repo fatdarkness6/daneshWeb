@@ -67,7 +67,7 @@ export default function HomePage() {
         <div ref={up} className='container-p2 '>
           
           <div
-            // style={{ transform: `translateY(${height}%)` }}
+            
             className='context-1 c'>
             <div className='img1 image'>
               <div className='text'>
@@ -82,7 +82,7 @@ export default function HomePage() {
             </div>
           </div>
           <div
-            // style={{ transform: `translatey(${height}%)` }}
+            
             className='context-2 c'>
             <div className='img2 image'></div>
             <div className='text'>
@@ -96,7 +96,7 @@ export default function HomePage() {
             </div>
           </div>
           <div
-            // style={{ transform: `translatey(${height}%)` }}
+            
             className='context-3 c'>
             <div className='img3 image'></div>
             <div className='text'>
@@ -110,7 +110,7 @@ export default function HomePage() {
             </div>
           </div>
           <div
-            // style={{ transform: `translatey(${height}%)` }}
+           
             className='context-4 c'>
             <div className='img4 image'></div>
             <div className='text'>
@@ -124,7 +124,7 @@ export default function HomePage() {
             </div>
           </div>
           <div
-            // style={{ transform: `translatey(${height}%)` }}
+          
             className='context-5 c'>
             <div className='img5 image'></div>
             <div className='text'>
@@ -141,7 +141,7 @@ export default function HomePage() {
             </div>
           </div>
           <div
-            // style={{ transform: `translatey(${height}%)` }}
+           
             className='context-6 c'>
             <div className='img6 image'>
               <div className='text'>

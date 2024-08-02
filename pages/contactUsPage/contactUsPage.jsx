@@ -20,13 +20,14 @@ export default function ContactUsPage() {
             <div className="container-p3">
                 <div className="wrapper">
                     <div className="contactUsPage-container-p3-content">
-                        <div className="contactUsPage-container-p3-content-p1">
-
-                        </div>
-                        <div className="contactUsPage-container-p3-content-p2">
+                        <div className="contactUsPage-container-p3-content p1">
                             
                         </div>
-                        <div className="contactUsPage-container-p3-content-p3">
+                        <div className="contactUsPage-container-p3-content p2">
+                            
+                        </div>
+                        <div className="contactUsPage-container-p3-content p3">
+
                         </div>
                     </div>
                 </div>

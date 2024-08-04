@@ -1,13 +1,18 @@
 import { useEffect, useRef } from 'react';
 import img from '../../public/headers-logo.png';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams, useSearchParams } from 'react-router-dom';
 
 export default function Header() {
   let lastScrollTop = 0;
   let header = useRef(null);
   const [scrollDirection, setScrollDirection] = useState(null);
   let [active, setActive] = useState(false);
+  let [page , setPage] = useState("")
+ 
+ 
+
+
 
   useEffect(() => {
     window.addEventListener('scroll', function () {
@@ -20,6 +25,10 @@ export default function Header() {
       }
       lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
     });
+
+    let path = window.location.pathname
+    setPage(path)
+
   }, []);
 
   return (
@@ -30,19 +39,21 @@ export default function Header() {
       <div className='wrapper'>
         <div className='header-content flex-alignCenter-spaceBetween '>
           <div className='header-logo'>
-            <Link to='/'>
+            <Link  to='/'>
               <img src={img} />
             </Link>
           </div>
           <div className='header-menu '>
             <div className='header-menu-text flex-alignCenter gap-30'>
-              <Link to='/'>
+              <Link className={page == "/"? "act" : ""} to='/'>
                 <h3>Home</h3>
               </Link>
-              <Link to='/aboutUs'>
+
+              <Link className={page == "/aboutUs"? "act" : ""} to='/aboutUs'>
                 <h3>About Us</h3>
               </Link>
-              <Link to='/contactUs'>
+
+              <Link className={page == "/contactUs"? "act" : ""} to='/contactUs'>
                 <h3>Contact Us</h3>
               </Link>
 
@@ -87,7 +98,9 @@ export default function Header() {
               </Link>
             </div>
             <div className='hambergerMenu-content-contactUsPage'>
-              <h3>Contact Us</h3>
+              <Link to='/contactUs'>
+                <h3>Contact Us</h3>
+              </Link>
             </div>
             <div className='hambergerMenu-content-newsPage'>
               <h3>News</h3>

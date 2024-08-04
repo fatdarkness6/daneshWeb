@@ -171,9 +171,10 @@
   transition: all .5s;
 }
 
-.header-menu h3:hover {
-  color: #918e00;
-  box-shadow: 0 0 10px 1px #000;
+.header-menu a.act h3, .header-menu h3:hover {
+  color: #0081bb;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 10px 1px #000000eb;
 }
 
 .home-page .text {
@@ -888,17 +889,21 @@
 .aboutUs-page .container-p4 .aboutUs-content button {
   color: #fff;
   cursor: pointer;
-  background: linear-gradient(to right, #000, #333);
+  background: #000;
   border: none;
   border-radius: 5px;
   width: 150px;
   height: 40px;
+  font-family: system-ui;
   font-size: 15px;
   transition: all .5s;
 }
 
 .aboutUs-page .container-p4 .aboutUs-content button:hover {
-  box-shadow: 0 0 10px 5px #000;
+  color: #000;
+  background-color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 10px 1px #000;
 }
 
 .aboutUs-page .container-p5 {
@@ -1087,9 +1092,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   margin-top: 50px;
   position: relative;
+}
+
+.contactUsPage .container-p3 {
+  padding-top: 100px;
 }
 
 .contactUsPage .container-p2 .absolute-h1 {
@@ -1111,6 +1120,169 @@
   text-shadow: 1px 1px 1px #000;
   font-family: Franklin Gothic Medium, Arial Narrow, Arial, sans-serif;
   font-size: 1.2rem;
+}
+
+.contactUsPage .contactUsPage-container-p3-content {
+  padding: 0 40px;
+}
+
+.contactUsPage .contactUsPage-container-p3-content-left, .contactUsPage .contactUsPage-container-p3-content-right {
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+  margin-bottom: 100px;
+  display: flex;
+}
+
+.contactUsPage .contactUsPage-container-p3-content-left h1, .contactUsPage .contactUsPage-container-p3-content-right h1 {
+  width: 50%;
+}
+
+.contactUsPage .sameStyle {
+  text-align: center;
+  cursor: pointer;
+  opacity: 0;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  width: 40%;
+  margin-top: 50px;
+  padding: 30px;
+  transition: all .5s;
+  display: flex;
+  position: relative;
+  transform: translateY(100px);
+  box-shadow: 0 0 14px 1px #000;
+}
+
+.contactUsPage .sameStyle.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contactUsPage .sameStyle:hover {
+  transform: scale(1.1);
+}
+
+.contactUsPage .sameStyle i {
+  font-size: 2rem;
+}
+
+.contactUsPage .sameStyle h4 {
+  font-size: 1.2rem;
+}
+
+.contactUsPage .contactUsPage-container-p3-content4 :is(h1, h3, h4, i) {
+  -webkit-text-fill-color: transparent;
+  z-index: 2;
+  background: -webkit-linear-gradient(#ffd438, #ee2a7b, #6228d7);
+  -webkit-background-clip: text;
+  position: relative;
+}
+
+.contactUsPage .contactUsPage-container-p3-content3 :is(h1, h3, h4, i) {
+  -webkit-text-fill-color: transparent;
+  z-index: 2;
+  background: -webkit-linear-gradient(#3e65cf, #08851b);
+  -webkit-background-clip: text;
+  position: relative;
+}
+
+.contactUsPage .contactUsPage-container-p3-content2 :is(h1, h3, h4, i) {
+  -webkit-text-fill-color: transparent;
+  z-index: 2;
+  background: #08c;
+  -webkit-background-clip: text;
+  position: relative;
+}
+
+.contactUsPage .contactUsPage-container-p3-content1 :is(h1, h3, h4, i) {
+  -webkit-text-fill-color: transparent;
+  z-index: 2;
+  background: -webkit-linear-gradient(#527288, #2c3e50);
+  -webkit-background-clip: text;
+  position: relative;
+}
+
+.contactUsPage .contactUsPage-container-p3-content4:hover :is(h1, h3, h4, i), .contactUsPage .contactUsPage-container-p3-content3:hover :is(h1, h3, h4, i), .contactUsPage .contactUsPage-container-p3-content2:hover :is(h1, h3, h4, i), .contactUsPage .contactUsPage-container-p3-content1:hover :is(h1, h3, h4, i) {
+  -webkit-text-fill-color: transparent;
+  background: #fff;
+  -webkit-background-clip: text;
+}
+
+.contactUsPage .contactUsPage-container-p3-content4:after {
+  content: "";
+  opacity: 0;
+  z-index: 1;
+  background-image: linear-gradient(to right, #ffd438, #ee2a7b, #6228d7);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  transition: all .5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contactUsPage .contactUsPage-container-p3-content3:after {
+  content: "";
+  opacity: 0;
+  z-index: 1;
+  background-image: linear-gradient(to right, #3e65cf, #08851b);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  transition: all .5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contactUsPage .contactUsPage-container-p3-content2:after {
+  content: "";
+  opacity: 0;
+  z-index: 1;
+  background: linear-gradient(120deg, #08c, #a5cadd);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  transition: all .5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contactUsPage .contactUsPage-container-p3-content1:after {
+  content: "";
+  opacity: 0;
+  z-index: 1;
+  background: linear-gradient(to left, #9bb3c4, #2c3e50);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  transition: all .5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contactUsPage .contactUsPage-container-p3-content4:hover:after, .contactUsPage .contactUsPage-container-p3-content3:hover:after, .contactUsPage .contactUsPage-container-p3-content2:hover:after, .contactUsPage .contactUsPage-container-p3-content1:hover:after {
+  opacity: 1;
+}
+
+.contactUsPage .h1Style {
+  opacity: 0;
+  transition: all .5s;
+  transform: translateY(200px);
+}
+
+.contactUsPage .h1Style.active {
+  opacity: 1;
+  line-height: 55px;
+  transition-delay: .3s;
+  transform: translateY(0);
 }
 
 @media only screen and (width <= 1650px) {
@@ -1253,6 +1425,14 @@
   .aboutUs-page .container-p5 .aboutUs-content-p1 h1 {
     font-size: 30px;
   }
+
+  .contactUsPage .h1Style {
+    font-size: 1.5rem;
+  }
+
+  .contactUsPage .sameStyle {
+    width: 45%;
+  }
 }
 
 @media only screen and (width <= 800px) {
@@ -1303,6 +1483,23 @@
 
   .aboutUs-page .aboutUs-content-p1 p {
     width: 100%;
+  }
+
+  .contactUsPage .h1Style {
+    display: none;
+  }
+
+  .contactUsPage .sameStyle {
+    width: 90%;
+  }
+
+  .contactUsPage :is(.contactUsPage-container-p3-content-left, .contactUsPage-container-p3-content-right) {
+    justify-content: center;
+  }
+
+  .contactUsPage .container-p2 .absolute-h1 {
+    width: 85%;
+    top: 30%;
   }
 }
 

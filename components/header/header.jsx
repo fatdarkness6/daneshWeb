@@ -12,8 +12,6 @@ export default function Header() {
  
  
 
-
-
   useEffect(() => {
     window.addEventListener('scroll', function () {
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -28,9 +26,7 @@ export default function Header() {
 
     let path = window.location.pathname
     setPage(path)
-
   }, []);
-
   return (
     <div
       ref={header}
@@ -87,17 +83,19 @@ export default function Header() {
             </div>
           </div>
           <div className='hambergerMenu-content-menuItems'>
-            <div className='hambergerMenu-content-homePage'>
+            <div id = {page == "/" && "transform"} className='hambergerMenu-content-homePage'>
               <Link to='/'>
+              {console.log(page)
+              }
                 <h3>Home</h3>
               </Link>
             </div>
-            <div className='hambergerMenu-content-aboutUsPage'>
+            <div id = {page == "/aboutUs" && "transform"} className='hambergerMenu-content-aboutUsPage'>
               <Link to='/aboutUs'>
                 <h3>About Us</h3>
               </Link>
             </div>
-            <div className='hambergerMenu-content-contactUsPage'>
+            <div id = {page == "/contactUs" && "transform"} className='hambergerMenu-content-contactUsPage'>
               <Link to='/contactUs'>
                 <h3>Contact Us</h3>
               </Link>

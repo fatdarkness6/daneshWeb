@@ -1285,6 +1285,89 @@
   transform: translateY(0);
 }
 
+.contactUsPage .container-p4 {
+  height: 636px;
+}
+
+.contactUsPage .container-p4 .wrapper {
+  height: 100%;
+}
+
+.contactUsPage .container-p4 .submit {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  display: flex;
+}
+
+.contactUsPage .container-p4 .submit input {
+  border-radius: 10px;
+  width: 50%;
+  padding: 14px;
+  font-size: 17px;
+}
+
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.contactUsPage .container-p4 .submit textarea {
+  resize: none;
+  border: 2px solid #000;
+  border-radius: 10px;
+  width: 50%;
+  height: 300px;
+  padding: 14px;
+  font-size: 17px;
+}
+
+.contactUsPage .container-p4 .submit input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.contactUsPage .container-p4 .submit button {
+  color: #fff;
+  cursor: pointer;
+  background: #000;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  height: 40px;
+  font-family: system-ui;
+  font-size: 15px;
+  transition: all .5s;
+}
+
+.contactUsPage .container-p4 .submit button:hover {
+  color: #000;
+  background-color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 10px 1px #000;
+}
+
+.contactUsPage .container-p4 .submit h3.green {
+  color: #00b300;
+  font-size: 25px;
+}
+
+.contactUsPage .container-p4 .submit h3.red {
+  color: red;
+  font-size: 25px;
+}
+
+.header #transform {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 @media only screen and (width <= 1650px) {
   .home-page .container-p7.target .content {
     padding: 0 30px;
@@ -1501,6 +1584,10 @@
     width: 85%;
     top: 30%;
   }
+
+  .contactUsPage .contactUsPage-container-p3-content4 :is(h1, h3, h4, i), .contactUsPage .contactUsPage-container-p3-content1 :is(h1, h3, h4, i), .contactUsPage .contactUsPage-container-p3-content2 :is(h1, h3, h4, i), .contactUsPage .contactUsPage-container-p3-content3 :is(h1, h3, h4, i) {
+    width: 100%;
+  }
 }
 
 @media only screen and (width <= 650px) {
@@ -1585,6 +1672,15 @@
 
   .home-page .container-p6.active .p1 h1, .home-page .container-p6.active .p2 h1 {
     font-size: 30px;
+  }
+
+  .contactUsPage .container-p4 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .contactUsPage .container-p4 .submit input, .contactUsPage .container-p4 .submit textarea {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=index.ee7f3cbd.css.map */

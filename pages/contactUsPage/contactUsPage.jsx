@@ -1,9 +1,17 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Header from '../../components/header/header';
 import 'react-slideshow-image/dist/styles.css';
 import Footer from '../../components/footer/footer';
+import { contactPage } from '../../api/contactPage';
 
 export default function ContactUsPage() {
+  let [email, setEmail] = useState('');
+  let [name, setName] = useState('');
+  let [message, setMessage] = useState('');
+  let [submit, setSubmit] = useState(false);
+  let [showMessage, setShowMessage] = useState(false);
+  let [error, setError] = useState(false);
+
   useEffect(() => {
     let scroll = document.querySelectorAll('.sameStyle');
     let h1 = document.querySelectorAll('.h1Style');
@@ -18,14 +26,37 @@ export default function ContactUsPage() {
     });
 
     h1.forEach((e) => {
-        window.addEventListener('scroll', () => {
-            let top = e.getBoundingClientRect().top;
-            if (top < 700) {
-              e.classList.add('active');
-            }
-          });
-    })
+      window.addEventListener('scroll', () => {
+        let top = e.getBoundingClientRect().top;
+        if (top < 700) {
+          e.classList.add('active');
+        }
+      });
+    });
   }, []);
+
+  useEffect(() => {
+    let values = {
+      access_key: 'f50433f4-93e9-4fa8-ae4b-ecad0422da70',
+      email: email,
+      subject: name,
+      message: message,
+    };
+    if ((email && name && message) !== '') {
+      contactPage(values)
+        .then((e) => {
+          return e.json();
+        })
+        .then((e) => {
+          if (e.success) {
+            setShowMessage(true);
+          }
+        })
+        .catch(() => {
+          setError(true);
+        });
+    }
+  }, [submit]);
 
   return (
     <div className='contactUsPage'>
@@ -132,6 +163,49 @@ export default function ContactUsPage() {
                   <h4>ID : Danesh_Web</h4>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className='container-p4'>
+          <div className='wrapper'>
+            <div className='submit'>
+              <input
+                type='text'
+                placeholder='name and lastname'
+                onChange={(event) => {
+                  setName(event.target.value);
+                }}
+              />
+              <input
+                type='email'
+                placeholder='email'
+                onChange={(event) => {
+                  setEmail(event.target.value);
+                }}
+              />
+              <textarea
+              placeholder='enter your message'
+                onChange={(e) => {
+                  setMessage(e.target.value);
+                }}></textarea>
+              <button
+                onClick={() => {
+                  if ((email && name && message) !== '') {
+                    setSubmit(true);
+                  }
+                }}>
+                submit
+              </button>
+              {showMessage ? (
+                <h3 class='green'>your message has been sent successfully</h3>
+              ) : (
+                error && (
+                  <h3 class='red'>
+                    your message hasnt been sent successfully. check you
+                    internet and try again
+                  </h3>
+                )
+              )}
             </div>
           </div>
         </div>

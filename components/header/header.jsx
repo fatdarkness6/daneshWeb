@@ -85,8 +85,6 @@ export default function Header() {
           <div className='hambergerMenu-content-menuItems'>
             <div id = {page == "/" && "transform"} className='hambergerMenu-content-homePage'>
               <Link to='/'>
-              {console.log(page)
-              }
                 <h3>Home</h3>
               </Link>
             </div>

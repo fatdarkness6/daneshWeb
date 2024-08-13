@@ -1148,10 +1148,7 @@
     line-height: 55px;
 } 
 .contactUsPage .container-p4 {
-    height: 636px;
-}
-.contactUsPage .container-p4 .wrapper {
-    height: 100%;
+    height: auto;
 }
 .contactUsPage .container-p4 .submit {
     display: flex;

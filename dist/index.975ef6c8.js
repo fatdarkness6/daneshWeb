@@ -35610,17 +35610,14 @@ function Header() {
                                     className: "hambergerMenu-content-homePage",
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                         to: "/",
-                                        children: [
-                                            console.log(page),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                                children: "Home"
-                                            }, void 0, false, {
-                                                fileName: "components/header/header.jsx",
-                                                lineNumber: 90,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                            children: "Home"
+                                        }, void 0, false, {
+                                            fileName: "components/header/header.jsx",
+                                            lineNumber: 88,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
                                         fileName: "components/header/header.jsx",
                                         lineNumber: 87,
                                         columnNumber: 15
@@ -35639,17 +35636,17 @@ function Header() {
                                             children: "About Us"
                                         }, void 0, false, {
                                             fileName: "components/header/header.jsx",
-                                            lineNumber: 95,
+                                            lineNumber: 93,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "components/header/header.jsx",
-                                        lineNumber: 94,
+                                        lineNumber: 92,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "components/header/header.jsx",
-                                    lineNumber: 93,
+                                    lineNumber: 91,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35661,17 +35658,17 @@ function Header() {
                                             children: "Contact Us"
                                         }, void 0, false, {
                                             fileName: "components/header/header.jsx",
-                                            lineNumber: 100,
+                                            lineNumber: 98,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "components/header/header.jsx",
-                                        lineNumber: 99,
+                                        lineNumber: 97,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "components/header/header.jsx",
-                                    lineNumber: 98,
+                                    lineNumber: 96,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35680,12 +35677,12 @@ function Header() {
                                         children: "News"
                                     }, void 0, false, {
                                         fileName: "components/header/header.jsx",
-                                        lineNumber: 104,
+                                        lineNumber: 102,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "components/header/header.jsx",
-                                    lineNumber: 103,
+                                    lineNumber: 101,
                                     columnNumber: 13
                                 }, this)
                             ]
@@ -41525,7 +41522,9 @@ function ContactUsPage() {
     _s();
     let [email, setEmail] = (0, _react.useState)("");
     let [name, setName] = (0, _react.useState)("");
+    let [username, setUsername] = (0, _react.useState)("");
     let [message, setMessage] = (0, _react.useState)("");
+    let [phone, setPhone] = (0, _react.useState)("");
     let [submit, setSubmit] = (0, _react.useState)(false);
     let [showMessage, setShowMessage] = (0, _react.useState)(false);
     let [error, setError] = (0, _react.useState)(false);
@@ -41547,15 +41546,17 @@ function ContactUsPage() {
     }, []);
     (0, _react.useEffect)(()=>{
         let values = {
-            access_key: "f50433f4-93e9-4fa8-ae4b-ecad0422da70",
+            name: name,
+            username: username,
+            phonNumber: phone,
             email: email,
-            subject: name,
             message: message
         };
         if ((email && name && message) !== "") (0, _contactPage.contactPage)(values).then((e)=>{
             return e.json();
         }).then((e)=>{
-            if (e.success) setShowMessage(true);
+            if (e == "Your message has been sent successfully") setShowMessage(true);
+            console.log(e);
         }).catch(()=>{
             setError(true);
         });
@@ -41572,12 +41573,12 @@ function ContactUsPage() {
                         className: "container-p1",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                             fileName: "pages/contactUsPage/contactUsPage.jsx",
-                            lineNumber: 65,
+                            lineNumber: 70,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                        lineNumber: 64,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41589,25 +41590,25 @@ function ContactUsPage() {
                                     children: "Contact Us"
                                 }, void 0, false, {
                                     fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                    lineNumber: 69,
+                                    lineNumber: 74,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                                     children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod inventore aspernatur quos quaerat asperiores. Libero mollitia impedit iusto nisi dignissimos, deserunt at velit doloribus itaque numquam ratione nesciunt atque?"
                                 }, void 0, false, {
                                     fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                    lineNumber: 70,
+                                    lineNumber: 75,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "pages/contactUsPage/contactUsPage.jsx",
-                            lineNumber: 68,
+                            lineNumber: 73,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                        lineNumber: 67,
+                        lineNumber: 72,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41627,21 +41628,21 @@ function ContactUsPage() {
                                                         class: "fa-solid fa-phone"
                                                     }, void 0, false, {
                                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 83,
+                                                        lineNumber: 88,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                                         children: "Phone"
                                                     }, void 0, false, {
                                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 84,
+                                                        lineNumber: 89,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                         children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod inventore aspernatur quos quaerat asperiores. Libero mollitia impedit iusto nisi dignissimos, deserunt at velit doloribus itaque numquam ratione nesciunt atque?"
                                                     }, void 0, false, {
                                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 85,
+                                                        lineNumber: 90,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ol", {
@@ -41651,12 +41652,12 @@ function ContactUsPage() {
                                                                     children: "123456789"
                                                                 }, void 0, false, {
                                                                     fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                                    lineNumber: 93,
+                                                                    lineNumber: 98,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                                lineNumber: 92,
+                                                                lineNumber: 97,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -41664,24 +41665,24 @@ function ContactUsPage() {
                                                                     children: "123456789"
                                                                 }, void 0, false, {
                                                                     fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                                    lineNumber: 96,
+                                                                    lineNumber: 101,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                                lineNumber: 95,
+                                                                lineNumber: 100,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 91,
+                                                        lineNumber: 96,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                lineNumber: 82,
+                                                lineNumber: 87,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -41689,13 +41690,13 @@ function ContactUsPage() {
                                                 children: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui fuga officia, distinctio repellendus cupiditate ratione, eius quod voluptas tempore omnis optio ad labore blanditiis iusto modi iste sunt officiis dicta!"
                                             }, void 0, false, {
                                                 fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                lineNumber: 100,
+                                                lineNumber: 105,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                        lineNumber: 81,
+                                        lineNumber: 86,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41706,7 +41707,7 @@ function ContactUsPage() {
                                                 children: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae a, perferendis iure, dolore fugiat quaerat nostrum at harum consequatur enim asperiores, velit repudiandae magnam illo exercitationem doloribus expedita ad nobis!"
                                             }, void 0, false, {
                                                 fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                lineNumber: 108,
+                                                lineNumber: 113,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41716,40 +41717,40 @@ function ContactUsPage() {
                                                         class: "fa-brands fa-telegram"
                                                     }, void 0, false, {
                                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 115,
+                                                        lineNumber: 120,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                                         children: "Telegram"
                                                     }, void 0, false, {
                                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 116,
+                                                        lineNumber: 121,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                         children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod inventore aspernatur quos quaerat asperiores. Libero mollitia impedit iusto nisi dignissimos, deserunt at velit doloribus itaque numquam ratione nesciunt atque?"
                                                     }, void 0, false, {
                                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 117,
+                                                        lineNumber: 122,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                                                         children: "@Ranesh-Reza"
                                                     }, void 0, false, {
                                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 123,
+                                                        lineNumber: 128,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                lineNumber: 114,
+                                                lineNumber: 119,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                        lineNumber: 107,
+                                        lineNumber: 112,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41762,34 +41763,34 @@ function ContactUsPage() {
                                                         class: "fa-solid fa-envelope"
                                                     }, void 0, false, {
                                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 128,
+                                                        lineNumber: 133,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                                         children: "Email"
                                                     }, void 0, false, {
                                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 129,
+                                                        lineNumber: 134,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                         children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aliquid assumenda alias aspernatur facere, voluptas deleniti minima porro ratione est atque nemo sunt accusantium voluptatum delectus. Quas, molestiae. Rem, soluta!"
                                                     }, void 0, false, {
                                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 130,
+                                                        lineNumber: 135,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                                                         children: "Gmail : Raneshreza@gmail.com"
                                                     }, void 0, false, {
                                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 137,
+                                                        lineNumber: 142,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                lineNumber: 127,
+                                                lineNumber: 132,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -41797,13 +41798,13 @@ function ContactUsPage() {
                                                 children: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam ipsum unde ducimus soluta tempore ea. Error esse quasi qui, corrupti eum reprehenderit quas architecto quia a laboriosam quis ipsa iste!"
                                             }, void 0, false, {
                                                 fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                lineNumber: 139,
+                                                lineNumber: 144,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                        lineNumber: 126,
+                                        lineNumber: 131,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41814,7 +41815,7 @@ function ContactUsPage() {
                                                 children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magnam officia neque blanditiis sunt asperiores ab laudantium sit cumque, harum dolorem atque deleniti architecto dolorum nemo quidem ipsa veniam. Cupiditate!"
                                             }, void 0, false, {
                                                 fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                lineNumber: 147,
+                                                lineNumber: 152,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41824,56 +41825,56 @@ function ContactUsPage() {
                                                         class: "fa-brands fa-instagram"
                                                     }, void 0, false, {
                                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 154,
+                                                        lineNumber: 159,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                                         children: "Instagram"
                                                     }, void 0, false, {
                                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 155,
+                                                        lineNumber: 160,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                         children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aliquid assumenda alias aspernatur facere, voluptas deleniti minima porro ratione est atque nemo sunt accusantium voluptatum delectus. Quas, molestiae. Rem, soluta!"
                                                     }, void 0, false, {
                                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 156,
+                                                        lineNumber: 161,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                                                         children: "ID : Danesh_Web"
                                                     }, void 0, false, {
                                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 163,
+                                                        lineNumber: 168,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                lineNumber: 153,
+                                                lineNumber: 158,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                        lineNumber: 146,
+                                        lineNumber: 151,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                lineNumber: 80,
+                                lineNumber: 85,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "pages/contactUsPage/contactUsPage.jsx",
-                            lineNumber: 79,
+                            lineNumber: 84,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                        lineNumber: 78,
+                        lineNumber: 83,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41891,7 +41892,29 @@ function ContactUsPage() {
                                         }
                                     }, void 0, false, {
                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                        lineNumber: 172,
+                                        lineNumber: 177,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                        type: "text",
+                                        placeholder: "username",
+                                        onChange: (event)=>{
+                                            setUsername(event.target.value);
+                                        }
+                                    }, void 0, false, {
+                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
+                                        lineNumber: 184,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                        type: "number",
+                                        placeholder: "Phone Number",
+                                        onChange: (event)=>{
+                                            setPhone(event.target.value);
+                                        }
+                                    }, void 0, false, {
+                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
+                                        lineNumber: 191,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -41902,7 +41925,7 @@ function ContactUsPage() {
                                         }
                                     }, void 0, false, {
                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                        lineNumber: 179,
+                                        lineNumber: 198,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
@@ -41912,7 +41935,7 @@ function ContactUsPage() {
                                         }
                                     }, void 0, false, {
                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                        lineNumber: 186,
+                                        lineNumber: 205,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -41922,7 +41945,7 @@ function ContactUsPage() {
                                         children: "submit"
                                     }, void 0, false, {
                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                        lineNumber: 191,
+                                        lineNumber: 210,
                                         columnNumber: 15
                                     }, this),
                                     showMessage ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -41930,51 +41953,51 @@ function ContactUsPage() {
                                         children: "your message has been sent successfully"
                                     }, void 0, false, {
                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                        lineNumber: 200,
+                                        lineNumber: 219,
                                         columnNumber: 17
                                     }, this) : error && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                         class: "red",
                                         children: "your message hasnt been sent successfully. check you internet and try again"
                                     }, void 0, false, {
                                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                        lineNumber: 203,
+                                        lineNumber: 222,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                lineNumber: 171,
+                                lineNumber: 176,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "pages/contactUsPage/contactUsPage.jsx",
-                            lineNumber: 170,
+                            lineNumber: 175,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "pages/contactUsPage/contactUsPage.jsx",
-                        lineNumber: 169,
+                        lineNumber: 174,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "pages/contactUsPage/contactUsPage.jsx",
-                lineNumber: 63,
+                lineNumber: 68,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "pages/contactUsPage/contactUsPage.jsx",
-                lineNumber: 213,
+                lineNumber: 232,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "pages/contactUsPage/contactUsPage.jsx",
-        lineNumber: 62,
+        lineNumber: 67,
         columnNumber: 5
     }, this);
 }
-_s(ContactUsPage, "5B2jxr2dlnAQ3Pvl7MAIeMILc0g=");
+_s(ContactUsPage, "ebNxK6zokitMD5Qjd6XxNmi4BhQ=");
 _c = ContactUsPage;
 var _c;
 $RefreshReg$(_c, "ContactUsPage");
@@ -41989,7 +42012,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "contactPage", ()=>contactPage);
 async function contactPage(values) {
-    return await fetch("https://api.web3forms.com/submit", {
+    return await fetch("https://dnwebcommits.liara.run/api/communicate", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

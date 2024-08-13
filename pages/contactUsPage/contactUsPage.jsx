@@ -7,7 +7,9 @@ import { contactPage } from '../../api/contactPage';
 export default function ContactUsPage() {
   let [email, setEmail] = useState('');
   let [name, setName] = useState('');
+  let [username, setUsername] = useState('');
   let [message, setMessage] = useState('');
+  let [phone , setPhone] = useState('')
   let [submit, setSubmit] = useState(false);
   let [showMessage, setShowMessage] = useState(false);
   let [error, setError] = useState(false);
@@ -37,9 +39,10 @@ export default function ContactUsPage() {
 
   useEffect(() => {
     let values = {
-      access_key: 'f50433f4-93e9-4fa8-ae4b-ecad0422da70',
+      name :name ,
+      username: username,
+      phonNumber:phone,
       email: email,
-      subject: name,
       message: message,
     };
     if ((email && name && message) !== '') {
@@ -48,9 +51,11 @@ export default function ContactUsPage() {
           return e.json();
         })
         .then((e) => {
-          if (e.success) {
+          if (e == "Your message has been sent successfully") {
             setShowMessage(true);
           }
+          console.log(e);
+          
         })
         .catch(() => {
           setError(true);
@@ -174,6 +179,20 @@ export default function ContactUsPage() {
                 placeholder='name and lastname'
                 onChange={(event) => {
                   setName(event.target.value);
+                }}
+              />
+              <input
+                type='text'
+                placeholder='username'
+                onChange={(event) => {
+                  setUsername(event.target.value);
+                }}
+              />
+              <input
+                type='number'
+                placeholder='Phone Number'
+                onChange={(event) => {
+                  setPhone(event.target.value);
                 }}
               />
               <input

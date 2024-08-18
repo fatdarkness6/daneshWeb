@@ -1,18 +1,23 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useReducer, useState } from 'react';
 import Header from '../../components/header/header';
 import 'react-slideshow-image/dist/styles.css';
 import Footer from '../../components/footer/footer';
 import { contactPage } from '../../api/contactPage';
+import { contactUsPage } from '../../reduceFiles/reduce';
 
 export default function ContactUsPage() {
-  let [email, setEmail] = useState('');
-  let [name, setName] = useState('');
-  let [username, setUsername] = useState('');
-  let [message, setMessage] = useState('');
-  let [phone , setPhone] = useState('')
-  let [submit, setSubmit] = useState(false);
-  let [showMessage, setShowMessage] = useState(false);
-  let [error, setError] = useState(false);
+  let obj = {
+    email: '',
+    name: '',
+    username: '',
+    message: '',
+    phone: '',
+    submit: false,
+    showMessage: false,
+    error: false,
+    error2: false,
+  };
+  let [state, dispatch] = useReducer(contactUsPage, obj);
 
   useEffect(() => {
     let scroll = document.querySelectorAll('.sameStyle');
@@ -38,30 +43,67 @@ export default function ContactUsPage() {
   }, []);
 
   useEffect(() => {
+    let getItem = localStorage.getItem('wait');
+
     let values = {
-      name :name ,
-      username: username,
-      phonNumber:phone,
-      email: email,
-      message: message,
+      name: state.name,
+      username: state.username,
+      phonNumber: state.phone,
+      email: state.email,
+      message: state.message,
     };
-    if ((email && name && message) !== '') {
+    if (
+      (state.name && state.username && state.email && state.message) !== '' &&
+      getItem !== 'true'
+    ) {
       contactPage(values)
         .then((e) => {
-          return e.json();
-        })
-        .then((e) => {
-          if (e == "Your message has been sent successfully") {
-            setShowMessage(true);
+          if (e.status == 200) {
+            dispatch({
+              type: 'email',
+              payload: '',
+            });
+            dispatch({
+              type: 'name',
+              payload: '',
+            });
+
+            dispatch({
+              type: 'username',
+              payload: '',
+            });
+
+            dispatch({
+              type: 'message',
+              payload: '',
+            });
+
+            dispatch({
+              type: 'phone',
+              payload: '',
+            });
+            dispatch({
+              type: 'showMessage',
+              payload: true,
+            });
+            setTimeout(() => {
+              dispatch({
+                type: 'showMessage',
+                payload: false,
+              });
+            }, 3000);
+
+            localStorage.setItem('wait', 'true');
           }
-          console.log(e);
-          
         })
         .catch(() => {
-          setError(true);
+          dispatch({
+            type: 'error',
+            payload: true,
+          });
         });
     }
-  }, [submit]);
+  }, [state.submit]);
 
   return (
     <div className='contactUsPage'>
@@ -71,7 +113,7 @@ export default function ContactUsPage() {
         </div>
         <div className='container-p2'>
           <div className='absolute-h1'>
-            <h1>Contact Us</h1>
+            <h1>Contatti</h1>
             <h4>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
               inventore aspernatur quos quaerat asperiores. Libero mollitia
@@ -86,7 +128,7 @@ export default function ContactUsPage() {
               <div className='contactUsPage-container-p3-content-left '>
                 <div className='contactUsPage-container-p3-content1 sameStyle'>
                   <i class='fa-solid fa-phone'></i>
-                  <h1>Phone</h1>
+                  <h1>cellulare</h1>
                   <h3>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quod inventore aspernatur quos quaerat asperiores. Libero
@@ -176,54 +218,101 @@ export default function ContactUsPage() {
             <div className='submit'>
               <input
                 type='text'
-                placeholder='name and lastname'
+                placeholder='nome e cognome'
+                value={state.name}
                 onChange={(event) => {
-                  setName(event.target.value);
+                  dispatch({
+                    type: 'name',
+                    payload: event.target.value,
+                  });
                 }}
               />
               <input
                 type='text'
-                placeholder='username'
+                placeholder='nome utente'
+                value={state.username}
                 onChange={(event) => {
-                  setUsername(event.target.value);
+                  dispatch({
+                    type: 'username',
+                    payload: event.target.value,
+                  });
                 }}
               />
               <input
                 type='number'
-                placeholder='Phone Number'
+                value={state.phone}
+                placeholder='cellulare'
                 onChange={(event) => {
-                  setPhone(event.target.value);
+                  dispatch({
+                    type: 'phone',
+                    payload: event.target.value,
+                  });
                 }}
               />
               <input
                 type='email'
                 placeholder='email'
+                value={state.email}
                 onChange={(event) => {
-                  setEmail(event.target.value);
+                  dispatch({
+                    type: 'email',
+                    payload: event.target.value,
+                  });
                 }}
               />
               <textarea
-              placeholder='enter your message'
+                placeholder='messaggio'
+                value={state.message}
                 onChange={(e) => {
-                  setMessage(e.target.value);
+                  dispatch({
+                    type: 'message',
+                    payload: e.target.value,
+                  });
                 }}></textarea>
               <button
                 onClick={() => {
-                  if ((email && name && message) !== '') {
-                    setSubmit(true);
+                  let getItem = localStorage.getItem('wait');
+                  if (
+                    (state.email && state.name && state.message) !== '' &&
+                    getItem !== 'true'
+                  ) {
+                    dispatch({
+                      type: 'submit',
+                      payload: true,
+                    });
+                  } else if (
+                    getItem == 'true' &&
+                    (state.email && state.name && state.message) !== ''
+                  ) {
+                    dispatch({
+                      type: 'error2',
+                      payload: true,
+                    });
+
+                    setTimeout(() => {
+                      dispatch({
+                        type: 'error2',
+                        payload: false,
+                      });
+                    }, 5000);
                   }
                 }}>
-                submit
+                INVIA
               </button>
-              {showMessage ? (
+              {state.showMessage ? (
                 <h3 class='green'>your message has been sent successfully</h3>
               ) : (
-                error && (
+                state.error && (
                   <h3 class='red'>
                     your message hasnt been sent successfully. check you
                     internet and try again
                   </h3>
                 )
+              )}
+              {state.error2 && (
+                <h3 class='yellow'>
+                  Your message has already been sent. please wait for response
+                </h3>
               )}
             </div>
           </div>

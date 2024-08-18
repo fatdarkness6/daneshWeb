@@ -46,11 +46,11 @@ export default function Header() {
               </Link>
 
               <Link className={page == "/aboutUs"? "act" : ""} to='/aboutUs'>
-                <h3>About Us</h3>
+                <h3>Chi Siamo </h3>
               </Link>
 
               <Link className={page == "/contactUs"? "act" : ""} to='/contactUs'>
-                <h3>Contact Us</h3>
+                <h3>Contatti</h3>
               </Link>
 
               <h3>News</h3>
@@ -90,12 +90,12 @@ export default function Header() {
             </div>
             <div id = {page == "/aboutUs" && "transform"} className='hambergerMenu-content-aboutUsPage'>
               <Link to='/aboutUs'>
-                <h3>About Us</h3>
+                <h3>Chi Siamo</h3>
               </Link>
             </div>
             <div id = {page == "/contactUs" && "transform"} className='hambergerMenu-content-contactUsPage'>
               <Link to='/contactUs'>
-                <h3>Contact Us</h3>
+                <h3>Contatti</h3>
               </Link>
             </div>
             <div className='hambergerMenu-content-newsPage'>

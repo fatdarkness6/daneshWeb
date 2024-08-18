@@ -3,19 +3,10 @@ import Header from '../../components/header/header';
 import 'react-slideshow-image/dist/styles.css';
 import job3 from '../../public/job3.jpg';
 
-import SwiperCore, {
-  EffectFade,
-  Navigation,
-  Pagination,
-  Autoplay,
-} from 'swiper';
-import 'swiper/swiper-bundle.min.css';
 import Footer from '../../components/footer/footer';
 
-SwiperCore.use([Navigation, Pagination, Autoplay, EffectFade]);
 export default function HomePage() {
   let [show, setShow] = useState(false);
-  let [width, setWidth] = useState(0);
   const up = useRef(null);
   const containerP6 = useRef(null);
 
@@ -44,20 +35,18 @@ export default function HomePage() {
     function slide() {
       img.forEach((e) => {
         e.style.transform = `translateX(-${counter * 100}%)`;
-        
       });
     }
-    
-      setInterval(() => {
-        if (counter === 5) {
-          counter = 0;
-        }
-        counter++;
-        slide();
-      } , 3000);
-    
+
+    setInterval(() => {
+      if (counter === 5) {
+        counter = 0;
+      }
+      counter++;
+      slide();
+    }, 3000);
   }, []);
-  
+
   return (
     <div className='home-page'>
       <div className='home-page-content'>
@@ -65,10 +54,7 @@ export default function HomePage() {
           <Header />
         </div>
         <div ref={up} className='container-p2 '>
-          
-          <div
-            
-            className='context-1 c'>
+          <div className='context-1 c'>
             <div className='img1 image'>
               <div className='text'>
                 <h1>Welcome to Danesh Web</h1>
@@ -81,9 +67,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div
-            
-            className='context-2 c'>
+          <div className='context-2 c'>
             <div className='img2 image'></div>
             <div className='text'>
               <h1>lalalalalalal</h1>
@@ -95,9 +79,7 @@ export default function HomePage() {
               </p>
             </div>
           </div>
-          <div
-            
-            className='context-3 c'>
+          <div className='context-3 c'>
             <div className='img3 image'></div>
             <div className='text'>
               <h1>bababababababababa</h1>
@@ -109,9 +91,7 @@ export default function HomePage() {
               </p>
             </div>
           </div>
-          <div
-           
-            className='context-4 c'>
+          <div className='context-4 c'>
             <div className='img4 image'></div>
             <div className='text'>
               <h1>bababababababababa</h1>
@@ -123,9 +103,7 @@ export default function HomePage() {
               </p>
             </div>
           </div>
-          <div
-          
-            className='context-5 c'>
+          <div className='context-5 c'>
             <div className='img5 image'></div>
             <div className='text'>
               <h1>bababababababababa</h1>
@@ -140,9 +118,7 @@ export default function HomePage() {
               </p>
             </div>
           </div>
-          <div
-           
-            className='context-6 c'>
+          <div className='context-6 c'>
             <div className='img6 image'>
               <div className='text'>
                 <h1>bababababababababa</h1>

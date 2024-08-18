@@ -11,7 +11,7 @@ export default function AboutUsPage() {
         <div className='container-p2'>
           <div className='wrapper'>
             <div className='aboutUs-content-p1'>
-              <h1>About Us</h1>
+              <h1>Chi Siamo </h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
                 laudantium sed ducimus aliquid ex ad cupiditate, in libero
@@ -20,7 +20,7 @@ export default function AboutUsPage() {
               </p>
 
               <button >
-                <Link style = {{color: 'white'}} to='/contactUs'>Contact Us</Link>
+                <Link style = {{color: 'white'}} to='/contactUs'>Contatti</Link>
               </button>
             </div>
             <div className='aboutUs-content-p2'>
@@ -57,7 +57,7 @@ export default function AboutUsPage() {
                 architecto unde illum! Est ea voluptate quis ullam veritatis, id
                 beatae impedit dignissimos accusantium!
               </p>
-              <button>See News</button>
+              <button>Leggi la News</button>
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@ export default function AboutUsPage() {
           <div className='wrapper'>
             <div className='aboutUs-content'>
               <div className='aboutUs-content-p1'>
-                <h1>What's different when you work with Us</h1>
+                <h1>Quale diferenza quando lavori con noi ?</h1>
               </div>
               <div className='together'>
                 <div className='aboutUs-content-p2'>

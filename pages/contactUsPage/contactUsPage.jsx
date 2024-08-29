@@ -40,6 +40,7 @@ export default function ContactUsPage() {
         }
       });
     });
+    window.scrollTo(0,0);
   }, []);
 
   useEffect(() => {

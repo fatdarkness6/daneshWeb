@@ -1207,11 +1207,216 @@ input::-webkit-inner-spin-button {
     color: red;
     font-size: 25px;
 }
+.red {
+    color: red;
+}
+.redOutLine {
+    outline: 3px solid red;
+}
 .header #transform  {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.loginPage {
+   height: 100%;
+}
+.loginPage , .registerPage {
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+}
+:is(.loginPage .loginPage-content .loginPage-content-form , .registerPage .registerPage-content .registerPage-content-form) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@keyframes animate {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+:is(.loginPage .loginPage-content .loginPage-content-form , .registerPage .registerPage-content .registerPage-content-form) .state input {
+    border-radius: 10px;
+    width: 50%;
+    padding: 14px;
+    font-size: 17px;
+    opacity: 0;
+    animation-name: animate;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+    transition: all 0.2s;
+}
+:is(.loginPage .loginPage-content .loginPage-content-form , .registerPage .registerPage-content .registerPage-content-form) .state {
+    width: 100%;
+}
+:is(.loginPage .loginPage-content .loginPage-content-form , .registerPage .registerPage-content .registerPage-content-form) input:focus {
+    outline: 5px solid #d7ad47;
+}
+:is(.loginPage .loginPage-content .loginPage-content-form , .registerPage .registerPage-content .registerPage-content-form) .state:nth-child(2) input {
+    animation-delay: 0.2s;
+}
+.registerPage .registerPage-content .registerPage-content-form .state:nth-child(3) input {
+    animation-delay: 0.3s;
+}
+.registerPage .registerPage-content .registerPage-content-form .state:nth-child(4)  input {
+    animation-delay: 0.5s;
+}
+.registerPage .registerPage-content .registerPage-content-form .state:nth-child(5)  input {
+    animation-delay: 0.7s;
+}
+.registerPage .registerPage-content .registerPage-content-form .state:nth-child(6)  input {
+    animation-delay: 0.9s;
+}
+.registerPage .registerPage-content .registerPage-content-form .state:nth-child(7)  input {
+    animation-delay: 1.1s;
+}
+:is(.loginPage .loginPage-content , .registerPage .registerPage-content) {
+    width: 50%; 
+    text-align: center;
+}
+:is(.loginPage .loginPage-content .loginPage-content-form , .registerPage .registerPage-content .registerPage-content-form ) button {
+    color: #fff;
+    cursor: pointer;
+    background: #000;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    font-family: system-ui;
+    font-size: 15px;
+    transition: all .5s;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation-name: animate;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s ;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+:is(.loginPage .loginPage-content , .registerPage .registerPage-content) h4 {
+    animation-name: animate2;
+    animation-duration: 0.7s ;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+.registerPage .registerPage-content {
+    margin-top: 200px;
+
+}
+:is(.loginPage .loginPage-content .loginPage-content-form , .registerPage .registerPage-content .registerPage-content-form) button:hover {
+    color: #000;
+    background-color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 10px 1px #000;
+}
+.portal::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000006b;
+    z-index: 1;
+}
+.portal .portal-content {
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+@keyframes animate3 {
+    from {
+        
+        scale: 0.5;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+        scale: 1;
+    }
+}
+.portal .portal-content img {
+    width: 200px;
+    opacity: 0;
+    animation-name: animate3;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.portal .portal-content button {
+    color: #fff;
+    cursor: pointer;
+    background: #000;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    font-family: system-ui;
+    font-size: 15px;
+    transition: all .5s;
+    animation-name: animate2;
+    animation-duration: 1s ;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+}
+.portal .portal-content button:hover {
+        color: #000;
+        background-color: #fff;
+        transform: translateY(-5px);
+        box-shadow: 0 10px 10px 1px #000;
+}
+
+.portal .portal-content h1 {
+    animation-name: animate2;
+    animation-duration: 1s ;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+.portal .portal-content p {
+    animation-name: animate3;
+    animation-duration: 1s ;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+
+
+
+
+
 
 /* .......................responsive........................ */
 
@@ -1318,6 +1523,9 @@ input::-webkit-inner-spin-button {
         justify-content: center;
         gap: 100px;
     }
+    :is(.loginPage .loginPage-content .loginPage-content-form, .registerPage .registerPage-content .registerPage-content-form) .state input {
+        width: 70%;
+    }
 }
 @media only screen and (max-width : 1050px ) {
     .aboutUs-page .container-p6 .aboutUs-content-p2 {
@@ -1328,6 +1536,16 @@ input::-webkit-inner-spin-button {
         background-color: #2b2638;
         border-radius: 5px;
         width: 45%;
+    }
+    :is(.loginPage .loginPage-content, .registerPage .registerPage-content) {
+        text-align: center;
+        width: 80%;
+    }
+    .portal .portal-content img {
+        width: 150px;
+    }
+    .portal .portal-content {
+        top: 60%;
     }
 }
 @media only screen and (max-width : 900px ) {
@@ -1399,7 +1617,22 @@ input::-webkit-inner-spin-button {
     .contactUsPage .contactUsPage-container-p3-content4 :is(h1, h3, h4, i) , .contactUsPage .contactUsPage-container-p3-content1 :is(h1, h3, h4, i) , .contactUsPage .contactUsPage-container-p3-content2 :is(h1, h3, h4, i) , .contactUsPage .contactUsPage-container-p3-content3 :is(h1, h3, h4, i) {
         width: 100%;
     }
-
+    :is(.loginPage .loginPage-content .loginPage-content-form, .registerPage .registerPage-content .registerPage-content-form) .state input {
+        width: 90%;
+    }
+    .portal .portal-content img {
+        width: 120px;
+    }
+    .portal .portal-content h1 {
+        font-size: 27px;
+    }
+}
+@media only screen and (max-width : 700px ) {
+    .header-content.flex-alignCenter-spaceBetween {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    } 
 }
 @media only screen and (max-width : 650px ) {
     .home-page .container-p7 .row {
@@ -1436,6 +1669,15 @@ input::-webkit-inner-spin-button {
     }
     .home-page .container-p6 {
         height: 1000px;
+    }
+    .portal .portal-content img {
+        width: 100px;
+    }
+    .portal .portal-content h1 {
+        font-size: 22px;
+    }
+    .portal .portal-content {
+        width: 80%;
     }
 } 
 @media only screen and (max-width : 550px ) {
@@ -1478,5 +1720,11 @@ input::-webkit-inner-spin-button {
     .contactUsPage .container-p4 .submit input , .contactUsPage .container-p4 .submit textarea {
         width: 90%;
     }
-
+    :is(.loginPage .loginPage-content .loginPage-content-form, .registerPage .registerPage-content .registerPage-content-form) .state input {
+        width: 100%;
+    }
+            
+    .header-content.flex-alignCenter-spaceBetween {
+        justify-content: space-between;
+    } 
 }

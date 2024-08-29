@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react';
 import Header from '../../components/header/header';
 import 'react-slideshow-image/dist/styles.css';
 import job3 from '../../public/job3.jpg';
-
 import Footer from '../../components/footer/footer';
 
 export default function HomePage() {
@@ -46,6 +45,9 @@ export default function HomePage() {
       slide();
     }, 3000);
   }, []);
+  useEffect(() => {
+    window.scrollTo(0,0);
+  } , [])
 
   return (
     <div className='home-page'>

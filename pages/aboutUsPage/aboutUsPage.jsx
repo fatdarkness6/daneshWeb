@@ -1,7 +1,14 @@
+import { useEffect } from 'react';
 import Footer from '../../components/footer/footer';
 import Header from '../../components/header/header';
 import { Link } from'react-router-dom';
 export default function AboutUsPage() {
+
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+  } , [])
+
   return (
     <div className='aboutUs-page'>
       <div className='aboutUs-page-content'>
@@ -11,7 +18,7 @@ export default function AboutUsPage() {
         <div className='container-p2'>
           <div className='wrapper'>
             <div className='aboutUs-content-p1'>
-              <h1>Chi Siamo </h1>
+              <h1> Chi Siamo </h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
                 laudantium sed ducimus aliquid ex ad cupiditate, in libero

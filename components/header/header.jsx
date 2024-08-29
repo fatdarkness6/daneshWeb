@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import img from '../../public/headers-logo.png';
 import { useState } from 'react';
-import { Link, useParams, useSearchParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   let lastScrollTop = 0;
@@ -44,15 +44,15 @@ export default function Header() {
               <Link className={page == "/"? "act" : ""} to='/'>
                 <h3>Home</h3>
               </Link>
-
+              <Link className={page == "/login" || page == "/register" ? "act" : ""} to='/login'>
+                <h3>Login / Register</h3>
+              </Link>
               <Link className={page == "/aboutUs"? "act" : ""} to='/aboutUs'>
                 <h3>Chi Siamo </h3>
               </Link>
-
               <Link className={page == "/contactUs"? "act" : ""} to='/contactUs'>
                 <h3>Contatti</h3>
               </Link>
-
               <h3>News</h3>
             </div>
 
@@ -86,6 +86,11 @@ export default function Header() {
             <div id = {page == "/" && "transform"} className='hambergerMenu-content-homePage'>
               <Link to='/'>
                 <h3>Home</h3>
+              </Link>
+            </div>
+            <div id = {page == "/login" || page == "/register"  && "transform"} className='hambergerMenu-content-homePage'>
+              <Link to='/login'>
+                <h3>Login / Register</h3>
               </Link>
             </div>
             <div id = {page == "/aboutUs" && "transform"} className='hambergerMenu-content-aboutUsPage'>

@@ -13,20 +13,20 @@ export default function RegisterPage() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
-    const [errorPass, setErrorPass] = useState(false);
-    const [filloutAlert, setFilloutAlert] = useState(false);
-
-   
     const [errorName, setErrorName] = useState(false);
     const [errorLastName, setErrorLastName] = useState(false);
     const [errorUsername, setErrorUsername] = useState(false);
     const [errorPhone, setErrorPhone] = useState(false);
     const [errorEmail, setErrorEmail] = useState(false);
     const [errorPassword, setErrorPassword] = useState(false);
-
-    
+    const [errorPass, setErrorPass] = useState(false);
+    const [filloutAlert, setFilloutAlert] = useState(false);
     const [openPortal, setOpenPortal] = useState(false);
     const [counter, setCounter] = useState(5);
+    const [existUser, setExistUser] = useState("");
+
+
+
 
     const redirect = useNavigate();
 
@@ -60,7 +60,10 @@ export default function RegisterPage() {
         if (lastName.length > 1) setErrorLastName(false);
         if (username.length > 1) setErrorUsername(false);
         if (phone.length > 1) setErrorPhone(false);
-        if (email.length > 1) setErrorEmail(false);
+        if (email.length > 1) {
+            setErrorEmail(false)
+            setExistUser(false)
+        } 
         if (password.length > 1) setErrorPassword(false);
     }, [confirmPassword, name, lastName, username, phone, email, password]);
 
@@ -90,7 +93,6 @@ export default function RegisterPage() {
         };
 
         if (!name || !lastName || !username || !phone || !email || !password || !confirmPassword) {
-            // Check if any field is empty and set appropriate error states
             setErrorName(!name);
             setErrorLastName(!lastName);
             setErrorUsername(!username);
@@ -113,6 +115,8 @@ export default function RegisterPage() {
             .then((result) => {
                 if (result === "User has been registered successfully") {
                     setOpenPortal(true);
+                }else {
+                    setExistUser(result);
                 }
             })
             .catch((error) => {
@@ -217,6 +221,9 @@ export default function RegisterPage() {
                         </div>
 
                         <button type="submit">Register</button>
+                        
+                        {existUser && <h3 className="red">{existUser}</h3>}
+                        <br/>
                     </form>
                     <h4>
                         Already have an account? <Link to="/login">Login</Link> now.

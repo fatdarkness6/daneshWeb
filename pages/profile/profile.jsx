@@ -9,7 +9,7 @@ export default function Profile() {
 
     function getUserData() {
         let data = localStorage.getItem("userData");
-        return data
+        return JSON.parse(data)
     }
     useEffect(() => {
         getUsers(getUserData()).then((e) => {

@@ -22,11 +22,13 @@ export default function LoginPage() {
             setOpenPortal(true)
         }else {
                 userToken(usernameOremail , password).then((e) => {
+                return e.json()
+                }).then((e) => {
                     if (e == "Password is incorrect" || e == "User not found" || e == "Internal server error") {
                         setLoginError(e)
                     } else {
                         localStorage.setItem("userData", JSON.stringify(e));
-                        if(e) {
+                        if(e.length >1) {
 
                             redirect("/profile");
                         }

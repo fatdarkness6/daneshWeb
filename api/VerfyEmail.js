@@ -1,9 +1,8 @@
-async function verfyEmail(email, userToken) {
+async function verfyEmail(email) {
     const response = await fetch("http://localhost:3001/api/sendEmailVerify", {
         headers: {
             "Content-Type": "application/json",
             "email": email,
-            "userToken": userToken,
         },
     });
     return response;

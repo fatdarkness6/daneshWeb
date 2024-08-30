@@ -65,17 +65,7 @@ export default function RegisterPage() {
         if (password.length > 1) setErrorPassword(false);
     }, [confirmPassword, name, lastName, username, phone, email, password]);
 
-    function generateUserToken(length) {
-        const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-        let token = "";
-        for (let i = 0; i < length; i++) {
-            const randomIndex = Math.floor(Math.random() * characters.length);
-            token += characters.charAt(randomIndex);
-        }
-        return token;
-    }
-
-    const userToken = generateUserToken(16);
+    
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -87,7 +77,6 @@ export default function RegisterPage() {
             phone,
             email,
             password,
-            userToken,
         };
 
         if (!name || !lastName || !username || !phone || !email || !password || !confirmPassword) {
@@ -135,8 +124,7 @@ export default function RegisterPage() {
                                     onClick={() => {
                                         setOpenPortal(false);
                                         redirect("/login");
-                                    }}
-                                >
+                                    }}>
                                     OK
                                 </button>
                                 <p>Redirecting to the login page in {counter} seconds...</p>

@@ -5,6 +5,7 @@ import { loginUser } from "../../api/login";
 import { createPortal } from "react-dom";
 import registerImage from "../../public/register.png";
 import { verfyEmail } from "../../api/VerfyEmail";
+import { userToken } from "../../api/userToken";
 export default function LoginPage() {
 
     const [usernameOremail, setUsernameOremail] = useState("");
@@ -13,17 +14,24 @@ export default function LoginPage() {
     const [errorUsernameOremail, setErrorUsernameOremail] = useState(false);
     const [errorPassword, setErrorPassword] = useState(false);
     const [openPortal, setOpenPortal] = useState(false)
-    const [userToken, setUserToken] = useState("")
 
     const redirect = useNavigate()
 
     function saveDataInLocalStorage(data) {
         if(data.verifyEmail == false) {
-            setUserToken(data.token)
             setOpenPortal(true)
         }else {
-            localStorage.setItem("userData", data.token);
-        redirect("/profile");
+            useEffect(() =>{
+                userToken(usernameOremail , password).then((e) => {
+                    if (e == "Password is incorrect" || e == "User not found" || e == "Internal server error") {
+                        setLoginError(e)
+                    } else {
+                        localStorage.setItem("userData", e.token);
+                        redirect("/profile");
+                    }
+                })
+            } , []) 
+            
 
         }
         
@@ -37,7 +45,6 @@ export default function LoginPage() {
     useEffect(() => {
         if (usernameOremail.length >1) {
             setErrorUsernameOremail(false)
-            
         }
         if (password.length > 1) {
             setErrorPassword(false)
@@ -49,7 +56,7 @@ export default function LoginPage() {
     useEffect(() => {
         if (openPortal) {
            
-            verfyEmail(usernameOremail, userToken).then((e) => {
+            verfyEmail(usernameOremail).then((e) => {
                 return e.json()
             }).then((e) => {
                 console.log(e)
@@ -67,7 +74,10 @@ export default function LoginPage() {
                     <div className="portal-content">
                         <img src={registerImage} alt="Register" />
                         <h1> Verify Gmail </h1>
-                        <p>Email has been sent to your Gmail...</p>
+                        <p>Email has been sent to your Gmail</p>
+                            <button onClick={() => {
+                                setOpenPortal(false)
+                            }}>OK</button>
                     </div>
                 </div>,
                 document.body

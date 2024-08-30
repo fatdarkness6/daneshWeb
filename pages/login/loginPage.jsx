@@ -26,7 +26,6 @@ export default function LoginPage() {
                         setLoginError(e)
                     } else {
                         localStorage.setItem("userData", e);
-                        console.log(e)
                         if(e) {
 
                             redirect("/profile");

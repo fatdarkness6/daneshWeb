@@ -1,9 +1,10 @@
-import { useEffect } from "react";
+import { useEffect , useState } from "react";
 import { useParams } from "react-router-dom"
 import { verfyEmailAdress } from "../../api/VerfyEmail";
 
 export default function VerfyEmailPage() {
 
+    const [verfyEmail, setVerfyEmail] = useState("")
 
     let params = useParams();
     let {userToken , email} = params;
@@ -13,7 +14,7 @@ export default function VerfyEmailPage() {
             verfyEmailAdress(email, userToken).then((e) => {
                 return e.json()
             }).then((e) => {
-                console.log(e)
+                setVerfyEmail(e)
             })
         }
     } , [])
@@ -22,7 +23,7 @@ export default function VerfyEmailPage() {
         <>
         
         <h1>
-            email verfied :)
+            {verfyEmail}
         </h1>
 
         </>

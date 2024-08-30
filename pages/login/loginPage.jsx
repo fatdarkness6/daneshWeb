@@ -25,7 +25,7 @@ export default function LoginPage() {
                     if (e == "Password is incorrect" || e == "User not found" || e == "Internal server error") {
                         setLoginError(e)
                     } else {
-                        localStorage.setItem("userData", e);
+                        localStorage.setItem("userData", JSON.stringify(e));
                         if(e) {
 
                             redirect("/profile");

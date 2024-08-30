@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { loginUser } from "../../api/login";
 import { createPortal } from "react-dom";
 import registerImage from "../../public/register.png";
-import { verfyEmail } from "../../api/VerfyEmail";
+import { verfyEmail } from "../../api/sendVerfyEmail";
 import { userToken } from "../../api/userToken";
 export default function LoginPage() {
 

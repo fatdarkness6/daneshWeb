@@ -1,10 +1,11 @@
-async function verfyEmail(email) {
-    const response = await fetch("http://localhost:3001/api/sendEmailVerify", {
+async function verfyEmailAdress(email , userToken) {
+    return await fetch("http://localhost:3001/api/verifyEmail" , {
         headers: {
             "Content-Type": "application/json",
             "email": email,
-        },
-    });
-    return response;
+            "userToken": userToken
+        }
+    })
 }
-export { verfyEmail }
+
+export { verfyEmailAdress }

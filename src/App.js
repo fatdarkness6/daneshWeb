@@ -5,6 +5,7 @@ import ContactUsPage from "../pages/contactUsPage/contactUsPage";
 import LoginPage from "../pages/login/loginPage";
 import RegisterPage from "../pages/registerPage/register";
 import Profile from "../pages/profile/profile";
+import VerfyEmailPage from "../pages/verfyEmailPage/verfyEmail";
 
 
 export function App() {
@@ -16,6 +17,7 @@ export function App() {
         <Route path = "/login" element = {<LoginPage/>}/>
         <Route path="/register" element={<RegisterPage/>}/>
         <Route path = "/profile" element = {<Profile/>}/>
+        <Route path="/:email/verfy/:userToken" element={<VerfyEmailPage />} />
       </Routes>
     );
   }

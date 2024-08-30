@@ -23,6 +23,7 @@ export default function Profile() {
           {users.map((e) => {
                return (
                 <>
+                
                     <h1>{e.name}</h1>
                     <h1>{e.email}</h1>
                     <h1>{e.password}</h1>

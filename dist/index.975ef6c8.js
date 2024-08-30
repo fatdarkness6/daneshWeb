@@ -27241,6 +27241,8 @@ var _register = require("../pages/registerPage/register");
 var _registerDefault = parcelHelpers.interopDefault(_register);
 var _profile = require("../pages/profile/profile");
 var _profileDefault = parcelHelpers.interopDefault(_profile);
+var _verfyEmail = require("../pages/verfyEmailPage/verfyEmail");
+var _verfyEmailDefault = parcelHelpers.interopDefault(_verfyEmail);
 function App() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
         children: [
@@ -27248,20 +27250,8 @@ function App() {
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homePageDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 13,
-                    columnNumber: 34
-                }, void 0)
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 13,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/aboutUs",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutUsPageDefault.default), {}, void 0, false, {
-                    fileName: "src/App.js",
                     lineNumber: 14,
-                    columnNumber: 45
+                    columnNumber: 34
                 }, void 0)
             }, void 0, false, {
                 fileName: "src/App.js",
@@ -27269,11 +27259,11 @@ function App() {
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/contactUs",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactUsPageDefault.default), {}, void 0, false, {
+                path: "/aboutUs",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutUsPageDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
                     lineNumber: 15,
-                    columnNumber: 47
+                    columnNumber: 45
                 }, void 0)
             }, void 0, false, {
                 fileName: "src/App.js",
@@ -27281,11 +27271,11 @@ function App() {
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/login",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginPageDefault.default), {}, void 0, false, {
+                path: "/contactUs",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactUsPageDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
                     lineNumber: 16,
-                    columnNumber: 43
+                    columnNumber: 47
                 }, void 0)
             }, void 0, false, {
                 fileName: "src/App.js",
@@ -27293,11 +27283,11 @@ function App() {
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/register",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _registerDefault.default), {}, void 0, false, {
+                path: "/login",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginPageDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
                     lineNumber: 17,
-                    columnNumber: 42
+                    columnNumber: 43
                 }, void 0)
             }, void 0, false, {
                 fileName: "src/App.js",
@@ -27305,21 +27295,45 @@ function App() {
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/profile",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileDefault.default), {}, void 0, false, {
+                path: "/register",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _registerDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
                     lineNumber: 18,
-                    columnNumber: 45
+                    columnNumber: 42
                 }, void 0)
             }, void 0, false, {
                 fileName: "src/App.js",
                 lineNumber: 18,
                 columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                path: "/profile",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 19,
+                    columnNumber: 45
+                }, void 0)
+            }, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 19,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                path: "/:email/verfy/:userToken",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _verfyEmailDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 20,
+                    columnNumber: 57
+                }, void 0)
+            }, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 20,
+                columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/App.js",
-        lineNumber: 12,
+        lineNumber: 13,
         columnNumber: 7
     }, this);
 }
@@ -27332,7 +27346,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../pages/homaPage/homePage":"iwGWk","../pages/aboutUsPage/aboutUsPage":"isZ4t","../pages/contactUsPage/contactUsPage":"4BkTJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../pages/registerPage/register":"b0YtZ","../pages/login/loginPage":"5R75k","../pages/profile/profile":"gEuB5"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../pages/homaPage/homePage":"iwGWk","../pages/aboutUsPage/aboutUsPage":"isZ4t","../pages/contactUsPage/contactUsPage":"4BkTJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../pages/registerPage/register":"b0YtZ","../pages/login/loginPage":"5R75k","../pages/profile/profile":"gEuB5","../pages/verfyEmailPage/verfyEmail":"8A2hU"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.25.0
  *
@@ -37491,7 +37505,6 @@ function RegisterPage() {
         openPortal,
         redirect
     ]);
-    // Form validation logic
     (0, _react.useEffect)(()=>{
         if (confirmPassword === "") setErrorPass(false);
         else if (confirmPassword.length > 1) setFilloutAlert(false);
@@ -37570,14 +37583,14 @@ function RegisterPage() {
                                 alt: "Register"
                             }, void 0, false, {
                                 fileName: "pages/registerPage/register.jsx",
-                                lineNumber: 134,
+                                lineNumber: 132,
                                 columnNumber: 33
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                 children: "Successfully registered"
                             }, void 0, false, {
                                 fileName: "pages/registerPage/register.jsx",
-                                lineNumber: 135,
+                                lineNumber: 133,
                                 columnNumber: 33
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -37588,7 +37601,7 @@ function RegisterPage() {
                                 children: "OK"
                             }, void 0, false, {
                                 fileName: "pages/registerPage/register.jsx",
-                                lineNumber: 136,
+                                lineNumber: 134,
                                 columnNumber: 33
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37599,18 +37612,18 @@ function RegisterPage() {
                                 ]
                             }, void 0, true, {
                                 fileName: "pages/registerPage/register.jsx",
-                                lineNumber: 144,
+                                lineNumber: 142,
                                 columnNumber: 33
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "pages/registerPage/register.jsx",
-                        lineNumber: 133,
+                        lineNumber: 131,
                         columnNumber: 29
                     }, this)
                 }, void 0, false, {
                     fileName: "pages/registerPage/register.jsx",
-                    lineNumber: 132,
+                    lineNumber: 130,
                     columnNumber: 25
                 }, this), document.body),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37630,7 +37643,7 @@ function RegisterPage() {
                                             onChange: (e)=>setName(e.target.value)
                                         }, void 0, false, {
                                             fileName: "pages/registerPage/register.jsx",
-                                            lineNumber: 152,
+                                            lineNumber: 150,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37638,13 +37651,13 @@ function RegisterPage() {
                                             children: errorName && "Please fill out this field"
                                         }, void 0, false, {
                                             fileName: "pages/registerPage/register.jsx",
-                                            lineNumber: 158,
+                                            lineNumber: 156,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "pages/registerPage/register.jsx",
-                                    lineNumber: 151,
+                                    lineNumber: 149,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37657,7 +37670,7 @@ function RegisterPage() {
                                             onChange: (e)=>setLastName(e.target.value)
                                         }, void 0, false, {
                                             fileName: "pages/registerPage/register.jsx",
-                                            lineNumber: 162,
+                                            lineNumber: 160,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37665,13 +37678,13 @@ function RegisterPage() {
                                             children: errorLastName && "Please fill out this field"
                                         }, void 0, false, {
                                             fileName: "pages/registerPage/register.jsx",
-                                            lineNumber: 168,
+                                            lineNumber: 166,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "pages/registerPage/register.jsx",
-                                    lineNumber: 161,
+                                    lineNumber: 159,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37684,7 +37697,7 @@ function RegisterPage() {
                                             onChange: (e)=>setUsername(e.target.value)
                                         }, void 0, false, {
                                             fileName: "pages/registerPage/register.jsx",
-                                            lineNumber: 172,
+                                            lineNumber: 170,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37692,13 +37705,13 @@ function RegisterPage() {
                                             children: errorUsername && "Please fill out this field"
                                         }, void 0, false, {
                                             fileName: "pages/registerPage/register.jsx",
-                                            lineNumber: 178,
+                                            lineNumber: 176,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "pages/registerPage/register.jsx",
-                                    lineNumber: 171,
+                                    lineNumber: 169,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37711,7 +37724,7 @@ function RegisterPage() {
                                             onChange: (e)=>setPhone(e.target.value)
                                         }, void 0, false, {
                                             fileName: "pages/registerPage/register.jsx",
-                                            lineNumber: 182,
+                                            lineNumber: 180,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37719,13 +37732,13 @@ function RegisterPage() {
                                             children: errorPhone && "Please fill out this field"
                                         }, void 0, false, {
                                             fileName: "pages/registerPage/register.jsx",
-                                            lineNumber: 188,
+                                            lineNumber: 186,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "pages/registerPage/register.jsx",
-                                    lineNumber: 181,
+                                    lineNumber: 179,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37738,7 +37751,7 @@ function RegisterPage() {
                                             onChange: (e)=>setEmail(e.target.value)
                                         }, void 0, false, {
                                             fileName: "pages/registerPage/register.jsx",
-                                            lineNumber: 192,
+                                            lineNumber: 190,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37746,13 +37759,13 @@ function RegisterPage() {
                                             children: errorEmail && "Please fill out this field"
                                         }, void 0, false, {
                                             fileName: "pages/registerPage/register.jsx",
-                                            lineNumber: 198,
+                                            lineNumber: 196,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "pages/registerPage/register.jsx",
-                                    lineNumber: 191,
+                                    lineNumber: 189,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37765,7 +37778,7 @@ function RegisterPage() {
                                             onChange: (e)=>setPassword(e.target.value)
                                         }, void 0, false, {
                                             fileName: "pages/registerPage/register.jsx",
-                                            lineNumber: 202,
+                                            lineNumber: 200,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37773,13 +37786,13 @@ function RegisterPage() {
                                             children: errorPassword && "Please fill out this field"
                                         }, void 0, false, {
                                             fileName: "pages/registerPage/register.jsx",
-                                            lineNumber: 208,
+                                            lineNumber: 206,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "pages/registerPage/register.jsx",
-                                    lineNumber: 201,
+                                    lineNumber: 199,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37792,7 +37805,7 @@ function RegisterPage() {
                                             onChange: (e)=>setConfirmPassword(e.target.value)
                                         }, void 0, false, {
                                             fileName: "pages/registerPage/register.jsx",
-                                            lineNumber: 212,
+                                            lineNumber: 210,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37800,13 +37813,13 @@ function RegisterPage() {
                                             children: filloutAlert ? "Please fill out this field" : errorPass && "Passwords do not match"
                                         }, void 0, false, {
                                             fileName: "pages/registerPage/register.jsx",
-                                            lineNumber: 218,
+                                            lineNumber: 216,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "pages/registerPage/register.jsx",
-                                    lineNumber: 211,
+                                    lineNumber: 209,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -37814,7 +37827,7 @@ function RegisterPage() {
                                     children: "Register"
                                 }, void 0, false, {
                                     fileName: "pages/registerPage/register.jsx",
-                                    lineNumber: 223,
+                                    lineNumber: 221,
                                     columnNumber: 25
                                 }, this),
                                 existUser && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -37822,18 +37835,18 @@ function RegisterPage() {
                                     children: existUser
                                 }, void 0, false, {
                                     fileName: "pages/registerPage/register.jsx",
-                                    lineNumber: 225,
+                                    lineNumber: 223,
                                     columnNumber: 39
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                     fileName: "pages/registerPage/register.jsx",
-                                    lineNumber: 226,
+                                    lineNumber: 224,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "pages/registerPage/register.jsx",
-                            lineNumber: 150,
+                            lineNumber: 148,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -37844,31 +37857,31 @@ function RegisterPage() {
                                     children: "Login"
                                 }, void 0, false, {
                                     fileName: "pages/registerPage/register.jsx",
-                                    lineNumber: 229,
+                                    lineNumber: 227,
                                     columnNumber: 50
                                 }, this),
                                 " now."
                             ]
                         }, void 0, true, {
                             fileName: "pages/registerPage/register.jsx",
-                            lineNumber: 228,
+                            lineNumber: 226,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "pages/registerPage/register.jsx",
-                    lineNumber: 149,
+                    lineNumber: 147,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "pages/registerPage/register.jsx",
-            lineNumber: 129,
+            lineNumber: 127,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "pages/registerPage/register.jsx",
-        lineNumber: 128,
+        lineNumber: 126,
         columnNumber: 9
     }, this);
 }
@@ -37960,6 +37973,10 @@ var _layout = require("../../components/layout/layout");
 var _layoutDefault = parcelHelpers.interopDefault(_layout);
 var _react = require("react");
 var _login = require("../../api/login");
+var _reactDom = require("react-dom");
+var _registerPng = require("../../public/register.png");
+var _registerPngDefault = parcelHelpers.interopDefault(_registerPng);
+var _verfyEmail = require("../../api/VerfyEmail");
 var _s = $RefreshSig$();
 function LoginPage() {
     _s();
@@ -37968,10 +37985,17 @@ function LoginPage() {
     const [LoginError, setLoginError] = (0, _react.useState)(false);
     const [errorUsernameOremail, setErrorUsernameOremail] = (0, _react.useState)(false);
     const [errorPassword, setErrorPassword] = (0, _react.useState)(false);
+    const [openPortal, setOpenPortal] = (0, _react.useState)(false);
+    const [userToken, setUserToken] = (0, _react.useState)("");
     const redirect = (0, _reactRouterDom.useNavigate)();
     function saveDataInLocalStorage(data) {
-        localStorage.setItem("userData", data);
-        redirect("/profile");
+        if (data.verifyEmail == false) {
+            setUserToken(data.token);
+            setOpenPortal(true);
+        } else {
+            localStorage.setItem("userData", data.token);
+            redirect("/profile");
+        }
     }
     (0, _react.useEffect)(()=>{
         setTimeout(()=>{
@@ -37987,150 +38011,199 @@ function LoginPage() {
         usernameOremail,
         password
     ]);
+    (0, _react.useEffect)(()=>{
+        if (openPortal) (0, _verfyEmail.verfyEmail)(usernameOremail, userToken).then((e)=>{
+            return e.json();
+        }).then((e)=>{
+            console.log(e);
+        });
+    }, [
+        openPortal
+    ]);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _layoutDefault.default), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "loginPage",
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "loginPage-content",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-                        className: "loginPage-content-form",
-                        onSubmit: (e)=>{
-                            e.preventDefault();
-                            let data = {
-                                usernameOremail,
-                                password
-                            };
-                            if (usernameOremail == "" && password == "") {
-                                setErrorUsernameOremail(true);
-                                setErrorPassword(true);
-                            } else if (usernameOremail == "" && password !== "") setErrorUsernameOremail(true);
-                            else if (usernameOremail !== "" && password == "") setErrorPassword(true);
-                            else (0, _login.loginUser)(data).then((e)=>{
-                                return e.json();
-                            }).then((e)=>{
-                                if (e == "User not found" || e == "Internal server error" || e == "Password is incorrect") {
-                                    setLoginError(e);
-                                    return;
-                                } else saveDataInLocalStorage(e);
-                            });
-                        },
+            children: [
+                openPortal && /*#__PURE__*/ (0, _reactDom.createPortal)(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "portal",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "portal-content",
                         children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "state",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                        className: errorUsernameOremail && "redOutLine",
-                                        placeholder: "Username OR Email",
-                                        type: "text",
-                                        onChange: (e)=>{
-                                            setUsernameOremail(e.target.value);
-                                        }
-                                    }, void 0, false, {
-                                        fileName: "pages/login/loginPage.jsx",
-                                        lineNumber: 70,
-                                        columnNumber: 29
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                        className: errorUsernameOremail && "red",
-                                        children: errorUsernameOremail && "fill out the form"
-                                    }, void 0, false, {
-                                        fileName: "pages/login/loginPage.jsx",
-                                        lineNumber: 73,
-                                        columnNumber: 29
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                src: (0, _registerPngDefault.default),
+                                alt: "Register"
+                            }, void 0, false, {
+                                fileName: "pages/login/loginPage.jsx",
+                                lineNumber: 68,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                children: " Verify Gmail "
+                            }, void 0, false, {
                                 fileName: "pages/login/loginPage.jsx",
                                 lineNumber: 69,
                                 columnNumber: 25
                             }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "state",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                        className: errorPassword && "redOutLine",
-                                        placeholder: "Password",
-                                        type: "password",
-                                        onChange: (e)=>{
-                                            setPassword(e.target.value);
-                                        }
-                                    }, void 0, false, {
-                                        fileName: "pages/login/loginPage.jsx",
-                                        lineNumber: 76,
-                                        columnNumber: 29
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                        className: errorPassword && "red",
-                                        children: errorPassword && "fill out the form"
-                                    }, void 0, false, {
-                                        fileName: "pages/login/loginPage.jsx",
-                                        lineNumber: 79,
-                                        columnNumber: 29
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "pages/login/loginPage.jsx",
-                                lineNumber: 75,
-                                columnNumber: 25
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                children: "Login"
-                            }, void 0, false, {
-                                fileName: "pages/login/loginPage.jsx",
-                                lineNumber: 81,
-                                columnNumber: 25
-                            }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "red",
-                                children: LoginError
+                                children: "Email has been sent to your Gmail..."
                             }, void 0, false, {
                                 fileName: "pages/login/loginPage.jsx",
-                                lineNumber: 82,
+                                lineNumber: 70,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "pages/login/loginPage.jsx",
-                        lineNumber: 38,
-                        columnNumber: 21
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                        children: [
-                            "You dont have an account? ",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/register",
-                                children: "Register"
-                            }, void 0, false, {
-                                fileName: "pages/login/loginPage.jsx",
-                                lineNumber: 84,
-                                columnNumber: 51
-                            }, this),
-                            " Now"
-                        ]
-                    }, void 0, true, {
-                        fileName: "pages/login/loginPage.jsx",
-                        lineNumber: 84,
+                        lineNumber: 67,
                         columnNumber: 21
                     }, this)
-                ]
-            }, void 0, true, {
-                fileName: "pages/login/loginPage.jsx",
-                lineNumber: 37,
-                columnNumber: 17
-            }, this)
-        }, void 0, false, {
+                }, void 0, false, {
+                    fileName: "pages/login/loginPage.jsx",
+                    lineNumber: 66,
+                    columnNumber: 21
+                }, this), document.body),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "loginPage-content",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                            className: "loginPage-content-form",
+                            onSubmit: (e)=>{
+                                e.preventDefault();
+                                let data = {
+                                    usernameOremail,
+                                    password
+                                };
+                                if (usernameOremail == "" && password == "") {
+                                    setErrorUsernameOremail(true);
+                                    setErrorPassword(true);
+                                } else if (usernameOremail == "" && password !== "") setErrorUsernameOremail(true);
+                                else if (usernameOremail !== "" && password == "") setErrorPassword(true);
+                                else (0, _login.loginUser)(data).then((e)=>{
+                                    return e.json();
+                                }).then((e)=>{
+                                    if (e == "User not found" || e == "Internal server error" || e == "Password is incorrect") {
+                                        setLoginError(e);
+                                        return;
+                                    } else saveDataInLocalStorage(e);
+                                });
+                            },
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "state",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                            className: errorUsernameOremail && "redOutLine",
+                                            placeholder: " Email",
+                                            type: "text",
+                                            onChange: (e)=>{
+                                                setUsernameOremail(e.target.value);
+                                            }
+                                        }, void 0, false, {
+                                            fileName: "pages/login/loginPage.jsx",
+                                            lineNumber: 105,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                            className: errorUsernameOremail && "red",
+                                            children: errorUsernameOremail && "fill out the form"
+                                        }, void 0, false, {
+                                            fileName: "pages/login/loginPage.jsx",
+                                            lineNumber: 108,
+                                            columnNumber: 29
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "pages/login/loginPage.jsx",
+                                    lineNumber: 104,
+                                    columnNumber: 25
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "state",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                            className: errorPassword && "redOutLine",
+                                            placeholder: "Password",
+                                            type: "password",
+                                            onChange: (e)=>{
+                                                setPassword(e.target.value);
+                                            }
+                                        }, void 0, false, {
+                                            fileName: "pages/login/loginPage.jsx",
+                                            lineNumber: 111,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                            className: errorPassword && "red",
+                                            children: errorPassword && "fill out the form"
+                                        }, void 0, false, {
+                                            fileName: "pages/login/loginPage.jsx",
+                                            lineNumber: 114,
+                                            columnNumber: 29
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "pages/login/loginPage.jsx",
+                                    lineNumber: 110,
+                                    columnNumber: 25
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    children: "Login"
+                                }, void 0, false, {
+                                    fileName: "pages/login/loginPage.jsx",
+                                    lineNumber: 116,
+                                    columnNumber: 25
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "red",
+                                    children: LoginError
+                                }, void 0, false, {
+                                    fileName: "pages/login/loginPage.jsx",
+                                    lineNumber: 117,
+                                    columnNumber: 25
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "pages/login/loginPage.jsx",
+                            lineNumber: 76,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                            children: [
+                                "You dont have an account? ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    to: "/register",
+                                    children: "Register"
+                                }, void 0, false, {
+                                    fileName: "pages/login/loginPage.jsx",
+                                    lineNumber: 119,
+                                    columnNumber: 51
+                                }, this),
+                                " Now"
+                            ]
+                        }, void 0, true, {
+                            fileName: "pages/login/loginPage.jsx",
+                            lineNumber: 119,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "pages/login/loginPage.jsx",
+                    lineNumber: 75,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
             fileName: "pages/login/loginPage.jsx",
-            lineNumber: 36,
+            lineNumber: 64,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "pages/login/loginPage.jsx",
-        lineNumber: 35,
+        lineNumber: 63,
         columnNumber: 9
     }, this);
 }
-_s(LoginPage, "8Dib+icvVbFKLgJE6fGM4gZA8L8=", false, function() {
+_s(LoginPage, "dzI1/vRt3oyfONLKb8h6Grr2n5o=", false, function() {
     return [
         (0, _reactRouterDom.useNavigate)
     ];
@@ -38144,7 +38217,7 @@ $RefreshReg$(_c, "LoginPage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../components/layout/layout":"kDHNM","react-router-dom":"9xmpe","react":"21dqq","../../api/login":"fyQee"}],"fyQee":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../components/layout/layout":"kDHNM","react-router-dom":"9xmpe","react":"21dqq","../../api/login":"fyQee","react-dom":"j6uA9","../../public/register.png":"l9eUR","../../api/VerfyEmail":"3dHFy"}],"fyQee":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "loginUser", ()=>loginUser);
@@ -38155,6 +38228,21 @@ async function loginUser(data) {
             "password": data.password
         }
     });
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3dHFy":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "verfyEmail", ()=>verfyEmail);
+async function verfyEmail(email, userToken) {
+    const response = await fetch("http://localhost:3001/api/sendEmailVerify", {
+        headers: {
+            "Content-Type": "application/json",
+            "email": email,
+            "userToken": userToken
+        }
+    });
+    return response;
 }
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gEuB5":[function(require,module,exports) {
@@ -38196,42 +38284,42 @@ function Profile() {
                             children: e.name
                         }, void 0, false, {
                             fileName: "pages/profile/profile.jsx",
-                            lineNumber: 26,
+                            lineNumber: 27,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                             children: e.email
                         }, void 0, false, {
                             fileName: "pages/profile/profile.jsx",
-                            lineNumber: 27,
+                            lineNumber: 28,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                             children: e.password
                         }, void 0, false, {
                             fileName: "pages/profile/profile.jsx",
-                            lineNumber: 28,
+                            lineNumber: 29,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                             children: e.phone
                         }, void 0, false, {
                             fileName: "pages/profile/profile.jsx",
-                            lineNumber: 29,
+                            lineNumber: 30,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                             children: e.lastname
                         }, void 0, false, {
                             fileName: "pages/profile/profile.jsx",
-                            lineNumber: 30,
+                            lineNumber: 31,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                             children: e.username
                         }, void 0, false, {
                             fileName: "pages/profile/profile.jsx",
-                            lineNumber: 31,
+                            lineNumber: 32,
                             columnNumber: 21
                         }, this)
                     ]
@@ -38239,7 +38327,7 @@ function Profile() {
             }),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "pages/profile/profile.jsx",
-                lineNumber: 36,
+                lineNumber: 37,
                 columnNumber: 9
             }, this)
         ]
@@ -38269,6 +38357,37 @@ async function getUsers(data) {
     });
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["farZc","1xC6H","8lqZg"], "8lqZg", "parcelRequire716c")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8A2hU":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$194b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$194b.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>VerfyEmailPage);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+function VerfyEmailPage() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            children: "email verfied :)"
+        }, void 0, false, {
+            fileName: "pages/verfyEmailPage/verfyEmail.jsx",
+            lineNumber: 5,
+            columnNumber: 9
+        }, this)
+    }, void 0, false);
+}
+_c = VerfyEmailPage;
+var _c;
+$RefreshReg$(_c, "VerfyEmailPage");
+
+  $parcel$ReactRefreshHelpers$194b.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["farZc","1xC6H","8lqZg"], "8lqZg", "parcelRequire716c")
 
 //# sourceMappingURL=index.975ef6c8.js.map

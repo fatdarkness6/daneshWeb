@@ -48,8 +48,6 @@ export default function RegisterPage() {
 
         
     }, [openPortal, redirect]);
-
-    // Form validation logic
     useEffect(() => {
         if (confirmPassword === "") {
             setErrorPass(false);

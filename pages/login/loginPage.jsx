@@ -21,7 +21,6 @@ export default function LoginPage() {
         if(data.verifyEmail == false) {
             setOpenPortal(true)
         }else {
-            useEffect(() =>{
                 userToken(usernameOremail , password).then((e) => {
                     if (e == "Password is incorrect" || e == "User not found" || e == "Internal server error") {
                         setLoginError(e)
@@ -30,9 +29,6 @@ export default function LoginPage() {
                         redirect("/profile");
                     }
                 })
-            } , []) 
-            
-
         }
         
     }

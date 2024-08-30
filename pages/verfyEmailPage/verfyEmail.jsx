@@ -7,7 +7,6 @@ export default function VerfyEmailPage() {
 
     let params = useParams();
     let {userToken , email} = params;
-    console.log(userToken, email);
 
     useEffect(() => {
         if (userToken !== undefined && email !== undefined) {

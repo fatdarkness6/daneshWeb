@@ -1,5 +1,5 @@
 async function loginUser(data) {
-    return await fetch("http://localhost:3001/api/login", {
+    return await fetch("https://dnwebapi.liara.run/api/login", {
         headers: {
             "username" : data.usernameOremail,
             "password" :  data.password

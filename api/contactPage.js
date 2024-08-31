@@ -1,5 +1,5 @@
 async function contactPage(values) {
-  return  await fetch("https://dnwebcommits.liara.run/api/communicate" , {
+  return  await fetch("https://dnwebapi.liara.run/api/communicate" , { 
         method : "POST" , 
         headers : {
             "Content-Type" : "application/json",

@@ -1,7 +1,7 @@
 
 async function setUser(data) {
    
-    return await fetch("http://localhost:3001/api/register" , {
+    return await fetch("https://dnwebapi.liara.run/api/register" , {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

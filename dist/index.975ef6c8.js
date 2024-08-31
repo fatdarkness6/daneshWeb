@@ -37395,7 +37395,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "contactPage", ()=>contactPage);
 async function contactPage(values) {
-    return await fetch("https://dnwebcommits.liara.run/api/communicate", {
+    return await fetch("https://dnwebapi.liara.run/api/communicate", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -37934,7 +37934,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "setUser", ()=>setUser);
 async function setUser(data) {
-    return await fetch("http://localhost:3001/api/register", {
+    return await fetch("https://dnwebapi.liara.run/api/register", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -38224,7 +38224,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "loginUser", ()=>loginUser);
 async function loginUser(data) {
-    return await fetch("http://localhost:3001/api/login", {
+    return await fetch("https://dnwebapi.liara.run/api/login", {
         headers: {
             "username": data.usernameOremail,
             "password": data.password
@@ -38237,7 +38237,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "verfyEmail", ()=>verfyEmail);
 async function verfyEmail(email) {
-    const response = await fetch("http://localhost:3001/api/sendEmailVerify", {
+    const response = await fetch("https://dnwebapi.liara.run/api/sendEmailVerify", {
         headers: {
             "Content-Type": "application/json",
             "email": email
@@ -38251,7 +38251,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "userToken", ()=>userToken);
 async function userToken(email, password) {
-    return await fetch("http://localhost:3001/api/userToken", {
+    return await fetch("https://dnwebapi.liara.run/api/userToken", {
         headers: {
             "Content-Type": "application/json",
             "email": email,
@@ -38363,7 +38363,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getUsers", ()=>getUsers);
 async function getUsers(data) {
-    return await fetch("http://localhost:3001/api/getUser", {
+    return await fetch("https://dnwebapi.liara.run/api/getUser", {
         headers: {
             "Content-Type": "application/json",
             "Accept": "application/json",

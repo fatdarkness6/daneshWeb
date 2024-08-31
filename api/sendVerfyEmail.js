@@ -1,5 +1,5 @@
 async function verfyEmail(email) {
-    const response = await fetch("http://localhost:3001/api/sendEmailVerify", {
+    const response = await fetch("https://dnwebapi.liara.run/api/sendEmailVerify", {
         headers: {
             "Content-Type": "application/json",
             "email": email,

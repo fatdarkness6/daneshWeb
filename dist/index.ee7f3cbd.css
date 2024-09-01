@@ -1588,6 +1588,11 @@ input::-webkit-inner-spin-button {
   animation-fill-mode: forwards;
 }
 
+.disabled {
+  pointer-events: none;
+  opacity: .5 !important;
+}
+
 @media only screen and (width <= 1650px) {
   .home-page .container-p7.target .content {
     padding: 0 30px;

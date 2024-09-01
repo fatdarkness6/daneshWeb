@@ -37966,7 +37966,8 @@ var _reactDom = require("react-dom");
 var _registerPng = require("../../public/register.png");
 var _registerPngDefault = parcelHelpers.interopDefault(_registerPng);
 var _sendVerfyEmail = require("../../api/sendVerfyEmail");
-var _userToken = require("../../api/userToken");
+var _sendCode = require("../../api/sendCode");
+var _checkCode = require("../../api/checkCode");
 var _s = $RefreshSig$();
 function LoginPage() {
     _s();
@@ -37975,19 +37976,19 @@ function LoginPage() {
     const [LoginError, setLoginError] = (0, _react.useState)(false);
     const [errorUsernameOremail, setErrorUsernameOremail] = (0, _react.useState)(false);
     const [errorPassword, setErrorPassword] = (0, _react.useState)(false);
-    const [openPortal, setOpenPortal] = (0, _react.useState)(false);
+    const [openPortal, setOpenPortal] = (0, _react.useState)(false) // this state is for portal
+    ;
+    const [sendCode, setSendCode] = (0, _react.useState)(false) // this state is for send code to email and open  sendEmailportal
+    ;
+    const [code, setCode] = (0, _react.useState)("") // this state is for code value
+    ;
+    const [isButtonDisabled, setIsButtonDisabled] = (0, _react.useState)(false);
+    const [updateUseEffectCheckCode, setUpdateUseEffectCheckCode] = (0, _react.useState)(0);
     const redirect = (0, _reactRouterDom.useNavigate)();
+    let button = (0, _react.useRef)(null);
     function saveDataInLocalStorage(data) {
         if (data.verifyEmail == false) setOpenPortal(true);
-        else (0, _userToken.userToken)(usernameOremail, password).then((e)=>{
-            return e.json();
-        }).then((e)=>{
-            if (e == "Password is incorrect" || e == "User not found" || e == "Internal server error") setLoginError(e);
-            else {
-                localStorage.setItem("userData", JSON.stringify(e));
-                if (e.length > 1) redirect("/profile");
-            }
-        });
+        else setSendCode(true);
     }
     (0, _react.useEffect)(()=>{
         setTimeout(()=>{
@@ -38012,11 +38013,40 @@ function LoginPage() {
     }, [
         openPortal
     ]);
+    (0, _react.useEffect)(()=>{
+        let data = {
+            email: usernameOremail,
+            password: password
+        };
+        if (usernameOremail !== "" && password !== "") (0, _sendCode.sendCodeForGmail)(data).then((e)=>{
+            return e.json();
+        }).then((e)=>{
+            console.log(e);
+        });
+    }, [
+        sendCode
+    ]);
+    (0, _react.useEffect)(()=>{
+        let data = {
+            email: usernameOremail,
+            password: password,
+            code: code
+        };
+        if (usernameOremail && password && code) (0, _checkCode.checkCodeForEmail)(data).then((e)=>e.json()).then((response)=>{
+            if (response === "Code is incorrect") setIsButtonDisabled(false);
+            else {
+                localStorage.setItem("token", JSON.stringify(response));
+                redirect("/profile");
+            }
+        });
+    }, [
+        updateUseEffectCheckCode
+    ]);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _layoutDefault.default), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "loginPage",
             children: [
-                openPortal && /*#__PURE__*/ (0, _reactDom.createPortal)(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                openPortal ? /*#__PURE__*/ (0, _reactDom.createPortal)(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "portal",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "portal-content",
@@ -38026,21 +38056,21 @@ function LoginPage() {
                                 alt: "Register"
                             }, void 0, false, {
                                 fileName: "pages/login/loginPage.jsx",
-                                lineNumber: 76,
+                                lineNumber: 106,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                 children: " Verify Gmail "
                             }, void 0, false, {
                                 fileName: "pages/login/loginPage.jsx",
-                                lineNumber: 77,
+                                lineNumber: 107,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: "Email has been sent to your Gmail"
                             }, void 0, false, {
                                 fileName: "pages/login/loginPage.jsx",
-                                lineNumber: 78,
+                                lineNumber: 108,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -38050,18 +38080,80 @@ function LoginPage() {
                                 children: "OK"
                             }, void 0, false, {
                                 fileName: "pages/login/loginPage.jsx",
-                                lineNumber: 79,
+                                lineNumber: 109,
                                 columnNumber: 29
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "pages/login/loginPage.jsx",
-                        lineNumber: 75,
+                        lineNumber: 105,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "pages/login/loginPage.jsx",
-                    lineNumber: 74,
+                    lineNumber: 104,
+                    columnNumber: 21
+                }, this), document.body) : sendCode && /*#__PURE__*/ (0, _reactDom.createPortal)(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "portal",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "portal-content",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                src: (0, _registerPngDefault.default),
+                                alt: "Register"
+                            }, void 0, false, {
+                                fileName: "pages/login/loginPage.jsx",
+                                lineNumber: 118,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                children: " Enter the code "
+                            }, void 0, false, {
+                                fileName: "pages/login/loginPage.jsx",
+                                lineNumber: 119,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "number",
+                                placeholder: "Code",
+                                onChange: (e)=>{
+                                    setCode(e.target.value);
+                                }
+                            }, void 0, false, {
+                                fileName: "pages/login/loginPage.jsx",
+                                lineNumber: 120,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: "Code has been sent to your Gmail"
+                            }, void 0, false, {
+                                fileName: "pages/login/loginPage.jsx",
+                                lineNumber: 123,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                ref: button,
+                                className: isButtonDisabled && "disabled",
+                                disabled: isButtonDisabled,
+                                onClick: ()=>{
+                                    setUpdateUseEffectCheckCode((prev)=>prev + 1);
+                                    setIsButtonDisabled(true);
+                                },
+                                children: "check"
+                            }, void 0, false, {
+                                fileName: "pages/login/loginPage.jsx",
+                                lineNumber: 124,
+                                columnNumber: 29
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "pages/login/loginPage.jsx",
+                        lineNumber: 117,
+                        columnNumber: 21
+                    }, this)
+                }, void 0, false, {
+                    fileName: "pages/login/loginPage.jsx",
+                    lineNumber: 116,
                     columnNumber: 21
                 }, this), document.body),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38102,7 +38194,7 @@ function LoginPage() {
                                             }
                                         }, void 0, false, {
                                             fileName: "pages/login/loginPage.jsx",
-                                            lineNumber: 116,
+                                            lineNumber: 162,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -38110,13 +38202,13 @@ function LoginPage() {
                                             children: errorUsernameOremail && "fill out the form"
                                         }, void 0, false, {
                                             fileName: "pages/login/loginPage.jsx",
-                                            lineNumber: 119,
+                                            lineNumber: 165,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "pages/login/loginPage.jsx",
-                                    lineNumber: 115,
+                                    lineNumber: 161,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38131,7 +38223,7 @@ function LoginPage() {
                                             }
                                         }, void 0, false, {
                                             fileName: "pages/login/loginPage.jsx",
-                                            lineNumber: 122,
+                                            lineNumber: 168,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -38139,20 +38231,20 @@ function LoginPage() {
                                             children: errorPassword && "fill out the form"
                                         }, void 0, false, {
                                             fileName: "pages/login/loginPage.jsx",
-                                            lineNumber: 125,
+                                            lineNumber: 171,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "pages/login/loginPage.jsx",
-                                    lineNumber: 121,
+                                    lineNumber: 167,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                     children: "Login"
                                 }, void 0, false, {
                                     fileName: "pages/login/loginPage.jsx",
-                                    lineNumber: 127,
+                                    lineNumber: 173,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -38160,13 +38252,13 @@ function LoginPage() {
                                     children: LoginError
                                 }, void 0, false, {
                                     fileName: "pages/login/loginPage.jsx",
-                                    lineNumber: 128,
+                                    lineNumber: 174,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "pages/login/loginPage.jsx",
-                            lineNumber: 87,
+                            lineNumber: 133,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -38177,35 +38269,35 @@ function LoginPage() {
                                     children: "Register"
                                 }, void 0, false, {
                                     fileName: "pages/login/loginPage.jsx",
-                                    lineNumber: 130,
+                                    lineNumber: 176,
                                     columnNumber: 51
                                 }, this),
                                 " Now"
                             ]
                         }, void 0, true, {
                             fileName: "pages/login/loginPage.jsx",
-                            lineNumber: 130,
+                            lineNumber: 176,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "pages/login/loginPage.jsx",
-                    lineNumber: 86,
+                    lineNumber: 132,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "pages/login/loginPage.jsx",
-            lineNumber: 72,
+            lineNumber: 102,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "pages/login/loginPage.jsx",
-        lineNumber: 71,
+        lineNumber: 101,
         columnNumber: 9
     }, this);
 }
-_s(LoginPage, "bAcm/9MpFmDp6upmx2zWr4jvjrI=", false, function() {
+_s(LoginPage, "1jmOr85JEtSNzkRZgbqaQMW5xZE=", false, function() {
     return [
         (0, _reactRouterDom.useNavigate)
     ];
@@ -38219,7 +38311,7 @@ $RefreshReg$(_c, "LoginPage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../components/layout/layout":"kDHNM","react-router-dom":"9xmpe","react":"21dqq","../../api/login":"fyQee","react-dom":"j6uA9","../../public/register.png":"l9eUR","../../api/sendVerfyEmail":"58tI3","../../api/userToken":"2XpUT"}],"fyQee":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../components/layout/layout":"kDHNM","react-router-dom":"9xmpe","react":"21dqq","../../api/login":"fyQee","react-dom":"j6uA9","../../public/register.png":"l9eUR","../../api/sendVerfyEmail":"58tI3","../../api/sendCode":"5dMjC","../../api/checkCode":"liKUX"}],"fyQee":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "loginUser", ()=>loginUser);
@@ -38246,17 +38338,33 @@ async function verfyEmail(email) {
     return response;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2XpUT":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5dMjC":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "userToken", ()=>userToken);
-async function userToken(email, password) {
-    return await fetch("https://dnwebapi.liara.run/api/userToken", {
+parcelHelpers.export(exports, "sendCodeForGmail", ()=>sendCodeForGmail);
+async function sendCodeForGmail(props) {
+    return await fetch("https://dnwebapi.liara.run/api/sendCodeToEmail", {
+        method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "email": email,
-            "password": password
-        }
+            "Accept": "application/json"
+        },
+        body: JSON.stringify(props)
+    });
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"liKUX":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "checkCodeForEmail", ()=>checkCodeForEmail);
+async function checkCodeForEmail(props) {
+    return await fetch("https://dnwebapi.liara.run/api/loginWithCode", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        },
+        body: JSON.stringify(props)
     });
 }
 
@@ -38280,7 +38388,7 @@ function Profile() {
     _s();
     const [users, setUsers] = (0, _react.useState)([]);
     function getUserData() {
-        let data = localStorage.getItem("userData");
+        let data = localStorage.getItem("token");
         return JSON.parse(data);
     }
     (0, _react.useEffect)(()=>{

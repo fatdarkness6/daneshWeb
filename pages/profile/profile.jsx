@@ -8,7 +8,7 @@ export default function Profile() {
     const [users, setUsers] = useState([])
 
     function getUserData() {
-        let data = localStorage.getItem("userData");
+        let data = localStorage.getItem("token");
         return JSON.parse(data)
     }
     useEffect(() => {

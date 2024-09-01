@@ -1,11 +1,12 @@
 import { Link, useNavigate } from "react-router-dom";
 import Layout from "../../components/layout/layout";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { loginUser } from "../../api/login";
 import { createPortal } from "react-dom";
 import registerImage from "../../public/register.png";
 import { verfyEmail } from "../../api/sendVerfyEmail";
-import { userToken } from "../../api/userToken";
+import { sendCodeForGmail } from "../../api/sendCode";
+import { checkCodeForEmail } from "../../api/checkCode";
 export default function LoginPage() {
 
     const [usernameOremail, setUsernameOremail] = useState("");
@@ -13,27 +14,21 @@ export default function LoginPage() {
     const [LoginError, setLoginError] = useState(false)
     const [errorUsernameOremail, setErrorUsernameOremail] = useState(false);
     const [errorPassword, setErrorPassword] = useState(false);
-    const [openPortal, setOpenPortal] = useState(false)
+    const [openPortal, setOpenPortal] = useState(false) // this state is for portal
+    const [sendCode, setSendCode] = useState(false)// this state is for send code to email and open  sendEmailportal
+    const [code, setCode] = useState("") // this state is for code value
+    const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+
+    const [updateUseEffectCheckCode, setUpdateUseEffectCheckCode] = useState(0)
 
     const redirect = useNavigate()
+    let button = useRef(null)
 
     function saveDataInLocalStorage(data) {
         if(data.verifyEmail == false) {
             setOpenPortal(true)
         }else {
-                userToken(usernameOremail , password).then((e) => {
-                return e.json()
-                }).then((e) => {
-                    if (e == "Password is incorrect" || e == "User not found" || e == "Internal server error") {
-                        setLoginError(e)
-                    } else {
-                        localStorage.setItem("userData", JSON.stringify(e));
-                        if(e.length >1) {
-
-                            redirect("/profile");
-                        }
-                    }
-                })
+            setSendCode(true)
         }
         
     }
@@ -67,10 +62,45 @@ export default function LoginPage() {
     }, [openPortal])
 
 
+    useEffect(() => {
+        let data = {
+            email: usernameOremail,
+            password: password
+        }
+        if (usernameOremail !== "" && password !== "") {
+            sendCodeForGmail(data).then((e) => {
+            return e.json()
+        }).then((e) => {
+            console.log(e)
+        })
+        }
+        
+    }, [sendCode])
+
+    useEffect(() => {
+        let data = {
+            email: usernameOremail,
+            password: password,
+            code: code
+        };
+    
+        if (usernameOremail && password && code) {
+            checkCodeForEmail(data).then((e) => e.json()).then((response) => {
+                if(response === "Code is incorrect") {
+                    setIsButtonDisabled(false);
+                } else {
+                    localStorage.setItem("token", JSON.stringify(response));
+                    redirect("/profile");
+                }
+            });
+        }
+    }, [updateUseEffectCheckCode]);
+    
+
     return (
         <Layout>
             <div className="loginPage">
-                {openPortal && createPortal(
+                {openPortal ? createPortal(
                     <div className="portal">
                     <div className="portal-content">
                         <img src={registerImage} alt="Register" />
@@ -82,7 +112,23 @@ export default function LoginPage() {
                     </div>
                 </div>,
                 document.body
-                )}
+                ) : sendCode && createPortal(
+                    <div className="portal">
+                    <div className="portal-content">
+                        <img src={registerImage} alt="Register" />
+                        <h1> Enter the code </h1>
+                        <input type="number" placeholder="Code" onChange={(e) => {
+                            setCode(e.target.value)
+                        }} />
+                        <p>Code has been sent to your Gmail</p>
+                            <button ref={button} className={isButtonDisabled && "disabled"} disabled={isButtonDisabled}  onClick={() => {
+                                setUpdateUseEffectCheckCode(prev => prev + 1);
+                                setIsButtonDisabled(true);
+                            }}>check</button>
+                    </div>
+                </div>,
+                document.body
+                ) }
                 <div className="loginPage-content">
                     <form className="loginPage-content-form" onSubmit={(e) => {
                         e.preventDefault();

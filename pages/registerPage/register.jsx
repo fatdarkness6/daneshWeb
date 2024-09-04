@@ -65,7 +65,10 @@ export default function RegisterPage() {
         if (password.length > 1) setErrorPassword(false);
     }, [confirmPassword, name, lastName, username, phone, email, password]);
 
-    
+    useEffect(() => {
+        document.title = "Login"
+        window.scrollTo(0, 0)
+    } , [])
 
     const handleSubmit = (e) => {
         e.preventDefault();

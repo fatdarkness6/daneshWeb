@@ -32,7 +32,10 @@ export default function LoginPage() {
         }
         
     }
-
+    useEffect(() => {
+        document.title = "Login"
+        window.scrollTo(0, 0)
+    } , [])
     useEffect(() => {
         setTimeout(() => {
             setLoginError(false)

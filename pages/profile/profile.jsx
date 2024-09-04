@@ -17,7 +17,10 @@ export default function Profile() {
         }).then((e) => {
             setUsers(e)
         })
+        document.title = "Login"
+        window.scrollTo(0, 0)
     } , [])
+   
     return(
         <>
           {users.map((e) => {

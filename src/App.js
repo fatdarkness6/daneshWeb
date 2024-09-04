@@ -17,7 +17,7 @@ export function App() {
         <Route path = "/login" element = {<LoginPage/>}/>
         <Route path="/register" element={<RegisterPage/>}/>
         <Route path = "/profile" element = {<Profile/>}/>
-        <Route path="/:email/verfy/:userToken" element={<VerfyEmailPage />} />
+        <Route path="/:email/verfy/:confirmEmail" element={<VerfyEmailPage />} />
       </Routes>
     );
   }

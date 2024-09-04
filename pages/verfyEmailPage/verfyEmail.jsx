@@ -1,17 +1,17 @@
 import { useEffect , useState } from "react";
 import { useParams } from "react-router-dom"
-import { verfyEmailAdress } from "../../api/VerfyEmail";
+import { verfyEmailAdress } from "../../api/verfyEmail";
 
 export default function VerfyEmailPage() {
 
     const [verfyEmail, setVerfyEmail] = useState("")
 
     let params = useParams();
-    let {userToken , email} = params;
+    let { email , confirmEmail } = params;
 
     useEffect(() => {
-        if (userToken !== undefined && email !== undefined) {
-            verfyEmailAdress(email, userToken).then((e) => {
+        if (confirmEmail !== undefined && email !== undefined) {
+            verfyEmailAdress(email, confirmEmail).then((e) => {
                 return e.json()
             }).then((e) => {
                 setVerfyEmail(e)

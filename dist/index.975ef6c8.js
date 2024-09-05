@@ -35696,9 +35696,10 @@ function Header() {
                                     id: page == "/login" || page == "/register" && "transform",
                                     className: "hambergerMenu-content-homePage",
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                        to: "/login",
+                                        className: page == "/login" || page == "/register" ? "act" : "",
+                                        to: getTokenFromLocalStorage ? "/profile" : "/login",
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                            children: "Login / Register"
+                                            children: getTokenFromLocalStorage ? "Profile" : "Login / Register"
                                         }, void 0, false, {
                                             fileName: "components/header/header.jsx",
                                             lineNumber: 95,
@@ -35707,7 +35708,7 @@ function Header() {
                                     }, void 0, false, {
                                         fileName: "components/header/header.jsx",
                                         lineNumber: 94,
-                                        columnNumber: 15
+                                        columnNumber: 13
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "components/header/header.jsx",

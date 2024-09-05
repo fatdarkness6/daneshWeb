@@ -35697,7 +35697,7 @@ function Header() {
                                     className: "hambergerMenu-content-homePage",
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                         className: page == "/login" || page == "/register" ? "act" : "",
-                                        to: getTokenFromLocalStorage ? "/profile" : "/login",
+                                        to: getTokenFromLocalStorage ? "/" : "/login",
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                             children: getTokenFromLocalStorage ? "Profile" : "Login / Register"
                                         }, void 0, false, {

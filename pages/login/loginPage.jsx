@@ -93,7 +93,7 @@ export default function LoginPage() {
                     setIsButtonDisabled(false);
                 } else {
                     localStorage.setItem("token", JSON.stringify(response));
-                    redirect("/profile");
+                    redirect("/");
                 }
             });
         }

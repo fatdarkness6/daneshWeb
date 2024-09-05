@@ -10,7 +10,9 @@ export default function Header() {
   let [active, setActive] = useState(false);
   let [page , setPage] = useState("")
  
- 
+  const getTokenFromLocalStorage = localStorage.getItem('token');
+
+
 
   useEffect(() => {
     window.addEventListener('scroll', function () {
@@ -44,8 +46,8 @@ export default function Header() {
               <Link className={page == "/"? "act" : ""} to='/'>
                 <h3>Home</h3>
               </Link>
-              <Link className={page == "/login" || page == "/register" ? "act" : ""} to='/login'>
-                <h3>Login / Register</h3>
+              <Link className={page == "/login" || page == "/register" ? "act" : ""} to={getTokenFromLocalStorage ? "/profile" : "/login"}>
+                <h3>{getTokenFromLocalStorage ? "Profile" : "Login / Register"}</h3>
               </Link>
               <Link className={page == "/aboutUs"? "act" : ""} to='/aboutUs'>
                 <h3>Chi Siamo </h3>

@@ -91,7 +91,7 @@ export default function Header() {
               </Link>
             </div>
             <div id = {page == "/login" || page == "/register"  && "transform"} className='hambergerMenu-content-homePage'>
-            <Link className={page == "/login" || page == "/register" ? "act" : ""} to={getTokenFromLocalStorage ? "/" : "/login"}>
+            <Link className={page == "/login" || page == "/register" ? "act" : ""} to={getTokenFromLocalStorage ? "/profile" : "/login"}>
                 <h3>{getTokenFromLocalStorage ? "Profile" : "Login / Register"}</h3>
               </Link>
             </div>

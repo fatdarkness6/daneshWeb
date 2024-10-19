@@ -1,6 +1,5 @@
 /* ready to use styles */
 
-
 .flex-alignCenter {
     display: flex;
     align-items: center;
@@ -81,6 +80,12 @@
     margin: 0 auto;
     max-width: 1600px;
 }
+.wrapper-aboutUs {
+    margin: 0 auto;
+    max-width: 1500px;
+    overflow: hidden;
+    padding: 0 15px;
+}
 .header {
     position: fixed;
     background-color: #fff;
@@ -91,16 +96,15 @@
     transition: all 0.3s;
     box-shadow: 0px 0px 10px 5px #000;
 }
-.header-menu-btn  {
+.header-menu-btn {
     display: none;
 }
-.header-menu-btn  div {
+.header-menu-btn div {
     border-bottom: 3px solid #000 ;
     width: 20px;
 }
 .header.active {
     background-color: #fff;
-    
     color: #000;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
@@ -532,12 +536,12 @@
     transition: all 0.5s;
 }
 .home-page .container-p6.active .p1 .mix span {
-    width: 20%;
+    width: 25%;
     transition-delay: 0.9s;
     visibility: visible;
 }
 .home-page .container-p6.active .p2 .mix span {
-    width: 20%;
+    width: 25%;
     transition-delay: 1.7s;
     visibility: visible;
 }
@@ -588,6 +592,7 @@
     opacity: 0;
     transform: translateX(-100%);
     transition: all 0.9s;
+    text-align: center !important;
 } 
 .home-page .container-p7 .row img {
     width: 100%;
@@ -708,13 +713,16 @@
     padding: 200px 0;
 }
 .aboutUs-page .aboutUs-content-p1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: start;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    align-items: start;
     gap: 40px;
     padding-top: 100px;
+    display: flex;
+}
+.aboutUs-page .aboutUs-content-p1  li {
+    list-style: disc;
 }
 .aboutUs-page .aboutUs-content-p1 button {
     width: 150px;
@@ -728,7 +736,6 @@
     transition: all 0.5s;
 }
 .aboutUs-page .aboutUs-content-p1 button:hover {
-    
    box-shadow: 0px 0px 10px 5px #000;
 }
 .aboutUs-page .aboutUs-content-p1 p {

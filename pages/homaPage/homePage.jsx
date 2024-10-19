@@ -16,7 +16,6 @@ export default function HomePage() {
     slt.forEach((e) => {
       window.addEventListener('scroll', () => {
         let top = e.getBoundingClientRect().top;
-
         if (top < 700) {
           e.classList.add('active');
         }
@@ -38,12 +37,14 @@ export default function HomePage() {
     }
 
     setInterval(() => {
+      slide();
       if (counter === 5) {
         counter = 0;
+        return
+      } else { 
+        counter++;
       }
-      counter++;
-      slide();
-    }, 3000);
+    }, 4000);
   }, []);
   useEffect(() => {
     window.scrollTo(0,0);
@@ -59,12 +60,9 @@ export default function HomePage() {
           <div className='context-1 c'>
             <div className='img1 image'>
               <div className='text'>
-                <h1>Welcome to Danesh Web</h1>
+                <h1>Benvenuti al Gruppo Danesh</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Facilis veniam autem doloribus nulla doloremque aut illo rem
-                  nam non explicabo delectus, officiis qui minima at, dolore
-                  corrupti ut, illum ea.
+                Siamo un gruppo dedicato all'innovazione e alla conoscenza, offrendo soluzioni avanzate per affrontare le sfide del futuro.
                 </p>
               </div>
             </div>
@@ -72,66 +70,45 @@ export default function HomePage() {
           <div className='context-2 c'>
             <div className='img2 image'></div>
             <div className='text'>
-              <h1>lalalalalalal</h1>
+              <h1>Esperienza e Innovazione</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptates doloribus hic fugit beatae eaque voluptate. Saepe
-                perspiciatis, consectetur, ut nulla accusamus eum, incidunt
-                tempore at illum cumque qui voluptas animi!
+                Al Gruppo Danesh, uniamo anni di esperienza con le ultime tecnologie per offrirvi soluzioni uniche e personalizzate
               </p>
             </div>
           </div>
           <div className='context-3 c'>
             <div className='img3 image'></div>
             <div className='text'>
-              <h1>bababababababababa</h1>
+              <h1>Innovazione nella Progettazione di Impianti</h1>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Voluptatem, velit ad ex laudantium totam nam saepe alias vero,
-                eveniet distinctio qui! Laboriosam est reprehenderit amet culpa
-                pariatur ipsam accusamus quos.
+              Al Gruppo Danesh, ci specializziamo nella progettazione e costruzione di impianti elettrici, termotecnici e fotovoltaici, garantendo qualità e sostenibilità.
               </p>
             </div>
           </div>
           <div className='context-4 c'>
             <div className='img4 image'></div>
             <div className='text'>
-              <h1>bababababababababa</h1>
+              <h1>Progettazione Efficiente</h1>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Voluptatem, velit ad ex laudantium totam nam saepe alias vero,
-                eveniet distinctio qui! Laboriosam est reprehenderit amet culpa
-                pariatur ipsam accusamus quos.
+              Sviluppiamo progetti personalizzati per impianti elettrici e termotecnici, ottimizzando risorse e costi.
               </p>
             </div>
           </div>
           <div className='context-5 c'>
             <div className='img5 image'></div>
             <div className='text'>
-              <h1>bababababababababa</h1>
+              <h1>Gestione Progetti</h1>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Voluptatem, velit ad ex laudantium totam nam saepe alias vero,
-                eveniet distinctio qui! Laboriosam est reprehenderit amet culpa
-                pariatur ipsam accusamus quos. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Illum ipsum vero totam dicta quia,
-                praesentium molestiae mollitia itaque hic accusantium atque ad
-                aperiam sit, reiciendis quae repellendus quisquam odio facilis!
+              Seguiamo ogni fase del progetto con attenzione e professionalità, garantendo risultati eccellenti.
               </p>
             </div>
           </div>
           <div className='context-6 c'>
             <div className='img6 image'>
               <div className='text'>
-                <h1>bababababababababa</h1>
+                <h1>Soluzioni Personalizzate</h1>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Voluptatem, velit ad ex laudantium totam nam saepe alias vero,
-                  eveniet distinctio qui! Laboriosam est reprehenderit amet
-                  culpa pariatur ipsam accusamus quos. Lorem ipsum dolor, sit
-                  amet consectetur adipisicing elit. Non voluptatibus, ratione
-                  sequi quas, quae amet corrupti cum, in magni itaque magnam
-                  voluptate eaque id sed ut nulla! Sunt, doloribus dolore?
+                Offriamo soluzioni tailor-made per ogni cliente, adattando i nostri servizi alle vostre esigenze specifiche.
                 </p>
               </div>
             </div>
@@ -142,29 +119,15 @@ export default function HomePage() {
             <div className='content'>
               <div className='img '></div>
               <div className='txt'>
-                <h2>balalalalala</h2>
+                <h2>Progettazione e Costruzione di Impianti</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Iusto, debitis tempore officia laboriosam nostrum ad, dolorem
-                  deserunt quidem velit sint excepturi maiores, suscipit
-                  consectetur rerum quod fugiat vero sit illum?
+                Nel mondo odierno, la progettazione e la costruzione di impianti elettrici, termotecnici e fotovoltaici rappresentano un pilastro fondamentale per garantire un futuro sostenibile. Al Gruppo Danesh, ci impegniamo a sviluppare soluzioni innovative che soddisfino le esigenze dei nostri clienti, contribuendo al contempo alla salvaguardia dell'ambiente.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Facilis aliquam, ea laudantium neque illo quae tempore quo
-                  repellendus sunt quod, corrupti delectus aperiam veritatis
-                  commodi, quisquam et praesentium reprehenderit suscipit.lorem
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laborum, accusamus. Culpa eum, non ratione distinctio porro
-                  laudantium corrupti vel quisquam, sapiente dolorem, ea ipsa.
-                  Ducimus inventore modi sit odio suscipit.
+                La nostra esperienza nel settore ci consente di offrire progetti personalizzati che ottimizzano l'uso delle risorse e riducono i costi. Utilizziamo tecnologie all'avanguardia per garantire impianti efficienti e sostenibili, che non solo soddisfano le normative vigenti, ma superano anche le aspettative dei nostri clienti.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Facilis aliquam, ea laudantium neque illo quae tempore quo
-                  repellendus e distinctio porro laudantium corrupti vel
-                  quisquam, sapiente dolorem, ea ipsa. Ducimus inventore modi
-                  sit odio suscipit.
+                Inoltre, il nostro team di esperti è composto da professionisti altamente qualificati che seguono ogni fase del progetto con attenzione e dedizione. Dalla progettazione alla costruzione, ci assicuriamo che ogni dettaglio sia curato e che il risultato finale sia di altissima qualità.
                 </p>
               </div>
             </div>
@@ -173,13 +136,10 @@ export default function HomePage() {
         <div className='container-p4 target'>
           <div className='shadow'></div>
           <div className='txt2'>
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+            <h1>Innovazione nei Sistemi Energetici</h1>
             <div className='progragh'>
               <h2>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Officiis amet eveniet tempore consequatur, dicta odit,
-                voluptatibus debitis voluptatum ea sit assumenda exercitationem
-                quae suscipit beatae maxime libero deleniti iure vero.
+              Al Gruppo Danesh, ci dedichiamo a creare impianti elettrici e fotovoltaici all'avanguardia, focalizzandoci su efficienza e rispetto per l'ambiente.
               </h2>
             </div>
           </div>
@@ -190,64 +150,46 @@ export default function HomePage() {
               <div className='row1 flex-alignCenter-spaceBetween '>
                 <div className='row1-part1-1 flex-column-center with gap-20'>
                   <i class='fa-solid fa-sitemap'></i>
-                  <h2>Good job</h2>
+                  <h2>Soluzioni Personalizzate</h2>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Explicabo dolore laborum accusamus magnam, nisi ipsum amet
-                    sequi vero pariatur corrupti repellendus consequatur tempora
-                    perferendis magni incidunt quidem aspernatur fuga animi.
+                  Offriamo progetti su misura per soddisfare le specifiche esigenze dei clienti.
                   </p>
                 </div>
                 <div className='row1-part1-2 flex-column-center with gap-20'>
                   <i class='fa-solid fa-hand'></i>
-                  <h2>Helpful</h2>
+                  <h2>Qualità Garantita</h2>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Explicabo dolore laborum accusamus magnam, nisi ipsum amet
-                    sequi vero pariatur corrupti repellendus consequatur tempora
-                    perferendis magni incidunt quidem aspernatur fuga animi.
+                  Ci impegniamo a mantenere standard elevati in ogni fase del processo.
                   </p>
                 </div>
                 <div className='row1-part1-3 flex-column-center with gap-20'>
                   <i class='fa-solid fa-fax'></i>
-                  <h2>Fast Communicate</h2>
+                  <h2>Sostenibilità</h2>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Explicabo dolore laborum accusamus magnam, nisi ipsum amet
-                    sequi vero pariatur corrupti repellendus consequatur tempora
-                    perferendis magni incidunt quidem aspernatur fuga animi.
+                  Le nostre soluzioni sono progettate per essere eco-friendly e ridurre l'impatto ambientale.
                   </p>
                 </div>
               </div>
               <div className='row2 flex-alignCenter-spaceBetween'>
                 <div className='row1-part2-1 flex-column-center with gap-20'>
                   <i class='fa-solid fa-truck-fast'></i>
-                  <h2>Arrive Early</h2>
+                  <h2>Assistenza Completa</h2>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Explicabo dolore laborum accusamus magnam, nisi ipsum amet
-                    sequi vero pariatur corrupti repellendus consequatur tempora
-                    perferendis magni incidunt quidem aspernatur fuga animi.
+                  Seguiamo i clienti in ogni fase, dalla progettazione alla realizzazione.
                   </p>
                 </div>
                 <div className='row1-part2-2 flex-column-center with gap-20'>
                   <i class='fa-solid fa-building'></i>
-                  <h2>Big Company</h2>
+                  <h2>Tecnologia Avanzata</h2>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Explicabo dolore laborum accusamus magnam, nisi ipsum amet
-                    sequi vero pariatur corrupti repellendus consequatur tempora
-                    perferendis magni incidunt quidem aspernatur fuga animi.
+                  Utilizziamo le ultime tecnologie per garantire sistemi efficienti e innovativi.
                   </p>
                 </div>
                 <div className='row1-part2-3 flex-column-center with gap-20'>
                   <i class='fa-brands fa-cc-visa'></i>
-                  <h2>Fast Payment</h2>
+                  <h2>Efficienza Energetica</h2>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Explicabo dolore laborum accusamus magnam, nisi ipsum amet
-                    sequi vero pariatur corrupti repellendus consequatur tempora
-                    perferendis magni incidunt quidem aspernatur fuga animi.
+                  I nostri impianti sono progettati per massimizzare l'efficienza e ridurre i consumi energetici.
                   </p>
                 </div>
               </div>
@@ -259,36 +201,21 @@ export default function HomePage() {
           <div className='mmi'>
             <div className='p1 '>
               <div className='mix'>
-                <h1 className='z-index'>balallalalalalalala</h1>
+                <h1 className='z-index'>Impianti Termotecnici</h1>
                 <span className='z-index'></span>
               </div>
-
               <h4 className='z-index'>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Eveniet dolorem non est accusantium omnis doloremque tempore.
-                Quas quasi ab esse, tempore nesciunt, assumenda libero
-                exercitationem natus, facilis dolores repellat dignissimos?
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Facilis accusantium dicta tempora eos commodi ea tenetur est
-                architecto recusandae voluptates ex cum sint veniam aut eaque,
-                enim eveniet optio expedita!
+              Al Gruppo Danesh, progettiamo e costruiamo impianti termotecnici per garantire comfort e efficienza energetica. Le nostre soluzioni personalizzate si adattano alle esigenze specifiche dei clienti, utilizzando tecnologie moderne per ottimizzare il consumo energetico e migliorare il rendimento.
               </h4>
             </div>
             <div className='p2'>
               <div className='mix'>
-                <h1 className='z-index'>balallalalalalalala</h1>
+                <h1 className='z-index'>Gestione dei Progetti</h1>
                 <span className='z-index'></span>
               </div>
 
               <h4 className='z-index'>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Eveniet dolorem non est accusantium omnis doloremque tempore.
-                Quas quasi ab esse, tempore nesciunt, assumenda libero
-                exercitationem natus, facilis dolores repellat dignissimos?
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Facilis accusantium dicta tempora eos commodi ea tenetur est
-                architecto recusandae voluptates ex cum sint veniam aut eaque,
-                enim eveniet optio expedita!
+              La gestione dei progetti è fondamentale per il successo delle nostre operazioni. Al Gruppo Danesh, pianifichiamo ogni fase del progetto con attenzione, assicurando che venga rispettato il budget e le tempistiche. La nostra esperienza ci consente di gestire progetti complessi, mantenendo alta la qualità e la soddisfazione del cliente.
               </h4>
             </div>
           </div>
@@ -297,12 +224,9 @@ export default function HomePage() {
         <div className='btw  target marginTop-200 '>
           <div className='wrapper'>
             <div className='content flex-column-center gap-20'>
-              <h1>About jobs</h1>
+              <h1>I Nostri Progetti</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quibusdam sapiente, fugit accusamus obcaecati eaque libero nihil
-                tenetur rem amet aut dignissimos voluptates veritatis! Mollitia
-                ullam dicta adipisci aliquam nulla qui.
+              Al Gruppo Danesh, siamo fieri di presentare alcuni dei nostri progetti. Abbiamo realizzato impianti elettrici e fotovoltaici su misura per soddisfare le esigenze dei nostri clienti. Visitate la nostra galleria per scoprire come possiamo aiutare anche voi!
               </p>
             </div>
           </div>
@@ -312,73 +236,37 @@ export default function HomePage() {
             <div className='content marginTop-300 flex-Start-spaceBetween gap-50'>
               <div className='row1 row'>
                 <div className='job1' />
-                <h2>balalala</h2>
+                <h2>Progetto di Desalinizzazione ad Abadan</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Fugiat alias a veniam quia labore est earum ullam amet facilis
-                  dignissimos. Eveniet modi maxime, odio quis vitae ea in?
-                  Maiores, consequaturnjmiag numafg nubadfgbnuoigadfbu.
+                Abbiamo realizzato un impianto di desalinizzazione con una capacità di 10.000 metri cubi al giorno ad Abadan. Questo progetto è stato progettato per fornire acqua potabile a una vasta area, garantendo risorse idriche sostenibili.
                 </p>
                 <div className='appear'>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsam iure ea numquam, repellat rerum, soluta recusandae
-                    modi, nesciunt error aliquam earum excepturi veniam fugiat
-                    provident quos inventore. Qui, adipisci ipsam. Lorem ipsum
-                    dolor sit amet consectetur, adipisicing elit. Quibusdam et
-                    illum exercitationem sequi quo, laudantium similique sint
-                    deleniti repellat aperiam amet praesentium debitis! Velit
-                    fugiat repudiandae reprehenderit totam, ipsam veniam. Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+                  "Abbiamo realizzato un impianto di desalinizzazione ad Abadan con una capacità di 10.000 metri cubi di acqua dolce al giorno. Questo progetto è progettato per fornire acqua potabile sostenibile a una vasta area, garantendo risorse idriche affidabili. Utilizziamo tecnologie avanzate come l'osmosi inversa per trasformare l'acqua di mare in acqua potabile, contribuendo così al miglioramento della qualità della vita e allo sviluppo economico della regione."
                   </p>
                 </div>
               </div>
               <div className='row2 row'>
                 <div className='job2' />
-                <h2>balalaaaaaa</h2>
+                <h2>Progetto di Desalinizzazione a Bandar Lange</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Fugiat alias a veniam quia labore est earum ullam amet facilis
-                  dignissimos. Eveniet modi maxime, odio quis vitae ea in?
-                  Maiores, consequaturnjmiag numafg nubadfgbnuoigadfbu.
+                Abbiamo completato un impianto di desalinizzazione simile a Bandar Lange, anch'esso con una capacità di 10.000 metri cubi al giorno. Questo progetto mira a soddisfare le esigenze idriche locali, contribuendo al benessere della comunità.
                 </p>
                 <div className='appear'>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsam iure ea numquam, repellat rerum, soluta recusandae
-                    modi, nesciunt error aliquam earum excepturi veniam fugiat
-                    provident quos inventore. Qui, adipisci ipsam. Lorem ipsum
-                    dolor sit amet consectetur, adipisicing elit. Quibusdam et
-                    illum exercitationem sequi quo, laudantium similique sint
-                    deleniti repellat aperiam amet praesentium debitis! Velit
-                    fugiat repudiandae reprehenderit totam, ipsam veniam. Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-                    eius necessitatibus perferendis illum labore aliquid
+                  Abbiamo implementato un impianto di desalinizzazione a Bandar Lange, con una capacità di 10.000 metri cubi al giorno. Questo progetto mira a soddisfare le esigenze idriche locali e a migliorare il benessere della comunità. Grazie a tecnologie moderne, il nostro impianto fornisce acqua potabile di alta qualità, contribuendo al progresso della zona e riducendo l'impatto ambientale.
                   </p>
                 </div>
               </div>
               <div className='row3 row'>
                 <div className='job3' src={job3} />
-                <h2>fasfsfasffaf</h2>
+                <h2>Costruzione di 140 Unità Abitative a Bandar Abbas</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Fugiat alias a veniam quia labore est earum ullam amet facilis
-                  dignissimos. Eveniet modi maxime, odio quis vitae ea in?
-                  Maiores, consequaturnjmiag numafg nubadfgbnuoigadfbu.
+                Abbiamo realizzato un progetto residenziale che comprende la costruzione di 140 unità abitative a Bandar Abbas. Il progetto include impianti moderni per garantire il comfort e la qualità della vita dei residenti.
                 </p>
                 <div className='appear'>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsam iure ea numquam, repellat rerum, soluta recusandae
-                    modi, nesciunt error aliquam earum excepturi veniam fugiat
-                    provident quos inventore. Qui, adipisci ipsam. Lorem ipsum
-                    dolor sit amet consectetur, adipisicing elit. Quibusdam et
-                    illum exercitationem sequi quo, laudantium similique sint
-                    deleniti repellat aperiam amet praesentium debitis! Velit
-                    fugiat repudiandae reprehenderit totam, ipsam veniam. Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-                    eius necessitatibus perferendis illum labore aliquid
-                    officiis amet velit facilis animi. Provident nobis
+                  Abbiamo realizzato un progetto residenziale che include la costruzione di 140 unità abitative a Bandar Abbas. Ogni unità è dotata di sistemi moderni per garantire comfort e qualità della vita. Questo progetto non solo risponde alle esigenze abitative della comunità, ma promuove anche lo sviluppo economico locale creando nuove opportunità di lavoro.
                   </p>
                 </div>
               </div>

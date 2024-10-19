@@ -16,15 +16,29 @@ export default function AboutUsPage() {
           <Header />
         </div>
         <div className='container-p2'>
-          <div className='wrapper'>
+          <div className='wrapper-aboutUs'>
             <div className='aboutUs-content-p1'>
-              <h1> Chi Siamo </h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                laudantium sed ducimus aliquid ex ad cupiditate, in libero
-                dignissimos, et illum. Accusamus corrupti voluptatibus quis?
-                Necessitatibus, sint. Sequi, sunt. Odit.
-              </p>
+              <h1> REZA DANESH – CHI SIAMO </h1>
+              <h2>Mi chiamo Reza Danesh e sono il titolare dello studio “Gruppo Danesh”.</h2>
+              <div className='aboutUs-content-p1-p'>
+                <h3>Vantiamo un’esperienza pluriennale nella costruzione e gestione di impianti civili e industriali e dal 2024 abbiamo avviato la nostra attività anche in Italia.</h3>
+              <h3>Abbiamo competenze nella progettazione, pianificazione e coordinamento di risorse in differenti settori. Uniamo capacità di gestione e conoscenze tecniche per offrire soluzioni che rispondano in maniera completa alle esigenze dei nostri clienti.</h3>
+              </div>
+              <div className='aboutUs-content-p2-p'>
+              <h2>Nello specifico possiamo occuparci di:</h2>
+                <ul>
+                  <li>
+                      <h3>Progettazione e costruzione di impianti elettrici, termotecnici, fotovoltaici</h3>
+                  </li>
+                  <li>
+                    <h3>Certificazioni energetiche (APE)</h3> 
+                  </li>
+                  <li>
+                    <h3>Progettazione e direzione lavori</h3>
+                  </li>
+                </ul>
+              </div>
+              <h3>Lo studio Danesh è formato da una squadra di persone che può aiutare i clienti a sviluppare le proprie idee e progetti in soluzioni concrete</h3>
 
               <button >
                 <Link style = {{color: 'white'}} to='/contactUs'>Contatti</Link>

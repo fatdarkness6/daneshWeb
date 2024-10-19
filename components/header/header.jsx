@@ -29,6 +29,8 @@ export default function Header() {
     let path = window.location.pathname
     setPage(path)
   }, []);
+
+  
   return (
     <div
       ref={header}
@@ -46,9 +48,9 @@ export default function Header() {
               <Link className={page == "/"? "act" : ""} to='/'>
                 <h3>Home</h3>
               </Link>
-              <Link className={page == "/login" || page == "/register" ? "act" : ""} to={getTokenFromLocalStorage ? "/profile" : "/login"}>
+              {/* <Link className={page == "/login" || page == "/register" ? "act" : ""} to={getTokenFromLocalStorage ? "/profile" : "/login"}>
                 <h3>{getTokenFromLocalStorage ? "Profile" : "Login / Register"}</h3>
-              </Link>
+              </Link> */}
               <Link className={page == "/aboutUs"? "act" : ""} to='/aboutUs'>
                 <h3>Chi Siamo </h3>
               </Link>
@@ -89,12 +91,12 @@ export default function Header() {
               <Link to='/'>
                 <h3>Home</h3>
               </Link>
-            </div>
-            <div id = {page == "/login" || page == "/register"  && "transform"} className='hambergerMenu-content-homePage'>
+            </div> 
+            {/* <div id = {page == "/login" || page == "/register"  && "transform"} className='hambergerMenu-content-homePage'>
             <Link className={page == "/login" || page == "/register" ? "act" : ""} to={getTokenFromLocalStorage ? "/profile" : "/login"}>
                 <h3>{getTokenFromLocalStorage ? "Profile" : "Login / Register"}</h3>
               </Link>
-            </div>
+            </div> */}
             <div id = {page == "/aboutUs" && "transform"} className='hambergerMenu-content-aboutUsPage'>
               <Link to='/aboutUs'>
                 <h3>Chi Siamo</h3>

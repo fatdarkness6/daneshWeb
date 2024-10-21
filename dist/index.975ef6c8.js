@@ -34466,24 +34466,26 @@ function HomePage() {
                 else setShow(false);
             });
         });
-        img.forEach((e, index)=>{
-            e.style.left = `${index * 100}%`;
-        });
         function slide() {
-            img.forEach((e)=>{
+            img.forEach((e, index)=>{
+                e.style.left = `${index * 100}%`;
                 e.style.transform = `translateX(-${counter * 100}%)`;
             });
         }
         setInterval(()=>{
-            slide();
             if (counter === 5) {
                 counter = 0;
-                return;
-            } else counter++;
+                slide();
+            } else {
+                ++counter;
+                slide();
+            }
         }, 4000);
+        slide();
     }, []);
     (0, _react.useEffect)(()=>{
         window.scrollTo(0, 0);
+        document.title = "Home";
     }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "home-page",
@@ -34495,12 +34497,12 @@ function HomePage() {
                         className: "container-p1",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                             fileName: "pages/homaPage/homePage.jsx",
-                            lineNumber: 57,
+                            lineNumber: 55,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "pages/homaPage/homePage.jsx",
-                        lineNumber: 56,
+                        lineNumber: 54,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34518,30 +34520,30 @@ function HomePage() {
                                                 children: "Benvenuti al Gruppo Danesh"
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 63,
+                                                lineNumber: 61,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                 children: "Siamo un gruppo dedicato all'innovazione e alla conoscenza, offrendo soluzioni avanzate per affrontare le sfide del futuro."
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 64,
+                                                lineNumber: 62,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 62,
+                                        lineNumber: 60,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "pages/homaPage/homePage.jsx",
-                                    lineNumber: 61,
+                                    lineNumber: 59,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 60,
+                                lineNumber: 58,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34551,7 +34553,7 @@ function HomePage() {
                                         className: "img2 image"
                                     }, void 0, false, {
                                         fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 71,
+                                        lineNumber: 69,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34561,26 +34563,26 @@ function HomePage() {
                                                 children: "Esperienza e Innovazione"
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 73,
+                                                lineNumber: 71,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                 children: "Al Gruppo Danesh, uniamo anni di esperienza con le ultime tecnologie per offrirvi soluzioni uniche e personalizzate"
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 74,
+                                                lineNumber: 72,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 72,
+                                        lineNumber: 70,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 70,
+                                lineNumber: 68,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34590,7 +34592,7 @@ function HomePage() {
                                         className: "img3 image"
                                     }, void 0, false, {
                                         fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 80,
+                                        lineNumber: 78,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34600,26 +34602,26 @@ function HomePage() {
                                                 children: "Innovazione nella Progettazione di Impianti"
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 82,
+                                                lineNumber: 80,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                 children: "Al Gruppo Danesh, ci specializziamo nella progettazione e costruzione di impianti elettrici, termotecnici e fotovoltaici, garantendo qualit\xe0 e sostenibilit\xe0."
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 83,
+                                                lineNumber: 81,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 81,
+                                        lineNumber: 79,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 79,
+                                lineNumber: 77,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34629,7 +34631,7 @@ function HomePage() {
                                         className: "img4 image"
                                     }, void 0, false, {
                                         fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 89,
+                                        lineNumber: 87,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34639,26 +34641,26 @@ function HomePage() {
                                                 children: "Progettazione Efficiente"
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 91,
+                                                lineNumber: 89,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                 children: "Sviluppiamo progetti personalizzati per impianti elettrici e termotecnici, ottimizzando risorse e costi."
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 92,
+                                                lineNumber: 90,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 90,
+                                        lineNumber: 88,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 88,
+                                lineNumber: 86,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34668,7 +34670,7 @@ function HomePage() {
                                         className: "img5 image"
                                     }, void 0, false, {
                                         fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 98,
+                                        lineNumber: 96,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34678,26 +34680,26 @@ function HomePage() {
                                                 children: "Gestione Progetti"
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 100,
+                                                lineNumber: 98,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                 children: "Seguiamo ogni fase del progetto con attenzione e professionalit\xe0, garantendo risultati eccellenti."
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 101,
+                                                lineNumber: 99,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 99,
+                                        lineNumber: 97,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 97,
+                                lineNumber: 95,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34711,36 +34713,36 @@ function HomePage() {
                                                 children: "Soluzioni Personalizzate"
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 109,
+                                                lineNumber: 107,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                 children: "Offriamo soluzioni tailor-made per ogni cliente, adattando i nostri servizi alle vostre esigenze specifiche."
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 110,
+                                                lineNumber: 108,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 108,
+                                        lineNumber: 106,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "pages/homaPage/homePage.jsx",
-                                    lineNumber: 107,
+                                    lineNumber: 105,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 106,
+                                lineNumber: 104,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "pages/homaPage/homePage.jsx",
-                        lineNumber: 59,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34754,7 +34756,7 @@ function HomePage() {
                                         className: "img "
                                     }, void 0, false, {
                                         fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 120,
+                                        lineNumber: 118,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34764,50 +34766,50 @@ function HomePage() {
                                                 children: "Progettazione e Costruzione di Impianti"
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 122,
+                                                lineNumber: 120,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                 children: "Nel mondo odierno, la progettazione e la costruzione di impianti elettrici, termotecnici e fotovoltaici rappresentano un pilastro fondamentale per garantire un futuro sostenibile. Al Gruppo Danesh, ci impegniamo a sviluppare soluzioni innovative che soddisfino le esigenze dei nostri clienti, contribuendo al contempo alla salvaguardia dell'ambiente."
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 123,
+                                                lineNumber: 121,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                 children: "La nostra esperienza nel settore ci consente di offrire progetti personalizzati che ottimizzano l'uso delle risorse e riducono i costi. Utilizziamo tecnologie all'avanguardia per garantire impianti efficienti e sostenibili, che non solo soddisfano le normative vigenti, ma superano anche le aspettative dei nostri clienti."
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 126,
+                                                lineNumber: 124,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                 children: "Inoltre, il nostro team di esperti \xe8 composto da professionisti altamente qualificati che seguono ogni fase del progetto con attenzione e dedizione. Dalla progettazione alla costruzione, ci assicuriamo che ogni dettaglio sia curato e che il risultato finale sia di altissima qualit\xe0."
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 129,
+                                                lineNumber: 127,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 121,
+                                        lineNumber: 119,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 119,
+                                lineNumber: 117,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "pages/homaPage/homePage.jsx",
-                            lineNumber: 118,
+                            lineNumber: 116,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "pages/homaPage/homePage.jsx",
-                        lineNumber: 117,
+                        lineNumber: 115,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34817,7 +34819,7 @@ function HomePage() {
                                 className: "shadow"
                             }, void 0, false, {
                                 fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 137,
+                                lineNumber: 135,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34827,7 +34829,7 @@ function HomePage() {
                                         children: "Innovazione nei Sistemi Energetici"
                                     }, void 0, false, {
                                         fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 139,
+                                        lineNumber: 137,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34836,24 +34838,24 @@ function HomePage() {
                                             children: "Al Gruppo Danesh, ci dedichiamo a creare impianti elettrici e fotovoltaici all'avanguardia, focalizzandoci su efficienza e rispetto per l'ambiente."
                                         }, void 0, false, {
                                             fileName: "pages/homaPage/homePage.jsx",
-                                            lineNumber: 141,
+                                            lineNumber: 139,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 140,
+                                        lineNumber: 138,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 138,
+                                lineNumber: 136,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "pages/homaPage/homePage.jsx",
-                        lineNumber: 136,
+                        lineNumber: 134,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34873,27 +34875,27 @@ function HomePage() {
                                                         class: "fa-solid fa-sitemap"
                                                     }, void 0, false, {
                                                         fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 152,
+                                                        lineNumber: 150,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                                         children: "Soluzioni Personalizzate"
                                                     }, void 0, false, {
                                                         fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 153,
+                                                        lineNumber: 151,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                         children: "Offriamo progetti su misura per soddisfare le specifiche esigenze dei clienti."
                                                     }, void 0, false, {
                                                         fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 154,
+                                                        lineNumber: 152,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 151,
+                                                lineNumber: 149,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34903,27 +34905,27 @@ function HomePage() {
                                                         class: "fa-solid fa-hand"
                                                     }, void 0, false, {
                                                         fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 159,
+                                                        lineNumber: 157,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                                         children: "Qualit\xe0 Garantita"
                                                     }, void 0, false, {
                                                         fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 160,
+                                                        lineNumber: 158,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                         children: "Ci impegniamo a mantenere standard elevati in ogni fase del processo."
                                                     }, void 0, false, {
                                                         fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 161,
+                                                        lineNumber: 159,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 158,
+                                                lineNumber: 156,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34933,33 +34935,33 @@ function HomePage() {
                                                         class: "fa-solid fa-fax"
                                                     }, void 0, false, {
                                                         fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 166,
+                                                        lineNumber: 164,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                                         children: "Sostenibilit\xe0"
                                                     }, void 0, false, {
                                                         fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 167,
+                                                        lineNumber: 165,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                         children: "Le nostre soluzioni sono progettate per essere eco-friendly e ridurre l'impatto ambientale."
                                                     }, void 0, false, {
                                                         fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 168,
+                                                        lineNumber: 166,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 165,
+                                                lineNumber: 163,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 150,
+                                        lineNumber: 148,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34972,27 +34974,27 @@ function HomePage() {
                                                         class: "fa-solid fa-truck-fast"
                                                     }, void 0, false, {
                                                         fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 175,
+                                                        lineNumber: 173,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                                         children: "Assistenza Completa"
                                                     }, void 0, false, {
                                                         fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 176,
+                                                        lineNumber: 174,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                         children: "Seguiamo i clienti in ogni fase, dalla progettazione alla realizzazione."
                                                     }, void 0, false, {
                                                         fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 177,
+                                                        lineNumber: 175,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 174,
+                                                lineNumber: 172,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35002,27 +35004,27 @@ function HomePage() {
                                                         class: "fa-solid fa-building"
                                                     }, void 0, false, {
                                                         fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 182,
+                                                        lineNumber: 180,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                                         children: "Tecnologia Avanzata"
                                                     }, void 0, false, {
                                                         fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 183,
+                                                        lineNumber: 181,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                         children: "Utilizziamo le ultime tecnologie per garantire sistemi efficienti e innovativi."
                                                     }, void 0, false, {
                                                         fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 184,
+                                                        lineNumber: 182,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 181,
+                                                lineNumber: 179,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35032,49 +35034,49 @@ function HomePage() {
                                                         class: "fa-brands fa-cc-visa"
                                                     }, void 0, false, {
                                                         fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 189,
+                                                        lineNumber: 187,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                                         children: "Efficienza Energetica"
                                                     }, void 0, false, {
                                                         fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 190,
+                                                        lineNumber: 188,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                         children: "I nostri impianti sono progettati per massimizzare l'efficienza e ridurre i consumi energetici."
                                                     }, void 0, false, {
                                                         fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 191,
+                                                        lineNumber: 189,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 188,
+                                                lineNumber: 186,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 173,
+                                        lineNumber: 171,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 149,
+                                lineNumber: 147,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "pages/homaPage/homePage.jsx",
-                            lineNumber: 148,
+                            lineNumber: 146,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "pages/homaPage/homePage.jsx",
-                        lineNumber: 147,
+                        lineNumber: 145,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35085,7 +35087,7 @@ function HomePage() {
                                 className: "absolute"
                             }, void 0, false, {
                                 fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 200,
+                                lineNumber: 198,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35102,20 +35104,20 @@ function HomePage() {
                                                         children: "Impianti Termotecnici"
                                                     }, void 0, false, {
                                                         fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 204,
+                                                        lineNumber: 202,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                         className: "z-index"
                                                     }, void 0, false, {
                                                         fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 205,
+                                                        lineNumber: 203,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 203,
+                                                lineNumber: 201,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -35123,13 +35125,13 @@ function HomePage() {
                                                 children: "Al Gruppo Danesh, progettiamo e costruiamo impianti termotecnici per garantire comfort e efficienza energetica. Le nostre soluzioni personalizzate si adattano alle esigenze specifiche dei clienti, utilizzando tecnologie moderne per ottimizzare il consumo energetico e migliorare il rendimento."
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 207,
+                                                lineNumber: 205,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 202,
+                                        lineNumber: 200,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35143,20 +35145,20 @@ function HomePage() {
                                                         children: "Gestione dei Progetti"
                                                     }, void 0, false, {
                                                         fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 213,
+                                                        lineNumber: 211,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                         className: "z-index"
                                                     }, void 0, false, {
                                                         fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 214,
+                                                        lineNumber: 212,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 212,
+                                                lineNumber: 210,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -35164,32 +35166,32 @@ function HomePage() {
                                                 children: "La gestione dei progetti \xe8 fondamentale per il successo delle nostre operazioni. Al Gruppo Danesh, pianifichiamo ogni fase del progetto con attenzione, assicurando che venga rispettato il budget e le tempistiche. La nostra esperienza ci consente di gestire progetti complessi, mantenendo alta la qualit\xe0 e la soddisfazione del cliente."
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 217,
+                                                lineNumber: 215,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 211,
+                                        lineNumber: 209,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 201,
+                                lineNumber: 199,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "img"
                             }, void 0, false, {
                                 fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 222,
+                                lineNumber: 220,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "pages/homaPage/homePage.jsx",
-                        lineNumber: 199,
+                        lineNumber: 197,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35203,30 +35205,30 @@ function HomePage() {
                                         children: "I Nostri Progetti"
                                     }, void 0, false, {
                                         fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 227,
+                                        lineNumber: 225,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         children: "Al Gruppo Danesh, siamo fieri di presentare alcuni dei nostri progetti. Abbiamo realizzato impianti elettrici e fotovoltaici su misura per soddisfare le esigenze dei nostri clienti. Visitate la nostra galleria per scoprire come possiamo aiutare anche voi!"
                                     }, void 0, false, {
                                         fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 228,
+                                        lineNumber: 226,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 226,
+                                lineNumber: 224,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "pages/homaPage/homePage.jsx",
-                            lineNumber: 225,
+                            lineNumber: 223,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "pages/homaPage/homePage.jsx",
-                        lineNumber: 224,
+                        lineNumber: 222,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35243,21 +35245,21 @@ function HomePage() {
                                                 className: "job1"
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 238,
+                                                lineNumber: 236,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                                 children: "Progetto di Desalinizzazione ad Abadan"
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 239,
+                                                lineNumber: 237,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                 children: "Abbiamo realizzato un impianto di desalinizzazione con una capacit\xe0 di 10.000 metri cubi al giorno ad Abadan. Questo progetto \xe8 stato progettato per fornire acqua potabile a una vasta area, garantendo risorse idriche sostenibili."
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 240,
+                                                lineNumber: 238,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35266,18 +35268,18 @@ function HomePage() {
                                                     children: "\"Abbiamo realizzato un impianto di desalinizzazione ad Abadan con una capacit\xe0 di 10.000 metri cubi di acqua dolce al giorno. Questo progetto \xe8 progettato per fornire acqua potabile sostenibile a una vasta area, garantendo risorse idriche affidabili. Utilizziamo tecnologie avanzate come l'osmosi inversa per trasformare l'acqua di mare in acqua potabile, contribuendo cos\xec al miglioramento della qualit\xe0 della vita e allo sviluppo economico della regione.\""
                                                 }, void 0, false, {
                                                     fileName: "pages/homaPage/homePage.jsx",
-                                                    lineNumber: 244,
+                                                    lineNumber: 242,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 243,
+                                                lineNumber: 241,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 237,
+                                        lineNumber: 235,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35287,21 +35289,21 @@ function HomePage() {
                                                 className: "job2"
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 250,
+                                                lineNumber: 248,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                                 children: "Progetto di Desalinizzazione a Bandar Lange"
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 251,
+                                                lineNumber: 249,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                 children: "Abbiamo completato un impianto di desalinizzazione simile a Bandar Lange, anch'esso con una capacit\xe0 di 10.000 metri cubi al giorno. Questo progetto mira a soddisfare le esigenze idriche locali, contribuendo al benessere della comunit\xe0."
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 252,
+                                                lineNumber: 250,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35310,18 +35312,18 @@ function HomePage() {
                                                     children: "Abbiamo implementato un impianto di desalinizzazione a Bandar Lange, con una capacit\xe0 di 10.000 metri cubi al giorno. Questo progetto mira a soddisfare le esigenze idriche locali e a migliorare il benessere della comunit\xe0. Grazie a tecnologie moderne, il nostro impianto fornisce acqua potabile di alta qualit\xe0, contribuendo al progresso della zona e riducendo l'impatto ambientale."
                                                 }, void 0, false, {
                                                     fileName: "pages/homaPage/homePage.jsx",
-                                                    lineNumber: 256,
+                                                    lineNumber: 254,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 255,
+                                                lineNumber: 253,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 249,
+                                        lineNumber: 247,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35332,21 +35334,21 @@ function HomePage() {
                                                 src: (0, _job3JpgDefault.default)
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 262,
+                                                lineNumber: 260,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                                 children: "Costruzione di 140 Unit\xe0 Abitative a Bandar Abbas"
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 263,
+                                                lineNumber: 261,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                 children: "Abbiamo realizzato un progetto residenziale che comprende la costruzione di 140 unit\xe0 abitative a Bandar Abbas. Il progetto include impianti moderni per garantire il comfort e la qualit\xe0 della vita dei residenti."
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 264,
+                                                lineNumber: 262,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35355,45 +35357,45 @@ function HomePage() {
                                                     children: "Abbiamo realizzato un progetto residenziale che include la costruzione di 140 unit\xe0 abitative a Bandar Abbas. Ogni unit\xe0 \xe8 dotata di sistemi moderni per garantire comfort e qualit\xe0 della vita. Questo progetto non solo risponde alle esigenze abitative della comunit\xe0, ma promuove anche lo sviluppo economico locale creando nuove opportunit\xe0 di lavoro."
                                                 }, void 0, false, {
                                                     fileName: "pages/homaPage/homePage.jsx",
-                                                    lineNumber: 268,
+                                                    lineNumber: 266,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 267,
+                                                lineNumber: 265,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 261,
+                                        lineNumber: 259,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 236,
+                                lineNumber: 234,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "pages/homaPage/homePage.jsx",
-                            lineNumber: 235,
+                            lineNumber: 233,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "pages/homaPage/homePage.jsx",
-                        lineNumber: 234,
+                        lineNumber: 232,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "pages/homaPage/homePage.jsx",
-                lineNumber: 55,
+                lineNumber: 53,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "pages/homaPage/homePage.jsx",
-                lineNumber: 277,
+                lineNumber: 275,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35407,18 +35409,18 @@ function HomePage() {
                     class: "fa-solid fa-up-long"
                 }, void 0, false, {
                     fileName: "pages/homaPage/homePage.jsx",
-                    lineNumber: 283,
+                    lineNumber: 281,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "pages/homaPage/homePage.jsx",
-                lineNumber: 278,
+                lineNumber: 276,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "pages/homaPage/homePage.jsx",
-        lineNumber: 54,
+        lineNumber: 52,
         columnNumber: 5
     }, this);
 }

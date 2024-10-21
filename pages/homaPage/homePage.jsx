@@ -26,28 +26,26 @@ export default function HomePage() {
         }
       });
     });
-    img.forEach((e, index) => {
-      e.style.left = `${index * 100}%`;
-    });
-
     function slide() {
-      img.forEach((e) => {
-        e.style.transform = `translateX(-${counter * 100}%)`;
+      img.forEach((e , index) => {
+        e.style.left = `${index * 100}%`;
+        e.style.transform = `translateX(-${(counter) * 100}%)`;
       });
     }
-
     setInterval(() => {
-      slide();
-      if (counter === 5) {
+      if (counter === 5) { 
         counter = 0;
-        return
+        slide();
       } else { 
-        counter++;
+        ++counter;
+        slide();
       }
     }, 4000);
+    slide();
   }, []);
   useEffect(() => {
     window.scrollTo(0,0);
+    document.title = 'Home';
   } , [])
 
   return (

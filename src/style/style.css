@@ -439,7 +439,8 @@
     z-index: 2;
 }
 .home-page .container-p6 {
-    background-image: url(../../public/hjj.jpg);
+    
+    background-image: url(../../public/imageForProjectManagement.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

@@ -149,17 +149,6 @@
   position: absolute;
 }
 
-.image:after {
-  content: "";
-  z-index: 1;
-  background: linear-gradient(to right, #000, #00000098, #00000049, #0000);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .home-page .container-p2 img {
   object-fit: cover;
   width: 100%;
@@ -189,11 +178,11 @@
   z-index: 10;
   text-align: center;
   background-color: #0000;
-  width: 40%;
+  width: 80%;
   position: absolute;
   top: 50%;
-  left: 30%;
-  transform: translate(-50%, -30%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @keyframes animate1 {
@@ -513,6 +502,17 @@
   width: 100%;
   height: 100%;
   position: relative;
+}
+
+.image:after {
+  content: "";
+  z-index: 1;
+  background-color: #00000079;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .img1 {
@@ -1605,6 +1605,52 @@ input::-webkit-inner-spin-button {
   opacity: .5 !important;
 }
 
+.container-p2 .clickToSlide button {
+  cursor: pointer;
+  color: #fff;
+  background-color: #0000;
+  border: none;
+  width: 15%;
+  height: 100%;
+  font-size: 30px;
+}
+
+.container-p2 .clickToSlide button:first-child:hover :after {
+  content: "";
+  background: linear-gradient(to left, #000, #00000098, #00000049, #0000);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.container-p2 .clickToSlide button:nth-child(2):hover :after {
+  content: "";
+  background: linear-gradient(to right, #000, #000000af, #0000008c, #0000);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container-p2 .clickToSlide button:first-child {
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.container-p2 .clickToSlide button:nth-child(2) {
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
 @media only screen and (width <= 1650px) {
   .home-page .container-p7.target .content {
     padding: 0 30px;
@@ -1892,16 +1938,6 @@ input::-webkit-inner-spin-button {
 
   .home-page .text {
     padding: 10px 30px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100% !important;
-  }
-
-  .home-page .image:after {
-    content: "";
-    z-index: 1;
-    background: linear-gradient(to right, #000, #000000b0, #0000008e, #0000005e);
   }
 
   .home-page .container-p6 {

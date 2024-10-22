@@ -6,47 +6,85 @@ import Footer from '../../components/footer/footer';
 
 export default function HomePage() {
   let [show, setShow] = useState(false);
+  let [counter, setCounter] = useState(0);
+  const intervalRef = useRef(null); // Ref to store interval ID
   const up = useRef(null);
   const containerP6 = useRef(null);
 
   useEffect(() => {
-    let slt = document.querySelectorAll('.target');
-    let img = document.querySelectorAll('.c');
-    let counter = 0;
-    slt.forEach((e) => {
-      window.addEventListener('scroll', () => {
+    const handleScroll = () => {
+      const slt = document.querySelectorAll('.target');
+      slt.forEach((e) => {
         let top = e.getBoundingClientRect().top;
         if (top < 700) {
           e.classList.add('active');
         }
-        if (containerP6.current?.getBoundingClientRect().top <= 0) {
-          setShow(true);
-        } else {
-          setShow(false);
-        }
       });
-    });
-    function slide() {
-      img.forEach((e , index) => {
-        e.style.left = `${index * 100}%`;
-        e.style.transform = `translateX(-${(counter) * 100}%)`;
-      });
-    }
-    setInterval(() => {
-      if (counter === 5) { 
-        counter = 0;
-        slide();
-      } else { 
-        ++counter;
-        slide();
+      if (containerP6.current?.getBoundingClientRect().top <= 0) {
+        setShow(true);
+      } else {
+        setShow(false);
       }
-    }, 4000);
-    slide();
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll); // Cleanup on unmount
+    };
   }, []);
+
   useEffect(() => {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
     document.title = 'Home';
-  } , [])
+  }, []);
+
+  useEffect(() => {
+    slide(); // Run slide on counter update
+  }, [counter]);
+
+  // Start auto-slide and reset it if user clicks
+  const startAutoSlide = () => {
+    // Clear any existing interval
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
+
+    // Set a new interval for auto-slide
+    intervalRef.current = setInterval(() => {
+      setCounter((prevCounter) => (prevCounter === 5 ? 0 : prevCounter + 1));
+    }, 5000); // Change slide every 5 seconds
+  };
+
+  useEffect(() => {
+    startAutoSlide(); // Start auto-slide on component mount
+
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current); // Clear interval on unmount
+      }
+    };
+  }, []);
+
+  // ...................functions.................//
+  function slide() {
+    let img = document.querySelectorAll('.c');
+    img.forEach((e, index) => {
+      e.style.left = `${index * 100}%`;
+      e.style.transform = `translateX(-${counter * 100}%)`;
+    });
+  }
+
+  function handleNextSlide() {
+    setCounter((prevCounter) => (prevCounter === 5 ? 0 : prevCounter + 1));
+    startAutoSlide(); // Reset auto-slide when user clicks
+  }
+
+  function handlePrevSlide() {
+    setCounter((prevCounter) => (prevCounter === 0 ? 5 : prevCounter - 1));
+    startAutoSlide(); // Reset auto-slide when user clicks
+  }
+
 
   return (
     <div className='home-page'>
@@ -55,6 +93,10 @@ export default function HomePage() {
           <Header />
         </div>
         <div ref={up} className='container-p2 '>
+          <div className='clickToSlide'>
+            <button onClick={handleNextSlide}><i class="fa-solid fa-chevron-right"></i></button>
+            <button onClick={handlePrevSlide}><i class="fa-solid fa-chevron-left"></i></button>
+          </div>
           <div className='context-1 c'>
             <div className='img1 image'>
               <div className='text'>

@@ -36028,7 +36028,7 @@ function Footer() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "footer",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-            children: "This site is owned by Gruppo Danesh. \xa9 All content, images, and information are   protected by copyright and may not be used without our explicit permission."
+            children: "This site is owned by Gruppo Danesh. \xa9 All content, and information are   protected by copyright and may not be used without our explicit permission."
         }, void 0, false, {
             fileName: "components/footer/footer.jsx",
             lineNumber: 4,
@@ -36066,6 +36066,8 @@ var _footerDefault = parcelHelpers.interopDefault(_footer);
 var _header = require("../../components/header/header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
 var _reactRouterDom = require("react-router-dom");
+var _reactAnimatedNumbers = require("react-animated-numbers");
+var _reactAnimatedNumbersDefault = parcelHelpers.interopDefault(_reactAnimatedNumbers);
 var _s = $RefreshSig$();
 function AboutUsPage() {
     _s();
@@ -36082,12 +36084,12 @@ function AboutUsPage() {
                         className: "container-p1",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                            lineNumber: 16,
+                            lineNumber: 18,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                        lineNumber: 15,
+                        lineNumber: 17,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36102,14 +36104,14 @@ function AboutUsPage() {
                                             children: " REZA DANESH \u2013 CHI SIAMO "
                                         }, void 0, false, {
                                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                            lineNumber: 21,
+                                            lineNumber: 23,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                             children: "Mi chiamo Reza Danesh e sono il titolare dello studio \u201CGruppo Danesh\u201D."
                                         }, void 0, false, {
                                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                            lineNumber: 22,
+                                            lineNumber: 24,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36119,20 +36121,20 @@ function AboutUsPage() {
                                                     children: "Vantiamo un\u2019esperienza pluriennale nella costruzione e gestione di impianti civili e industriali e dal 2024 abbiamo avviato la nostra attivit\xe0 anche in Italia."
                                                 }, void 0, false, {
                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                    lineNumber: 24,
+                                                    lineNumber: 26,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                     children: "Abbiamo competenze nella progettazione, pianificazione e coordinamento di risorse in differenti settori. Uniamo capacit\xe0 di gestione e conoscenze tecniche per offrire soluzioni che rispondano in maniera completa alle esigenze dei nostri clienti."
                                                 }, void 0, false, {
                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                    lineNumber: 25,
+                                                    lineNumber: 27,
                                                     columnNumber: 15
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                            lineNumber: 23,
+                                            lineNumber: 25,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36142,7 +36144,7 @@ function AboutUsPage() {
                                                     children: "Nello specifico possiamo occuparci di:"
                                                 }, void 0, false, {
                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                    lineNumber: 28,
+                                                    lineNumber: 30,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -36152,12 +36154,12 @@ function AboutUsPage() {
                                                                 children: "Progettazione e costruzione di impianti elettrici, termotecnici, fotovoltaici"
                                                             }, void 0, false, {
                                                                 fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                lineNumber: 31,
+                                                                lineNumber: 33,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                            lineNumber: 30,
+                                                            lineNumber: 32,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -36165,12 +36167,12 @@ function AboutUsPage() {
                                                                 children: "Certificazioni energetiche (APE)"
                                                             }, void 0, false, {
                                                                 fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                lineNumber: 34,
+                                                                lineNumber: 36,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                            lineNumber: 33,
+                                                            lineNumber: 35,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -36178,31 +36180,31 @@ function AboutUsPage() {
                                                                 children: "Progettazione e direzione lavori"
                                                             }, void 0, false, {
                                                                 fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                lineNumber: 37,
+                                                                lineNumber: 39,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                            lineNumber: 36,
+                                                            lineNumber: 38,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                    lineNumber: 29,
+                                                    lineNumber: 31,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                            lineNumber: 27,
+                                            lineNumber: 29,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                             children: "Lo studio Danesh \xe8 formato da una squadra di persone che pu\xf2 aiutare i clienti a sviluppare le proprie idee e progetti in soluzioni concrete"
                                         }, void 0, false, {
                                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                            lineNumber: 41,
+                                            lineNumber: 43,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36214,137 +36216,181 @@ function AboutUsPage() {
                                                 children: "Contatti"
                                             }, void 0, false, {
                                                 fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                lineNumber: 44,
+                                                lineNumber: 46,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                            lineNumber: 43,
+                                            lineNumber: 45,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                    lineNumber: 20,
+                                    lineNumber: 22,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "aboutUs-content-p2",
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "customers",
+                                            className: "customers flex-column-center",
                                             children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                                    children: "2800"
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactAnimatedNumbersDefault.default), {
+                                                    includeComma: true,
+                                                    transitions: (index)=>({
+                                                            type: "spring",
+                                                            duration: index + 0.1
+                                                        }),
+                                                    animateToNumber: 150,
+                                                    fontStyle: {
+                                                        fontSize: 50,
+                                                        color: "#a3a3a3",
+                                                        fontWeight: "500",
+                                                        fontFamily: "Courier New, Courier, monospace"
+                                                    }
                                                 }, void 0, false, {
                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                    lineNumber: 49,
-                                                    columnNumber: 17
+                                                    lineNumber: 51,
+                                                    columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                     children: "Customers"
                                                 }, void 0, false, {
                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                    lineNumber: 50,
+                                                    lineNumber: 65,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                            lineNumber: 48,
+                                            lineNumber: 50,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "people",
+                                            className: "people flex-column-center",
                                             children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                                    children: "2800"
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactAnimatedNumbersDefault.default), {
+                                                    includeComma: true,
+                                                    transitions: (index)=>({
+                                                            type: "spring",
+                                                            duration: index
+                                                        }),
+                                                    animateToNumber: 900,
+                                                    fontStyle: {
+                                                        fontSize: 50,
+                                                        color: "#a3a3a3",
+                                                        fontWeight: "500",
+                                                        fontFamily: "Courier New, Courier, monospace"
+                                                    }
                                                 }, void 0, false, {
                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                    lineNumber: 53,
-                                                    columnNumber: 17
+                                                    lineNumber: 68,
+                                                    columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                     children: "People"
                                                 }, void 0, false, {
                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                    lineNumber: 54,
+                                                    lineNumber: 82,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                            lineNumber: 52,
+                                            lineNumber: 67,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "location",
+                                            className: "location flex-column-center",
                                             children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                                    children: "2800"
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactAnimatedNumbersDefault.default), {
+                                                    includeComma: true,
+                                                    transitions: (index)=>({
+                                                            type: "spring",
+                                                            duration: index
+                                                        }),
+                                                    animateToNumber: 50,
+                                                    fontStyle: {
+                                                        fontSize: 50,
+                                                        color: "#a3a3a3",
+                                                        fontWeight: "500",
+                                                        fontFamily: "Courier New, Courier, monospace"
+                                                    }
                                                 }, void 0, false, {
                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                    lineNumber: 57,
-                                                    columnNumber: 17
+                                                    lineNumber: 85,
+                                                    columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                    children: "Location"
+                                                    children: "Project"
                                                 }, void 0, false, {
                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                    lineNumber: 58,
+                                                    lineNumber: 99,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                            lineNumber: 56,
+                                            lineNumber: 84,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "office",
+                                            className: "office flex-column-center",
                                             children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                                    children: "2800"
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactAnimatedNumbersDefault.default), {
+                                                    includeComma: true,
+                                                    transitions: (index)=>({
+                                                            type: "spring",
+                                                            duration: index
+                                                        }),
+                                                    animateToNumber: 100,
+                                                    fontStyle: {
+                                                        fontSize: 50,
+                                                        color: "#a3a3a3",
+                                                        fontWeight: "500",
+                                                        fontFamily: "Courier New, Courier, monospace"
+                                                    }
                                                 }, void 0, false, {
                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                    lineNumber: 61,
-                                                    columnNumber: 17
+                                                    lineNumber: 102,
+                                                    columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                    children: "Office"
+                                                    children: "The projects that are being done"
                                                 }, void 0, false, {
                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                    lineNumber: 62,
+                                                    lineNumber: 116,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                            lineNumber: 60,
+                                            lineNumber: 101,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                    lineNumber: 47,
+                                    lineNumber: 49,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                            lineNumber: 19,
+                            lineNumber: 21,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                        lineNumber: 18,
+                        lineNumber: 20,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "container-p3"
                     }, void 0, false, {
                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                        lineNumber: 67,
+                        lineNumber: 121,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36358,37 +36404,37 @@ function AboutUsPage() {
                                         children: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus consequuntur fuga blanditiis esse illo enim"
                                     }, void 0, false, {
                                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                        lineNumber: 71,
+                                        lineNumber: 125,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt numquam assumenda nemo beatae at voluptatum ullam architecto unde illum! Est ea voluptate quis ullam veritatis, id beatae impedit dignissimos accusantium!"
                                     }, void 0, false, {
                                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                        lineNumber: 75,
+                                        lineNumber: 129,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                         children: "Leggi la News"
                                     }, void 0, false, {
                                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                        lineNumber: 81,
+                                        lineNumber: 135,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                lineNumber: 70,
+                                lineNumber: 124,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                            lineNumber: 69,
+                            lineNumber: 123,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                        lineNumber: 68,
+                        lineNumber: 122,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36401,15 +36447,15 @@ function AboutUsPage() {
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "aboutUs-content-p1",
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                            children: "Quale diferenza quando lavori con noi ?"
+                                            children: "Qual \xe8 la differenza tra lavorare con gli altri e lavorare con noi?"
                                         }, void 0, false, {
                                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                            lineNumber: 89,
+                                            lineNumber: 143,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                        lineNumber: 88,
+                                        lineNumber: 142,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36419,128 +36465,220 @@ function AboutUsPage() {
                                                 className: "aboutUs-content-p2",
                                                 children: [
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                        children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero incidunt nesciunt ea vel recusandae, repudiandae ipsam eius quaerat ut similique, ratione unde rem labore nobis voluptatum? Doloribus fuga porro repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolor quisquam in. Non, quos officia voluptatibus a, quam, quaerat commodi culpa provident eaque quibusdam similique! Placeat porro fugiat totam similique?"
-                                                    }, void 0, false, {
-                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 93,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                         children: [
-                                                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis beatae quidem asperiores autem nulla! Eum temporibus ut distinctio maxime quas, cum laudantium velit qui exercitationem? Impedit recusandae fugiat aspernatur doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, modi! Eos sint sunt, laudantium eaque, molestiae enim sequi optio assumenda at minus incidunt",
-                                                            " "
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                style: {
+                                                                    color: "black",
+                                                                    fontSize: "33px"
+                                                                },
+                                                                children: "Esperienza e competenza:"
+                                                            }, void 0, false, {
+                                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                                lineNumber: 148,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                                lineNumber: 149,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                                lineNumber: 150,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            "Lavorare con noi significa collaborare con un team che ha anni di esperienza nel settore e una vasta gamma di competenze tecniche. Questo ci permette di affrontare con successo ogni sfida progettuale, garantendo soluzioni efficaci e ben studiate per i nostri clienti. La nostra esperienza ci consente di prevenire e risolvere problemi prima che diventino ostacoli."
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 103,
+                                                        lineNumber: 147,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                        children: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae est alias dolorem libero impedit aperiam culpa aliquid rem id. Nobis excepturi vitae veritatis nulla. Velit, inventore maxime! Minus, id quas?"
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                    style: {
+                                                                        color: "black",
+                                                                        fontSize: "33px"
+                                                                    },
+                                                                    children: "Innovazione e personalizzazione:"
+                                                                }, void 0, false, {
+                                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                                    lineNumber: 155,
+                                                                    columnNumber: 21
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                                    lineNumber: 156,
+                                                                    columnNumber: 21
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                                    lineNumber: 157,
+                                                                    columnNumber: 21
+                                                                }, this),
+                                                                "Offriamo soluzioni all'avanguardia, utilizzando le ultime tecnologie e approcci innovativi. Ogni progetto \xe8 unico per noi, quindi adattiamo le nostre soluzioni in base alle esigenze specifiche del cliente. Non proponiamo mai una soluzione standardizzata, ma ci impegniamo a personalizzare ogni fase del progetto per ottenere risultati ottimali."
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                            lineNumber: 154,
+                                                            columnNumber: 19
+                                                        }, this)
                                                     }, void 0, false, {
                                                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 113,
+                                                        lineNumber: 153,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                lineNumber: 92,
+                                                lineNumber: 146,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                 className: "aboutUs-content-p3",
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                        children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae libero vel aspernatur laboriosam"
-                                                    }, void 0, false, {
-                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 121,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                                                        children: [
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                                 children: [
-                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                                        children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laboriosam explicabo repellendus at aliquid consequatur reprehenderit a vero fuga autem minima, modi voluptatem alias ratione"
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                        style: {
+                                                                            color: "black",
+                                                                            fontSize: "33px"
+                                                                        },
+                                                                        children: "Qualit\xe0 e sostenibilit\xe0:"
                                                                     }, void 0, false, {
                                                                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                        lineNumber: 127,
+                                                                        lineNumber: 166,
                                                                         columnNumber: 23
                                                                     }, this),
-                                                                    " "
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                                        lineNumber: 167,
+                                                                        columnNumber: 21
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                                        lineNumber: 168,
+                                                                        columnNumber: 21
+                                                                    }, this),
+                                                                    "Ci impegniamo a utilizzare materiali di altissima qualit\xe0 e tecnologie sostenibili che rispettano l'ambiente. Questo non solo garantisce la durata nel tempo dei nostri impianti, ma assicura anche che siano efficienti dal punto di vista energetico e rispettosi delle normative ambientali. Con noi, ogni progetto \xe8 realizzato con un occhio alla sostenibilit\xe0."
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                lineNumber: 126,
-                                                                columnNumber: 21
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                                    children: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi omnis unde asperiores ratione est itaque ea similique molestias. Animi consequuntur cumque voluptate natus tenetur dolores vel voluptatum blanditiis quidem esse."
-                                                                }, void 0, false, {
-                                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 135,
-                                                                    columnNumber: 23
-                                                                }, this)
-                                                            }, void 0, false, {
-                                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                lineNumber: 134,
-                                                                columnNumber: 21
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                                    children: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores tempora cupiditate magni quo, voluptatum reprehenderit tempore velit"
-                                                                }, void 0, false, {
-                                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 144,
-                                                                    columnNumber: 23
-                                                                }, this)
-                                                            }, void 0, false, {
-                                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                lineNumber: 143,
-                                                                columnNumber: 21
+                                                                lineNumber: 165,
+                                                                columnNumber: 23
                                                             }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 125,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                        children: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus optio delectus possimus, ipsum ducimus commodi cupiditate. Mollitia facere dolorum, repudiandae repellendus consequuntur eligendi. Officiis ratione velit nulla dolore earum recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo maiores expedita magni totam beatae itaque optio, sapiente distinctio corporis maxime aut iure consectetur voluptatum suscipit quia debitis atque placeat ipsa?"
-                                                    }, void 0, false, {
-                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 151,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
+                                                        }, void 0, false, {
+                                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                            lineNumber: 164,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                        style: {
+                                                                            color: "black",
+                                                                            fontSize: "33px"
+                                                                        },
+                                                                        children: "Supporto continuo:"
+                                                                    }, void 0, false, {
+                                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                                        lineNumber: 174,
+                                                                        columnNumber: 23
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                                        lineNumber: 175,
+                                                                        columnNumber: 21
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                                        lineNumber: 176,
+                                                                        columnNumber: 21
+                                                                    }, this),
+                                                                    "La nostra assistenza non termina con la consegna del progetto. Offriamo un supporto continuo e siamo sempre disponibili per risolvere eventuali problemi o rispondere a richieste aggiuntive. A differenza di altri, non lasciamo il cliente da solo dopo il completamento del lavoro, ma siamo sempre pronti a intervenire quando necessario."
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                                lineNumber: 173,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                            lineNumber: 172,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                        style: {
+                                                                            color: "black",
+                                                                            fontSize: "33px"
+                                                                        },
+                                                                        children: "Professionalit\xe0 e trasparenza:"
+                                                                    }, void 0, false, {
+                                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                                        lineNumber: 182,
+                                                                        columnNumber: 23
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                                        lineNumber: 183,
+                                                                        columnNumber: 21
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                                        lineNumber: 184,
+                                                                        columnNumber: 21
+                                                                    }, this),
+                                                                    "Ci impegniamo a mantenere un livello elevato di professionalit\xe0 in ogni fase del progetto. Lavoriamo in modo trasparente, fornendo al cliente aggiornamenti costanti e comunicazioni chiare. Questo garantisce che non ci siano sorprese durante il processo e che ogni passo sia ben compreso dal cliente."
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                                lineNumber: 181,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                            lineNumber: 180,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                    lineNumber: 163,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
                                                 fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                lineNumber: 120,
+                                                lineNumber: 162,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                        lineNumber: 91,
+                                        lineNumber: 145,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                lineNumber: 87,
+                                lineNumber: 141,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                            lineNumber: 86,
+                            lineNumber: 140,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                        lineNumber: 85,
+                        lineNumber: 139,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36557,20 +36695,20 @@ function AboutUsPage() {
                                                 children: "Our prosses"
                                             }, void 0, false, {
                                                 fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                lineNumber: 171,
+                                                lineNumber: 198,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                 children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam odit corporis, debitis cumque optio molestias accusantium? Eum non, maiores, dolores provident, eius nemo ducimus mollitia accusamus eligendi commodi eaque omnis!"
                                             }, void 0, false, {
                                                 fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                lineNumber: 172,
+                                                lineNumber: 199,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                        lineNumber: 170,
+                                        lineNumber: 197,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36585,19 +36723,19 @@ function AboutUsPage() {
                                                             class: "fa-solid fa-mug-hot"
                                                         }, void 0, false, {
                                                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                            lineNumber: 182,
+                                                            lineNumber: 209,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 181,
+                                                        lineNumber: 208,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                         children: "New Project"
                                                     }, void 0, false, {
                                                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 185,
+                                                        lineNumber: 212,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36608,45 +36746,45 @@ function AboutUsPage() {
                                                                     children: "Lorem ipsum dolor"
                                                                 }, void 0, false, {
                                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 188,
+                                                                    lineNumber: 215,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                                                     children: "deserunt mollit anim id"
                                                                 }, void 0, false, {
                                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 189,
+                                                                    lineNumber: 216,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                                                     children: "fugiat nulla pariatur"
                                                                 }, void 0, false, {
                                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 190,
+                                                                    lineNumber: 217,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                                                     children: "cillum dolore eu"
                                                                 }, void 0, false, {
                                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 191,
+                                                                    lineNumber: 218,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                            lineNumber: 187,
+                                                            lineNumber: 214,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 186,
+                                                        lineNumber: 213,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                lineNumber: 180,
+                                                lineNumber: 207,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36658,19 +36796,19 @@ function AboutUsPage() {
                                                             class: "fa-solid fa-hand"
                                                         }, void 0, false, {
                                                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                            lineNumber: 197,
+                                                            lineNumber: 224,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 196,
+                                                        lineNumber: 223,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                         children: "Work Friendly"
                                                     }, void 0, false, {
                                                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 199,
+                                                        lineNumber: 226,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36681,45 +36819,45 @@ function AboutUsPage() {
                                                                     children: "Lorem ipsum dolor"
                                                                 }, void 0, false, {
                                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 202,
+                                                                    lineNumber: 229,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                                                     children: "deserunt mollit anim id"
                                                                 }, void 0, false, {
                                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 203,
+                                                                    lineNumber: 230,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                                                     children: "fugiat nulla pariatur"
                                                                 }, void 0, false, {
                                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 204,
+                                                                    lineNumber: 231,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                                                     children: "cillum dolore eu"
                                                                 }, void 0, false, {
                                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 205,
+                                                                    lineNumber: 232,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                            lineNumber: 201,
+                                                            lineNumber: 228,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 200,
+                                                        lineNumber: 227,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                lineNumber: 195,
+                                                lineNumber: 222,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36731,19 +36869,19 @@ function AboutUsPage() {
                                                             class: "fa-solid fa-envelope"
                                                         }, void 0, false, {
                                                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                            lineNumber: 212,
+                                                            lineNumber: 239,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 211,
+                                                        lineNumber: 238,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                         children: "Danesh Groupe"
                                                     }, void 0, false, {
                                                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 214,
+                                                        lineNumber: 241,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36754,45 +36892,45 @@ function AboutUsPage() {
                                                                     children: "Lorem ipsum dolor"
                                                                 }, void 0, false, {
                                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 217,
+                                                                    lineNumber: 244,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                                                     children: "deserunt mollit anim id"
                                                                 }, void 0, false, {
                                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 218,
+                                                                    lineNumber: 245,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                                                     children: "fugiat nulla pariatur"
                                                                 }, void 0, false, {
                                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 219,
+                                                                    lineNumber: 246,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                                                     children: "cillum dolore eu"
                                                                 }, void 0, false, {
                                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 220,
+                                                                    lineNumber: 247,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                            lineNumber: 216,
+                                                            lineNumber: 243,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 215,
+                                                        lineNumber: 242,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                lineNumber: 210,
+                                                lineNumber: 237,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36806,20 +36944,20 @@ function AboutUsPage() {
                                                                 class: "fa-solid fa-scroll"
                                                             }, void 0, false, {
                                                                 fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                lineNumber: 227,
+                                                                lineNumber: 254,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 225,
+                                                        lineNumber: 252,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                         children: "Our Company"
                                                     }, void 0, false, {
                                                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 230,
+                                                        lineNumber: 257,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36830,84 +36968,84 @@ function AboutUsPage() {
                                                                     children: "Lorem ipsum dolor"
                                                                 }, void 0, false, {
                                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 233,
+                                                                    lineNumber: 260,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                                                     children: "deserunt mollit anim id"
                                                                 }, void 0, false, {
                                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 234,
+                                                                    lineNumber: 261,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                                                     children: "fugiat nulla pariatur"
                                                                 }, void 0, false, {
                                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 235,
+                                                                    lineNumber: 262,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                                                     children: "cillum dolore eu"
                                                                 }, void 0, false, {
                                                                     fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 236,
+                                                                    lineNumber: 263,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                            lineNumber: 232,
+                                                            lineNumber: 259,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 231,
+                                                        lineNumber: 258,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                lineNumber: 224,
+                                                lineNumber: 251,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                        lineNumber: 179,
+                                        lineNumber: 206,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                lineNumber: 169,
+                                lineNumber: 196,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                            lineNumber: 168,
+                            lineNumber: 195,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                        lineNumber: 167,
+                        lineNumber: 194,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                lineNumber: 14,
+                lineNumber: 16,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                lineNumber: 245,
+                lineNumber: 272,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-        lineNumber: 13,
+        lineNumber: 15,
         columnNumber: 5
     }, this);
 }
@@ -36921,7 +37059,4381 @@ $RefreshReg$(_c, "AboutUsPage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../components/footer/footer":"dtCFD","../../components/header/header":"HkB1m","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4BkTJ":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../components/footer/footer":"dtCFD","../../components/header/header":"HkB1m","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-animated-numbers":"2ZAE7"}],"2ZAE7":[function(require,module,exports) {
+!function(t1, e) {
+    var n, s;
+    module.exports = e(require("12d6bebdb78946db"));
+}(self, function(t1) {
+    return (()=>{
+        "use strict";
+        var e = {
+            297: (e)=>{
+                e.exports = t1;
+            }
+        }, n = {};
+        function s(t1) {
+            var i = n[t1];
+            if (void 0 !== i) return i.exports;
+            var o = n[t1] = {
+                exports: {}
+            };
+            return e[t1](o, o.exports, s), o.exports;
+        }
+        s.n = (t1)=>{
+            var e = t1 && t1.__esModule ? ()=>t1.default : ()=>t1;
+            return s.d(e, {
+                a: e
+            }), e;
+        }, s.d = (t1, e)=>{
+            for(var n in e)s.o(e, n) && !s.o(t1, n) && Object.defineProperty(t1, n, {
+                enumerable: !0,
+                get: e[n]
+            });
+        }, s.o = (t1, e)=>Object.prototype.hasOwnProperty.call(t1, e), s.r = (t1)=>{
+            "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(t1, Symbol.toStringTag, {
+                value: "Module"
+            }), Object.defineProperty(t1, "__esModule", {
+                value: !0
+            });
+        };
+        var i = {};
+        return (()=>{
+            s.r(i), s.d(i, {
+                default: ()=>jo
+            });
+            var t1 = s(297), e = s.n(t1);
+            const n = (t1)=>t1;
+            let o = n, r = n;
+            const a = {
+                some: 0,
+                all: 1
+            };
+            const l = (t1)=>/^\-?\d*\.?\d+$/.test(t1), u = (t1)=>/^0[^.\s]+$/.test(t1), c = (t1)=>Array.isArray(t1);
+            function h(t1, e) {
+                -1 === t1.indexOf(e) && t1.push(e);
+            }
+            function d(t1, e) {
+                const n = t1.indexOf(e);
+                n > -1 && t1.splice(n, 1);
+            }
+            class m {
+                constructor(){
+                    this.subscriptions = [];
+                }
+                add(t1) {
+                    return h(this.subscriptions, t1), ()=>d(this.subscriptions, t1);
+                }
+                notify(t1, e, n) {
+                    const s = this.subscriptions.length;
+                    if (s) {
+                        if (1 === s) this.subscriptions[0](t1, e, n);
+                        else for(let i = 0; i < s; i++){
+                            const s = this.subscriptions[i];
+                            s && s(t1, e, n);
+                        }
+                    }
+                }
+                getSize() {
+                    return this.subscriptions.length;
+                }
+                clear() {
+                    this.subscriptions.length = 0;
+                }
+            }
+            function p(t1, e) {
+                return e ? t1 * (1e3 / e) : 0;
+            }
+            class f {
+                constructor(){
+                    this.order = [], this.scheduled = new Set;
+                }
+                add(t1) {
+                    if (!this.scheduled.has(t1)) return this.scheduled.add(t1), this.order.push(t1), !0;
+                }
+                remove(t1) {
+                    const e = this.order.indexOf(t1);
+                    -1 !== e && (this.order.splice(e, 1), this.scheduled.delete(t1));
+                }
+                clear() {
+                    this.order.length = 0, this.scheduled.clear();
+                }
+            }
+            const g = [
+                "prepare",
+                "read",
+                "update",
+                "preRender",
+                "render",
+                "postRender"
+            ], { schedule: y, cancel: v, state: x, steps: P } = function(t1, e) {
+                let n = !1, s = !0;
+                const i = {
+                    delta: 0,
+                    timestamp: 0,
+                    isProcessing: !1
+                }, o = g.reduce((t1, e)=>(t1[e] = function(t1) {
+                        let e = new f, n = new f, s = 0, i = !1, o = !1;
+                        const r = new WeakSet, a = {
+                            schedule: (t1, o = !1, a = !1)=>{
+                                const l = a && i, u = l ? e : n;
+                                return o && r.add(t1), u.add(t1) && l && i && (s = e.order.length), t1;
+                            },
+                            cancel: (t1)=>{
+                                n.remove(t1), r.delete(t1);
+                            },
+                            process: (l)=>{
+                                if (i) o = !0;
+                                else {
+                                    if (i = !0, [e, n] = [
+                                        n,
+                                        e
+                                    ], n.clear(), s = e.order.length, s) for(let n = 0; n < s; n++){
+                                        const s = e.order[n];
+                                        s(l), r.has(s) && (a.schedule(s), t1());
+                                    }
+                                    i = !1, o && (o = !1, a.process(l));
+                                }
+                            }
+                        };
+                        return a;
+                    }(()=>n = !0), t1), {}), r = (t1)=>o[t1].process(i), a = ()=>{
+                    const e = performance.now();
+                    n = !1, i.delta = s ? 1e3 / 60 : Math.max(Math.min(e - i.timestamp, 40), 1), i.timestamp = e, i.isProcessing = !0, g.forEach(r), i.isProcessing = !1, n && (s = !1, t1(a));
+                };
+                return {
+                    schedule: g.reduce((e, r)=>{
+                        const l = o[r];
+                        return e[r] = (e, o = !1, r = !1)=>(n || (n = !0, s = !0, i.isProcessing || t1(a)), l.schedule(e, o, r)), e;
+                    }, {}),
+                    cancel: (t1)=>g.forEach((e)=>o[e].cancel(t1)),
+                    state: i,
+                    steps: o
+                };
+            }("undefined" != typeof requestAnimationFrame ? requestAnimationFrame : n), b = {
+                current: void 0
+            };
+            class T {
+                constructor(t1, e = {}){
+                    var n;
+                    this.version = "10.16.5", this.timeDelta = 0, this.lastUpdated = 0, this.canTrackVelocity = !1, this.events = {}, this.updateAndNotify = (t1, e = !0)=>{
+                        this.prev = this.current, this.current = t1;
+                        const { delta: n, timestamp: s } = x;
+                        this.lastUpdated !== s && (this.timeDelta = n, this.lastUpdated = s, y.postRender(this.scheduleVelocityCheck)), this.prev !== this.current && this.events.change && this.events.change.notify(this.current), this.events.velocityChange && this.events.velocityChange.notify(this.getVelocity()), e && this.events.renderRequest && this.events.renderRequest.notify(this.current);
+                    }, this.scheduleVelocityCheck = ()=>y.postRender(this.velocityCheck), this.velocityCheck = ({ timestamp: t1 })=>{
+                        t1 !== this.lastUpdated && (this.prev = this.current, this.events.velocityChange && this.events.velocityChange.notify(this.getVelocity()));
+                    }, this.hasAnimated = !1, this.prev = this.current = t1, this.canTrackVelocity = (n = this.current, !isNaN(parseFloat(n))), this.owner = e.owner;
+                }
+                onChange(t1) {
+                    return this.on("change", t1);
+                }
+                on(t1, e) {
+                    this.events[t1] || (this.events[t1] = new m);
+                    const n = this.events[t1].add(e);
+                    return "change" === t1 ? ()=>{
+                        n(), y.read(()=>{
+                            this.events.change.getSize() || this.stop();
+                        });
+                    } : n;
+                }
+                clearListeners() {
+                    for(const t1 in this.events)this.events[t1].clear();
+                }
+                attach(t1, e) {
+                    this.passiveEffect = t1, this.stopPassiveEffect = e;
+                }
+                set(t1, e = !0) {
+                    e && this.passiveEffect ? this.passiveEffect(t1, this.updateAndNotify) : this.updateAndNotify(t1, e);
+                }
+                setWithVelocity(t1, e, n) {
+                    this.set(e), this.prev = t1, this.timeDelta = n;
+                }
+                jump(t1) {
+                    this.updateAndNotify(t1), this.prev = t1, this.stop(), this.stopPassiveEffect && this.stopPassiveEffect();
+                }
+                get() {
+                    return b.current && b.current.push(this), this.current;
+                }
+                getPrevious() {
+                    return this.prev;
+                }
+                getVelocity() {
+                    return this.canTrackVelocity ? p(parseFloat(this.current) - parseFloat(this.prev), this.timeDelta) : 0;
+                }
+                start(t1) {
+                    return this.stop(), new Promise((e)=>{
+                        this.hasAnimated = !0, this.animation = t1(e), this.events.animationStart && this.events.animationStart.notify();
+                    }).then(()=>{
+                        this.events.animationComplete && this.events.animationComplete.notify(), this.clearAnimation();
+                    });
+                }
+                stop() {
+                    this.animation && (this.animation.stop(), this.events.animationCancel && this.events.animationCancel.notify()), this.clearAnimation();
+                }
+                isAnimating() {
+                    return !!this.animation;
+                }
+                clearAnimation() {
+                    delete this.animation;
+                }
+                destroy() {
+                    this.clearListeners(), this.stop(), this.stopPassiveEffect && this.stopPassiveEffect();
+                }
+            }
+            function S(t1, e) {
+                return new T(t1, e);
+            }
+            const w = (t1)=>(e)=>"string" == typeof e && e.startsWith(t1), E = w("--"), A = w("var(--"), V = (t1)=>Math.round(1e5 * t1) / 1e5, C = /(-)?([\d]*\.?[\d])+/g, M = /(#[0-9a-f]{3,8}|(rgb|hsl)a?\((-?[\d\.]+%?[,\s]+){2}(-?[\d\.]+%?)\s*[\,\/]?\s*[\d\.]*%?\))/gi, D = /^(#[0-9a-f]{3,8}|(rgb|hsl)a?\((-?[\d\.]+%?[,\s]+){2}(-?[\d\.]+%?)\s*[\,\/]?\s*[\d\.]*%?\))$/i;
+            function k(t1) {
+                return "string" == typeof t1;
+            }
+            const R = (t1, e, n)=>Math.min(Math.max(n, t1), e), L = {
+                test: (t1)=>"number" == typeof t1,
+                parse: parseFloat,
+                transform: (t1)=>t1
+            }, j = {
+                ...L,
+                transform: (t1)=>R(0, 1, t1)
+            }, B = {
+                ...L,
+                default: 1
+            }, F = (t1, e)=>(n)=>Boolean(k(n) && D.test(n) && n.startsWith(t1) || e && Object.prototype.hasOwnProperty.call(n, e)), O = (t1, e, n)=>(s)=>{
+                    if (!k(s)) return s;
+                    const [i, o, r, a] = s.match(C);
+                    return {
+                        [t1]: parseFloat(i),
+                        [e]: parseFloat(o),
+                        [n]: parseFloat(r),
+                        alpha: void 0 !== a ? parseFloat(a) : 1
+                    };
+                }, I = {
+                ...L,
+                transform: (t1)=>Math.round(((t1)=>R(0, 255, t1))(t1))
+            }, U = {
+                test: F("rgb", "red"),
+                parse: O("red", "green", "blue"),
+                transform: ({ red: t1, green: e, blue: n, alpha: s = 1 })=>"rgba(" + I.transform(t1) + ", " + I.transform(e) + ", " + I.transform(n) + ", " + V(j.transform(s)) + ")"
+            }, N = {
+                test: F("#"),
+                parse: function(t1) {
+                    let e = "", n = "", s = "", i = "";
+                    return t1.length > 5 ? (e = t1.substring(1, 3), n = t1.substring(3, 5), s = t1.substring(5, 7), i = t1.substring(7, 9)) : (e = t1.substring(1, 2), n = t1.substring(2, 3), s = t1.substring(3, 4), i = t1.substring(4, 5), e += e, n += n, s += s, i += i), {
+                        red: parseInt(e, 16),
+                        green: parseInt(n, 16),
+                        blue: parseInt(s, 16),
+                        alpha: i ? parseInt(i, 16) / 255 : 1
+                    };
+                },
+                transform: U.transform
+            }, $ = (t1)=>({
+                    test: (e)=>k(e) && e.endsWith(t1) && 1 === e.split(" ").length,
+                    parse: parseFloat,
+                    transform: (e)=>`${e}${t1}`
+                }), W = $("deg"), H = $("%"), z = $("px"), Y = $("vh"), X = $("vw"), G = {
+                ...H,
+                parse: (t1)=>H.parse(t1) / 100,
+                transform: (t1)=>H.transform(100 * t1)
+            }, q = {
+                test: F("hsl", "hue"),
+                parse: O("hue", "saturation", "lightness"),
+                transform: ({ hue: t1, saturation: e, lightness: n, alpha: s = 1 })=>"hsla(" + Math.round(t1) + ", " + H.transform(V(e)) + ", " + H.transform(V(n)) + ", " + V(j.transform(s)) + ")"
+            }, Z = {
+                test: (t1)=>U.test(t1) || N.test(t1) || q.test(t1),
+                parse: (t1)=>U.test(t1) ? U.parse(t1) : q.test(t1) ? q.parse(t1) : N.parse(t1),
+                transform: (t1)=>k(t1) ? t1 : t1.hasOwnProperty("red") ? U.transform(t1) : q.transform(t1)
+            }, K = {
+                regex: /var\s*\(\s*--[\w-]+(\s*,\s*(?:(?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)+)?\s*\)/g,
+                countKey: "Vars",
+                token: "${v}",
+                parse: n
+            }, _ = {
+                regex: M,
+                countKey: "Colors",
+                token: "${c}",
+                parse: Z.parse
+            }, J = {
+                regex: C,
+                countKey: "Numbers",
+                token: "${n}",
+                parse: L.parse
+            };
+            function Q(t1, { regex: e, countKey: n, token: s, parse: i }) {
+                const o = t1.tokenised.match(e);
+                o && (t1["num" + n] = o.length, t1.tokenised = t1.tokenised.replace(e, s), t1.values.push(...o.map(i)));
+            }
+            function tt(t1) {
+                const e = t1.toString(), n = {
+                    value: e,
+                    tokenised: e,
+                    values: [],
+                    numVars: 0,
+                    numColors: 0,
+                    numNumbers: 0
+                };
+                return n.value.includes("var(--") && Q(n, K), Q(n, _), Q(n, J), n;
+            }
+            function et(t1) {
+                return tt(t1).values;
+            }
+            function nt(t1) {
+                const { values: e, numColors: n, numVars: s, tokenised: i } = tt(t1), o = e.length;
+                return (t1)=>{
+                    let e = i;
+                    for(let i = 0; i < o; i++)e = i < s ? e.replace(K.token, t1[i]) : i < s + n ? e.replace(_.token, Z.transform(t1[i])) : e.replace(J.token, V(t1[i]));
+                    return e;
+                };
+            }
+            const st = (t1)=>"number" == typeof t1 ? 0 : t1, it = {
+                test: function(t1) {
+                    var e, n;
+                    return isNaN(t1) && k(t1) && ((null === (e = t1.match(C)) || void 0 === e ? void 0 : e.length) || 0) + ((null === (n = t1.match(M)) || void 0 === n ? void 0 : n.length) || 0) > 0;
+                },
+                parse: et,
+                createTransformer: nt,
+                getAnimatableNone: function(t1) {
+                    const e = et(t1);
+                    return nt(t1)(e.map(st));
+                }
+            }, ot = new Set([
+                "brightness",
+                "contrast",
+                "saturate",
+                "opacity"
+            ]);
+            function rt(t1) {
+                const [e, n] = t1.slice(0, -1).split("(");
+                if ("drop-shadow" === e) return t1;
+                const [s] = n.match(C) || [];
+                if (!s) return t1;
+                const i = n.replace(s, "");
+                let o = ot.has(e) ? 1 : 0;
+                return s !== n && (o *= 100), e + "(" + o + i + ")";
+            }
+            const at = /([a-z-]*)\(.*?\)/g, lt = {
+                ...it,
+                getAnimatableNone: (t1)=>{
+                    const e = t1.match(at);
+                    return e ? e.map(rt).join(" ") : t1;
+                }
+            }, ut = {
+                ...L,
+                transform: Math.round
+            }, ct = {
+                borderWidth: z,
+                borderTopWidth: z,
+                borderRightWidth: z,
+                borderBottomWidth: z,
+                borderLeftWidth: z,
+                borderRadius: z,
+                radius: z,
+                borderTopLeftRadius: z,
+                borderTopRightRadius: z,
+                borderBottomRightRadius: z,
+                borderBottomLeftRadius: z,
+                width: z,
+                maxWidth: z,
+                height: z,
+                maxHeight: z,
+                size: z,
+                top: z,
+                right: z,
+                bottom: z,
+                left: z,
+                padding: z,
+                paddingTop: z,
+                paddingRight: z,
+                paddingBottom: z,
+                paddingLeft: z,
+                margin: z,
+                marginTop: z,
+                marginRight: z,
+                marginBottom: z,
+                marginLeft: z,
+                rotate: W,
+                rotateX: W,
+                rotateY: W,
+                rotateZ: W,
+                scale: B,
+                scaleX: B,
+                scaleY: B,
+                scaleZ: B,
+                skew: W,
+                skewX: W,
+                skewY: W,
+                distance: z,
+                translateX: z,
+                translateY: z,
+                translateZ: z,
+                x: z,
+                y: z,
+                z,
+                perspective: z,
+                transformPerspective: z,
+                opacity: j,
+                originX: G,
+                originY: G,
+                originZ: z,
+                zIndex: ut,
+                fillOpacity: j,
+                strokeOpacity: j,
+                numOctaves: ut
+            }, ht = {
+                ...ct,
+                color: Z,
+                backgroundColor: Z,
+                outlineColor: Z,
+                fill: Z,
+                stroke: Z,
+                borderColor: Z,
+                borderTopColor: Z,
+                borderRightColor: Z,
+                borderBottomColor: Z,
+                borderLeftColor: Z,
+                filter: lt,
+                WebkitFilter: lt
+            }, dt = (t1)=>ht[t1];
+            function mt(t1, e) {
+                let n = dt(t1);
+                return n !== lt && (n = it), n.getAnimatableNone ? n.getAnimatableNone(e) : void 0;
+            }
+            const pt = (t1)=>(e)=>e.test(t1), ft = [
+                L,
+                z,
+                H,
+                W,
+                X,
+                Y,
+                {
+                    test: (t1)=>"auto" === t1,
+                    parse: (t1)=>t1
+                }
+            ], gt = (t1)=>ft.find(pt(t1)), yt = [
+                ...ft,
+                Z,
+                it
+            ];
+            function vt(t1, e, n, s = {}, i = {}) {
+                return "function" == typeof e && (e = e(void 0 !== n ? n : t1.custom, s, i)), "string" == typeof e && (e = t1.variants && t1.variants[e]), "function" == typeof e && (e = e(void 0 !== n ? n : t1.custom, s, i)), e;
+            }
+            function xt(t1, e, n) {
+                const s = t1.getProps();
+                return vt(s, e, void 0 !== n ? n : s.custom, function(t1) {
+                    const e = {};
+                    return t1.values.forEach((t1, n)=>e[n] = t1.get()), e;
+                }(t1), function(t1) {
+                    const e = {};
+                    return t1.values.forEach((t1, n)=>e[n] = t1.getVelocity()), e;
+                }(t1));
+            }
+            function Pt(t1, e, n) {
+                t1.hasValue(e) ? t1.getValue(e).set(n) : t1.addValue(e, S(n));
+            }
+            function bt(t1, e) {
+                const n = xt(t1, e);
+                let { transitionEnd: s = {}, transition: i = {}, ...o } = n ? t1.makeTargetAnimatable(n, !1) : {};
+                o = {
+                    ...o,
+                    ...s
+                };
+                for(const e in o)Pt(t1, e, (r = o[e], c(r) ? r[r.length - 1] || 0 : r));
+                var r;
+            }
+            function Tt(t1, e) {
+                [
+                    ...e
+                ].reverse().forEach((n)=>{
+                    const s = t1.getVariant(n);
+                    s && bt(t1, s), t1.variantChildren && t1.variantChildren.forEach((t1)=>{
+                        Tt(t1, e);
+                    });
+                });
+            }
+            function St(t1, e) {
+                if (e) return (e[t1] || e.default || e).from;
+            }
+            const wt = [
+                "transformPerspective",
+                "x",
+                "y",
+                "z",
+                "translateX",
+                "translateY",
+                "translateZ",
+                "scale",
+                "scaleX",
+                "scaleY",
+                "rotate",
+                "rotateX",
+                "rotateY",
+                "rotateZ",
+                "skew",
+                "skewX",
+                "skewY"
+            ], Et = new Set(wt), At = (t1)=>t1.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase(), Vt = "data-" + At("framerAppearId"), Ct = (t1)=>1e3 * t1, Mt = (t1)=>t1 / 1e3, Dt = (t1)=>Array.isArray(t1) && "number" == typeof t1[0];
+            function kt(t1) {
+                return Boolean(!t1 || "string" == typeof t1 && Lt[t1] || Dt(t1) || Array.isArray(t1) && t1.every(kt));
+            }
+            const Rt = ([t1, e, n, s])=>`cubic-bezier(${t1}, ${e}, ${n}, ${s})`, Lt = {
+                linear: "linear",
+                ease: "ease",
+                easeIn: "ease-in",
+                easeOut: "ease-out",
+                easeInOut: "ease-in-out",
+                circIn: Rt([
+                    0,
+                    .65,
+                    .55,
+                    1
+                ]),
+                circOut: Rt([
+                    .55,
+                    0,
+                    1,
+                    .45
+                ]),
+                backIn: Rt([
+                    .31,
+                    .01,
+                    .66,
+                    -0.59
+                ]),
+                backOut: Rt([
+                    .33,
+                    1.53,
+                    .69,
+                    .99
+                ])
+            };
+            function jt(t1) {
+                if (t1) return Dt(t1) ? Rt(t1) : Array.isArray(t1) ? t1.map(jt) : Lt[t1];
+            }
+            const Bt = (t1, e, n)=>(((1 - 3 * n + 3 * e) * t1 + (3 * n - 6 * e)) * t1 + 3 * e) * t1;
+            function Ft(t1, e, s, i) {
+                if (t1 === e && s === i) return n;
+                return (n)=>0 === n || 1 === n ? n : Bt(function(t1, e, n, s, i) {
+                        let o, r, a = 0;
+                        do r = e + (n - e) / 2, o = Bt(r, s, i) - t1, o > 0 ? n = r : e = r;
+                        while (Math.abs(o) > 1e-7 && ++a < 12);
+                        return r;
+                    }(n, 0, 1, t1, s), e, i);
+            }
+            const Ot = Ft(.42, 0, 1, 1), It = Ft(0, 0, .58, 1), Ut = Ft(.42, 0, .58, 1), Nt = (t1)=>(e)=>e <= .5 ? t1(2 * e) / 2 : (2 - t1(2 * (1 - e))) / 2, $t = (t1)=>(e)=>1 - t1(1 - e), Wt = (t1)=>1 - Math.sin(Math.acos(t1)), Ht = $t(Wt), zt = Nt(Ht), Yt = Ft(.33, 1.53, .69, .99), Xt = $t(Yt), Gt = Nt(Xt), qt = {
+                linear: n,
+                easeIn: Ot,
+                easeInOut: Ut,
+                easeOut: It,
+                circIn: Wt,
+                circInOut: zt,
+                circOut: Ht,
+                backIn: Xt,
+                backInOut: Gt,
+                backOut: Yt,
+                anticipate: (t1)=>(t1 *= 2) < 1 ? .5 * Xt(t1) : .5 * (2 - Math.pow(2, -10 * (t1 - 1)))
+            }, Zt = (t1)=>{
+                if (Array.isArray(t1)) {
+                    r(4 === t1.length, "Cubic bezier arrays must contain four numerical values.");
+                    const [e, n, s, i] = t1;
+                    return Ft(e, n, s, i);
+                }
+                return "string" == typeof t1 ? (r(void 0 !== qt[t1], `Invalid easing type '${t1}'`), qt[t1]) : t1;
+            }, Kt = (t1, e, n)=>-n * t1 + n * e + t1;
+            function _t(t1, e, n) {
+                return n < 0 && (n += 1), n > 1 && (n -= 1), n < 1 / 6 ? t1 + 6 * (e - t1) * n : n < .5 ? e : n < 2 / 3 ? t1 + (e - t1) * (2 / 3 - n) * 6 : t1;
+            }
+            const Jt = (t1, e, n)=>{
+                const s = t1 * t1;
+                return Math.sqrt(Math.max(0, n * (e * e - s) + s));
+            }, Qt = [
+                N,
+                U,
+                q
+            ];
+            function te(t1) {
+                const e = (n = t1, Qt.find((t1)=>t1.test(n)));
+                var n;
+                r(Boolean(e), `'${t1}' is not an animatable color. Use the equivalent color code instead.`);
+                let s = e.parse(t1);
+                return e === q && (s = function({ hue: t1, saturation: e, lightness: n, alpha: s }) {
+                    t1 /= 360, n /= 100;
+                    let i = 0, o = 0, r = 0;
+                    if (e /= 100) {
+                        const s = n < .5 ? n * (1 + e) : n + e - n * e, a = 2 * n - s;
+                        i = _t(a, s, t1 + 1 / 3), o = _t(a, s, t1), r = _t(a, s, t1 - 1 / 3);
+                    } else i = o = r = n;
+                    return {
+                        red: Math.round(255 * i),
+                        green: Math.round(255 * o),
+                        blue: Math.round(255 * r),
+                        alpha: s
+                    };
+                }(s)), s;
+            }
+            const ee = (t1, e)=>{
+                const n = te(t1), s = te(e), i = {
+                    ...n
+                };
+                return (t1)=>(i.red = Jt(n.red, s.red, t1), i.green = Jt(n.green, s.green, t1), i.blue = Jt(n.blue, s.blue, t1), i.alpha = Kt(n.alpha, s.alpha, t1), U.transform(i));
+            }, ne = (t1, e)=>(n)=>e(t1(n)), se = (...t1)=>t1.reduce(ne), ie = (t1, e)=>(n)=>`${n > 0 ? e : t1}`;
+            function oe(t1, e) {
+                return "number" == typeof t1 ? (n)=>Kt(t1, e, n) : Z.test(t1) ? ee(t1, e) : t1.startsWith("var(") ? ie(t1, e) : le(t1, e);
+            }
+            const re = (t1, e)=>{
+                const n = [
+                    ...t1
+                ], s = n.length, i = t1.map((t1, n)=>oe(t1, e[n]));
+                return (t1)=>{
+                    for(let e = 0; e < s; e++)n[e] = i[e](t1);
+                    return n;
+                };
+            }, ae = (t1, e)=>{
+                const n = {
+                    ...t1,
+                    ...e
+                }, s = {};
+                for(const i in n)void 0 !== t1[i] && void 0 !== e[i] && (s[i] = oe(t1[i], e[i]));
+                return (t1)=>{
+                    for(const e in s)n[e] = s[e](t1);
+                    return n;
+                };
+            }, le = (t1, e)=>{
+                const n = it.createTransformer(e), s = tt(t1), i = tt(e);
+                return s.numVars === i.numVars && s.numColors === i.numColors && s.numNumbers >= i.numNumbers ? se(re(s.values, i.values), n) : (o(!0, `Complex values '${t1}' and '${e}' too different to mix. Ensure all colors are of the same type, and that each contains the same quantity of number and color values. Falling back to instant transition.`), ie(t1, e));
+            }, ue = (t1, e, n)=>{
+                const s = e - t1;
+                return 0 === s ? 1 : (n - t1) / s;
+            }, ce = (t1, e)=>(n)=>Kt(t1, e, n);
+            function he(t1, e, { clamp: s = !0, ease: i, mixer: o } = {}) {
+                const a = t1.length;
+                if (r(a === e.length, "Both input and output ranges must be the same length"), 1 === a) return ()=>e[0];
+                t1[0] > t1[a - 1] && (t1 = [
+                    ...t1
+                ].reverse(), e = [
+                    ...e
+                ].reverse());
+                const l = function(t1, e, s) {
+                    const i = [], o = s || ("number" == typeof (r = t1[0]) ? ce : "string" == typeof r ? Z.test(r) ? ee : le : Array.isArray(r) ? re : "object" == typeof r ? ae : ce);
+                    var r;
+                    const a = t1.length - 1;
+                    for(let s = 0; s < a; s++){
+                        let r = o(t1[s], t1[s + 1]);
+                        if (e) {
+                            const t1 = Array.isArray(e) ? e[s] || n : e;
+                            r = se(t1, r);
+                        }
+                        i.push(r);
+                    }
+                    return i;
+                }(e, i, o), u = l.length, c = (e)=>{
+                    let n = 0;
+                    if (u > 1) for(; n < t1.length - 2 && !(e < t1[n + 1]); n++);
+                    const s = ue(t1[n], t1[n + 1], e);
+                    return l[n](s);
+                };
+                return s ? (e)=>c(R(t1[0], t1[a - 1], e)) : c;
+            }
+            function de({ duration: t1 = 300, keyframes: e, times: n, ease: s = "easeInOut" }) {
+                const i = ((t1)=>Array.isArray(t1) && "number" != typeof t1[0])(s) ? s.map(Zt) : Zt(s), o = {
+                    done: !1,
+                    value: e[0]
+                }, r = he(function(t1, e) {
+                    return t1.map((t1)=>t1 * e);
+                }(n && n.length === e.length ? n : function(t1) {
+                    const e = [
+                        0
+                    ];
+                    return function(t1, e) {
+                        const n = t1[t1.length - 1];
+                        for(let s = 1; s <= e; s++){
+                            const i = ue(0, e, s);
+                            t1.push(Kt(n, 1, i));
+                        }
+                    }(e, t1.length - 1), e;
+                }(e), t1), e, {
+                    ease: Array.isArray(i) ? i : (a = e, l = i, a.map(()=>l || Ut).splice(0, a.length - 1))
+                });
+                var a, l;
+                return {
+                    calculatedDuration: t1,
+                    next: (e)=>(o.value = r(e), o.done = e >= t1, o)
+                };
+            }
+            function me(t1, e, n) {
+                const s = Math.max(e - 5, 0);
+                return p(n - t1(s), e - s);
+            }
+            function pe(t1, e) {
+                return t1 * Math.sqrt(1 - e * e);
+            }
+            const fe = [
+                "duration",
+                "bounce"
+            ], ge = [
+                "stiffness",
+                "damping",
+                "mass"
+            ];
+            function ye(t1, e) {
+                return e.some((e)=>void 0 !== t1[e]);
+            }
+            function ve({ keyframes: t1, restDelta: e, restSpeed: n, ...s }) {
+                const i = t1[0], r = t1[t1.length - 1], a = {
+                    done: !1,
+                    value: i
+                }, { stiffness: l, damping: u, mass: c, velocity: h, duration: d, isResolvedFromDuration: m } = function(t1) {
+                    let e = {
+                        velocity: 0,
+                        stiffness: 100,
+                        damping: 10,
+                        mass: 1,
+                        isResolvedFromDuration: !1,
+                        ...t1
+                    };
+                    if (!ye(t1, ge) && ye(t1, fe)) {
+                        const n = function({ duration: t1 = 800, bounce: e = .25, velocity: n = 0, mass: s = 1 }) {
+                            let i, r;
+                            o(t1 <= Ct(10), "Spring duration must be 10 seconds or less");
+                            let a = 1 - e;
+                            a = R(.05, 1, a), t1 = R(.01, 10, Mt(t1)), a < 1 ? (i = (e)=>{
+                                const s = e * a, i = s * t1;
+                                return .001 - (s - n) / pe(e, a) * Math.exp(-i);
+                            }, r = (e)=>{
+                                const s = e * a * t1, o = s * n + n, r = Math.pow(a, 2) * Math.pow(e, 2) * t1, l = Math.exp(-s), u = pe(Math.pow(e, 2), a);
+                                return (.001 - i(e) > 0 ? -1 : 1) * ((o - r) * l) / u;
+                            }) : (i = (e)=>Math.exp(-e * t1) * ((e - n) * t1 + 1) - .001, r = (e)=>Math.exp(-e * t1) * (t1 * t1 * (n - e)));
+                            const l = function(t1, e, n) {
+                                let s = n;
+                                for(let n = 1; n < 12; n++)s -= t1(s) / e(s);
+                                return s;
+                            }(i, r, 5 / t1);
+                            if (t1 = Ct(t1), isNaN(l)) return {
+                                stiffness: 100,
+                                damping: 10,
+                                duration: t1
+                            };
+                            {
+                                const e = Math.pow(l, 2) * s;
+                                return {
+                                    stiffness: e,
+                                    damping: 2 * a * Math.sqrt(s * e),
+                                    duration: t1
+                                };
+                            }
+                        }(t1);
+                        e = {
+                            ...e,
+                            ...n,
+                            velocity: 0,
+                            mass: 1
+                        }, e.isResolvedFromDuration = !0;
+                    }
+                    return e;
+                }(s), p = h ? -Mt(h) : 0, f = u / (2 * Math.sqrt(l * c)), g = r - i, y = Mt(Math.sqrt(l / c)), v = Math.abs(g) < 5;
+                let x;
+                if (n || (n = v ? .01 : 2), e || (e = v ? .005 : .5), f < 1) {
+                    const t1 = pe(y, f);
+                    x = (e)=>{
+                        const n = Math.exp(-f * y * e);
+                        return r - n * ((p + f * y * g) / t1 * Math.sin(t1 * e) + g * Math.cos(t1 * e));
+                    };
+                } else if (1 === f) x = (t1)=>r - Math.exp(-y * t1) * (g + (p + y * g) * t1);
+                else {
+                    const t1 = y * Math.sqrt(f * f - 1);
+                    x = (e)=>{
+                        const n = Math.exp(-f * y * e), s = Math.min(t1 * e, 300);
+                        return r - n * ((p + f * y * g) * Math.sinh(s) + t1 * g * Math.cosh(s)) / t1;
+                    };
+                }
+                return {
+                    calculatedDuration: m && d || null,
+                    next: (t1)=>{
+                        const s = x(t1);
+                        if (m) a.done = t1 >= d;
+                        else {
+                            let i = p;
+                            0 !== t1 && (i = f < 1 ? me(x, t1, s) : 0);
+                            const o = Math.abs(i) <= n, l = Math.abs(r - s) <= e;
+                            a.done = o && l;
+                        }
+                        return a.value = a.done ? r : s, a;
+                    }
+                };
+            }
+            function xe({ keyframes: t1, velocity: e = 0, power: n = .8, timeConstant: s = 325, bounceDamping: i = 10, bounceStiffness: o = 500, modifyTarget: r, min: a, max: l, restDelta: u = .5, restSpeed: c }) {
+                const h = t1[0], d = {
+                    done: !1,
+                    value: h
+                }, m = (t1)=>void 0 === a ? l : void 0 === l || Math.abs(a - t1) < Math.abs(l - t1) ? a : l;
+                let p = n * e;
+                const f = h + p, g = void 0 === r ? f : r(f);
+                g !== f && (p = g - h);
+                const y = (t1)=>-p * Math.exp(-t1 / s), v = (t1)=>g + y(t1), x = (t1)=>{
+                    const e = y(t1), n = v(t1);
+                    d.done = Math.abs(e) <= u, d.value = d.done ? g : n;
+                };
+                let P, b;
+                const T = (t1)=>{
+                    var e;
+                    e = d.value, (void 0 !== a && e < a || void 0 !== l && e > l) && (P = t1, b = ve({
+                        keyframes: [
+                            d.value,
+                            m(d.value)
+                        ],
+                        velocity: me(v, t1, d.value),
+                        damping: i,
+                        stiffness: o,
+                        restDelta: u,
+                        restSpeed: c
+                    }));
+                };
+                return T(0), {
+                    calculatedDuration: null,
+                    next: (t1)=>{
+                        let e = !1;
+                        return b || void 0 !== P || (e = !0, x(t1), T(t1)), void 0 !== P && t1 > P ? b.next(t1 - P) : (!e && x(t1), d);
+                    }
+                };
+            }
+            const Pe = (t1)=>{
+                const e = ({ timestamp: e })=>t1(e);
+                return {
+                    start: ()=>y.update(e, !0),
+                    stop: ()=>v(e),
+                    now: ()=>x.isProcessing ? x.timestamp : performance.now()
+                };
+            };
+            function be(t1) {
+                let e = 0, n = t1.next(e);
+                for(; !n.done && e < 2e4;)e += 50, n = t1.next(e);
+                return e >= 2e4 ? 1 / 0 : e;
+            }
+            const Te = {
+                decay: xe,
+                inertia: xe,
+                tween: de,
+                keyframes: de,
+                spring: ve
+            };
+            function Se({ autoplay: t1 = !0, delay: e = 0, driver: n = Pe, keyframes: s, type: i = "keyframes", repeat: o = 0, repeatDelay: r = 0, repeatType: a = "loop", onPlay: l, onStop: u, onComplete: c, onUpdate: h, ...d }) {
+                let m, p, f = 1, g = !1;
+                const y = ()=>{
+                    p = new Promise((t1)=>{
+                        m = t1;
+                    });
+                };
+                let v;
+                y();
+                const x = Te[i] || de;
+                let P;
+                x !== de && "number" != typeof s[0] && (P = he([
+                    0,
+                    100
+                ], s, {
+                    clamp: !1
+                }), s = [
+                    0,
+                    100
+                ]);
+                const b = x({
+                    ...d,
+                    keyframes: s
+                });
+                let T;
+                "mirror" === a && (T = x({
+                    ...d,
+                    keyframes: [
+                        ...s
+                    ].reverse(),
+                    velocity: -(d.velocity || 0)
+                }));
+                let S = "idle", w = null, E = null, A = null;
+                null === b.calculatedDuration && o && (b.calculatedDuration = be(b));
+                const { calculatedDuration: V } = b;
+                let C = 1 / 0, M = 1 / 0;
+                null !== V && (C = V + r, M = C * (o + 1) - r);
+                let D = 0;
+                const k = (t1)=>{
+                    if (null === E) return;
+                    f > 0 && (E = Math.min(E, t1)), f < 0 && (E = Math.min(t1 - M / f, E)), D = null !== w ? w : Math.round(t1 - E) * f;
+                    const n = D - e * (f >= 0 ? 1 : -1), i = f >= 0 ? n < 0 : n > M;
+                    D = Math.max(n, 0), "finished" === S && null === w && (D = M);
+                    let l = D, u = b;
+                    if (o) {
+                        const t1 = D / C;
+                        let e = Math.floor(t1), n = t1 % 1;
+                        !n && t1 >= 1 && (n = 1), 1 === n && e--, e = Math.min(e, o + 1);
+                        const s = Boolean(e % 2);
+                        s && ("reverse" === a ? (n = 1 - n, r && (n -= r / C)) : "mirror" === a && (u = T));
+                        let i = R(0, 1, n);
+                        D > M && (i = "reverse" === a && s ? 1 : 0), l = i * C;
+                    }
+                    const c = i ? {
+                        done: !1,
+                        value: s[0]
+                    } : u.next(l);
+                    P && (c.value = P(c.value));
+                    let { done: d } = c;
+                    i || null === V || (d = f >= 0 ? D >= M : D <= 0);
+                    const m = null === w && ("finished" === S || "running" === S && d);
+                    return h && h(c.value), m && B(), c;
+                }, L = ()=>{
+                    v && v.stop(), v = void 0;
+                }, j = ()=>{
+                    S = "idle", L(), m(), y(), E = A = null;
+                }, B = ()=>{
+                    S = "finished", c && c(), L(), m();
+                }, F = ()=>{
+                    if (g) return;
+                    v || (v = n(k));
+                    const t1 = v.now();
+                    l && l(), null !== w ? E = t1 - w : E && "finished" !== S || (E = t1), "finished" === S && y(), A = E, w = null, S = "running", v.start();
+                };
+                t1 && F();
+                const O = {
+                    then: (t1, e)=>p.then(t1, e),
+                    get time () {
+                        return Mt(D);
+                    },
+                    set time (t){
+                        t = Ct(t), D = t, null === w && v && 0 !== f ? E = v.now() - t / f : w = t;
+                    },
+                    get duration () {
+                        const t1 = null === b.calculatedDuration ? be(b) : b.calculatedDuration;
+                        return Mt(t1);
+                    },
+                    get speed () {
+                        return f;
+                    },
+                    set speed (t){
+                        t !== f && v && (f = t, O.time = Mt(D));
+                    },
+                    get state () {
+                        return S;
+                    },
+                    play: F,
+                    pause: ()=>{
+                        S = "paused", w = D;
+                    },
+                    stop: ()=>{
+                        g = !0, "idle" !== S && (S = "idle", u && u(), j());
+                    },
+                    cancel: ()=>{
+                        null !== A && k(A), j();
+                    },
+                    complete: ()=>{
+                        S = "finished";
+                    },
+                    sample: (t1)=>(E = 0, k(t1))
+                };
+                return O;
+            }
+            const we = function(t1) {
+                let e;
+                return ()=>(void 0 === e && (e = Object.hasOwnProperty.call(Element.prototype, "animate")), e);
+            }(), Ee = new Set([
+                "opacity",
+                "clipPath",
+                "filter",
+                "transform",
+                "backgroundColor"
+            ]);
+            const Ae = {
+                type: "spring",
+                stiffness: 500,
+                damping: 25,
+                restSpeed: 10
+            }, Ve = {
+                type: "keyframes",
+                duration: .8
+            }, Ce = {
+                type: "keyframes",
+                ease: [
+                    .25,
+                    .1,
+                    .35,
+                    1
+                ],
+                duration: .3
+            }, Me = (t1, { keyframes: e })=>e.length > 2 ? Ve : Et.has(t1) ? t1.startsWith("scale") ? {
+                    type: "spring",
+                    stiffness: 550,
+                    damping: 0 === e[1] ? 2 * Math.sqrt(550) : 30,
+                    restSpeed: 10
+                } : Ae : Ce, De = (t1, e)=>!("zIndex" === t1 || "number" != typeof e && !Array.isArray(e) && ("string" != typeof e || !it.test(e) && "0" !== e || e.startsWith("url(")));
+            function ke(t1) {
+                return "number" == typeof t1 ? 0 === t1 : null !== t1 ? "none" === t1 || "0" === t1 || u(t1) : void 0;
+            }
+            function Re(t1, e) {
+                return t1[e] || t1.default || t1;
+            }
+            const Le = (t1, e, s, i = {})=>(r)=>{
+                    const a = Re(i, t1) || {}, l = a.delay || i.delay || 0;
+                    let { elapsed: u = 0 } = i;
+                    u -= Ct(l);
+                    const c = function(t1, e, n, s) {
+                        const i = De(e, n);
+                        let o;
+                        o = Array.isArray(n) ? [
+                            ...n
+                        ] : [
+                            null,
+                            n
+                        ];
+                        const r = void 0 !== s.from ? s.from : t1.get();
+                        let a;
+                        const l = [];
+                        for(let t1 = 0; t1 < o.length; t1++)null === o[t1] && (o[t1] = 0 === t1 ? r : o[t1 - 1]), ke(o[t1]) && l.push(t1), "string" == typeof o[t1] && "none" !== o[t1] && "0" !== o[t1] && (a = o[t1]);
+                        if (i && l.length && a) for(let t1 = 0; t1 < l.length; t1++)o[l[t1]] = mt(e, a);
+                        return o;
+                    }(e, t1, s, a), h = c[0], d = c[c.length - 1], m = De(t1, h), p = De(t1, d);
+                    o(m === p, `You are trying to animate ${t1} from "${h}" to "${d}". ${h} is not an animatable value - to enable this animation set ${h} to a value animatable to ${d} via the \`style\` property.`);
+                    let f = {
+                        keyframes: c,
+                        velocity: e.getVelocity(),
+                        ease: "easeOut",
+                        ...a,
+                        delay: -u,
+                        onUpdate: (t1)=>{
+                            e.set(t1), a.onUpdate && a.onUpdate(t1);
+                        },
+                        onComplete: ()=>{
+                            r(), a.onComplete && a.onComplete();
+                        }
+                    };
+                    if (function({ when: t1, delay: e, delayChildren: n, staggerChildren: s, staggerDirection: i, repeat: o, repeatType: r, repeatDelay: a, from: l, elapsed: u, ...c }) {
+                        return !!Object.keys(c).length;
+                    }(a) || (f = {
+                        ...f,
+                        ...Me(t1, f)
+                    }), f.duration && (f.duration = Ct(f.duration)), f.repeatDelay && (f.repeatDelay = Ct(f.repeatDelay)), !m || !p || !1 === a.type) return function({ keyframes: t1, delay: e, onUpdate: s, onComplete: i }) {
+                        const o = ()=>(s && s(t1[t1.length - 1]), i && i(), {
+                                time: 0,
+                                speed: 1,
+                                duration: 0,
+                                play: n,
+                                pause: n,
+                                stop: n,
+                                then: (t1)=>(t1(), Promise.resolve()),
+                                cancel: n,
+                                complete: n
+                            });
+                        return e ? Se({
+                            keyframes: [
+                                0,
+                                1
+                            ],
+                            duration: 0,
+                            delay: e,
+                            onComplete: o
+                        }) : o();
+                    }(f);
+                    if (e.owner && e.owner.current instanceof HTMLElement && !e.owner.getProps().onUpdate) {
+                        const s = function(t1, e, { onUpdate: s, onComplete: i, ...o }) {
+                            if (!we() || !Ee.has(e) || o.repeatDelay || "mirror" === o.repeatType || 0 === o.damping || "inertia" === o.type) return !1;
+                            let r, a, l = !1;
+                            const u = ()=>{
+                                a = new Promise((t1)=>{
+                                    r = t1;
+                                });
+                            };
+                            u();
+                            let { keyframes: c, duration: h = 300, ease: d, times: m } = o;
+                            if (((t1, e)=>"spring" === e.type || "backgroundColor" === t1 || !kt(e.ease))(e, o)) {
+                                const t1 = Se({
+                                    ...o,
+                                    repeat: 0,
+                                    delay: 0
+                                });
+                                let e = {
+                                    done: !1,
+                                    value: c[0]
+                                };
+                                const n = [];
+                                let s = 0;
+                                for(; !e.done && s < 2e4;)e = t1.sample(s), n.push(e.value), s += 10;
+                                m = void 0, c = n, h = s - 10, d = "linear";
+                            }
+                            const p = function(t1, e, n, { delay: s = 0, duration: i, repeat: o = 0, repeatType: r = "loop", ease: a, times: l } = {}) {
+                                const u = {
+                                    [e]: n
+                                };
+                                l && (u.offset = l);
+                                const c = jt(a);
+                                return Array.isArray(c) && (u.easing = c), t1.animate(u, {
+                                    delay: s,
+                                    duration: i,
+                                    easing: Array.isArray(c) ? "linear" : c,
+                                    fill: "both",
+                                    iterations: o + 1,
+                                    direction: "reverse" === r ? "alternate" : "normal"
+                                });
+                            }(t1.owner.current, e, c, {
+                                ...o,
+                                duration: h,
+                                ease: d,
+                                times: m
+                            });
+                            o.syncStart && (p.startTime = x.isProcessing ? x.timestamp : document.timeline ? document.timeline.currentTime : performance.now());
+                            const f = ()=>p.cancel(), g = ()=>{
+                                y.update(f), r(), u();
+                            };
+                            return p.onfinish = ()=>{
+                                t1.set(function(t1, { repeat: e, repeatType: n = "loop" }) {
+                                    return t1[e && "loop" !== n && e % 2 == 1 ? 0 : t1.length - 1];
+                                }(c, o)), i && i(), g();
+                            }, {
+                                then: (t1, e)=>a.then(t1, e),
+                                attachTimeline: (t1)=>(p.timeline = t1, p.onfinish = null, n),
+                                get time () {
+                                    return Mt(p.currentTime || 0);
+                                },
+                                set time (t){
+                                    p.currentTime = Ct(t);
+                                },
+                                get speed () {
+                                    return p.playbackRate;
+                                },
+                                set speed (t){
+                                    p.playbackRate = t;
+                                },
+                                get duration () {
+                                    return Mt(h);
+                                },
+                                play: ()=>{
+                                    l || (p.play(), v(f));
+                                },
+                                pause: ()=>p.pause(),
+                                stop: ()=>{
+                                    if (l = !0, "idle" === p.playState) return;
+                                    const { currentTime: e } = p;
+                                    if (e) {
+                                        const n = Se({
+                                            ...o,
+                                            autoplay: !1
+                                        });
+                                        t1.setWithVelocity(n.sample(e - 10).value, n.sample(e).value, 10);
+                                    }
+                                    g();
+                                },
+                                complete: ()=>p.finish(),
+                                cancel: g
+                            };
+                        }(e, t1, f);
+                        if (s) return s;
+                    }
+                    return Se(f);
+                }, je = (t1)=>Boolean(t1 && t1.getVelocity);
+            function Be(t1) {
+                return Boolean(je(t1) && t1.add);
+            }
+            function Fe({ protectedKeys: t1, needsAnimating: e }, n) {
+                const s = t1.hasOwnProperty(n) && !0 !== e[n];
+                return e[n] = !1, s;
+            }
+            function Oe(t1, e, { delay: n = 0, transitionOverride: s, type: i } = {}) {
+                let { transition: o = t1.getDefaultTransition(), transitionEnd: r, ...a } = t1.makeTargetAnimatable(e);
+                const l = t1.getValue("willChange");
+                s && (o = s);
+                const u = [], c = i && t1.animationState && t1.animationState.getState()[i];
+                for(const e in a){
+                    const s = t1.getValue(e), i = a[e];
+                    if (!s || void 0 === i || c && Fe(c, e)) continue;
+                    const r = {
+                        delay: n,
+                        elapsed: 0,
+                        ...o
+                    };
+                    if (window.HandoffAppearAnimations && !s.hasAnimated) {
+                        const n = t1.getProps()[Vt];
+                        n && (r.elapsed = window.HandoffAppearAnimations(n, e, s, y), r.syncStart = !0);
+                    }
+                    s.start(Le(e, s, i, t1.shouldReduceMotion && Et.has(e) ? {
+                        type: !1
+                    } : r));
+                    const h = s.animation;
+                    Be(l) && (l.add(e), h.then(()=>l.remove(e))), u.push(h);
+                }
+                return r && Promise.all(u).then(()=>{
+                    r && bt(t1, r);
+                }), u;
+            }
+            function Ie(t1, e, n = {}) {
+                const s = xt(t1, e, n.custom);
+                let { transition: i = t1.getDefaultTransition() || {} } = s || {};
+                n.transitionOverride && (i = n.transitionOverride);
+                const o = s ? ()=>Promise.all(Oe(t1, s, n)) : ()=>Promise.resolve(), r = t1.variantChildren && t1.variantChildren.size ? (s = 0)=>{
+                    const { delayChildren: o = 0, staggerChildren: r, staggerDirection: a } = i;
+                    return function(t1, e, n = 0, s = 0, i = 1, o) {
+                        const r = [], a = (t1.variantChildren.size - 1) * s, l = 1 === i ? (t1 = 0)=>t1 * s : (t1 = 0)=>a - t1 * s;
+                        return Array.from(t1.variantChildren).sort(Ue).forEach((t1, s)=>{
+                            t1.notify("AnimationStart", e), r.push(Ie(t1, e, {
+                                ...o,
+                                delay: n + l(s)
+                            }).then(()=>t1.notify("AnimationComplete", e)));
+                        }), Promise.all(r);
+                    }(t1, e, o + s, r, a, n);
+                } : ()=>Promise.resolve(), { when: a } = i;
+                if (a) {
+                    const [t1, e] = "beforeChildren" === a ? [
+                        o,
+                        r
+                    ] : [
+                        r,
+                        o
+                    ];
+                    return t1().then(()=>e());
+                }
+                return Promise.all([
+                    o(),
+                    r(n.delay)
+                ]);
+            }
+            function Ue(t1, e) {
+                return t1.sortNodePosition(e);
+            }
+            function Ne(t1, e, n = {}) {
+                let s;
+                if (t1.notify("AnimationStart", e), Array.isArray(e)) {
+                    const i = e.map((e)=>Ie(t1, e, n));
+                    s = Promise.all(i);
+                } else if ("string" == typeof e) s = Ie(t1, e, n);
+                else {
+                    const i = "function" == typeof e ? xt(t1, e, n.custom) : e;
+                    s = Promise.all(Oe(t1, i, n));
+                }
+                return s.then(()=>t1.notify("AnimationComplete", e));
+            }
+            function $e() {
+                let t1 = !1;
+                const e = new Set, n = {
+                    subscribe: (t1)=>(e.add(t1), ()=>{
+                            e.delete(t1);
+                        }),
+                    start (n, s) {
+                        r(t1, "controls.start() should only be called after a component has mounted. Consider calling within a useEffect hook.");
+                        const i = [];
+                        return e.forEach((t1)=>{
+                            i.push(Ne(t1, n, {
+                                transitionOverride: s
+                            }));
+                        }), Promise.all(i);
+                    },
+                    set: (n)=>(r(t1, "controls.set() should only be called after a component has mounted. Consider calling within a useEffect hook."), e.forEach((t1)=>{
+                            !function(t1, e) {
+                                Array.isArray(e) ? Tt(t1, e) : "string" == typeof e ? Tt(t1, [
+                                    e
+                                ]) : bt(t1, e);
+                            }(t1, n);
+                        })),
+                    stop () {
+                        e.forEach((t1)=>{
+                            !function(t1) {
+                                t1.values.forEach((t1)=>t1.stop());
+                            }(t1);
+                        });
+                    },
+                    mount: ()=>(t1 = !0, ()=>{
+                            t1 = !1, n.stop();
+                        })
+                };
+                return n;
+            }
+            function We(e) {
+                const n = (0, t1.useRef)(null);
+                return null === n.current && (n.current = e()), n.current;
+            }
+            const He = "undefined" != typeof document, ze = He ? t1.useLayoutEffect : t1.useEffect, Ye = (0, t1.createContext)({
+                transformPagePoint: (t1)=>t1,
+                isStatic: !1,
+                reducedMotion: "never"
+            }), Xe = (0, t1.createContext)({}), Ge = (0, t1.createContext)(null), qe = (0, t1.createContext)({
+                strict: !1
+            });
+            function Ze(t1) {
+                return "object" == typeof t1 && Object.prototype.hasOwnProperty.call(t1, "current");
+            }
+            function Ke(t1) {
+                return "string" == typeof t1 || Array.isArray(t1);
+            }
+            function _e(t1) {
+                return "object" == typeof t1 && "function" == typeof t1.start;
+            }
+            const Je = [
+                "animate",
+                "whileInView",
+                "whileFocus",
+                "whileHover",
+                "whileTap",
+                "whileDrag",
+                "exit"
+            ], Qe = [
+                "initial",
+                ...Je
+            ];
+            function tn(t1) {
+                return _e(t1.animate) || Qe.some((e)=>Ke(t1[e]));
+            }
+            function en(t1) {
+                return Boolean(tn(t1) || t1.variants);
+            }
+            function nn(t1) {
+                return Array.isArray(t1) ? t1.join(" ") : t1;
+            }
+            const sn = {
+                animation: [
+                    "animate",
+                    "variants",
+                    "whileHover",
+                    "whileTap",
+                    "exit",
+                    "whileInView",
+                    "whileFocus",
+                    "whileDrag"
+                ],
+                exit: [
+                    "exit"
+                ],
+                drag: [
+                    "drag",
+                    "dragControls"
+                ],
+                focus: [
+                    "whileFocus"
+                ],
+                hover: [
+                    "whileHover",
+                    "onHoverStart",
+                    "onHoverEnd"
+                ],
+                tap: [
+                    "whileTap",
+                    "onTap",
+                    "onTapStart",
+                    "onTapCancel"
+                ],
+                pan: [
+                    "onPan",
+                    "onPanStart",
+                    "onPanSessionStart",
+                    "onPanEnd"
+                ],
+                inView: [
+                    "whileInView",
+                    "onViewportEnter",
+                    "onViewportLeave"
+                ],
+                layout: [
+                    "layout",
+                    "layoutId"
+                ]
+            }, on = {};
+            for(const t1 in sn)on[t1] = {
+                isEnabled: (e)=>sn[t1].some((t1)=>!!e[t1])
+            };
+            const rn = (0, t1.createContext)({}), an = (0, t1.createContext)({}), ln = Symbol.for("motionComponentSymbol");
+            function un({ preloadedFeatures: e, createVisualElement: n, useRender: s, useVisualState: i, Component: o }) {
+                e && function(t1) {
+                    for(const e in t1)on[e] = {
+                        ...on[e],
+                        ...t1[e]
+                    };
+                }(e);
+                const r = (0, t1.forwardRef)(function(r, a) {
+                    let l;
+                    const u = {
+                        ...(0, t1.useContext)(Ye),
+                        ...r,
+                        layoutId: cn(r)
+                    }, { isStatic: c } = u, h = function(e) {
+                        const { initial: n, animate: s } = function(t1, e) {
+                            if (tn(t1)) {
+                                const { initial: e, animate: n } = t1;
+                                return {
+                                    initial: !1 === e || Ke(e) ? e : void 0,
+                                    animate: Ke(n) ? n : void 0
+                                };
+                            }
+                            return !1 !== t1.inherit ? e : {};
+                        }(e, (0, t1.useContext)(Xe));
+                        return (0, t1.useMemo)(()=>({
+                                initial: n,
+                                animate: s
+                            }), [
+                            nn(n),
+                            nn(s)
+                        ]);
+                    }(r), d = i(r, c);
+                    if (!c && He) {
+                        h.visualElement = function(e, n, s, i) {
+                            const { visualElement: o } = (0, t1.useContext)(Xe), r = (0, t1.useContext)(qe), a = (0, t1.useContext)(Ge), l = (0, t1.useContext)(Ye).reducedMotion, u = (0, t1.useRef)();
+                            i = i || r.renderer, !u.current && i && (u.current = i(e, {
+                                visualState: n,
+                                parent: o,
+                                props: s,
+                                presenceContext: a,
+                                blockInitialAnimation: !!a && !1 === a.initial,
+                                reducedMotionConfig: l
+                            }));
+                            const c = u.current;
+                            (0, t1.useInsertionEffect)(()=>{
+                                c && c.update(s, a);
+                            });
+                            const h = (0, t1.useRef)(Boolean(window.HandoffAppearAnimations));
+                            return ze(()=>{
+                                c && (c.render(), h.current && c.animationState && c.animationState.animateChanges());
+                            }), (0, t1.useEffect)(()=>{
+                                c && (c.updateFeatures(), !h.current && c.animationState && c.animationState.animateChanges(), window.HandoffAppearAnimations = void 0, h.current = !1);
+                            }), c;
+                        }(o, d, u, n);
+                        const s = (0, t1.useContext)(an), i = (0, t1.useContext)(qe).strict;
+                        h.visualElement && (l = h.visualElement.loadFeatures(u, i, e, s));
+                    }
+                    return t1.createElement(Xe.Provider, {
+                        value: h
+                    }, l && h.visualElement ? t1.createElement(l, {
+                        visualElement: h.visualElement,
+                        ...u
+                    }) : null, s(o, r, function(e, n, s) {
+                        return (0, t1.useCallback)((t1)=>{
+                            t1 && e.mount && e.mount(t1), n && (t1 ? n.mount(t1) : n.unmount()), s && ("function" == typeof s ? s(t1) : Ze(s) && (s.current = t1));
+                        }, [
+                            n
+                        ]);
+                    }(d, h.visualElement, a), d, c, h.visualElement));
+                });
+                return r[ln] = o, r;
+            }
+            function cn({ layoutId: e }) {
+                const n = (0, t1.useContext)(rn).id;
+                return n && void 0 !== e ? n + "-" + e : e;
+            }
+            function hn(t1) {
+                function e(e, n = {}) {
+                    return un(t1(e, n));
+                }
+                if ("undefined" == typeof Proxy) return e;
+                const n = new Map;
+                return new Proxy(e, {
+                    get: (t1, s)=>(n.has(s) || n.set(s, e(s)), n.get(s))
+                });
+            }
+            const dn = [
+                "animate",
+                "circle",
+                "defs",
+                "desc",
+                "ellipse",
+                "g",
+                "image",
+                "line",
+                "filter",
+                "marker",
+                "mask",
+                "metadata",
+                "path",
+                "pattern",
+                "polygon",
+                "polyline",
+                "rect",
+                "stop",
+                "switch",
+                "symbol",
+                "svg",
+                "text",
+                "tspan",
+                "use",
+                "view"
+            ];
+            function mn(t1) {
+                return "string" == typeof t1 && !t1.includes("-") && !!(dn.indexOf(t1) > -1 || /[A-Z]/.test(t1));
+            }
+            const pn = {};
+            function fn(t1, { layout: e, layoutId: n }) {
+                return Et.has(t1) || t1.startsWith("origin") || (e || void 0 !== n) && (!!pn[t1] || "opacity" === t1);
+            }
+            const gn = {
+                x: "translateX",
+                y: "translateY",
+                z: "translateZ",
+                transformPerspective: "perspective"
+            }, yn = wt.length, vn = (t1, e)=>e && "number" == typeof t1 ? e.transform(t1) : t1;
+            function xn(t1, e, n, s) {
+                const { style: i, vars: o, transform: r, transformOrigin: a } = t1;
+                let l = !1, u = !1, c = !0;
+                for(const t1 in e){
+                    const n = e[t1];
+                    if (E(t1)) {
+                        o[t1] = n;
+                        continue;
+                    }
+                    const s = ct[t1], h = vn(n, s);
+                    if (Et.has(t1)) {
+                        if (l = !0, r[t1] = h, !c) continue;
+                        n !== (s.default || 0) && (c = !1);
+                    } else t1.startsWith("origin") ? (u = !0, a[t1] = h) : i[t1] = h;
+                }
+                if (e.transform || (l || s ? i.transform = function(t1, { enableHardwareAcceleration: e = !0, allowTransformNone: n = !0 }, s, i) {
+                    let o = "";
+                    for(let e = 0; e < yn; e++){
+                        const n = wt[e];
+                        void 0 !== t1[n] && (o += `${gn[n] || n}(${t1[n]}) `);
+                    }
+                    return e && !t1.z && (o += "translateZ(0)"), o = o.trim(), i ? o = i(t1, s ? "" : o) : n && s && (o = "none"), o;
+                }(t1.transform, n, c, s) : i.transform && (i.transform = "none")), u) {
+                    const { originX: t1 = "50%", originY: e = "50%", originZ: n = 0 } = a;
+                    i.transformOrigin = `${t1} ${e} ${n}`;
+                }
+            }
+            function Pn(t1, e, n) {
+                for(const s in e)je(e[s]) || fn(s, n) || (t1[s] = e[s]);
+            }
+            function bn(e, n, s) {
+                const i = {}, o = function(e, n, s) {
+                    const i = {};
+                    return Pn(i, e.style || {}, e), Object.assign(i, function({ transformTemplate: e }, n, s) {
+                        return (0, t1.useMemo)(()=>{
+                            const t1 = {
+                                style: {},
+                                transform: {},
+                                transformOrigin: {},
+                                vars: {}
+                            };
+                            return xn(t1, n, {
+                                enableHardwareAcceleration: !s
+                            }, e), Object.assign({}, t1.vars, t1.style);
+                        }, [
+                            n
+                        ]);
+                    }(e, n, s)), e.transformValues ? e.transformValues(i) : i;
+                }(e, n, s);
+                return e.drag && !1 !== e.dragListener && (i.draggable = !1, o.userSelect = o.WebkitUserSelect = o.WebkitTouchCallout = "none", o.touchAction = !0 === e.drag ? "none" : "pan-" + ("x" === e.drag ? "y" : "x")), void 0 === e.tabIndex && (e.onTap || e.onTapStart || e.whileTap) && (i.tabIndex = 0), i.style = o, i;
+            }
+            const Tn = new Set([
+                "animate",
+                "exit",
+                "variants",
+                "initial",
+                "style",
+                "values",
+                "variants",
+                "transition",
+                "transformTemplate",
+                "transformValues",
+                "custom",
+                "inherit",
+                "onLayoutAnimationStart",
+                "onLayoutAnimationComplete",
+                "onLayoutMeasure",
+                "onBeforeLayoutMeasure",
+                "onAnimationStart",
+                "onAnimationComplete",
+                "onUpdate",
+                "onDragStart",
+                "onDrag",
+                "onDragEnd",
+                "onMeasureDragConstraints",
+                "onDirectionLock",
+                "onDragTransitionEnd",
+                "_dragX",
+                "_dragY",
+                "onHoverStart",
+                "onHoverEnd",
+                "onViewportEnter",
+                "onViewportLeave",
+                "ignoreStrict",
+                "viewport"
+            ]);
+            function Sn(t1) {
+                return t1.startsWith("while") || t1.startsWith("drag") && "draggable" !== t1 || t1.startsWith("layout") || t1.startsWith("onTap") || t1.startsWith("onPan") || Tn.has(t1);
+            }
+            let wn = (t1)=>!Sn(t1);
+            try {
+                (En = require("e996e754a73e414b").default) && (wn = (t1)=>t1.startsWith("on") ? !Sn(t1) : En(t1));
+            } catch (t1) {}
+            var En;
+            function An(t1, e, n) {
+                return "string" == typeof t1 ? t1 : z.transform(e + n * t1);
+            }
+            const Vn = {
+                offset: "stroke-dashoffset",
+                array: "stroke-dasharray"
+            }, Cn = {
+                offset: "strokeDashoffset",
+                array: "strokeDasharray"
+            };
+            function Mn(t1, { attrX: e, attrY: n, attrScale: s, originX: i, originY: o, pathLength: r, pathSpacing: a = 1, pathOffset: l = 0, ...u }, c, h, d) {
+                if (xn(t1, u, c, d), h) return void (t1.style.viewBox && (t1.attrs.viewBox = t1.style.viewBox));
+                t1.attrs = t1.style, t1.style = {};
+                const { attrs: m, style: p, dimensions: f } = t1;
+                m.transform && (f && (p.transform = m.transform), delete m.transform), f && (void 0 !== i || void 0 !== o || p.transform) && (p.transformOrigin = function(t1, e, n) {
+                    return `${An(e, t1.x, t1.width)} ${An(n, t1.y, t1.height)}`;
+                }(f, void 0 !== i ? i : .5, void 0 !== o ? o : .5)), void 0 !== e && (m.x = e), void 0 !== n && (m.y = n), void 0 !== s && (m.scale = s), void 0 !== r && function(t1, e, n = 1, s = 0, i = !0) {
+                    t1.pathLength = 1;
+                    const o = i ? Vn : Cn;
+                    t1[o.offset] = z.transform(-s);
+                    const r = z.transform(e), a = z.transform(n);
+                    t1[o.array] = `${r} ${a}`;
+                }(m, r, a, l, !1);
+            }
+            const Dn = (t1)=>"string" == typeof t1 && "svg" === t1.toLowerCase();
+            function kn(e, n, s, i) {
+                const o = (0, t1.useMemo)(()=>{
+                    const t1 = {
+                        style: {},
+                        transform: {},
+                        transformOrigin: {},
+                        vars: {},
+                        attrs: {}
+                    };
+                    return Mn(t1, n, {
+                        enableHardwareAcceleration: !1
+                    }, Dn(i), e.transformTemplate), {
+                        ...t1.attrs,
+                        style: {
+                            ...t1.style
+                        }
+                    };
+                }, [
+                    n
+                ]);
+                if (e.style) {
+                    const t1 = {};
+                    Pn(t1, e.style, e), o.style = {
+                        ...t1,
+                        ...o.style
+                    };
+                }
+                return o;
+            }
+            function Rn(e = !1) {
+                return (n, s, i, { latestValues: o }, r)=>{
+                    const a = (mn(n) ? kn : bn)(s, o, r, n), l = {
+                        ...function(t1, e, n) {
+                            const s = {};
+                            for(const i in t1)"values" === i && "object" == typeof t1.values || (wn(i) || !0 === n && Sn(i) || !e && !Sn(i) || t1.draggable && i.startsWith("onDrag")) && (s[i] = t1[i]);
+                            return s;
+                        }(s, "string" == typeof n, e),
+                        ...a,
+                        ref: i
+                    }, { children: u } = s, c = (0, t1.useMemo)(()=>je(u) ? u.get() : u, [
+                        u
+                    ]);
+                    return (0, t1.createElement)(n, {
+                        ...l,
+                        children: c
+                    });
+                };
+            }
+            function Ln(t1, { style: e, vars: n }, s, i) {
+                Object.assign(t1.style, e, i && i.getProjectionStyles(s));
+                for(const e in n)t1.style.setProperty(e, n[e]);
+            }
+            const jn = new Set([
+                "baseFrequency",
+                "diffuseConstant",
+                "kernelMatrix",
+                "kernelUnitLength",
+                "keySplines",
+                "keyTimes",
+                "limitingConeAngle",
+                "markerHeight",
+                "markerWidth",
+                "numOctaves",
+                "targetX",
+                "targetY",
+                "surfaceScale",
+                "specularConstant",
+                "specularExponent",
+                "stdDeviation",
+                "tableValues",
+                "viewBox",
+                "gradientTransform",
+                "pathLength",
+                "startOffset",
+                "textLength",
+                "lengthAdjust"
+            ]);
+            function Bn(t1, e, n, s) {
+                Ln(t1, e, void 0, s);
+                for(const n in e.attrs)t1.setAttribute(jn.has(n) ? n : At(n), e.attrs[n]);
+            }
+            function Fn(t1, e) {
+                const { style: n } = t1, s = {};
+                for(const i in n)(je(n[i]) || e.style && je(e.style[i]) || fn(i, t1)) && (s[i] = n[i]);
+                return s;
+            }
+            function On(t1, e) {
+                const n = Fn(t1, e);
+                for(const s in t1)(je(t1[s]) || je(e[s])) && (n[-1 !== wt.indexOf(s) ? "attr" + s.charAt(0).toUpperCase() + s.substring(1) : s] = t1[s]);
+                return n;
+            }
+            function In(t1) {
+                const e = je(t1) ? t1.get() : t1;
+                var n;
+                return n = e, Boolean(n && "object" == typeof n && n.mix && n.toValue) ? e.toValue() : e;
+            }
+            const Un = (e)=>(n, s)=>{
+                    const i = (0, t1.useContext)(Xe), o = (0, t1.useContext)(Ge), r = ()=>(function({ scrapeMotionValuesFromProps: t1, createRenderState: e, onMount: n }, s, i, o) {
+                            const r = {
+                                latestValues: Nn(s, i, o, t1),
+                                renderState: e()
+                            };
+                            return n && (r.mount = (t1)=>n(s, t1, r)), r;
+                        })(e, n, i, o);
+                    return s ? r() : We(r);
+                };
+            function Nn(t1, e, n, s) {
+                const i = {}, o = s(t1, {});
+                for(const t1 in o)i[t1] = In(o[t1]);
+                let { initial: r, animate: a } = t1;
+                const l = tn(t1), u = en(t1);
+                e && u && !l && !1 !== t1.inherit && (void 0 === r && (r = e.initial), void 0 === a && (a = e.animate));
+                let c = !!n && !1 === n.initial;
+                c = c || !1 === r;
+                const h = c ? a : r;
+                return h && "boolean" != typeof h && !_e(h) && (Array.isArray(h) ? h : [
+                    h
+                ]).forEach((e)=>{
+                    const n = vt(t1, e);
+                    if (!n) return;
+                    const { transitionEnd: s, transition: o, ...r } = n;
+                    for(const t1 in r){
+                        let e = r[t1];
+                        Array.isArray(e) && (e = e[c ? e.length - 1 : 0]), null !== e && (i[t1] = e);
+                    }
+                    for(const t1 in s)i[t1] = s[t1];
+                }), i;
+            }
+            const $n = {
+                useVisualState: Un({
+                    scrapeMotionValuesFromProps: On,
+                    createRenderState: ()=>({
+                            style: {},
+                            transform: {},
+                            transformOrigin: {},
+                            vars: {},
+                            attrs: {}
+                        }),
+                    onMount: (t1, e, { renderState: n, latestValues: s })=>{
+                        y.read(()=>{
+                            try {
+                                n.dimensions = "function" == typeof e.getBBox ? e.getBBox() : e.getBoundingClientRect();
+                            } catch (t1) {
+                                n.dimensions = {
+                                    x: 0,
+                                    y: 0,
+                                    width: 0,
+                                    height: 0
+                                };
+                            }
+                        }), y.render(()=>{
+                            Mn(n, s, {
+                                enableHardwareAcceleration: !1
+                            }, Dn(e.tagName), t1.transformTemplate), Bn(e, n);
+                        });
+                    }
+                })
+            }, Wn = {
+                useVisualState: Un({
+                    scrapeMotionValuesFromProps: Fn,
+                    createRenderState: ()=>({
+                            style: {},
+                            transform: {},
+                            transformOrigin: {},
+                            vars: {}
+                        })
+                })
+            };
+            function Hn(t1, e, n, s = {
+                passive: !0
+            }) {
+                return t1.addEventListener(e, n, s), ()=>t1.removeEventListener(e, n);
+            }
+            const zn = (t1)=>"mouse" === t1.pointerType ? "number" != typeof t1.button || t1.button <= 0 : !1 !== t1.isPrimary;
+            function Yn(t1, e = "page") {
+                return {
+                    point: {
+                        x: t1[e + "X"],
+                        y: t1[e + "Y"]
+                    }
+                };
+            }
+            function Xn(t1, e, n, s) {
+                return Hn(t1, e, ((t1)=>(e)=>zn(e) && t1(e, Yn(e)))(n), s);
+            }
+            function Gn(t1) {
+                let e = null;
+                return ()=>null === e && (e = t1, ()=>{
+                        e = null;
+                    });
+            }
+            const qn = Gn("dragHorizontal"), Zn = Gn("dragVertical");
+            function Kn(t1) {
+                let e = !1;
+                if ("y" === t1) e = Zn();
+                else if ("x" === t1) e = qn();
+                else {
+                    const t1 = qn(), n = Zn();
+                    t1 && n ? e = ()=>{
+                        t1(), n();
+                    } : (t1 && t1(), n && n());
+                }
+                return e;
+            }
+            function _n() {
+                const t1 = Kn(!0);
+                return !t1 || (t1(), !1);
+            }
+            class Jn {
+                constructor(t1){
+                    this.isMounted = !1, this.node = t1;
+                }
+                update() {}
+            }
+            function Qn(t1, e) {
+                const n = "pointer" + (e ? "enter" : "leave"), s = "onHover" + (e ? "Start" : "End");
+                return Xn(t1.current, n, (n, i)=>{
+                    if ("touch" === n.type || _n()) return;
+                    const o = t1.getProps();
+                    t1.animationState && o.whileHover && t1.animationState.setActive("whileHover", e), o[s] && y.update(()=>o[s](n, i));
+                }, {
+                    passive: !t1.getProps()[s]
+                });
+            }
+            const ts = (t1, e)=>!!e && (t1 === e || ts(t1, e.parentElement));
+            function es(t1, e) {
+                if (!e) return;
+                const n = new PointerEvent("pointer" + t1);
+                e(n, Yn(n));
+            }
+            const ns = new WeakMap, ss = new WeakMap, is = (t1)=>{
+                const e = ns.get(t1.target);
+                e && e(t1);
+            }, os = (t1)=>{
+                t1.forEach(is);
+            };
+            const rs = {
+                some: 0,
+                all: 1
+            }, as = {
+                inView: {
+                    Feature: class extends Jn {
+                        constructor(){
+                            super(...arguments), this.hasEnteredView = !1, this.isInView = !1;
+                        }
+                        startObserver() {
+                            this.unmount();
+                            const { viewport: t1 = {} } = this.node.getProps(), { root: e, margin: n, amount: s = "some", once: i } = t1, o = {
+                                root: e ? e.current : void 0,
+                                rootMargin: n,
+                                threshold: "number" == typeof s ? s : rs[s]
+                            };
+                            return function(t1, e, n) {
+                                const s = function({ root: t1, ...e }) {
+                                    const n = t1 || document;
+                                    ss.has(n) || ss.set(n, {});
+                                    const s = ss.get(n), i = JSON.stringify(e);
+                                    return s[i] || (s[i] = new IntersectionObserver(os, {
+                                        root: t1,
+                                        ...e
+                                    })), s[i];
+                                }(e);
+                                return ns.set(t1, n), s.observe(t1), ()=>{
+                                    ns.delete(t1), s.unobserve(t1);
+                                };
+                            }(this.node.current, o, (t1)=>{
+                                const { isIntersecting: e } = t1;
+                                if (this.isInView === e) return;
+                                if (this.isInView = e, i && !e && this.hasEnteredView) return;
+                                e && (this.hasEnteredView = !0), this.node.animationState && this.node.animationState.setActive("whileInView", e);
+                                const { onViewportEnter: n, onViewportLeave: s } = this.node.getProps(), o = e ? n : s;
+                                o && o(t1);
+                            });
+                        }
+                        mount() {
+                            this.startObserver();
+                        }
+                        update() {
+                            if ("undefined" == typeof IntersectionObserver) return;
+                            const { props: t1, prevProps: e } = this.node;
+                            [
+                                "amount",
+                                "margin",
+                                "root"
+                            ].some(function({ viewport: t1 = {} }, { viewport: e = {} } = {}) {
+                                return (n)=>t1[n] !== e[n];
+                            }(t1, e)) && this.startObserver();
+                        }
+                        unmount() {}
+                    }
+                },
+                tap: {
+                    Feature: class extends Jn {
+                        constructor(){
+                            super(...arguments), this.removeStartListeners = n, this.removeEndListeners = n, this.removeAccessibleListeners = n, this.startPointerPress = (t1, e)=>{
+                                if (this.removeEndListeners(), this.isPressing) return;
+                                const n = this.node.getProps(), s = Xn(window, "pointerup", (t1, e)=>{
+                                    if (!this.checkPressEnd()) return;
+                                    const { onTap: n, onTapCancel: s } = this.node.getProps();
+                                    y.update(()=>{
+                                        ts(this.node.current, t1.target) ? n && n(t1, e) : s && s(t1, e);
+                                    });
+                                }, {
+                                    passive: !(n.onTap || n.onPointerUp)
+                                }), i = Xn(window, "pointercancel", (t1, e)=>this.cancelPress(t1, e), {
+                                    passive: !(n.onTapCancel || n.onPointerCancel)
+                                });
+                                this.removeEndListeners = se(s, i), this.startPress(t1, e);
+                            }, this.startAccessiblePress = ()=>{
+                                const t1 = Hn(this.node.current, "keydown", (t1)=>{
+                                    "Enter" !== t1.key || this.isPressing || (this.removeEndListeners(), this.removeEndListeners = Hn(this.node.current, "keyup", (t1)=>{
+                                        "Enter" === t1.key && this.checkPressEnd() && es("up", (t1, e)=>{
+                                            const { onTap: n } = this.node.getProps();
+                                            n && y.update(()=>n(t1, e));
+                                        });
+                                    }), es("down", (t1, e)=>{
+                                        this.startPress(t1, e);
+                                    }));
+                                }), e = Hn(this.node.current, "blur", ()=>{
+                                    this.isPressing && es("cancel", (t1, e)=>this.cancelPress(t1, e));
+                                });
+                                this.removeAccessibleListeners = se(t1, e);
+                            };
+                        }
+                        startPress(t1, e) {
+                            this.isPressing = !0;
+                            const { onTapStart: n, whileTap: s } = this.node.getProps();
+                            s && this.node.animationState && this.node.animationState.setActive("whileTap", !0), n && y.update(()=>n(t1, e));
+                        }
+                        checkPressEnd() {
+                            return this.removeEndListeners(), this.isPressing = !1, this.node.getProps().whileTap && this.node.animationState && this.node.animationState.setActive("whileTap", !1), !_n();
+                        }
+                        cancelPress(t1, e) {
+                            if (!this.checkPressEnd()) return;
+                            const { onTapCancel: n } = this.node.getProps();
+                            n && y.update(()=>n(t1, e));
+                        }
+                        mount() {
+                            const t1 = this.node.getProps(), e = Xn(this.node.current, "pointerdown", this.startPointerPress, {
+                                passive: !(t1.onTapStart || t1.onPointerStart)
+                            }), n = Hn(this.node.current, "focus", this.startAccessiblePress);
+                            this.removeStartListeners = se(e, n);
+                        }
+                        unmount() {
+                            this.removeStartListeners(), this.removeEndListeners(), this.removeAccessibleListeners();
+                        }
+                    }
+                },
+                focus: {
+                    Feature: class extends Jn {
+                        constructor(){
+                            super(...arguments), this.isActive = !1;
+                        }
+                        onFocus() {
+                            let t1 = !1;
+                            try {
+                                t1 = this.node.current.matches(":focus-visible");
+                            } catch (e) {
+                                t1 = !0;
+                            }
+                            t1 && this.node.animationState && (this.node.animationState.setActive("whileFocus", !0), this.isActive = !0);
+                        }
+                        onBlur() {
+                            this.isActive && this.node.animationState && (this.node.animationState.setActive("whileFocus", !1), this.isActive = !1);
+                        }
+                        mount() {
+                            this.unmount = se(Hn(this.node.current, "focus", ()=>this.onFocus()), Hn(this.node.current, "blur", ()=>this.onBlur()));
+                        }
+                        unmount() {}
+                    }
+                },
+                hover: {
+                    Feature: class extends Jn {
+                        mount() {
+                            this.unmount = se(Qn(this.node, !0), Qn(this.node, !1));
+                        }
+                        unmount() {}
+                    }
+                }
+            };
+            function ls(t1, e) {
+                if (!Array.isArray(e)) return !1;
+                const n = e.length;
+                if (n !== t1.length) return !1;
+                for(let s = 0; s < n; s++)if (e[s] !== t1[s]) return !1;
+                return !0;
+            }
+            const us = [
+                ...Je
+            ].reverse(), cs = Je.length;
+            function hs(t1 = !1) {
+                return {
+                    isActive: t1,
+                    protectedKeys: {},
+                    needsAnimating: {},
+                    prevResolvedValues: {}
+                };
+            }
+            let ds = 0;
+            const ms = {
+                animation: {
+                    Feature: class extends Jn {
+                        constructor(t1){
+                            super(t1), t1.animationState || (t1.animationState = function(t1) {
+                                let e = function(t1) {
+                                    return (e)=>Promise.all(e.map(({ animation: e, options: n })=>Ne(t1, e, n)));
+                                }(t1);
+                                const n = {
+                                    animate: hs(!0),
+                                    whileInView: hs(),
+                                    whileHover: hs(),
+                                    whileTap: hs(),
+                                    whileDrag: hs(),
+                                    whileFocus: hs(),
+                                    exit: hs()
+                                };
+                                let s = !0;
+                                const i = (e, n)=>{
+                                    const s = xt(t1, n);
+                                    if (s) {
+                                        const { transition: t1, transitionEnd: n, ...i } = s;
+                                        e = {
+                                            ...e,
+                                            ...i,
+                                            ...n
+                                        };
+                                    }
+                                    return e;
+                                };
+                                function o(o, r) {
+                                    const a = t1.getProps(), l = t1.getVariantContext(!0) || {}, u = [], h = new Set;
+                                    let d = {}, m = 1 / 0;
+                                    for(let e = 0; e < cs; e++){
+                                        const g = us[e], y = n[g], v = void 0 !== a[g] ? a[g] : l[g], x = Ke(v), P = g === r ? y.isActive : null;
+                                        !1 === P && (m = e);
+                                        let b = v === l[g] && v !== a[g] && x;
+                                        if (b && s && t1.manuallyAnimateOnMount && (b = !1), y.protectedKeys = {
+                                            ...d
+                                        }, !y.isActive && null === P || !v && !y.prevProp || _e(v) || "boolean" == typeof v) continue;
+                                        const T = (p = y.prevProp, "string" == typeof (f = v) ? f !== p : !!Array.isArray(f) && !ls(f, p));
+                                        let S = T || g === r && y.isActive && !b && x || e > m && x;
+                                        const w = Array.isArray(v) ? v : [
+                                            v
+                                        ];
+                                        let E = w.reduce(i, {});
+                                        !1 === P && (E = {});
+                                        const { prevResolvedValues: A = {} } = y, V = {
+                                            ...A,
+                                            ...E
+                                        }, C = (t1)=>{
+                                            S = !0, h.delete(t1), y.needsAnimating[t1] = !0;
+                                        };
+                                        for(const t1 in V){
+                                            const e = E[t1], n = A[t1];
+                                            d.hasOwnProperty(t1) || (e !== n ? c(e) && c(n) ? !ls(e, n) || T ? C(t1) : y.protectedKeys[t1] = !0 : void 0 !== e ? C(t1) : h.add(t1) : void 0 !== e && h.has(t1) ? C(t1) : y.protectedKeys[t1] = !0);
+                                        }
+                                        y.prevProp = v, y.prevResolvedValues = E, y.isActive && (d = {
+                                            ...d,
+                                            ...E
+                                        }), s && t1.blockInitialAnimation && (S = !1), S && !b && u.push(...w.map((t1)=>({
+                                                animation: t1,
+                                                options: {
+                                                    type: g,
+                                                    ...o
+                                                }
+                                            })));
+                                    }
+                                    var p, f;
+                                    if (h.size) {
+                                        const e = {};
+                                        h.forEach((n)=>{
+                                            const s = t1.getBaseTarget(n);
+                                            void 0 !== s && (e[n] = s);
+                                        }), u.push({
+                                            animation: e
+                                        });
+                                    }
+                                    let g = Boolean(u.length);
+                                    return s && !1 === a.initial && !t1.manuallyAnimateOnMount && (g = !1), s = !1, g ? e(u) : Promise.resolve();
+                                }
+                                return {
+                                    animateChanges: o,
+                                    setActive: function(e, s, i) {
+                                        var r;
+                                        if (n[e].isActive === s) return Promise.resolve();
+                                        null === (r = t1.variantChildren) || void 0 === r || r.forEach((t1)=>{
+                                            var n;
+                                            return null === (n = t1.animationState) || void 0 === n ? void 0 : n.setActive(e, s);
+                                        }), n[e].isActive = s;
+                                        const a = o(i, e);
+                                        for(const t1 in n)n[t1].protectedKeys = {};
+                                        return a;
+                                    },
+                                    setAnimateFunction: function(n) {
+                                        e = n(t1);
+                                    },
+                                    getState: ()=>n
+                                };
+                            }(t1));
+                        }
+                        updateAnimationControlsSubscription() {
+                            const { animate: t1 } = this.node.getProps();
+                            this.unmount(), _e(t1) && (this.unmount = t1.subscribe(this.node));
+                        }
+                        mount() {
+                            this.updateAnimationControlsSubscription();
+                        }
+                        update() {
+                            const { animate: t1 } = this.node.getProps(), { animate: e } = this.node.prevProps || {};
+                            t1 !== e && this.updateAnimationControlsSubscription();
+                        }
+                        unmount() {}
+                    }
+                },
+                exit: {
+                    Feature: class extends Jn {
+                        constructor(){
+                            super(...arguments), this.id = ds++;
+                        }
+                        update() {
+                            if (!this.node.presenceContext) return;
+                            const { isPresent: t1, onExitComplete: e, custom: n } = this.node.presenceContext, { isPresent: s } = this.node.prevPresenceContext || {};
+                            if (!this.node.animationState || t1 === s) return;
+                            const i = this.node.animationState.setActive("exit", !t1, {
+                                custom: null != n ? n : this.node.getProps().custom
+                            });
+                            e && !t1 && i.then(()=>e(this.id));
+                        }
+                        mount() {
+                            const { register: t1 } = this.node.presenceContext || {};
+                            t1 && (this.unmount = t1(this.id));
+                        }
+                        unmount() {}
+                    }
+                }
+            }, ps = (t1, e)=>Math.abs(t1 - e);
+            class fs {
+                constructor(t1, e, { transformPagePoint: n } = {}){
+                    if (this.startEvent = null, this.lastMoveEvent = null, this.lastMoveEventInfo = null, this.handlers = {}, this.updatePoint = ()=>{
+                        if (!this.lastMoveEvent || !this.lastMoveEventInfo) return;
+                        const t1 = vs(this.lastMoveEventInfo, this.history), e = null !== this.startEvent, n = function(t1, e) {
+                            const n = ps(t1.x, e.x), s = ps(t1.y, e.y);
+                            return Math.sqrt(n ** 2 + s ** 2);
+                        }(t1.offset, {
+                            x: 0,
+                            y: 0
+                        }) >= 3;
+                        if (!e && !n) return;
+                        const { point: s } = t1, { timestamp: i } = x;
+                        this.history.push({
+                            ...s,
+                            timestamp: i
+                        });
+                        const { onStart: o, onMove: r } = this.handlers;
+                        e || (o && o(this.lastMoveEvent, t1), this.startEvent = this.lastMoveEvent), r && r(this.lastMoveEvent, t1);
+                    }, this.handlePointerMove = (t1, e)=>{
+                        this.lastMoveEvent = t1, this.lastMoveEventInfo = gs(e, this.transformPagePoint), y.update(this.updatePoint, !0);
+                    }, this.handlePointerUp = (t1, e)=>{
+                        if (this.end(), !this.lastMoveEvent || !this.lastMoveEventInfo) return;
+                        const { onEnd: n, onSessionEnd: s } = this.handlers, i = vs("pointercancel" === t1.type ? this.lastMoveEventInfo : gs(e, this.transformPagePoint), this.history);
+                        this.startEvent && n && n(t1, i), s && s(t1, i);
+                    }, !zn(t1)) return;
+                    this.handlers = e, this.transformPagePoint = n;
+                    const s = gs(Yn(t1), this.transformPagePoint), { point: i } = s, { timestamp: o } = x;
+                    this.history = [
+                        {
+                            ...i,
+                            timestamp: o
+                        }
+                    ];
+                    const { onSessionStart: r } = e;
+                    r && r(t1, vs(s, this.history)), this.removeListeners = se(Xn(window, "pointermove", this.handlePointerMove), Xn(window, "pointerup", this.handlePointerUp), Xn(window, "pointercancel", this.handlePointerUp));
+                }
+                updateHandlers(t1) {
+                    this.handlers = t1;
+                }
+                end() {
+                    this.removeListeners && this.removeListeners(), v(this.updatePoint);
+                }
+            }
+            function gs(t1, e) {
+                return e ? {
+                    point: e(t1.point)
+                } : t1;
+            }
+            function ys(t1, e) {
+                return {
+                    x: t1.x - e.x,
+                    y: t1.y - e.y
+                };
+            }
+            function vs({ point: t1 }, e) {
+                return {
+                    point: t1,
+                    delta: ys(t1, Ps(e)),
+                    offset: ys(t1, xs(e)),
+                    velocity: bs(e, .1)
+                };
+            }
+            function xs(t1) {
+                return t1[0];
+            }
+            function Ps(t1) {
+                return t1[t1.length - 1];
+            }
+            function bs(t1, e) {
+                if (t1.length < 2) return {
+                    x: 0,
+                    y: 0
+                };
+                let n = t1.length - 1, s = null;
+                const i = Ps(t1);
+                for(; n >= 0 && (s = t1[n], !(i.timestamp - s.timestamp > Ct(e)));)n--;
+                if (!s) return {
+                    x: 0,
+                    y: 0
+                };
+                const o = Mt(i.timestamp - s.timestamp);
+                if (0 === o) return {
+                    x: 0,
+                    y: 0
+                };
+                const r = {
+                    x: (i.x - s.x) / o,
+                    y: (i.y - s.y) / o
+                };
+                return r.x === 1 / 0 && (r.x = 0), r.y === 1 / 0 && (r.y = 0), r;
+            }
+            function Ts(t1) {
+                return t1.max - t1.min;
+            }
+            function Ss(t1, e = 0, n = .01) {
+                return Math.abs(t1 - e) <= n;
+            }
+            function ws(t1, e, n, s = .5) {
+                t1.origin = s, t1.originPoint = Kt(e.min, e.max, t1.origin), t1.scale = Ts(n) / Ts(e), (Ss(t1.scale, 1, 1e-4) || isNaN(t1.scale)) && (t1.scale = 1), t1.translate = Kt(n.min, n.max, t1.origin) - t1.originPoint, (Ss(t1.translate) || isNaN(t1.translate)) && (t1.translate = 0);
+            }
+            function Es(t1, e, n, s) {
+                ws(t1.x, e.x, n.x, s ? s.originX : void 0), ws(t1.y, e.y, n.y, s ? s.originY : void 0);
+            }
+            function As(t1, e, n) {
+                t1.min = n.min + e.min, t1.max = t1.min + Ts(e);
+            }
+            function Vs(t1, e, n) {
+                t1.min = e.min - n.min, t1.max = t1.min + Ts(e);
+            }
+            function Cs(t1, e, n) {
+                Vs(t1.x, e.x, n.x), Vs(t1.y, e.y, n.y);
+            }
+            function Ms(t1, e, n) {
+                return {
+                    min: void 0 !== e ? t1.min + e : void 0,
+                    max: void 0 !== n ? t1.max + n - (t1.max - t1.min) : void 0
+                };
+            }
+            function Ds(t1, e) {
+                let n = e.min - t1.min, s = e.max - t1.max;
+                return e.max - e.min < t1.max - t1.min && ([n, s] = [
+                    s,
+                    n
+                ]), {
+                    min: n,
+                    max: s
+                };
+            }
+            const ks = .35;
+            function Rs(t1, e, n) {
+                return {
+                    min: Ls(t1, e),
+                    max: Ls(t1, n)
+                };
+            }
+            function Ls(t1, e) {
+                return "number" == typeof t1 ? t1 : t1[e] || 0;
+            }
+            function js(t1) {
+                return [
+                    t1("x"),
+                    t1("y")
+                ];
+            }
+            function Bs({ top: t1, left: e, right: n, bottom: s }) {
+                return {
+                    x: {
+                        min: e,
+                        max: n
+                    },
+                    y: {
+                        min: t1,
+                        max: s
+                    }
+                };
+            }
+            function Fs(t1) {
+                return void 0 === t1 || 1 === t1;
+            }
+            function Os({ scale: t1, scaleX: e, scaleY: n }) {
+                return !Fs(t1) || !Fs(e) || !Fs(n);
+            }
+            function Is(t1) {
+                return Os(t1) || Us(t1) || t1.z || t1.rotate || t1.rotateX || t1.rotateY;
+            }
+            function Us(t1) {
+                return Ns(t1.x) || Ns(t1.y);
+            }
+            function Ns(t1) {
+                return t1 && "0%" !== t1;
+            }
+            function $s(t1, e, n) {
+                return n + e * (t1 - n);
+            }
+            function Ws(t1, e, n, s, i) {
+                return void 0 !== i && (t1 = $s(t1, i, s)), $s(t1, n, s) + e;
+            }
+            function Hs(t1, e = 0, n = 1, s, i) {
+                t1.min = Ws(t1.min, e, n, s, i), t1.max = Ws(t1.max, e, n, s, i);
+            }
+            function zs(t1, { x: e, y: n }) {
+                Hs(t1.x, e.translate, e.scale, e.originPoint), Hs(t1.y, n.translate, n.scale, n.originPoint);
+            }
+            function Ys(t1) {
+                return Number.isInteger(t1) || t1 > 1.0000000000001 || t1 < .999999999999 ? t1 : 1;
+            }
+            function Xs(t1, e) {
+                t1.min = t1.min + e, t1.max = t1.max + e;
+            }
+            function Gs(t1, e, [n, s, i]) {
+                const o = void 0 !== e[i] ? e[i] : .5, r = Kt(t1.min, t1.max, o);
+                Hs(t1, e[n], e[s], r, e.scale);
+            }
+            const qs = [
+                "x",
+                "scaleX",
+                "originX"
+            ], Zs = [
+                "y",
+                "scaleY",
+                "originY"
+            ];
+            function Ks(t1, e) {
+                Gs(t1.x, e, qs), Gs(t1.y, e, Zs);
+            }
+            function _s(t1, e) {
+                return Bs(function(t1, e) {
+                    if (!e) return t1;
+                    const n = e({
+                        x: t1.left,
+                        y: t1.top
+                    }), s = e({
+                        x: t1.right,
+                        y: t1.bottom
+                    });
+                    return {
+                        top: n.y,
+                        left: n.x,
+                        bottom: s.y,
+                        right: s.x
+                    };
+                }(t1.getBoundingClientRect(), e));
+            }
+            const Js = new WeakMap;
+            class Qs {
+                constructor(t1){
+                    this.openGlobalLock = null, this.isDragging = !1, this.currentDirection = null, this.originPoint = {
+                        x: 0,
+                        y: 0
+                    }, this.constraints = !1, this.hasMutatedConstraints = !1, this.elastic = {
+                        x: {
+                            min: 0,
+                            max: 0
+                        },
+                        y: {
+                            min: 0,
+                            max: 0
+                        }
+                    }, this.visualElement = t1;
+                }
+                start(t1, { snapToCursor: e = !1 } = {}) {
+                    const { presenceContext: n } = this.visualElement;
+                    n && !1 === n.isPresent || (this.panSession = new fs(t1, {
+                        onSessionStart: (t1)=>{
+                            this.stopAnimation(), e && this.snapToCursor(Yn(t1, "page").point);
+                        },
+                        onStart: (t1, e)=>{
+                            const { drag: n, dragPropagation: s, onDragStart: i } = this.getProps();
+                            if (n && !s && (this.openGlobalLock && this.openGlobalLock(), this.openGlobalLock = Kn(n), !this.openGlobalLock)) return;
+                            this.isDragging = !0, this.currentDirection = null, this.resolveConstraints(), this.visualElement.projection && (this.visualElement.projection.isAnimationBlocked = !0, this.visualElement.projection.target = void 0), js((t1)=>{
+                                let e = this.getAxisMotionValue(t1).get() || 0;
+                                if (H.test(e)) {
+                                    const { projection: n } = this.visualElement;
+                                    if (n && n.layout) {
+                                        const s = n.layout.layoutBox[t1];
+                                        s && (e = Ts(s) * (parseFloat(e) / 100));
+                                    }
+                                }
+                                this.originPoint[t1] = e;
+                            }), i && y.update(()=>i(t1, e), !1, !0);
+                            const { animationState: o } = this.visualElement;
+                            o && o.setActive("whileDrag", !0);
+                        },
+                        onMove: (t1, e)=>{
+                            const { dragPropagation: n, dragDirectionLock: s, onDirectionLock: i, onDrag: o } = this.getProps();
+                            if (!n && !this.openGlobalLock) return;
+                            const { offset: r } = e;
+                            if (s && null === this.currentDirection) return this.currentDirection = function(t1, e = 10) {
+                                let n = null;
+                                return Math.abs(t1.y) > e ? n = "y" : Math.abs(t1.x) > e && (n = "x"), n;
+                            }(r), void (null !== this.currentDirection && i && i(this.currentDirection));
+                            this.updateAxis("x", e.point, r), this.updateAxis("y", e.point, r), this.visualElement.render(), o && o(t1, e);
+                        },
+                        onSessionEnd: (t1, e)=>this.stop(t1, e)
+                    }, {
+                        transformPagePoint: this.visualElement.getTransformPagePoint()
+                    }));
+                }
+                stop(t1, e) {
+                    const n = this.isDragging;
+                    if (this.cancel(), !n) return;
+                    const { velocity: s } = e;
+                    this.startAnimation(s);
+                    const { onDragEnd: i } = this.getProps();
+                    i && y.update(()=>i(t1, e));
+                }
+                cancel() {
+                    this.isDragging = !1;
+                    const { projection: t1, animationState: e } = this.visualElement;
+                    t1 && (t1.isAnimationBlocked = !1), this.panSession && this.panSession.end(), this.panSession = void 0;
+                    const { dragPropagation: n } = this.getProps();
+                    !n && this.openGlobalLock && (this.openGlobalLock(), this.openGlobalLock = null), e && e.setActive("whileDrag", !1);
+                }
+                updateAxis(t1, e, n) {
+                    const { drag: s } = this.getProps();
+                    if (!n || !ti(t1, s, this.currentDirection)) return;
+                    const i = this.getAxisMotionValue(t1);
+                    let o = this.originPoint[t1] + n[t1];
+                    this.constraints && this.constraints[t1] && (o = function(t1, { min: e, max: n }, s) {
+                        return void 0 !== e && t1 < e ? t1 = s ? Kt(e, t1, s.min) : Math.max(t1, e) : void 0 !== n && t1 > n && (t1 = s ? Kt(n, t1, s.max) : Math.min(t1, n)), t1;
+                    }(o, this.constraints[t1], this.elastic[t1])), i.set(o);
+                }
+                resolveConstraints() {
+                    const { dragConstraints: t1, dragElastic: e } = this.getProps(), { layout: n } = this.visualElement.projection || {}, s = this.constraints;
+                    t1 && Ze(t1) ? this.constraints || (this.constraints = this.resolveRefConstraints()) : this.constraints = !(!t1 || !n) && function(t1, { top: e, left: n, bottom: s, right: i }) {
+                        return {
+                            x: Ms(t1.x, n, i),
+                            y: Ms(t1.y, e, s)
+                        };
+                    }(n.layoutBox, t1), this.elastic = function(t1 = ks) {
+                        return !1 === t1 ? t1 = 0 : !0 === t1 && (t1 = ks), {
+                            x: Rs(t1, "left", "right"),
+                            y: Rs(t1, "top", "bottom")
+                        };
+                    }(e), s !== this.constraints && n && this.constraints && !this.hasMutatedConstraints && js((t1)=>{
+                        this.getAxisMotionValue(t1) && (this.constraints[t1] = function(t1, e) {
+                            const n = {};
+                            return void 0 !== e.min && (n.min = e.min - t1.min), void 0 !== e.max && (n.max = e.max - t1.min), n;
+                        }(n.layoutBox[t1], this.constraints[t1]));
+                    });
+                }
+                resolveRefConstraints() {
+                    const { dragConstraints: t1, onMeasureDragConstraints: e } = this.getProps();
+                    if (!t1 || !Ze(t1)) return !1;
+                    const n = t1.current;
+                    r(null !== n, "If `dragConstraints` is set as a React ref, that ref must be passed to another component's `ref` prop.");
+                    const { projection: s } = this.visualElement;
+                    if (!s || !s.layout) return !1;
+                    const i = function(t1, e, n) {
+                        const s = _s(t1, n), { scroll: i } = e;
+                        return i && (Xs(s.x, i.offset.x), Xs(s.y, i.offset.y)), s;
+                    }(n, s.root, this.visualElement.getTransformPagePoint());
+                    let o = function(t1, e) {
+                        return {
+                            x: Ds(t1.x, e.x),
+                            y: Ds(t1.y, e.y)
+                        };
+                    }(s.layout.layoutBox, i);
+                    if (e) {
+                        const t1 = e(function({ x: t1, y: e }) {
+                            return {
+                                top: e.min,
+                                right: t1.max,
+                                bottom: e.max,
+                                left: t1.min
+                            };
+                        }(o));
+                        this.hasMutatedConstraints = !!t1, t1 && (o = Bs(t1));
+                    }
+                    return o;
+                }
+                startAnimation(t1) {
+                    const { drag: e, dragMomentum: n, dragElastic: s, dragTransition: i, dragSnapToOrigin: o, onDragTransitionEnd: r } = this.getProps(), a = this.constraints || {}, l = js((r)=>{
+                        if (!ti(r, e, this.currentDirection)) return;
+                        let l = a && a[r] || {};
+                        o && (l = {
+                            min: 0,
+                            max: 0
+                        });
+                        const u = s ? 200 : 1e6, c = s ? 40 : 1e7, h = {
+                            type: "inertia",
+                            velocity: n ? t1[r] : 0,
+                            bounceStiffness: u,
+                            bounceDamping: c,
+                            timeConstant: 750,
+                            restDelta: 1,
+                            restSpeed: 10,
+                            ...i,
+                            ...l
+                        };
+                        return this.startAxisValueAnimation(r, h);
+                    });
+                    return Promise.all(l).then(r);
+                }
+                startAxisValueAnimation(t1, e) {
+                    const n = this.getAxisMotionValue(t1);
+                    return n.start(Le(t1, n, 0, e));
+                }
+                stopAnimation() {
+                    js((t1)=>this.getAxisMotionValue(t1).stop());
+                }
+                getAxisMotionValue(t1) {
+                    const e = "_drag" + t1.toUpperCase(), n = this.visualElement.getProps();
+                    return n[e] || this.visualElement.getValue(t1, (n.initial ? n.initial[t1] : void 0) || 0);
+                }
+                snapToCursor(t1) {
+                    js((e)=>{
+                        const { drag: n } = this.getProps();
+                        if (!ti(e, n, this.currentDirection)) return;
+                        const { projection: s } = this.visualElement, i = this.getAxisMotionValue(e);
+                        if (s && s.layout) {
+                            const { min: n, max: o } = s.layout.layoutBox[e];
+                            i.set(t1[e] - Kt(n, o, .5));
+                        }
+                    });
+                }
+                scalePositionWithinConstraints() {
+                    if (!this.visualElement.current) return;
+                    const { drag: t1, dragConstraints: e } = this.getProps(), { projection: n } = this.visualElement;
+                    if (!Ze(e) || !n || !this.constraints) return;
+                    this.stopAnimation();
+                    const s = {
+                        x: 0,
+                        y: 0
+                    };
+                    js((t1)=>{
+                        const e = this.getAxisMotionValue(t1);
+                        if (e) {
+                            const n = e.get();
+                            s[t1] = function(t1, e) {
+                                let n = .5;
+                                const s = Ts(t1), i = Ts(e);
+                                return i > s ? n = ue(e.min, e.max - s, t1.min) : s > i && (n = ue(t1.min, t1.max - i, e.min)), R(0, 1, n);
+                            }({
+                                min: n,
+                                max: n
+                            }, this.constraints[t1]);
+                        }
+                    });
+                    const { transformTemplate: i } = this.visualElement.getProps();
+                    this.visualElement.current.style.transform = i ? i({}, "") : "none", n.root && n.root.updateScroll(), n.updateLayout(), this.resolveConstraints(), js((e)=>{
+                        if (!ti(e, t1, null)) return;
+                        const n = this.getAxisMotionValue(e), { min: i, max: o } = this.constraints[e];
+                        n.set(Kt(i, o, s[e]));
+                    });
+                }
+                addListeners() {
+                    if (!this.visualElement.current) return;
+                    Js.set(this.visualElement, this);
+                    const t1 = Xn(this.visualElement.current, "pointerdown", (t1)=>{
+                        const { drag: e, dragListener: n = !0 } = this.getProps();
+                        e && n && this.start(t1);
+                    }), e = ()=>{
+                        const { dragConstraints: t1 } = this.getProps();
+                        Ze(t1) && (this.constraints = this.resolveRefConstraints());
+                    }, { projection: n } = this.visualElement, s = n.addEventListener("measure", e);
+                    n && !n.layout && (n.root && n.root.updateScroll(), n.updateLayout()), e();
+                    const i = Hn(window, "resize", ()=>this.scalePositionWithinConstraints()), o = n.addEventListener("didUpdate", ({ delta: t1, hasLayoutChanged: e })=>{
+                        this.isDragging && e && (js((e)=>{
+                            const n = this.getAxisMotionValue(e);
+                            n && (this.originPoint[e] += t1[e].translate, n.set(n.get() + t1[e].translate));
+                        }), this.visualElement.render());
+                    });
+                    return ()=>{
+                        i(), t1(), s(), o && o();
+                    };
+                }
+                getProps() {
+                    const t1 = this.visualElement.getProps(), { drag: e = !1, dragDirectionLock: n = !1, dragPropagation: s = !1, dragConstraints: i = !1, dragElastic: o = ks, dragMomentum: r = !0 } = t1;
+                    return {
+                        ...t1,
+                        drag: e,
+                        dragDirectionLock: n,
+                        dragPropagation: s,
+                        dragConstraints: i,
+                        dragElastic: o,
+                        dragMomentum: r
+                    };
+                }
+            }
+            function ti(t1, e, n) {
+                return !(!0 !== e && e !== t1 || null !== n && n !== t1);
+            }
+            const ei = (t1)=>(e, n)=>{
+                    t1 && y.update(()=>t1(e, n));
+                }, ni = {
+                hasAnimatedSinceResize: !0,
+                hasEverUpdated: !1
+            };
+            function si(t1, e) {
+                return e.max === e.min ? 0 : t1 / (e.max - e.min) * 100;
+            }
+            const ii = {
+                correct: (t1, e)=>{
+                    if (!e.target) return t1;
+                    if ("string" == typeof t1) {
+                        if (!z.test(t1)) return t1;
+                        t1 = parseFloat(t1);
+                    }
+                    return `${si(t1, e.target.x)}% ${si(t1, e.target.y)}%`;
+                }
+            }, oi = {
+                correct: (t1, { treeScale: e, projectionDelta: n })=>{
+                    const s = t1, i = it.parse(t1);
+                    if (i.length > 5) return s;
+                    const o = it.createTransformer(t1), r = "number" != typeof i[0] ? 1 : 0, a = n.x.scale * e.x, l = n.y.scale * e.y;
+                    i[0 + r] /= a, i[1 + r] /= l;
+                    const u = Kt(a, l, .5);
+                    return "number" == typeof i[2 + r] && (i[2 + r] /= u), "number" == typeof i[3 + r] && (i[3 + r] /= u), o(i);
+                }
+            };
+            class ri extends t1.Component {
+                componentDidMount() {
+                    const { visualElement: t1, layoutGroup: e, switchLayoutGroup: n, layoutId: s } = this.props, { projection: i } = t1;
+                    var o;
+                    o = li, Object.assign(pn, o), i && (e.group && e.group.add(i), n && n.register && s && n.register(i), i.root.didUpdate(), i.addEventListener("animationComplete", ()=>{
+                        this.safeToRemove();
+                    }), i.setOptions({
+                        ...i.options,
+                        onExitComplete: ()=>this.safeToRemove()
+                    })), ni.hasEverUpdated = !0;
+                }
+                getSnapshotBeforeUpdate(t1) {
+                    const { layoutDependency: e, visualElement: n, drag: s, isPresent: i } = this.props, o = n.projection;
+                    return o ? (o.isPresent = i, s || t1.layoutDependency !== e || void 0 === e ? o.willUpdate() : this.safeToRemove(), t1.isPresent !== i && (i ? o.promote() : o.relegate() || y.postRender(()=>{
+                        const t1 = o.getStack();
+                        t1 && t1.members.length || this.safeToRemove();
+                    })), null) : null;
+                }
+                componentDidUpdate() {
+                    const { projection: t1 } = this.props.visualElement;
+                    t1 && (t1.root.didUpdate(), queueMicrotask(()=>{
+                        !t1.currentAnimation && t1.isLead() && this.safeToRemove();
+                    }));
+                }
+                componentWillUnmount() {
+                    const { visualElement: t1, layoutGroup: e, switchLayoutGroup: n } = this.props, { projection: s } = t1;
+                    s && (s.scheduleCheckAfterUnmount(), e && e.group && e.group.remove(s), n && n.deregister && n.deregister(s));
+                }
+                safeToRemove() {
+                    const { safeToRemove: t1 } = this.props;
+                    t1 && t1();
+                }
+                render() {
+                    return null;
+                }
+            }
+            function ai(e) {
+                const [n, s] = function() {
+                    const e = (0, t1.useContext)(Ge);
+                    if (null === e) return [
+                        !0,
+                        null
+                    ];
+                    const { isPresent: n, onExitComplete: s, register: i } = e, o = (0, t1.useId)();
+                    return (0, t1.useEffect)(()=>i(o), []), !n && s ? [
+                        !1,
+                        ()=>s && s(o)
+                    ] : [
+                        !0
+                    ];
+                }(), i = (0, t1.useContext)(rn);
+                return t1.createElement(ri, {
+                    ...e,
+                    layoutGroup: i,
+                    switchLayoutGroup: (0, t1.useContext)(an),
+                    isPresent: n,
+                    safeToRemove: s
+                });
+            }
+            const li = {
+                borderRadius: {
+                    ...ii,
+                    applyTo: [
+                        "borderTopLeftRadius",
+                        "borderTopRightRadius",
+                        "borderBottomLeftRadius",
+                        "borderBottomRightRadius"
+                    ]
+                },
+                borderTopLeftRadius: ii,
+                borderTopRightRadius: ii,
+                borderBottomLeftRadius: ii,
+                borderBottomRightRadius: ii,
+                boxShadow: oi
+            }, ui = [
+                "TopLeft",
+                "TopRight",
+                "BottomLeft",
+                "BottomRight"
+            ], ci = ui.length, hi = (t1)=>"string" == typeof t1 ? parseFloat(t1) : t1, di = (t1)=>"number" == typeof t1 || z.test(t1);
+            function mi(t1, e) {
+                return void 0 !== t1[e] ? t1[e] : t1.borderRadius;
+            }
+            const pi = gi(0, .5, Ht), fi = gi(.5, .95, n);
+            function gi(t1, e, n) {
+                return (s)=>s < t1 ? 0 : s > e ? 1 : n(ue(t1, e, s));
+            }
+            function yi(t1, e) {
+                t1.min = e.min, t1.max = e.max;
+            }
+            function vi(t1, e) {
+                yi(t1.x, e.x), yi(t1.y, e.y);
+            }
+            function xi(t1, e, n, s, i) {
+                return t1 = $s(t1 -= e, 1 / n, s), void 0 !== i && (t1 = $s(t1, 1 / i, s)), t1;
+            }
+            function Pi(t1, e, [n, s, i], o, r) {
+                !function(t1, e = 0, n = 1, s = .5, i, o = t1, r = t1) {
+                    if (H.test(e) && (e = parseFloat(e), e = Kt(r.min, r.max, e / 100) - r.min), "number" != typeof e) return;
+                    let a = Kt(o.min, o.max, s);
+                    t1 === o && (a -= e), t1.min = xi(t1.min, e, n, a, i), t1.max = xi(t1.max, e, n, a, i);
+                }(t1, e[n], e[s], e[i], e.scale, o, r);
+            }
+            const bi = [
+                "x",
+                "scaleX",
+                "originX"
+            ], Ti = [
+                "y",
+                "scaleY",
+                "originY"
+            ];
+            function Si(t1, e, n, s) {
+                Pi(t1.x, e, bi, n ? n.x : void 0, s ? s.x : void 0), Pi(t1.y, e, Ti, n ? n.y : void 0, s ? s.y : void 0);
+            }
+            function wi(t1) {
+                return 0 === t1.translate && 1 === t1.scale;
+            }
+            function Ei(t1) {
+                return wi(t1.x) && wi(t1.y);
+            }
+            function Ai(t1, e) {
+                return Math.round(t1.x.min) === Math.round(e.x.min) && Math.round(t1.x.max) === Math.round(e.x.max) && Math.round(t1.y.min) === Math.round(e.y.min) && Math.round(t1.y.max) === Math.round(e.y.max);
+            }
+            function Vi(t1) {
+                return Ts(t1.x) / Ts(t1.y);
+            }
+            class Ci {
+                constructor(){
+                    this.members = [];
+                }
+                add(t1) {
+                    h(this.members, t1), t1.scheduleRender();
+                }
+                remove(t1) {
+                    if (d(this.members, t1), t1 === this.prevLead && (this.prevLead = void 0), t1 === this.lead) {
+                        const t1 = this.members[this.members.length - 1];
+                        t1 && this.promote(t1);
+                    }
+                }
+                relegate(t1) {
+                    const e = this.members.findIndex((e)=>t1 === e);
+                    if (0 === e) return !1;
+                    let n;
+                    for(let t1 = e; t1 >= 0; t1--){
+                        const e = this.members[t1];
+                        if (!1 !== e.isPresent) {
+                            n = e;
+                            break;
+                        }
+                    }
+                    return !!n && (this.promote(n), !0);
+                }
+                promote(t1, e) {
+                    const n = this.lead;
+                    if (t1 !== n && (this.prevLead = n, this.lead = t1, t1.show(), n)) {
+                        n.instance && n.scheduleRender(), t1.scheduleRender(), t1.resumeFrom = n, e && (t1.resumeFrom.preserveOpacity = !0), n.snapshot && (t1.snapshot = n.snapshot, t1.snapshot.latestValues = n.animationValues || n.latestValues), t1.root && t1.root.isUpdating && (t1.isLayoutDirty = !0);
+                        const { crossfade: s } = t1.options;
+                        !1 === s && n.hide();
+                    }
+                }
+                exitAnimationComplete() {
+                    this.members.forEach((t1)=>{
+                        const { options: e, resumingFrom: n } = t1;
+                        e.onExitComplete && e.onExitComplete(), n && n.options.onExitComplete && n.options.onExitComplete();
+                    });
+                }
+                scheduleRender() {
+                    this.members.forEach((t1)=>{
+                        t1.instance && t1.scheduleRender(!1);
+                    });
+                }
+                removeLeadSnapshot() {
+                    this.lead && this.lead.snapshot && (this.lead.snapshot = void 0);
+                }
+            }
+            function Mi(t1, e, n) {
+                let s = "";
+                const i = t1.x.translate / e.x, o = t1.y.translate / e.y;
+                if ((i || o) && (s = `translate3d(${i}px, ${o}px, 0) `), 1 === e.x && 1 === e.y || (s += `scale(${1 / e.x}, ${1 / e.y}) `), n) {
+                    const { rotate: t1, rotateX: e, rotateY: i } = n;
+                    t1 && (s += `rotate(${t1}deg) `), e && (s += `rotateX(${e}deg) `), i && (s += `rotateY(${i}deg) `);
+                }
+                const r = t1.x.scale * e.x, a = t1.y.scale * e.y;
+                return 1 === r && 1 === a || (s += `scale(${r}, ${a})`), s || "none";
+            }
+            const Di = (t1, e)=>t1.depth - e.depth;
+            class ki {
+                constructor(){
+                    this.children = [], this.isDirty = !1;
+                }
+                add(t1) {
+                    h(this.children, t1), this.isDirty = !0;
+                }
+                remove(t1) {
+                    d(this.children, t1), this.isDirty = !0;
+                }
+                forEach(t1) {
+                    this.isDirty && this.children.sort(Di), this.isDirty = !1, this.children.forEach(t1);
+                }
+            }
+            const Ri = [
+                "",
+                "X",
+                "Y",
+                "Z"
+            ];
+            let Li = 0;
+            const ji = {
+                type: "projectionFrame",
+                totalNodes: 0,
+                resolvedTargetDeltas: 0,
+                recalculatedProjection: 0
+            };
+            function Bi({ attachResizeListener: t1, defaultParent: e, measureScroll: n, checkIsScrollRoot: s, resetTransform: i }) {
+                return class {
+                    constructor(t1 = {}, n = null == e ? void 0 : e()){
+                        this.id = Li++, this.animationId = 0, this.children = new Set, this.options = {}, this.isTreeAnimating = !1, this.isAnimationBlocked = !1, this.isLayoutDirty = !1, this.isProjectionDirty = !1, this.isSharedProjectionDirty = !1, this.isTransformDirty = !1, this.updateManuallyBlocked = !1, this.updateBlockedByResize = !1, this.isUpdating = !1, this.isSVG = !1, this.needsReset = !1, this.shouldResetTransform = !1, this.treeScale = {
+                            x: 1,
+                            y: 1
+                        }, this.eventHandlers = new Map, this.hasTreeAnimated = !1, this.updateScheduled = !1, this.checkUpdateFailed = ()=>{
+                            this.isUpdating && (this.isUpdating = !1, this.clearAllSnapshots());
+                        }, this.updateProjection = ()=>{
+                            var t1;
+                            ji.totalNodes = ji.resolvedTargetDeltas = ji.recalculatedProjection = 0, this.nodes.forEach(Ii), this.nodes.forEach(Yi), this.nodes.forEach(Xi), this.nodes.forEach(Ui), t1 = ji, window.MotionDebug && window.MotionDebug.record(t1);
+                        }, this.hasProjected = !1, this.isVisible = !0, this.animationProgress = 0, this.sharedNodes = new Map, this.latestValues = t1, this.root = n ? n.root || n : this, this.path = n ? [
+                            ...n.path,
+                            n
+                        ] : [], this.parent = n, this.depth = n ? n.depth + 1 : 0;
+                        for(let t1 = 0; t1 < this.path.length; t1++)this.path[t1].shouldResetTransform = !0;
+                        this.root === this && (this.nodes = new ki);
+                    }
+                    addEventListener(t1, e) {
+                        return this.eventHandlers.has(t1) || this.eventHandlers.set(t1, new m), this.eventHandlers.get(t1).add(e);
+                    }
+                    notifyListeners(t1, ...e) {
+                        const n = this.eventHandlers.get(t1);
+                        n && n.notify(...e);
+                    }
+                    hasListeners(t1) {
+                        return this.eventHandlers.has(t1);
+                    }
+                    mount(e, n = this.root.hasTreeAnimated) {
+                        if (this.instance) return;
+                        var s;
+                        this.isSVG = (s = e) instanceof SVGElement && "svg" !== s.tagName, this.instance = e;
+                        const { layoutId: i, layout: o, visualElement: r } = this.options;
+                        if (r && !r.current && r.mount(e), this.root.nodes.add(this), this.parent && this.parent.children.add(this), n && (o || i) && (this.isLayoutDirty = !0), t1) {
+                            let n;
+                            const s = ()=>this.root.updateBlockedByResize = !1;
+                            t1(e, ()=>{
+                                this.root.updateBlockedByResize = !0, n && n(), n = function(t1, e) {
+                                    const n = performance.now(), s = ({ timestamp: e })=>{
+                                        const i = e - n;
+                                        i >= 250 && (v(s), t1(i - 250));
+                                    };
+                                    return y.read(s, !0), ()=>v(s);
+                                }(s), ni.hasAnimatedSinceResize && (ni.hasAnimatedSinceResize = !1, this.nodes.forEach(zi));
+                            });
+                        }
+                        i && this.root.registerSharedNode(i, this), !1 !== this.options.animate && r && (i || o) && this.addEventListener("didUpdate", ({ delta: t1, hasLayoutChanged: e, hasRelativeTargetChanged: n, layout: s })=>{
+                            if (this.isTreeAnimationBlocked()) return this.target = void 0, void (this.relativeTarget = void 0);
+                            const i = this.options.transition || r.getDefaultTransition() || Ji, { onLayoutAnimationStart: o, onLayoutAnimationComplete: a } = r.getProps(), l = !this.targetLayout || !Ai(this.targetLayout, s) || n, u = !e && n;
+                            if (this.options.layoutRoot || this.resumeFrom && this.resumeFrom.instance || u || e && (l || !this.currentAnimation)) {
+                                this.resumeFrom && (this.resumingFrom = this.resumeFrom, this.resumingFrom.resumingFrom = void 0), this.setAnimationOrigin(t1, u);
+                                const e = {
+                                    ...Re(i, "layout"),
+                                    onPlay: o,
+                                    onComplete: a
+                                };
+                                (r.shouldReduceMotion || this.options.layoutRoot) && (e.delay = 0, e.type = !1), this.startAnimation(e);
+                            } else e || zi(this), this.isLead() && this.options.onExitComplete && this.options.onExitComplete();
+                            this.targetLayout = s;
+                        });
+                    }
+                    unmount() {
+                        this.options.layoutId && this.willUpdate(), this.root.nodes.remove(this);
+                        const t1 = this.getStack();
+                        t1 && t1.remove(this), this.parent && this.parent.children.delete(this), this.instance = void 0, v(this.updateProjection);
+                    }
+                    blockUpdate() {
+                        this.updateManuallyBlocked = !0;
+                    }
+                    unblockUpdate() {
+                        this.updateManuallyBlocked = !1;
+                    }
+                    isUpdateBlocked() {
+                        return this.updateManuallyBlocked || this.updateBlockedByResize;
+                    }
+                    isTreeAnimationBlocked() {
+                        return this.isAnimationBlocked || this.parent && this.parent.isTreeAnimationBlocked() || !1;
+                    }
+                    startUpdate() {
+                        this.isUpdateBlocked() || (this.isUpdating = !0, this.nodes && this.nodes.forEach(Gi), this.animationId++);
+                    }
+                    getTransformTemplate() {
+                        const { visualElement: t1 } = this.options;
+                        return t1 && t1.getProps().transformTemplate;
+                    }
+                    willUpdate(t1 = !0) {
+                        if (this.root.hasTreeAnimated = !0, this.root.isUpdateBlocked()) return void (this.options.onExitComplete && this.options.onExitComplete());
+                        if (!this.root.isUpdating && this.root.startUpdate(), this.isLayoutDirty) return;
+                        this.isLayoutDirty = !0;
+                        for(let t1 = 0; t1 < this.path.length; t1++){
+                            const e = this.path[t1];
+                            e.shouldResetTransform = !0, e.updateScroll("snapshot"), e.options.layoutRoot && e.willUpdate(!1);
+                        }
+                        const { layoutId: e, layout: n } = this.options;
+                        if (void 0 === e && !n) return;
+                        const s = this.getTransformTemplate();
+                        this.prevTransformTemplateValue = s ? s(this.latestValues, "") : void 0, this.updateSnapshot(), t1 && this.notifyListeners("willUpdate");
+                    }
+                    update() {
+                        if (this.updateScheduled = !1, this.isUpdateBlocked()) return this.unblockUpdate(), this.clearAllSnapshots(), void this.nodes.forEach($i);
+                        this.isUpdating || this.nodes.forEach(Wi), this.isUpdating = !1, this.nodes.forEach(Hi), this.nodes.forEach(Fi), this.nodes.forEach(Oi), this.clearAllSnapshots();
+                        const t1 = performance.now();
+                        x.delta = R(0, 1e3 / 60, t1 - x.timestamp), x.timestamp = t1, x.isProcessing = !0, P.update.process(x), P.preRender.process(x), P.render.process(x), x.isProcessing = !1;
+                    }
+                    didUpdate() {
+                        this.updateScheduled || (this.updateScheduled = !0, queueMicrotask(()=>this.update()));
+                    }
+                    clearAllSnapshots() {
+                        this.nodes.forEach(Ni), this.sharedNodes.forEach(qi);
+                    }
+                    scheduleUpdateProjection() {
+                        y.preRender(this.updateProjection, !1, !0);
+                    }
+                    scheduleCheckAfterUnmount() {
+                        y.postRender(()=>{
+                            this.isLayoutDirty ? this.root.didUpdate() : this.root.checkUpdateFailed();
+                        });
+                    }
+                    updateSnapshot() {
+                        !this.snapshot && this.instance && (this.snapshot = this.measure());
+                    }
+                    updateLayout() {
+                        if (!this.instance) return;
+                        if (this.updateScroll(), !(this.options.alwaysMeasureLayout && this.isLead() || this.isLayoutDirty)) return;
+                        if (this.resumeFrom && !this.resumeFrom.instance) for(let t1 = 0; t1 < this.path.length; t1++)this.path[t1].updateScroll();
+                        const t1 = this.layout;
+                        this.layout = this.measure(!1), this.layoutCorrected = {
+                            x: {
+                                min: 0,
+                                max: 0
+                            },
+                            y: {
+                                min: 0,
+                                max: 0
+                            }
+                        }, this.isLayoutDirty = !1, this.projectionDelta = void 0, this.notifyListeners("measure", this.layout.layoutBox);
+                        const { visualElement: e } = this.options;
+                        e && e.notify("LayoutMeasure", this.layout.layoutBox, t1 ? t1.layoutBox : void 0);
+                    }
+                    updateScroll(t1 = "measure") {
+                        let e = Boolean(this.options.layoutScroll && this.instance);
+                        this.scroll && this.scroll.animationId === this.root.animationId && this.scroll.phase === t1 && (e = !1), e && (this.scroll = {
+                            animationId: this.root.animationId,
+                            phase: t1,
+                            isRoot: s(this.instance),
+                            offset: n(this.instance)
+                        });
+                    }
+                    resetTransform() {
+                        if (!i) return;
+                        const t1 = this.isLayoutDirty || this.shouldResetTransform, e = this.projectionDelta && !Ei(this.projectionDelta), n = this.getTransformTemplate(), s = n ? n(this.latestValues, "") : void 0, o = s !== this.prevTransformTemplateValue;
+                        t1 && (e || Is(this.latestValues) || o) && (i(this.instance, s), this.shouldResetTransform = !1, this.scheduleRender());
+                    }
+                    measure(t1 = !0) {
+                        const e = this.measurePageBox();
+                        let n = this.removeElementScroll(e);
+                        var s;
+                        return t1 && (n = this.removeTransform(n)), eo((s = n).x), eo(s.y), {
+                            animationId: this.root.animationId,
+                            measuredBox: e,
+                            layoutBox: n,
+                            latestValues: {},
+                            source: this.id
+                        };
+                    }
+                    measurePageBox() {
+                        const { visualElement: t1 } = this.options;
+                        if (!t1) return {
+                            x: {
+                                min: 0,
+                                max: 0
+                            },
+                            y: {
+                                min: 0,
+                                max: 0
+                            }
+                        };
+                        const e = t1.measureViewportBox(), { scroll: n } = this.root;
+                        return n && (Xs(e.x, n.offset.x), Xs(e.y, n.offset.y)), e;
+                    }
+                    removeElementScroll(t1) {
+                        const e = {
+                            x: {
+                                min: 0,
+                                max: 0
+                            },
+                            y: {
+                                min: 0,
+                                max: 0
+                            }
+                        };
+                        vi(e, t1);
+                        for(let n = 0; n < this.path.length; n++){
+                            const s = this.path[n], { scroll: i, options: o } = s;
+                            if (s !== this.root && i && o.layoutScroll) {
+                                if (i.isRoot) {
+                                    vi(e, t1);
+                                    const { scroll: n } = this.root;
+                                    n && (Xs(e.x, -n.offset.x), Xs(e.y, -n.offset.y));
+                                }
+                                Xs(e.x, i.offset.x), Xs(e.y, i.offset.y);
+                            }
+                        }
+                        return e;
+                    }
+                    applyTransform(t1, e = !1) {
+                        const n = {
+                            x: {
+                                min: 0,
+                                max: 0
+                            },
+                            y: {
+                                min: 0,
+                                max: 0
+                            }
+                        };
+                        vi(n, t1);
+                        for(let t1 = 0; t1 < this.path.length; t1++){
+                            const s = this.path[t1];
+                            !e && s.options.layoutScroll && s.scroll && s !== s.root && Ks(n, {
+                                x: -s.scroll.offset.x,
+                                y: -s.scroll.offset.y
+                            }), Is(s.latestValues) && Ks(n, s.latestValues);
+                        }
+                        return Is(this.latestValues) && Ks(n, this.latestValues), n;
+                    }
+                    removeTransform(t1) {
+                        const e = {
+                            x: {
+                                min: 0,
+                                max: 0
+                            },
+                            y: {
+                                min: 0,
+                                max: 0
+                            }
+                        };
+                        vi(e, t1);
+                        for(let t1 = 0; t1 < this.path.length; t1++){
+                            const n = this.path[t1];
+                            if (!n.instance) continue;
+                            if (!Is(n.latestValues)) continue;
+                            Os(n.latestValues) && n.updateSnapshot();
+                            const s = {
+                                x: {
+                                    min: 0,
+                                    max: 0
+                                },
+                                y: {
+                                    min: 0,
+                                    max: 0
+                                }
+                            };
+                            vi(s, n.measurePageBox()), Si(e, n.latestValues, n.snapshot ? n.snapshot.layoutBox : void 0, s);
+                        }
+                        return Is(this.latestValues) && Si(e, this.latestValues), e;
+                    }
+                    setTargetDelta(t1) {
+                        this.targetDelta = t1, this.root.scheduleUpdateProjection(), this.isProjectionDirty = !0;
+                    }
+                    setOptions(t1) {
+                        this.options = {
+                            ...this.options,
+                            ...t1,
+                            crossfade: void 0 === t1.crossfade || t1.crossfade
+                        };
+                    }
+                    clearMeasurements() {
+                        this.scroll = void 0, this.layout = void 0, this.snapshot = void 0, this.prevTransformTemplateValue = void 0, this.targetDelta = void 0, this.target = void 0, this.isLayoutDirty = !1;
+                    }
+                    forceRelativeParentToResolveTarget() {
+                        this.relativeParent && this.relativeParent.resolvedRelativeTargetAt !== x.timestamp && this.relativeParent.resolveTargetDelta(!0);
+                    }
+                    resolveTargetDelta(t1 = !1) {
+                        var e;
+                        const n = this.getLead();
+                        this.isProjectionDirty || (this.isProjectionDirty = n.isProjectionDirty), this.isTransformDirty || (this.isTransformDirty = n.isTransformDirty), this.isSharedProjectionDirty || (this.isSharedProjectionDirty = n.isSharedProjectionDirty);
+                        const s = Boolean(this.resumingFrom) || this !== n;
+                        if (!(t1 || s && this.isSharedProjectionDirty || this.isProjectionDirty || (null === (e = this.parent) || void 0 === e ? void 0 : e.isProjectionDirty) || this.attemptToResolveRelativeTarget)) return;
+                        const { layout: i, layoutId: o } = this.options;
+                        if (this.layout && (i || o)) {
+                            if (this.resolvedRelativeTargetAt = x.timestamp, !this.targetDelta && !this.relativeTarget) {
+                                const t1 = this.getClosestProjectingParent();
+                                t1 && t1.layout && 1 !== this.animationProgress ? (this.relativeParent = t1, this.forceRelativeParentToResolveTarget(), this.relativeTarget = {
+                                    x: {
+                                        min: 0,
+                                        max: 0
+                                    },
+                                    y: {
+                                        min: 0,
+                                        max: 0
+                                    }
+                                }, this.relativeTargetOrigin = {
+                                    x: {
+                                        min: 0,
+                                        max: 0
+                                    },
+                                    y: {
+                                        min: 0,
+                                        max: 0
+                                    }
+                                }, Cs(this.relativeTargetOrigin, this.layout.layoutBox, t1.layout.layoutBox), vi(this.relativeTarget, this.relativeTargetOrigin)) : this.relativeParent = this.relativeTarget = void 0;
+                            }
+                            if (this.relativeTarget || this.targetDelta) {
+                                var r, a, l;
+                                if (this.target || (this.target = {
+                                    x: {
+                                        min: 0,
+                                        max: 0
+                                    },
+                                    y: {
+                                        min: 0,
+                                        max: 0
+                                    }
+                                }, this.targetWithTransforms = {
+                                    x: {
+                                        min: 0,
+                                        max: 0
+                                    },
+                                    y: {
+                                        min: 0,
+                                        max: 0
+                                    }
+                                }), this.relativeTarget && this.relativeTargetOrigin && this.relativeParent && this.relativeParent.target ? (this.forceRelativeParentToResolveTarget(), r = this.target, a = this.relativeTarget, l = this.relativeParent.target, As(r.x, a.x, l.x), As(r.y, a.y, l.y)) : this.targetDelta ? (Boolean(this.resumingFrom) ? this.target = this.applyTransform(this.layout.layoutBox) : vi(this.target, this.layout.layoutBox), zs(this.target, this.targetDelta)) : vi(this.target, this.layout.layoutBox), this.attemptToResolveRelativeTarget) {
+                                    this.attemptToResolveRelativeTarget = !1;
+                                    const t1 = this.getClosestProjectingParent();
+                                    t1 && Boolean(t1.resumingFrom) === Boolean(this.resumingFrom) && !t1.options.layoutScroll && t1.target && 1 !== this.animationProgress ? (this.relativeParent = t1, this.forceRelativeParentToResolveTarget(), this.relativeTarget = {
+                                        x: {
+                                            min: 0,
+                                            max: 0
+                                        },
+                                        y: {
+                                            min: 0,
+                                            max: 0
+                                        }
+                                    }, this.relativeTargetOrigin = {
+                                        x: {
+                                            min: 0,
+                                            max: 0
+                                        },
+                                        y: {
+                                            min: 0,
+                                            max: 0
+                                        }
+                                    }, Cs(this.relativeTargetOrigin, this.target, t1.target), vi(this.relativeTarget, this.relativeTargetOrigin)) : this.relativeParent = this.relativeTarget = void 0;
+                                }
+                                ji.resolvedTargetDeltas++;
+                            }
+                        }
+                    }
+                    getClosestProjectingParent() {
+                        if (this.parent && !Os(this.parent.latestValues) && !Us(this.parent.latestValues)) return this.parent.isProjecting() ? this.parent : this.parent.getClosestProjectingParent();
+                    }
+                    isProjecting() {
+                        return Boolean((this.relativeTarget || this.targetDelta || this.options.layoutRoot) && this.layout);
+                    }
+                    calcProjection() {
+                        var t1;
+                        const e = this.getLead(), n = Boolean(this.resumingFrom) || this !== e;
+                        let s = !0;
+                        if ((this.isProjectionDirty || (null === (t1 = this.parent) || void 0 === t1 ? void 0 : t1.isProjectionDirty)) && (s = !1), n && (this.isSharedProjectionDirty || this.isTransformDirty) && (s = !1), this.resolvedRelativeTargetAt === x.timestamp && (s = !1), s) return;
+                        const { layout: i, layoutId: o } = this.options;
+                        if (this.isTreeAnimating = Boolean(this.parent && this.parent.isTreeAnimating || this.currentAnimation || this.pendingAnimation), this.isTreeAnimating || (this.targetDelta = this.relativeTarget = void 0), !this.layout || !i && !o) return;
+                        vi(this.layoutCorrected, this.layout.layoutBox);
+                        const r = this.treeScale.x, a = this.treeScale.y;
+                        !function(t1, e, n, s = !1) {
+                            const i = n.length;
+                            if (!i) return;
+                            let o, r;
+                            e.x = e.y = 1;
+                            for(let a = 0; a < i; a++){
+                                o = n[a], r = o.projectionDelta;
+                                const i = o.instance;
+                                i && i.style && "contents" === i.style.display || (s && o.options.layoutScroll && o.scroll && o !== o.root && Ks(t1, {
+                                    x: -o.scroll.offset.x,
+                                    y: -o.scroll.offset.y
+                                }), r && (e.x *= r.x.scale, e.y *= r.y.scale, zs(t1, r)), s && Is(o.latestValues) && Ks(t1, o.latestValues));
+                            }
+                            e.x = Ys(e.x), e.y = Ys(e.y);
+                        }(this.layoutCorrected, this.treeScale, this.path, n), !e.layout || e.target || 1 === this.treeScale.x && 1 === this.treeScale.y || (e.target = e.layout.layoutBox);
+                        const { target: l } = e;
+                        if (!l) return void (this.projectionTransform && (this.projectionDelta = {
+                            x: {
+                                translate: 0,
+                                scale: 1,
+                                origin: 0,
+                                originPoint: 0
+                            },
+                            y: {
+                                translate: 0,
+                                scale: 1,
+                                origin: 0,
+                                originPoint: 0
+                            }
+                        }, this.projectionTransform = "none", this.scheduleRender()));
+                        this.projectionDelta || (this.projectionDelta = {
+                            x: {
+                                translate: 0,
+                                scale: 1,
+                                origin: 0,
+                                originPoint: 0
+                            },
+                            y: {
+                                translate: 0,
+                                scale: 1,
+                                origin: 0,
+                                originPoint: 0
+                            }
+                        }, this.projectionDeltaWithTransform = {
+                            x: {
+                                translate: 0,
+                                scale: 1,
+                                origin: 0,
+                                originPoint: 0
+                            },
+                            y: {
+                                translate: 0,
+                                scale: 1,
+                                origin: 0,
+                                originPoint: 0
+                            }
+                        });
+                        const u = this.projectionTransform;
+                        Es(this.projectionDelta, this.layoutCorrected, l, this.latestValues), this.projectionTransform = Mi(this.projectionDelta, this.treeScale), this.projectionTransform === u && this.treeScale.x === r && this.treeScale.y === a || (this.hasProjected = !0, this.scheduleRender(), this.notifyListeners("projectionUpdate", l)), ji.recalculatedProjection++;
+                    }
+                    hide() {
+                        this.isVisible = !1;
+                    }
+                    show() {
+                        this.isVisible = !0;
+                    }
+                    scheduleRender(t1 = !0) {
+                        if (this.options.scheduleRender && this.options.scheduleRender(), t1) {
+                            const t1 = this.getStack();
+                            t1 && t1.scheduleRender();
+                        }
+                        this.resumingFrom && !this.resumingFrom.instance && (this.resumingFrom = void 0);
+                    }
+                    setAnimationOrigin(t1, e = !1) {
+                        const n = this.snapshot, s = n ? n.latestValues : {}, i = {
+                            ...this.latestValues
+                        }, o = {
+                            x: {
+                                translate: 0,
+                                scale: 1,
+                                origin: 0,
+                                originPoint: 0
+                            },
+                            y: {
+                                translate: 0,
+                                scale: 1,
+                                origin: 0,
+                                originPoint: 0
+                            }
+                        };
+                        this.relativeParent && this.relativeParent.options.layoutRoot || (this.relativeTarget = this.relativeTargetOrigin = void 0), this.attemptToResolveRelativeTarget = !e;
+                        const r = {
+                            x: {
+                                min: 0,
+                                max: 0
+                            },
+                            y: {
+                                min: 0,
+                                max: 0
+                            }
+                        }, a = (n ? n.source : void 0) !== (this.layout ? this.layout.source : void 0), l = this.getStack(), u = !l || l.members.length <= 1, c = Boolean(a && !u && !0 === this.options.crossfade && !this.path.some(_i));
+                        let h;
+                        this.animationProgress = 0, this.mixTargetDelta = (e)=>{
+                            const n = e / 1e3;
+                            var l, d, m, p, f, g;
+                            Zi(o.x, t1.x, n), Zi(o.y, t1.y, n), this.setTargetDelta(o), this.relativeTarget && this.relativeTargetOrigin && this.layout && this.relativeParent && this.relativeParent.layout && (Cs(r, this.layout.layoutBox, this.relativeParent.layout.layoutBox), m = this.relativeTarget, p = this.relativeTargetOrigin, f = r, g = n, Ki(m.x, p.x, f.x, g), Ki(m.y, p.y, f.y, g), h && (l = this.relativeTarget, d = h, l.x.min === d.x.min && l.x.max === d.x.max && l.y.min === d.y.min && l.y.max === d.y.max) && (this.isProjectionDirty = !1), h || (h = {
+                                x: {
+                                    min: 0,
+                                    max: 0
+                                },
+                                y: {
+                                    min: 0,
+                                    max: 0
+                                }
+                            }), vi(h, this.relativeTarget)), a && (this.animationValues = i, function(t1, e, n, s, i, o) {
+                                i ? (t1.opacity = Kt(0, void 0 !== n.opacity ? n.opacity : 1, pi(s)), t1.opacityExit = Kt(void 0 !== e.opacity ? e.opacity : 1, 0, fi(s))) : o && (t1.opacity = Kt(void 0 !== e.opacity ? e.opacity : 1, void 0 !== n.opacity ? n.opacity : 1, s));
+                                for(let i = 0; i < ci; i++){
+                                    const o = `border${ui[i]}Radius`;
+                                    let r = mi(e, o), a = mi(n, o);
+                                    void 0 === r && void 0 === a || (r || (r = 0), a || (a = 0), 0 === r || 0 === a || di(r) === di(a) ? (t1[o] = Math.max(Kt(hi(r), hi(a), s), 0), (H.test(a) || H.test(r)) && (t1[o] += "%")) : t1[o] = a);
+                                }
+                                (e.rotate || n.rotate) && (t1.rotate = Kt(e.rotate || 0, n.rotate || 0, s));
+                            }(i, s, this.latestValues, n, c, u)), this.root.scheduleUpdateProjection(), this.scheduleRender(), this.animationProgress = n;
+                        }, this.mixTargetDelta(this.options.layoutRoot ? 1e3 : 0);
+                    }
+                    startAnimation(t1) {
+                        this.notifyListeners("animationStart"), this.currentAnimation && this.currentAnimation.stop(), this.resumingFrom && this.resumingFrom.currentAnimation && this.resumingFrom.currentAnimation.stop(), this.pendingAnimation && (v(this.pendingAnimation), this.pendingAnimation = void 0), this.pendingAnimation = y.update(()=>{
+                            ni.hasAnimatedSinceResize = !0, this.currentAnimation = function(t1, e, n) {
+                                const s = je(0) ? 0 : S(0);
+                                return s.start(Le("", s, 1e3, n)), s.animation;
+                            }(0, 0, {
+                                ...t1,
+                                onUpdate: (e)=>{
+                                    this.mixTargetDelta(e), t1.onUpdate && t1.onUpdate(e);
+                                },
+                                onComplete: ()=>{
+                                    t1.onComplete && t1.onComplete(), this.completeAnimation();
+                                }
+                            }), this.resumingFrom && (this.resumingFrom.currentAnimation = this.currentAnimation), this.pendingAnimation = void 0;
+                        });
+                    }
+                    completeAnimation() {
+                        this.resumingFrom && (this.resumingFrom.currentAnimation = void 0, this.resumingFrom.preserveOpacity = void 0);
+                        const t1 = this.getStack();
+                        t1 && t1.exitAnimationComplete(), this.resumingFrom = this.currentAnimation = this.animationValues = void 0, this.notifyListeners("animationComplete");
+                    }
+                    finishAnimation() {
+                        this.currentAnimation && (this.mixTargetDelta && this.mixTargetDelta(1e3), this.currentAnimation.stop()), this.completeAnimation();
+                    }
+                    applyTransformsToTarget() {
+                        const t1 = this.getLead();
+                        let { targetWithTransforms: e, target: n, layout: s, latestValues: i } = t1;
+                        if (e && n && s) {
+                            if (this !== t1 && this.layout && s && no(this.options.animationType, this.layout.layoutBox, s.layoutBox)) {
+                                n = this.target || {
+                                    x: {
+                                        min: 0,
+                                        max: 0
+                                    },
+                                    y: {
+                                        min: 0,
+                                        max: 0
+                                    }
+                                };
+                                const e = Ts(this.layout.layoutBox.x);
+                                n.x.min = t1.target.x.min, n.x.max = n.x.min + e;
+                                const s = Ts(this.layout.layoutBox.y);
+                                n.y.min = t1.target.y.min, n.y.max = n.y.min + s;
+                            }
+                            vi(e, n), Ks(e, i), Es(this.projectionDeltaWithTransform, this.layoutCorrected, e, i);
+                        }
+                    }
+                    registerSharedNode(t1, e) {
+                        this.sharedNodes.has(t1) || this.sharedNodes.set(t1, new Ci), this.sharedNodes.get(t1).add(e);
+                        const n = e.options.initialPromotionConfig;
+                        e.promote({
+                            transition: n ? n.transition : void 0,
+                            preserveFollowOpacity: n && n.shouldPreserveFollowOpacity ? n.shouldPreserveFollowOpacity(e) : void 0
+                        });
+                    }
+                    isLead() {
+                        const t1 = this.getStack();
+                        return !t1 || t1.lead === this;
+                    }
+                    getLead() {
+                        var t1;
+                        const { layoutId: e } = this.options;
+                        return e && (null === (t1 = this.getStack()) || void 0 === t1 ? void 0 : t1.lead) || this;
+                    }
+                    getPrevLead() {
+                        var t1;
+                        const { layoutId: e } = this.options;
+                        return e ? null === (t1 = this.getStack()) || void 0 === t1 ? void 0 : t1.prevLead : void 0;
+                    }
+                    getStack() {
+                        const { layoutId: t1 } = this.options;
+                        if (t1) return this.root.sharedNodes.get(t1);
+                    }
+                    promote({ needsReset: t1, transition: e, preserveFollowOpacity: n } = {}) {
+                        const s = this.getStack();
+                        s && s.promote(this, n), t1 && (this.projectionDelta = void 0, this.needsReset = !0), e && this.setOptions({
+                            transition: e
+                        });
+                    }
+                    relegate() {
+                        const t1 = this.getStack();
+                        return !!t1 && t1.relegate(this);
+                    }
+                    resetRotation() {
+                        const { visualElement: t1 } = this.options;
+                        if (!t1) return;
+                        let e = !1;
+                        const { latestValues: n } = t1;
+                        if ((n.rotate || n.rotateX || n.rotateY || n.rotateZ) && (e = !0), !e) return;
+                        const s = {};
+                        for(let e = 0; e < Ri.length; e++){
+                            const i = "rotate" + Ri[e];
+                            n[i] && (s[i] = n[i], t1.setStaticValue(i, 0));
+                        }
+                        t1.render();
+                        for(const e in s)t1.setStaticValue(e, s[e]);
+                        t1.scheduleRender();
+                    }
+                    getProjectionStyles(t1 = {}) {
+                        var e, n;
+                        const s = {};
+                        if (!this.instance || this.isSVG) return s;
+                        if (!this.isVisible) return {
+                            visibility: "hidden"
+                        };
+                        s.visibility = "";
+                        const i = this.getTransformTemplate();
+                        if (this.needsReset) return this.needsReset = !1, s.opacity = "", s.pointerEvents = In(t1.pointerEvents) || "", s.transform = i ? i(this.latestValues, "") : "none", s;
+                        const o = this.getLead();
+                        if (!this.projectionDelta || !this.layout || !o.target) {
+                            const e = {};
+                            return this.options.layoutId && (e.opacity = void 0 !== this.latestValues.opacity ? this.latestValues.opacity : 1, e.pointerEvents = In(t1.pointerEvents) || ""), this.hasProjected && !Is(this.latestValues) && (e.transform = i ? i({}, "") : "none", this.hasProjected = !1), e;
+                        }
+                        const r = o.animationValues || o.latestValues;
+                        this.applyTransformsToTarget(), s.transform = Mi(this.projectionDeltaWithTransform, this.treeScale, r), i && (s.transform = i(r, s.transform));
+                        const { x: a, y: l } = this.projectionDelta;
+                        s.transformOrigin = `${100 * a.origin}% ${100 * l.origin}% 0`, o.animationValues ? s.opacity = o === this ? null !== (n = null !== (e = r.opacity) && void 0 !== e ? e : this.latestValues.opacity) && void 0 !== n ? n : 1 : this.preserveOpacity ? this.latestValues.opacity : r.opacityExit : s.opacity = o === this ? void 0 !== r.opacity ? r.opacity : "" : void 0 !== r.opacityExit ? r.opacityExit : 0;
+                        for(const t1 in pn){
+                            if (void 0 === r[t1]) continue;
+                            const { correct: e, applyTo: n } = pn[t1], i = "none" === s.transform ? r[t1] : e(r[t1], o);
+                            if (n) {
+                                const t1 = n.length;
+                                for(let e = 0; e < t1; e++)s[n[e]] = i;
+                            } else s[t1] = i;
+                        }
+                        return this.options.layoutId && (s.pointerEvents = o === this ? In(t1.pointerEvents) || "" : "none"), s;
+                    }
+                    clearSnapshot() {
+                        this.resumeFrom = this.snapshot = void 0;
+                    }
+                    resetTree() {
+                        this.root.nodes.forEach((t1)=>{
+                            var e;
+                            return null === (e = t1.currentAnimation) || void 0 === e ? void 0 : e.stop();
+                        }), this.root.nodes.forEach($i), this.root.sharedNodes.clear();
+                    }
+                };
+            }
+            function Fi(t1) {
+                t1.updateLayout();
+            }
+            function Oi(t1) {
+                var e;
+                const n = (null === (e = t1.resumeFrom) || void 0 === e ? void 0 : e.snapshot) || t1.snapshot;
+                if (t1.isLead() && t1.layout && n && t1.hasListeners("didUpdate")) {
+                    const { layoutBox: e, measuredBox: s } = t1.layout, { animationType: i } = t1.options, o = n.source !== t1.layout.source;
+                    "size" === i ? js((t1)=>{
+                        const s = o ? n.measuredBox[t1] : n.layoutBox[t1], i = Ts(s);
+                        s.min = e[t1].min, s.max = s.min + i;
+                    }) : no(i, n.layoutBox, e) && js((s)=>{
+                        const i = o ? n.measuredBox[s] : n.layoutBox[s], r = Ts(e[s]);
+                        i.max = i.min + r, t1.relativeTarget && !t1.currentAnimation && (t1.isProjectionDirty = !0, t1.relativeTarget[s].max = t1.relativeTarget[s].min + r);
+                    });
+                    const r = {
+                        x: {
+                            translate: 0,
+                            scale: 1,
+                            origin: 0,
+                            originPoint: 0
+                        },
+                        y: {
+                            translate: 0,
+                            scale: 1,
+                            origin: 0,
+                            originPoint: 0
+                        }
+                    };
+                    Es(r, e, n.layoutBox);
+                    const a = {
+                        x: {
+                            translate: 0,
+                            scale: 1,
+                            origin: 0,
+                            originPoint: 0
+                        },
+                        y: {
+                            translate: 0,
+                            scale: 1,
+                            origin: 0,
+                            originPoint: 0
+                        }
+                    };
+                    o ? Es(a, t1.applyTransform(s, !0), n.measuredBox) : Es(a, e, n.layoutBox);
+                    const l = !Ei(r);
+                    let u = !1;
+                    if (!t1.resumeFrom) {
+                        const s = t1.getClosestProjectingParent();
+                        if (s && !s.resumeFrom) {
+                            const { snapshot: i, layout: o } = s;
+                            if (i && o) {
+                                const r = {
+                                    x: {
+                                        min: 0,
+                                        max: 0
+                                    },
+                                    y: {
+                                        min: 0,
+                                        max: 0
+                                    }
+                                };
+                                Cs(r, n.layoutBox, i.layoutBox);
+                                const a = {
+                                    x: {
+                                        min: 0,
+                                        max: 0
+                                    },
+                                    y: {
+                                        min: 0,
+                                        max: 0
+                                    }
+                                };
+                                Cs(a, e, o.layoutBox), Ai(r, a) || (u = !0), s.options.layoutRoot && (t1.relativeTarget = a, t1.relativeTargetOrigin = r, t1.relativeParent = s);
+                            }
+                        }
+                    }
+                    t1.notifyListeners("didUpdate", {
+                        layout: e,
+                        snapshot: n,
+                        delta: a,
+                        layoutDelta: r,
+                        hasLayoutChanged: l,
+                        hasRelativeTargetChanged: u
+                    });
+                } else if (t1.isLead()) {
+                    const { onExitComplete: e } = t1.options;
+                    e && e();
+                }
+                t1.options.transition = void 0;
+            }
+            function Ii(t1) {
+                ji.totalNodes++, t1.parent && (t1.isProjecting() || (t1.isProjectionDirty = t1.parent.isProjectionDirty), t1.isSharedProjectionDirty || (t1.isSharedProjectionDirty = Boolean(t1.isProjectionDirty || t1.parent.isProjectionDirty || t1.parent.isSharedProjectionDirty)), t1.isTransformDirty || (t1.isTransformDirty = t1.parent.isTransformDirty));
+            }
+            function Ui(t1) {
+                t1.isProjectionDirty = t1.isSharedProjectionDirty = t1.isTransformDirty = !1;
+            }
+            function Ni(t1) {
+                t1.clearSnapshot();
+            }
+            function $i(t1) {
+                t1.clearMeasurements();
+            }
+            function Wi(t1) {
+                t1.isLayoutDirty = !1;
+            }
+            function Hi(t1) {
+                const { visualElement: e } = t1.options;
+                e && e.getProps().onBeforeLayoutMeasure && e.notify("BeforeLayoutMeasure"), t1.resetTransform();
+            }
+            function zi(t1) {
+                t1.finishAnimation(), t1.targetDelta = t1.relativeTarget = t1.target = void 0, t1.isProjectionDirty = !0;
+            }
+            function Yi(t1) {
+                t1.resolveTargetDelta();
+            }
+            function Xi(t1) {
+                t1.calcProjection();
+            }
+            function Gi(t1) {
+                t1.resetRotation();
+            }
+            function qi(t1) {
+                t1.removeLeadSnapshot();
+            }
+            function Zi(t1, e, n) {
+                t1.translate = Kt(e.translate, 0, n), t1.scale = Kt(e.scale, 1, n), t1.origin = e.origin, t1.originPoint = e.originPoint;
+            }
+            function Ki(t1, e, n, s) {
+                t1.min = Kt(e.min, n.min, s), t1.max = Kt(e.max, n.max, s);
+            }
+            function _i(t1) {
+                return t1.animationValues && void 0 !== t1.animationValues.opacityExit;
+            }
+            const Ji = {
+                duration: .45,
+                ease: [
+                    .4,
+                    0,
+                    .1,
+                    1
+                ]
+            }, Qi = (t1)=>"undefined" != typeof navigator && navigator.userAgent.toLowerCase().includes(t1), to = Qi("applewebkit/") && !Qi("chrome/") ? Math.round : n;
+            function eo(t1) {
+                t1.min = to(t1.min), t1.max = to(t1.max);
+            }
+            function no(t1, e, n) {
+                return "position" === t1 || "preserve-aspect" === t1 && !Ss(Vi(e), Vi(n), .2);
+            }
+            const so = Bi({
+                attachResizeListener: (t1, e)=>Hn(t1, "resize", e),
+                measureScroll: ()=>({
+                        x: document.documentElement.scrollLeft || document.body.scrollLeft,
+                        y: document.documentElement.scrollTop || document.body.scrollTop
+                    }),
+                checkIsScrollRoot: ()=>!0
+            }), io = {
+                current: void 0
+            }, oo = Bi({
+                measureScroll: (t1)=>({
+                        x: t1.scrollLeft,
+                        y: t1.scrollTop
+                    }),
+                defaultParent: ()=>{
+                    if (!io.current) {
+                        const t1 = new so({});
+                        t1.mount(window), t1.setOptions({
+                            layoutScroll: !0
+                        }), io.current = t1;
+                    }
+                    return io.current;
+                },
+                resetTransform: (t1, e)=>{
+                    t1.style.transform = void 0 !== e ? e : "none";
+                },
+                checkIsScrollRoot: (t1)=>Boolean("fixed" === window.getComputedStyle(t1).position)
+            }), ro = {
+                pan: {
+                    Feature: class extends Jn {
+                        constructor(){
+                            super(...arguments), this.removePointerDownListener = n;
+                        }
+                        onPointerDown(t1) {
+                            this.session = new fs(t1, this.createPanHandlers(), {
+                                transformPagePoint: this.node.getTransformPagePoint()
+                            });
+                        }
+                        createPanHandlers() {
+                            const { onPanSessionStart: t1, onPanStart: e, onPan: n, onPanEnd: s } = this.node.getProps();
+                            return {
+                                onSessionStart: ei(t1),
+                                onStart: ei(e),
+                                onMove: n,
+                                onEnd: (t1, e)=>{
+                                    delete this.session, s && y.update(()=>s(t1, e));
+                                }
+                            };
+                        }
+                        mount() {
+                            this.removePointerDownListener = Xn(this.node.current, "pointerdown", (t1)=>this.onPointerDown(t1));
+                        }
+                        update() {
+                            this.session && this.session.updateHandlers(this.createPanHandlers());
+                        }
+                        unmount() {
+                            this.removePointerDownListener(), this.session && this.session.end();
+                        }
+                    }
+                },
+                drag: {
+                    Feature: class extends Jn {
+                        constructor(t1){
+                            super(t1), this.removeGroupControls = n, this.removeListeners = n, this.controls = new Qs(t1);
+                        }
+                        mount() {
+                            const { dragControls: t1 } = this.node.getProps();
+                            t1 && (this.removeGroupControls = t1.subscribe(this.controls)), this.removeListeners = this.controls.addListeners() || n;
+                        }
+                        unmount() {
+                            this.removeGroupControls(), this.removeListeners();
+                        }
+                    },
+                    ProjectionNode: oo,
+                    MeasureLayout: ai
+                }
+            }, ao = /var\((--[a-zA-Z0-9-_]+),? ?([a-zA-Z0-9 ()%#.,-]+)?\)/;
+            function lo(t1, e, n = 1) {
+                r(n <= 4, `Max CSS variable fallback depth detected in property "${t1}". This may indicate a circular fallback dependency.`);
+                const [s, i] = function(t1) {
+                    const e = ao.exec(t1);
+                    if (!e) return [
+                        , 
+                    ];
+                    const [, n, s] = e;
+                    return [
+                        n,
+                        s
+                    ];
+                }(t1);
+                if (!s) return;
+                const o = window.getComputedStyle(e).getPropertyValue(s);
+                if (o) {
+                    const t1 = o.trim();
+                    return l(t1) ? parseFloat(t1) : t1;
+                }
+                return A(i) ? lo(i, e, n + 1) : i;
+            }
+            const uo = new Set([
+                "width",
+                "height",
+                "top",
+                "left",
+                "right",
+                "bottom",
+                "x",
+                "y",
+                "translateX",
+                "translateY"
+            ]), co = (t1)=>uo.has(t1), ho = (t1)=>t1 === L || t1 === z, mo = (t1, e)=>parseFloat(t1.split(", ")[e]), po = (t1, e)=>(n, { transform: s })=>{
+                    if ("none" === s || !s) return 0;
+                    const i = s.match(/^matrix3d\((.+)\)$/);
+                    if (i) return mo(i[1], e);
+                    {
+                        const e = s.match(/^matrix\((.+)\)$/);
+                        return e ? mo(e[1], t1) : 0;
+                    }
+                }, fo = new Set([
+                "x",
+                "y",
+                "z"
+            ]), go = wt.filter((t1)=>!fo.has(t1)), yo = {
+                width: ({ x: t1 }, { paddingLeft: e = "0", paddingRight: n = "0" })=>t1.max - t1.min - parseFloat(e) - parseFloat(n),
+                height: ({ y: t1 }, { paddingTop: e = "0", paddingBottom: n = "0" })=>t1.max - t1.min - parseFloat(e) - parseFloat(n),
+                top: (t1, { top: e })=>parseFloat(e),
+                left: (t1, { left: e })=>parseFloat(e),
+                bottom: ({ y: t1 }, { top: e })=>parseFloat(e) + (t1.max - t1.min),
+                right: ({ x: t1 }, { left: e })=>parseFloat(e) + (t1.max - t1.min),
+                x: po(4, 13),
+                y: po(5, 14)
+            };
+            yo.translateX = yo.x, yo.translateY = yo.y;
+            function vo(t1, e, n, s) {
+                return ((t1)=>Object.keys(t1).some(co))(e) ? ((t1, e, n = {}, s = {})=>{
+                    e = {
+                        ...e
+                    }, s = {
+                        ...s
+                    };
+                    const i = Object.keys(e).filter(co);
+                    let o = [], a = !1;
+                    const l = [];
+                    if (i.forEach((i)=>{
+                        const u = t1.getValue(i);
+                        if (!t1.hasValue(i)) return;
+                        let h = n[i], d = gt(h);
+                        const m = e[i];
+                        let p;
+                        if (c(m)) {
+                            const t1 = m.length, e = null === m[0] ? 1 : 0;
+                            h = m[e], d = gt(h);
+                            for(let n = e; n < t1 && null !== m[n]; n++)p ? r(gt(m[n]) === p, "All keyframes must be of the same type") : (p = gt(m[n]), r(p === d || ho(d) && ho(p), "Keyframes must be of the same dimension as the current value"));
+                        } else p = gt(m);
+                        if (d !== p) {
+                            if (ho(d) && ho(p)) {
+                                const t1 = u.get();
+                                "string" == typeof t1 && u.set(parseFloat(t1)), "string" == typeof m ? e[i] = parseFloat(m) : Array.isArray(m) && p === z && (e[i] = m.map(parseFloat));
+                            } else (null == d ? void 0 : d.transform) && (null == p ? void 0 : p.transform) && (0 === h || 0 === m) ? 0 === h ? u.set(p.transform(h)) : e[i] = d.transform(m) : (a || (o = function(t1) {
+                                const e = [];
+                                return go.forEach((n)=>{
+                                    const s = t1.getValue(n);
+                                    void 0 !== s && (e.push([
+                                        n,
+                                        s.get()
+                                    ]), s.set(n.startsWith("scale") ? 1 : 0));
+                                }), e.length && t1.render(), e;
+                            }(t1), a = !0), l.push(i), s[i] = void 0 !== s[i] ? s[i] : e[i], u.jump(m));
+                        }
+                    }), l.length) {
+                        const n = l.indexOf("height") >= 0 ? window.pageYOffset : null, i = ((t1, e, n)=>{
+                            const s = e.measureViewportBox(), i = e.current, o = getComputedStyle(i), { display: r } = o, a = {};
+                            "none" === r && e.setStaticValue("display", t1.display || "block"), n.forEach((t1)=>{
+                                a[t1] = yo[t1](s, o);
+                            }), e.render();
+                            const l = e.measureViewportBox();
+                            return n.forEach((n)=>{
+                                const s = e.getValue(n);
+                                s && s.jump(a[n]), t1[n] = yo[n](l, o);
+                            }), t1;
+                        })(e, t1, l);
+                        return o.length && o.forEach(([e, n])=>{
+                            t1.getValue(e).set(n);
+                        }), t1.render(), He && null !== n && window.scrollTo({
+                            top: n
+                        }), {
+                            target: i,
+                            transitionEnd: s
+                        };
+                    }
+                    return {
+                        target: e,
+                        transitionEnd: s
+                    };
+                })(t1, e, n, s) : {
+                    target: e,
+                    transitionEnd: s
+                };
+            }
+            const xo = {
+                current: null
+            }, Po = {
+                current: !1
+            }, bo = new WeakMap, To = Object.keys(on), So = To.length, wo = [
+                "AnimationStart",
+                "AnimationComplete",
+                "Update",
+                "BeforeLayoutMeasure",
+                "LayoutMeasure",
+                "LayoutAnimationStart",
+                "LayoutAnimationComplete"
+            ], Eo = Qe.length;
+            class Ao extends class {
+                constructor({ parent: t1, props: e, presenceContext: n, reducedMotionConfig: s, visualState: i }, o = {}){
+                    this.current = null, this.children = new Set, this.isVariantNode = !1, this.isControllingVariants = !1, this.shouldReduceMotion = null, this.values = new Map, this.features = {}, this.valueSubscriptions = new Map, this.prevMotionValues = {}, this.events = {}, this.propEventSubscriptions = {}, this.notifyUpdate = ()=>this.notify("Update", this.latestValues), this.render = ()=>{
+                        this.current && (this.triggerBuild(), this.renderInstance(this.current, this.renderState, this.props.style, this.projection));
+                    }, this.scheduleRender = ()=>y.render(this.render, !1, !0);
+                    const { latestValues: r, renderState: a } = i;
+                    this.latestValues = r, this.baseTarget = {
+                        ...r
+                    }, this.initialValues = e.initial ? {
+                        ...r
+                    } : {}, this.renderState = a, this.parent = t1, this.props = e, this.presenceContext = n, this.depth = t1 ? t1.depth + 1 : 0, this.reducedMotionConfig = s, this.options = o, this.isControllingVariants = tn(e), this.isVariantNode = en(e), this.isVariantNode && (this.variantChildren = new Set), this.manuallyAnimateOnMount = Boolean(t1 && t1.current);
+                    const { willChange: l, ...u } = this.scrapeMotionValuesFromProps(e, {});
+                    for(const t1 in u){
+                        const e = u[t1];
+                        void 0 !== r[t1] && je(e) && (e.set(r[t1], !1), Be(l) && l.add(t1));
+                    }
+                }
+                scrapeMotionValuesFromProps(t1, e) {
+                    return {};
+                }
+                mount(t1) {
+                    this.current = t1, bo.set(t1, this), this.projection && !this.projection.instance && this.projection.mount(t1), this.parent && this.isVariantNode && !this.isControllingVariants && (this.removeFromVariantTree = this.parent.addVariantChild(this)), this.values.forEach((t1, e)=>this.bindToMotionValue(e, t1)), Po.current || function() {
+                        if (Po.current = !0, He) {
+                            if (window.matchMedia) {
+                                const t1 = window.matchMedia("(prefers-reduced-motion)"), e = ()=>xo.current = t1.matches;
+                                t1.addListener(e), e();
+                            } else xo.current = !1;
+                        }
+                    }(), this.shouldReduceMotion = "never" !== this.reducedMotionConfig && ("always" === this.reducedMotionConfig || xo.current), this.parent && this.parent.children.add(this), this.update(this.props, this.presenceContext);
+                }
+                unmount() {
+                    bo.delete(this.current), this.projection && this.projection.unmount(), v(this.notifyUpdate), v(this.render), this.valueSubscriptions.forEach((t1)=>t1()), this.removeFromVariantTree && this.removeFromVariantTree(), this.parent && this.parent.children.delete(this);
+                    for(const t1 in this.events)this.events[t1].clear();
+                    for(const t1 in this.features)this.features[t1].unmount();
+                    this.current = null;
+                }
+                bindToMotionValue(t1, e) {
+                    const n = Et.has(t1), s = e.on("change", (e)=>{
+                        this.latestValues[t1] = e, this.props.onUpdate && y.update(this.notifyUpdate, !1, !0), n && this.projection && (this.projection.isTransformDirty = !0);
+                    }), i = e.on("renderRequest", this.scheduleRender);
+                    this.valueSubscriptions.set(t1, ()=>{
+                        s(), i();
+                    });
+                }
+                sortNodePosition(t1) {
+                    return this.current && this.sortInstanceNodePosition && this.type === t1.type ? this.sortInstanceNodePosition(this.current, t1.current) : 0;
+                }
+                loadFeatures({ children: t1, ...e }, n, s, i) {
+                    let o, r;
+                    for(let t1 = 0; t1 < So; t1++){
+                        const n = To[t1], { isEnabled: s, Feature: i, ProjectionNode: a, MeasureLayout: l } = on[n];
+                        a && (o = a), s(e) && (!this.features[n] && i && (this.features[n] = new i(this)), l && (r = l));
+                    }
+                    if (!this.projection && o) {
+                        this.projection = new o(this.latestValues, this.parent && this.parent.projection);
+                        const { layoutId: t1, layout: n, drag: s, dragConstraints: r, layoutScroll: a, layoutRoot: l } = e;
+                        this.projection.setOptions({
+                            layoutId: t1,
+                            layout: n,
+                            alwaysMeasureLayout: Boolean(s) || r && Ze(r),
+                            visualElement: this,
+                            scheduleRender: ()=>this.scheduleRender(),
+                            animationType: "string" == typeof n ? n : "both",
+                            initialPromotionConfig: i,
+                            layoutScroll: a,
+                            layoutRoot: l
+                        });
+                    }
+                    return r;
+                }
+                updateFeatures() {
+                    for(const t1 in this.features){
+                        const e = this.features[t1];
+                        e.isMounted ? e.update() : (e.mount(), e.isMounted = !0);
+                    }
+                }
+                triggerBuild() {
+                    this.build(this.renderState, this.latestValues, this.options, this.props);
+                }
+                measureViewportBox() {
+                    return this.current ? this.measureInstanceViewportBox(this.current, this.props) : {
+                        x: {
+                            min: 0,
+                            max: 0
+                        },
+                        y: {
+                            min: 0,
+                            max: 0
+                        }
+                    };
+                }
+                getStaticValue(t1) {
+                    return this.latestValues[t1];
+                }
+                setStaticValue(t1, e) {
+                    this.latestValues[t1] = e;
+                }
+                makeTargetAnimatable(t1, e = !0) {
+                    return this.makeTargetAnimatableFromInstance(t1, this.props, e);
+                }
+                update(t1, e) {
+                    (t1.transformTemplate || this.props.transformTemplate) && this.scheduleRender(), this.prevProps = this.props, this.props = t1, this.prevPresenceContext = this.presenceContext, this.presenceContext = e;
+                    for(let e = 0; e < wo.length; e++){
+                        const n = wo[e];
+                        this.propEventSubscriptions[n] && (this.propEventSubscriptions[n](), delete this.propEventSubscriptions[n]);
+                        const s = t1["on" + n];
+                        s && (this.propEventSubscriptions[n] = this.on(n, s));
+                    }
+                    this.prevMotionValues = function(t1, e, n) {
+                        const { willChange: s } = e;
+                        for(const i in e){
+                            const o = e[i], r = n[i];
+                            if (je(o)) t1.addValue(i, o), Be(s) && s.add(i);
+                            else if (je(r)) t1.addValue(i, S(o, {
+                                owner: t1
+                            })), Be(s) && s.remove(i);
+                            else if (r !== o) {
+                                if (t1.hasValue(i)) {
+                                    const e = t1.getValue(i);
+                                    !e.hasAnimated && e.set(o);
+                                } else {
+                                    const e = t1.getStaticValue(i);
+                                    t1.addValue(i, S(void 0 !== e ? e : o, {
+                                        owner: t1
+                                    }));
+                                }
+                            }
+                        }
+                        for(const s in n)void 0 === e[s] && t1.removeValue(s);
+                        return e;
+                    }(this, this.scrapeMotionValuesFromProps(t1, this.prevProps), this.prevMotionValues), this.handleChildMotionValue && this.handleChildMotionValue();
+                }
+                getProps() {
+                    return this.props;
+                }
+                getVariant(t1) {
+                    return this.props.variants ? this.props.variants[t1] : void 0;
+                }
+                getDefaultTransition() {
+                    return this.props.transition;
+                }
+                getTransformPagePoint() {
+                    return this.props.transformPagePoint;
+                }
+                getClosestVariantNode() {
+                    return this.isVariantNode ? this : this.parent ? this.parent.getClosestVariantNode() : void 0;
+                }
+                getVariantContext(t1 = !1) {
+                    if (t1) return this.parent ? this.parent.getVariantContext() : void 0;
+                    if (!this.isControllingVariants) {
+                        const t1 = this.parent && this.parent.getVariantContext() || {};
+                        return void 0 !== this.props.initial && (t1.initial = this.props.initial), t1;
+                    }
+                    const e = {};
+                    for(let t1 = 0; t1 < Eo; t1++){
+                        const n = Qe[t1], s = this.props[n];
+                        (Ke(s) || !1 === s) && (e[n] = s);
+                    }
+                    return e;
+                }
+                addVariantChild(t1) {
+                    const e = this.getClosestVariantNode();
+                    if (e) return e.variantChildren && e.variantChildren.add(t1), ()=>e.variantChildren.delete(t1);
+                }
+                addValue(t1, e) {
+                    e !== this.values.get(t1) && (this.removeValue(t1), this.bindToMotionValue(t1, e)), this.values.set(t1, e), this.latestValues[t1] = e.get();
+                }
+                removeValue(t1) {
+                    this.values.delete(t1);
+                    const e = this.valueSubscriptions.get(t1);
+                    e && (e(), this.valueSubscriptions.delete(t1)), delete this.latestValues[t1], this.removeValueFromRenderState(t1, this.renderState);
+                }
+                hasValue(t1) {
+                    return this.values.has(t1);
+                }
+                getValue(t1, e) {
+                    if (this.props.values && this.props.values[t1]) return this.props.values[t1];
+                    let n = this.values.get(t1);
+                    return void 0 === n && void 0 !== e && (n = S(e, {
+                        owner: this
+                    }), this.addValue(t1, n)), n;
+                }
+                readValue(t1) {
+                    var e;
+                    return void 0 === this.latestValues[t1] && this.current ? null !== (e = this.getBaseTargetFromProps(this.props, t1)) && void 0 !== e ? e : this.readValueFromInstance(this.current, t1, this.options) : this.latestValues[t1];
+                }
+                setBaseTarget(t1, e) {
+                    this.baseTarget[t1] = e;
+                }
+                getBaseTarget(t1) {
+                    var e;
+                    const { initial: n } = this.props, s = "string" == typeof n || "object" == typeof n ? null === (e = vt(this.props, n)) || void 0 === e ? void 0 : e[t1] : void 0;
+                    if (n && void 0 !== s) return s;
+                    const i = this.getBaseTargetFromProps(this.props, t1);
+                    return void 0 === i || je(i) ? void 0 !== this.initialValues[t1] && void 0 === s ? void 0 : this.baseTarget[t1] : i;
+                }
+                on(t1, e) {
+                    return this.events[t1] || (this.events[t1] = new m), this.events[t1].add(e);
+                }
+                notify(t1, ...e) {
+                    this.events[t1] && this.events[t1].notify(...e);
+                }
+            } {
+                sortInstanceNodePosition(t1, e) {
+                    return 2 & t1.compareDocumentPosition(e) ? 1 : -1;
+                }
+                getBaseTargetFromProps(t1, e) {
+                    return t1.style ? t1.style[e] : void 0;
+                }
+                removeValueFromRenderState(t1, { vars: e, style: n }) {
+                    delete e[t1], delete n[t1];
+                }
+                makeTargetAnimatableFromInstance({ transition: t1, transitionEnd: e, ...n }, { transformValues: s }, i) {
+                    let o = function(t1, e, n) {
+                        const s = {};
+                        for(const i in t1){
+                            const t1 = St(i, e);
+                            if (void 0 !== t1) s[i] = t1;
+                            else {
+                                const t1 = n.getValue(i);
+                                t1 && (s[i] = t1.get());
+                            }
+                        }
+                        return s;
+                    }(n, t1 || {}, this);
+                    if (s && (e && (e = s(e)), n && (n = s(n)), o && (o = s(o))), i) {
+                        !function(t1, e, n) {
+                            var s, i;
+                            const o = Object.keys(e).filter((e)=>!t1.hasValue(e)), r = o.length;
+                            var a;
+                            if (r) for(let c = 0; c < r; c++){
+                                const r = o[c], h = e[r];
+                                let d = null;
+                                Array.isArray(h) && (d = h[0]), null === d && (d = null !== (i = null !== (s = n[r]) && void 0 !== s ? s : t1.readValue(r)) && void 0 !== i ? i : e[r]), null != d && ("string" == typeof d && (l(d) || u(d)) ? d = parseFloat(d) : (a = d, !yt.find(pt(a)) && it.test(h) && (d = mt(r, h))), t1.addValue(r, S(d, {
+                                    owner: t1
+                                })), void 0 === n[r] && (n[r] = d), null !== d && t1.setBaseTarget(r, d));
+                            }
+                        }(this, n, o);
+                        const t1 = ((t1, e, n, s)=>{
+                            const i = function(t1, { ...e }, n) {
+                                const s = t1.current;
+                                if (!(s instanceof Element)) return {
+                                    target: e,
+                                    transitionEnd: n
+                                };
+                                n && (n = {
+                                    ...n
+                                }), t1.values.forEach((t1)=>{
+                                    const e = t1.get();
+                                    if (!A(e)) return;
+                                    const n = lo(e, s);
+                                    n && t1.set(n);
+                                });
+                                for(const t1 in e){
+                                    const i = e[t1];
+                                    if (!A(i)) continue;
+                                    const o = lo(i, s);
+                                    o && (e[t1] = o, n || (n = {}), void 0 === n[t1] && (n[t1] = i));
+                                }
+                                return {
+                                    target: e,
+                                    transitionEnd: n
+                                };
+                            }(t1, e, s);
+                            return vo(t1, e = i.target, n, s = i.transitionEnd);
+                        })(this, n, o, e);
+                        e = t1.transitionEnd, n = t1.target;
+                    }
+                    return {
+                        transition: t1,
+                        transitionEnd: e,
+                        ...n
+                    };
+                }
+            }
+            class Vo extends Ao {
+                readValueFromInstance(t1, e) {
+                    if (Et.has(e)) {
+                        const t1 = dt(e);
+                        return t1 && t1.default || 0;
+                    }
+                    {
+                        const s = (n = t1, window.getComputedStyle(n)), i = (E(e) ? s.getPropertyValue(e) : s[e]) || 0;
+                        return "string" == typeof i ? i.trim() : i;
+                    }
+                    var n;
+                }
+                measureInstanceViewportBox(t1, { transformPagePoint: e }) {
+                    return _s(t1, e);
+                }
+                build(t1, e, n, s) {
+                    xn(t1, e, n, s.transformTemplate);
+                }
+                scrapeMotionValuesFromProps(t1, e) {
+                    return Fn(t1, e);
+                }
+                handleChildMotionValue() {
+                    this.childSubscription && (this.childSubscription(), delete this.childSubscription);
+                    const { children: t1 } = this.props;
+                    je(t1) && (this.childSubscription = t1.on("change", (t1)=>{
+                        this.current && (this.current.textContent = `${t1}`);
+                    }));
+                }
+                renderInstance(t1, e, n, s) {
+                    Ln(t1, e, n, s);
+                }
+            }
+            class Co extends Ao {
+                constructor(){
+                    super(...arguments), this.isSVGTag = !1;
+                }
+                getBaseTargetFromProps(t1, e) {
+                    return t1[e];
+                }
+                readValueFromInstance(t1, e) {
+                    if (Et.has(e)) {
+                        const t1 = dt(e);
+                        return t1 && t1.default || 0;
+                    }
+                    return e = jn.has(e) ? e : At(e), t1.getAttribute(e);
+                }
+                measureInstanceViewportBox() {
+                    return {
+                        x: {
+                            min: 0,
+                            max: 0
+                        },
+                        y: {
+                            min: 0,
+                            max: 0
+                        }
+                    };
+                }
+                scrapeMotionValuesFromProps(t1, e) {
+                    return On(t1, e);
+                }
+                build(t1, e, n, s) {
+                    Mn(t1, e, n, this.isSVGTag, s.transformTemplate);
+                }
+                renderInstance(t1, e, n, s) {
+                    Bn(t1, e, 0, s);
+                }
+                mount(t1) {
+                    this.isSVGTag = Dn(t1.tagName), super.mount(t1);
+                }
+            }
+            const Mo = (t1, e)=>mn(t1) ? new Co(e, {
+                    enableHardwareAcceleration: !1
+                }) : new Vo(e, {
+                    enableHardwareAcceleration: !0
+                }), Do = {
+                ...ms,
+                ...as,
+                ...ro,
+                layout: {
+                    ProjectionNode: oo,
+                    MeasureLayout: ai
+                }
+            }, ko = hn((t1, e)=>(function(t1, { forwardMotionProps: e = !1 }, n, s) {
+                    return {
+                        ...mn(t1) ? $n : Wn,
+                        preloadedFeatures: n,
+                        useRender: Rn(e),
+                        createVisualElement: s,
+                        Component: t1
+                    };
+                })(t1, e, Do, Mo)), Ro = [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ], Lo = ({ className: n, animateToNumber: s, fontStyle: i, transitions: o, includeComma: r, locale: l })=>{
+                const u = e().useRef(null), c = function(e, { root: n, margin: s, amount: i, once: o = !1 } = {}) {
+                    const [r, l] = (0, t1.useState)(!1);
+                    return (0, t1.useEffect)(()=>{
+                        if (!e.current || o && r) return;
+                        const t1 = {
+                            root: n && n.current || void 0,
+                            margin: s,
+                            amount: i
+                        };
+                        return function(t1, e, { root: n, margin: s, amount: i = "some" } = {}) {
+                            const o = function(t1, e, n) {
+                                if ("string" == typeof t1) t1 = document.querySelectorAll(t1);
+                                else t1 instanceof Element && (t1 = [
+                                    t1
+                                ]);
+                                return Array.from(t1 || []);
+                            }(t1), r = new WeakMap, l = new IntersectionObserver((t1)=>{
+                                t1.forEach((t1)=>{
+                                    const n = r.get(t1.target);
+                                    if (t1.isIntersecting !== Boolean(n)) {
+                                        if (t1.isIntersecting) {
+                                            const n = e(t1);
+                                            "function" == typeof n ? r.set(t1.target, n) : l.unobserve(t1.target);
+                                        } else n && (n(t1), r.delete(t1.target));
+                                    }
+                                });
+                            }, {
+                                root: n,
+                                rootMargin: s,
+                                threshold: "number" == typeof i ? i : a[i]
+                            });
+                            return o.forEach((t1)=>l.observe(t1)), ()=>l.disconnect();
+                        }(e.current, ()=>(l(!0), o ? void 0 : ()=>l(!1)), t1);
+                    }, [
+                        n,
+                        e,
+                        s,
+                        o
+                    ]), r;
+                }(u, {
+                    once: !0
+                }), h = function() {
+                    const t1 = We($e);
+                    return ze(t1.mount, []), t1;
+                }(), d = e().useRef(0), m = r ? Math.abs(s).toLocaleString(l || "en-US") : String(Math.abs(s)), p = Array.from(m, Number).map((t1, e)=>isNaN(t1) ? m[e] : t1), [f, g] = e().useState(0), [y, v] = e().useState(0), x = e().useRef(null);
+                return e().useEffect(()=>{
+                    var t1;
+                    const e = null === (t1 = x.current.getClientRects()) || void 0 === t1 ? void 0 : t1[0];
+                    e && (g(e.height), v(e.width));
+                }, [
+                    s,
+                    i
+                ]), e().useEffect(()=>{
+                    c && h.start("visible");
+                }, [
+                    c,
+                    s
+                ]), e().createElement("span", {
+                    ref: u
+                }, 0 !== f && e().createElement("div", {
+                    style: {
+                        display: "flex",
+                        flexDirection: "row",
+                        overflow: "hidden"
+                    },
+                    className: n
+                }, p.map((t1, n)=>"string" == typeof t1 ? e().createElement("div", {
+                        key: n,
+                        style: {
+                            ...i,
+                            fontVariantNumeric: "tabular-nums"
+                        }
+                    }, t1) : e().createElement("div", {
+                        key: n,
+                        style: {
+                            height: f,
+                            width: y
+                        }
+                    }, Ro.map((t1)=>e().createElement(ko.div, {
+                            style: {
+                                ...i,
+                                fontVariantNumeric: "tabular-nums"
+                            },
+                            key: "" + d.current++,
+                            initial: "hidden",
+                            variants: {
+                                hidden: {
+                                    y: 0
+                                },
+                                visible: {
+                                    y: f * p[n] * -1 - 20 * f
+                                }
+                            },
+                            animate: h,
+                            transition: null == o ? void 0 : o(n)
+                        }, t1))))), e().createElement("div", {
+                    ref: x,
+                    style: {
+                        position: "absolute",
+                        top: -9999,
+                        ...i
+                    }
+                }, 0));
+            }, jo = e().memo(Lo, (t1, e)=>t1.animateToNumber === e.animateToNumber && t1.fontStyle === e.fontStyle && t1.includeComma === e.includeComma);
+        })(), i;
+    })();
+});
+
+},{"12d6bebdb78946db":"21dqq","e996e754a73e414b":"5ZOhJ"}],"5ZOhJ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _memoize = require("@emotion/memoize");
+var _memoizeDefault = parcelHelpers.interopDefault(_memoize);
+var reactPropsRegex = /^((children|dangerouslySetInnerHTML|key|ref|autoFocus|defaultValue|defaultChecked|innerHTML|suppressContentEditableWarning|suppressHydrationWarning|valueLink|accept|acceptCharset|accessKey|action|allow|allowUserMedia|allowPaymentRequest|allowFullScreen|allowTransparency|alt|async|autoComplete|autoPlay|capture|cellPadding|cellSpacing|challenge|charSet|checked|cite|classID|className|cols|colSpan|content|contentEditable|contextMenu|controls|controlsList|coords|crossOrigin|data|dateTime|decoding|default|defer|dir|disabled|disablePictureInPicture|download|draggable|encType|form|formAction|formEncType|formMethod|formNoValidate|formTarget|frameBorder|headers|height|hidden|high|href|hrefLang|htmlFor|httpEquiv|id|inputMode|integrity|is|keyParams|keyType|kind|label|lang|list|loading|loop|low|marginHeight|marginWidth|max|maxLength|media|mediaGroup|method|min|minLength|multiple|muted|name|nonce|noValidate|open|optimum|pattern|placeholder|playsInline|poster|preload|profile|radioGroup|readOnly|referrerPolicy|rel|required|reversed|role|rows|rowSpan|sandbox|scope|scoped|scrolling|seamless|selected|shape|size|sizes|slot|span|spellCheck|src|srcDoc|srcLang|srcSet|start|step|style|summary|tabIndex|target|title|type|useMap|value|width|wmode|wrap|about|datatype|inlist|prefix|property|resource|typeof|vocab|autoCapitalize|autoCorrect|autoSave|color|inert|itemProp|itemScope|itemType|itemID|itemRef|on|results|security|unselectable|accentHeight|accumulate|additive|alignmentBaseline|allowReorder|alphabetic|amplitude|arabicForm|ascent|attributeName|attributeType|autoReverse|azimuth|baseFrequency|baselineShift|baseProfile|bbox|begin|bias|by|calcMode|capHeight|clip|clipPathUnits|clipPath|clipRule|colorInterpolation|colorInterpolationFilters|colorProfile|colorRendering|contentScriptType|contentStyleType|cursor|cx|cy|d|decelerate|descent|diffuseConstant|direction|display|divisor|dominantBaseline|dur|dx|dy|edgeMode|elevation|enableBackground|end|exponent|externalResourcesRequired|fill|fillOpacity|fillRule|filter|filterRes|filterUnits|floodColor|floodOpacity|focusable|fontFamily|fontSize|fontSizeAdjust|fontStretch|fontStyle|fontVariant|fontWeight|format|from|fr|fx|fy|g1|g2|glyphName|glyphOrientationHorizontal|glyphOrientationVertical|glyphRef|gradientTransform|gradientUnits|hanging|horizAdvX|horizOriginX|ideographic|imageRendering|in|in2|intercept|k|k1|k2|k3|k4|kernelMatrix|kernelUnitLength|kerning|keyPoints|keySplines|keyTimes|lengthAdjust|letterSpacing|lightingColor|limitingConeAngle|local|markerEnd|markerMid|markerStart|markerHeight|markerUnits|markerWidth|mask|maskContentUnits|maskUnits|mathematical|mode|numOctaves|offset|opacity|operator|order|orient|orientation|origin|overflow|overlinePosition|overlineThickness|panose1|paintOrder|pathLength|patternContentUnits|patternTransform|patternUnits|pointerEvents|points|pointsAtX|pointsAtY|pointsAtZ|preserveAlpha|preserveAspectRatio|primitiveUnits|r|radius|refX|refY|renderingIntent|repeatCount|repeatDur|requiredExtensions|requiredFeatures|restart|result|rotate|rx|ry|scale|seed|shapeRendering|slope|spacing|specularConstant|specularExponent|speed|spreadMethod|startOffset|stdDeviation|stemh|stemv|stitchTiles|stopColor|stopOpacity|strikethroughPosition|strikethroughThickness|string|stroke|strokeDasharray|strokeDashoffset|strokeLinecap|strokeLinejoin|strokeMiterlimit|strokeOpacity|strokeWidth|surfaceScale|systemLanguage|tableValues|targetX|targetY|textAnchor|textDecoration|textRendering|textLength|to|transform|u1|u2|underlinePosition|underlineThickness|unicode|unicodeBidi|unicodeRange|unitsPerEm|vAlphabetic|vHanging|vIdeographic|vMathematical|values|vectorEffect|version|vertAdvY|vertOriginX|vertOriginY|viewBox|viewTarget|visibility|widths|wordSpacing|writingMode|x|xHeight|x1|x2|xChannelSelector|xlinkActuate|xlinkArcrole|xlinkHref|xlinkRole|xlinkShow|xlinkTitle|xlinkType|xmlBase|xmlns|xmlnsXlink|xmlLang|xmlSpace|y|y1|y2|yChannelSelector|z|zoomAndPan|for|class|autofocus)|(([Dd][Aa][Tt][Aa]|[Aa][Rr][Ii][Aa]|x)-.*))$/; // https://esbench.com/bench/5bfee68a4cd7e6009ef61d23
+var index = (0, _memoizeDefault.default)(function(prop) {
+    return reactPropsRegex.test(prop) || prop.charCodeAt(0) === 111 && prop.charCodeAt(1) === 110 && prop.charCodeAt(2) < 91;
+});
+exports.default = index;
+
+},{"@emotion/memoize":"3aVvJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3aVvJ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function memoize(fn) {
+    var cache = {};
+    return function(arg) {
+        if (cache[arg] === undefined) cache[arg] = fn(arg);
+        return cache[arg];
+    };
+}
+exports.default = memoize;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4BkTJ":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$48d1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

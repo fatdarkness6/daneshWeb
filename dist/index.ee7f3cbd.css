@@ -1687,6 +1687,11 @@ input::-webkit-inner-spin-button {
     width: 33.3%;
     height: auto;
   }
+
+  .aboutUs-page .aboutUs-content-p1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media only screen and (width <= 1250px) {
@@ -1902,6 +1907,12 @@ input::-webkit-inner-spin-button {
   }
 }
 
+@media only screen and (width <= 710px) {
+  .aboutUs-page .aboutUs-content-p1 h1 {
+    font-size: 35px;
+  }
+}
+
 @media only screen and (width <= 700px) {
   .header-content.flex-alignCenter-spaceBetween {
     flex-wrap: wrap;
@@ -1961,6 +1972,10 @@ input::-webkit-inner-spin-button {
   .home-page .container-p6 .p1 h1, .home-page .container-p6 .p2 h1 {
     opacity: 0;
     font-size: 30px;
+  }
+
+  .aboutUs-page .aboutUs-content-p1 h1 {
+    text-align: center;
   }
 
   .header-menu-btn {

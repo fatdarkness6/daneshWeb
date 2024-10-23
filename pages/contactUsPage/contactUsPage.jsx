@@ -1,4 +1,4 @@
-import { useEffect, useReducer, useState } from 'react';
+import { useEffect, useReducer } from 'react';
 import Header from '../../components/header/header';
 import 'react-slideshow-image/dist/styles.css';
 import Footer from '../../components/footer/footer';

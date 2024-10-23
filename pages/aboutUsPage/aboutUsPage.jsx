@@ -2,6 +2,8 @@ import { useEffect } from 'react';
 import Footer from '../../components/footer/footer';
 import Header from '../../components/header/header';
 import { Link } from'react-router-dom';
+import AnimatedNumbers from 'react-animated-numbers';
+
 export default function AboutUsPage() {
 
 
@@ -45,21 +47,73 @@ export default function AboutUsPage() {
               </button>
             </div>
             <div className='aboutUs-content-p2'>
-              <div className='customers'>
-                <h2>2800</h2>
+              <div className='customers flex-column-center'>
+              <AnimatedNumbers
+                includeComma
+                transitions={(index) => ({
+                  type: "spring",
+                  duration:index + 0.1,
+                })}
+                animateToNumber={150}
+                fontStyle={{
+                  fontSize: 50,
+                  color: "#a3a3a3",
+                  fontWeight: '500',
+                  fontFamily: 'Courier New, Courier, monospace'
+                }}
+              />
                 <p>Customers</p>
               </div>
-              <div className='people'>
-                <h2>2800</h2>
+              <div className='people flex-column-center'>
+              <AnimatedNumbers
+                includeComma
+                transitions={(index) => ({
+                  type: "spring",
+                  duration:index,
+                })}
+                animateToNumber={900}
+                fontStyle={{
+                  fontSize: 50,
+                  color: "#a3a3a3",
+                  fontWeight: '500',
+                  fontFamily: 'Courier New, Courier, monospace'
+                }}
+              />
                 <p>People</p>
               </div>
-              <div className='location'>
-                <h2>2800</h2>
-                <p>Location</p>
+              <div className='location flex-column-center'>
+              <AnimatedNumbers
+                includeComma
+                transitions={(index) => ({
+                  type: "spring",
+                  duration:index,
+                })}
+                animateToNumber={50}
+                fontStyle={{
+                  fontSize: 50,
+                  color: "#a3a3a3",
+                  fontWeight: '500',
+                  fontFamily: 'Courier New, Courier, monospace'
+                }}
+              />
+                <p>Project</p>
               </div>
-              <div className='office'>
-                <h2>2800</h2>
-                <p>Office</p>
+              <div className='office flex-column-center'>
+              <AnimatedNumbers
+                includeComma
+                transitions={(index) => ({
+                  type: "spring",
+                  duration:index,
+                })}
+                animateToNumber={100}
+                fontStyle={{
+                  fontSize: 50,
+                  color: "#a3a3a3",
+                  fontWeight: '500',
+                  fontFamily: 'Courier New, Courier, monospace'
+                }}
+              />
+                <p>The projects that are being done</p>
               </div>
             </div>
           </div>
@@ -86,79 +140,52 @@ export default function AboutUsPage() {
           <div className='wrapper'>
             <div className='aboutUs-content'>
               <div className='aboutUs-content-p1'>
-                <h1>Quale diferenza quando lavori con noi ?</h1>
+                <h1>Qual è la differenza tra lavorare con gli altri e lavorare con noi?</h1>
               </div>
               <div className='together'>
                 <div className='aboutUs-content-p2'>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Libero incidunt nesciunt ea vel recusandae, repudiandae
-                    ipsam eius quaerat ut similique, ratione unde rem labore
-                    nobis voluptatum? Doloribus fuga porro repellendus. Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Vel dolor
-                    quisquam in. Non, quos officia voluptatibus a, quam, quaerat
-                    commodi culpa provident eaque quibusdam similique! Placeat
-                    porro fugiat totam similique?
+                    <span style={{color: "black" , fontSize : '33px'}}>Esperienza e competenza:</span>
+                    <br/>
+                    <br/>
+                    Lavorare con noi significa collaborare con un team che ha anni di esperienza nel settore e una vasta gamma di competenze tecniche. Questo ci permette di affrontare con successo ogni sfida progettuale, garantendo soluzioni efficaci e ben studiate per i nostri clienti. La nostra esperienza ci consente di prevenire e risolvere problemi prima che diventino ostacoli.
                   </p>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Officiis beatae quidem asperiores autem nulla! Eum
-                    temporibus ut distinctio maxime quas, cum laudantium velit
-                    qui exercitationem? Impedit recusandae fugiat aspernatur
-                    doloremque! Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Expedita, modi! Eos sint sunt, laudantium
-                    eaque, molestiae enim sequi optio assumenda at minus
-                    incidunt{' '}
-                  </p>
                   <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Molestiae est alias dolorem libero impedit aperiam culpa
-                    aliquid rem id. Nobis excepturi vitae veritatis nulla.
-                    Velit, inventore maxime! Minus, id quas?
+                    <span style={{color: "black" , fontSize : '33px'}}>Innovazione e personalizzazione:</span>
+                    <br/>
+                    <br/>
+                    Offriamo soluzioni all'avanguardia, utilizzando le ultime tecnologie e approcci innovativi. Ogni progetto è unico per noi, quindi adattiamo le nostre soluzioni in base alle esigenze specifiche del cliente. Non proponiamo mai una soluzione standardizzata, ma ci impegniamo a personalizzare ogni fase del progetto per ottenere risultati ottimali.
+                  </p>
                   </p>
                 </div>
                 <div className='aboutUs-content-p3'>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repudiandae libero vel aspernatur laboriosam
-                  </p>
                   <ul>
                     <li>
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Perferendis laboriosam explicabo repellendus at aliquid
-                        consequatur reprehenderit a vero fuga autem minima, modi
-                        voluptatem alias ratione
-                      </p>{' '}
-                    </li>
-                    <li>
-                      <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Nisi omnis unde asperiores ratione est itaque ea
-                        similique molestias. Animi consequuntur cumque voluptate
-                        natus tenetur dolores vel voluptatum blanditiis quidem
-                        esse.
+                      <span style={{color: "black" , fontSize : '33px'}}>Qualità e sostenibilità:</span>
+                    <br/>
+                    <br/>
+                    Ci impegniamo a utilizzare materiali di altissima qualità e tecnologie sostenibili che rispettano l'ambiente. Questo non solo garantisce la durata nel tempo dei nostri impianti, ma assicura anche che siano efficienti dal punto di vista energetico e rispettosi delle normative ambientali. Con noi, ogni progetto è realizzato con un occhio alla sostenibilità.
                       </p>
                     </li>
                     <li>
                       <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Asperiores tempora cupiditate magni quo,
-                        voluptatum reprehenderit tempore velit
+                      <span style={{color: "black" , fontSize : '33px'}}>Supporto continuo:</span>
+                    <br/>
+                    <br/>
+                    La nostra assistenza non termina con la consegna del progetto. Offriamo un supporto continuo e siamo sempre disponibili per risolvere eventuali problemi o rispondere a richieste aggiuntive. A differenza di altri, non lasciamo il cliente da solo dopo il completamento del lavoro, ma siamo sempre pronti a intervenire quando necessario.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                      <span style={{color: "black" , fontSize : '33px'}}>Professionalità e trasparenza:</span>
+                    <br/>
+                    <br/>
+                    Ci impegniamo a mantenere un livello elevato di professionalità in ogni fase del progetto. Lavoriamo in modo trasparente, fornendo al cliente aggiornamenti costanti e comunicazioni chiare. Questo garantisce che non ci siano sorprese durante il processo e che ogni passo sia ben compreso dal cliente.
                       </p>
                     </li>
                   </ul>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Temporibus optio delectus possimus, ipsum ducimus commodi
-                    cupiditate. Mollitia facere dolorum, repudiandae repellendus
-                    consequuntur eligendi. Officiis ratione velit nulla dolore
-                    earum recusandae. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Nemo maiores expedita magni totam beatae
-                    itaque optio, sapiente distinctio corporis maxime aut iure
-                    consectetur voluptatum suscipit quia debitis atque placeat
-                    ipsa?
-                  </p>
                 </div>
               </div>
             </div>

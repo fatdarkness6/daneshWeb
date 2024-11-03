@@ -10,6 +10,7 @@
     "@types/node": "^22.4.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "crypto-browserify": "^3.12.1",
     "parcel": "latest",
     "prettier": "^3.3.3",
     "process": "^0.11.10",

@@ -1,5 +1,5 @@
 import { useEffect , useState } from "react";
-import { getUsers } from "../../api/getusers";
+import { getUsers } from "../../services/getusers";
 import Footer from "../../components/footer/footer";
 
 export default function Profile() {

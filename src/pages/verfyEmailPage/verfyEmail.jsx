@@ -1,8 +1,8 @@
 import { useEffect , useState } from "react";
 import { useParams } from "react-router-dom"
-import { verfyEmailAdress } from "../../api/VerfyEmail";
+import { verfyEmailAdress } from "../../services/VerfyEmail";
 
-export default function VerfyEmailPage() {
+export default function VerifyEmailPage() {
 
     const [verfyEmail, setVerfyEmail] = useState("")
 

@@ -1,12 +1,12 @@
 import { Link, useNavigate } from "react-router-dom";
 import Layout from "../../components/layout/layout";
 import { useEffect, useRef, useState } from "react";
-import { loginUser } from "../../api/login";
+import { loginUser} from '../../services/login'
 import { createPortal } from "react-dom";
-import registerImage from "../../public/register.png";
-import { verfyEmail } from "../../api/sendVerfyEmail";
-import { sendCodeForGmail } from "../../api/sendCode";
-import { checkCodeForEmail } from "../../api/checkCode";
+import registerImage from "../../../public/register.png";
+import { verfyEmailAdress } from "../../services/VerfyEmail";
+import { sendCodeForGmail } from "../../services/sendCode";
+import { checkCodeForEmail } from "../../services/checkCode";
 export default function LoginPage() {
 
     const [usernameOremail, setUsernameOremail] = useState("");
@@ -54,14 +54,12 @@ export default function LoginPage() {
 
     useEffect(() => {
         if (openPortal) {
-           
             verfyEmail(usernameOremail).then((e) => {
                 return e.json()
             }).then((e) => {
                 console.log(e)
             })
         }
-
     }, [openPortal])
 
 

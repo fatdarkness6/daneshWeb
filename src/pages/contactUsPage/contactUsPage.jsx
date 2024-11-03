@@ -2,7 +2,7 @@ import { useEffect, useReducer } from 'react';
 import Header from '../../components/header/header';
 import 'react-slideshow-image/dist/styles.css';
 import Footer from '../../components/footer/footer';
-import { contactPage } from '../../api/contactPage';
+import { contactPage } from '../../services/contactPage';
 import { contactUsPage } from '../../reduceFiles/reduce';
 
 export default function ContactUsPage() {
@@ -41,6 +41,7 @@ export default function ContactUsPage() {
       });
     });
     window.scrollTo(0,0);
+
   }, []);
 
   useEffect(() => {
@@ -105,6 +106,10 @@ export default function ContactUsPage() {
         });
     }
   }, [state.submit]);
+
+  useEffect(() => {
+    document.title = 'contatti'
+  } , [])
 
   return (
     <div className='contactUsPage'>

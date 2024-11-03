@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Header from '../../components/header/header';
 import 'react-slideshow-image/dist/styles.css';
-import job3 from '../../public/job3.jpg';
+import job3 from '../../../public/job3.jpg';
 import Footer from '../../components/footer/footer';
 
 export default function HomePage() {
@@ -43,7 +43,7 @@ export default function HomePage() {
     slide(); // Run slide on counter update
   }, [counter]);
 
-  // Start auto-slide and reset it if user clicks
+  // Function to start the auto-slide
   const startAutoSlide = () => {
     // Clear any existing interval
     if (intervalRef.current) {
@@ -54,6 +54,13 @@ export default function HomePage() {
     intervalRef.current = setInterval(() => {
       setCounter((prevCounter) => (prevCounter === 5 ? 0 : prevCounter + 1));
     }, 5000); // Change slide every 5 seconds
+  };
+
+  // Function to pause the auto-slide
+  const pauseAutoSlide = () => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
   };
 
   useEffect(() => {
@@ -85,14 +92,16 @@ export default function HomePage() {
     startAutoSlide(); // Reset auto-slide when user clicks
   }
 
-
   return (
     <div className='home-page'>
       <div className='home-page-content'>
         <div className='container-p1'>
           <Header />
         </div>
-        <div ref={up} className='container-p2 '>
+        <div ref={up} className='container-p2 '
+        onMouseEnter={pauseAutoSlide} 
+        onMouseLeave={startAutoSlide}
+        >
           <div className='clickToSlide'>
             <button onClick={handleNextSlide}><i class="fa-solid fa-chevron-right"></i></button>
             <button onClick={handlePrevSlide}><i class="fa-solid fa-chevron-left"></i></button>

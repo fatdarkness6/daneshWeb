@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import img from '../../public/headers-logo.png';
+import img from '../../../public/headers-logo.png';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -10,7 +10,7 @@ export default function Header() {
   let [active, setActive] = useState(false);
   let [page , setPage] = useState("")
  
-  const getTokenFromLocalStorage = localStorage.getItem('token');
+  // const getTokenFromLocalStorage = localStorage.getItem('token');
 
 
 
@@ -57,7 +57,12 @@ export default function Header() {
               <Link className={page == "/contactUs"? "act" : ""} to='/contactUs'>
                 <h3>Contatti</h3>
               </Link>
-              <h3>News</h3>
+              <Link className={page == "/news"? "act" : ""} to='/news'>
+                <h3>News</h3>
+              </Link>
+              <Link className={page == "/project"? "act" : ""} to='/project'>
+                <h3>projects</h3>
+              </Link>
             </div>
 
             <div
@@ -107,8 +112,15 @@ export default function Header() {
                 <h3>Contatti</h3>
               </Link>
             </div>
-            <div className='hambergerMenu-content-newsPage'>
-              <h3>News</h3>
+            <div id = {page == "/news" && "transform"}  className='hambergerMenu-content-newsPage'>
+              <Link to='/news'>
+                <h3>News</h3>
+              </Link>
+            </div>
+            <div id = {page == "/project" && "transform"}  className='hambergerMenu-content-projectPage'>
+              <Link to='/news'>
+                <h3>projects</h3>
+              </Link>
             </div>
           </div>
         </div>

@@ -9,6 +9,7 @@ export default function AboutUsPage() {
 
   useEffect(() => {
     window.scrollTo(0,0);
+    document.title = 'Chi Siamo ';
   } , [])
 
   return (
@@ -197,10 +198,7 @@ export default function AboutUsPage() {
               <div className='aboutUs-content-p1'>
                 <h1>Our prosses</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quisquam odit corporis, debitis cumque optio molestias
-                  accusantium? Eum non, maiores, dolores provident, eius nemo
-                  ducimus mollitia accusamus eligendi commodi eaque omnis!
+                Collaboriamo con i nostri clienti sin dall'inizio per assicurare che ogni progetto sia sviluppato con cura e attenzione ai dettagli. La nostra esperienza ci permette di affrontare qualsiasi sfida con soluzioni mirate e ben pensate.
                 </p>
               </div>
               <div className='aboutUs-content-p2'>
@@ -212,10 +210,9 @@ export default function AboutUsPage() {
                   <h3>New Project</h3>
                   <div className='absolute'>
                     <ul>
-                      <li>Lorem ipsum dolor</li>
-                      <li>deserunt mollit anim id</li>
-                      <li>fugiat nulla pariatur</li>
-                      <li>cillum dolore eu</li>
+                      <li><i class="fa-solid fa-circle"></i><p>Collaborazione fin dall'inizio del progetto</p></li>
+                      <li><i class="fa-solid fa-circle"></i><p>Soluzioni mirate e ben studiate</p></li>
+                      <li><i class="fa-solid fa-circle"></i><p>Esperienza nella gestione delle sfide</p></li>
                     </ul>
                   </div>
                 </div>
@@ -226,14 +223,12 @@ export default function AboutUsPage() {
                   <h3>Work Friendly</h3>
                   <div className='absolute'>
                     <ul>
-                      <li>Lorem ipsum dolor</li>
-                      <li>deserunt mollit anim id</li>
-                      <li>fugiat nulla pariatur</li>
-                      <li>cillum dolore eu</li>
+                      <li><i class="fa-solid fa-circle"></i><p>Flessibilità nelle soluzioni</p></li>
+                      <li><i class="fa-solid fa-circle"></i><p>Approccio amichevole e collaborativo</p></li>
+                      <li><i class="fa-solid fa-circle"></i><p>Personalizzazione secondo le esigenze del cliente</p></li>
                     </ul>
                   </div>
                 </div>
-
                 <div className='aboutUs-content-p2-card'>
                   <div className='icons'>
                     <i class='fa-solid fa-envelope'></i>
@@ -241,26 +236,22 @@ export default function AboutUsPage() {
                   <h3>Danesh Groupe</h3>
                   <div className='absolute'>
                     <ul>
-                      <li>Lorem ipsum dolor</li>
-                      <li>deserunt mollit anim id</li>
-                      <li>fugiat nulla pariatur</li>
-                      <li>cillum dolore eu</li>
+                      <li><i class="fa-solid fa-circle"></i>Uso di materiali e tecnologie di alta qualità</li>
+                      <li><i class="fa-solid fa-circle"></i>Impianti sostenibili e durevoli</li>
+                      <li><i class="fa-solid fa-circle"></i>Attenzione alla sostenibilità ambientale</li>
                     </ul>
                   </div>
                 </div>
                 <div className='aboutUs-content-p2-card'>
                   <div className='icons'>
-                    {' '}
                     <i class='fa-solid fa-scroll'></i>
                   </div>
-
                   <h3>Our Company</h3>
                   <div className='absolute'>
                     <ul>
-                      <li>Lorem ipsum dolor</li>
-                      <li>deserunt mollit anim id</li>
-                      <li>fugiat nulla pariatur</li>
-                      <li>cillum dolore eu</li>
+                      <li><i class="fa-solid fa-circle"></i>Aggiornamenti continui durante il progetto</li>
+                      <li><i class="fa-solid fa-circle"></i>Comunicazione trasparente e chiara</li>
+                      <li><i class="fa-solid fa-circle"></i>Professionalità e risultati eccellenti</li>
                     </ul>
                   </div>
                 </div>

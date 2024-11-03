@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import { setUser } from "../../api/register";
+import { setUser } from '../../services/register'
 import Layout from "../../components/layout/layout";
 import { Link, useNavigate } from "react-router-dom";
 import { createPortal } from "react-dom";
-import registerImage from "../../public/register.png";
+import registerImage from "../../../public/register.png";
 
 export default function RegisterPage() {
     const [name, setName] = useState("");

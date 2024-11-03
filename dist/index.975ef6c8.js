@@ -27229,20 +27229,24 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "App", ()=>App);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _reactRouterDom = require("react-router-dom");
-var _homePage = require("../pages/homaPage/homePage");
+var _homePage = require("./pages/homaPage/homePage");
 var _homePageDefault = parcelHelpers.interopDefault(_homePage);
-var _aboutUsPage = require("../pages/aboutUsPage/aboutUsPage");
+var _aboutUsPage = require("./pages/aboutUsPage/aboutUsPage");
 var _aboutUsPageDefault = parcelHelpers.interopDefault(_aboutUsPage);
-var _contactUsPage = require("../pages/contactUsPage/contactUsPage");
+var _contactUsPage = require("./pages/contactUsPage/contactUsPage");
 var _contactUsPageDefault = parcelHelpers.interopDefault(_contactUsPage);
-var _loginPage = require("../pages/login/loginPage");
+var _loginPage = require("./pages/login/loginPage");
 var _loginPageDefault = parcelHelpers.interopDefault(_loginPage);
-var _register = require("../pages/registerPage/register");
+var _register = require("./pages/registerPage/register");
 var _registerDefault = parcelHelpers.interopDefault(_register);
-var _profile = require("../pages/profile/profile");
+var _profile = require("./pages/profile/profile");
 var _profileDefault = parcelHelpers.interopDefault(_profile);
-var _verfyEmail = require("../pages/verfyEmailPage/verfyEmail");
+var _verfyEmail = require("./pages/verfyEmailPage/verfyEmail");
 var _verfyEmailDefault = parcelHelpers.interopDefault(_verfyEmail);
+var _newsPage = require("./pages/newsPage/newsPage");
+var _newsPageDefault = parcelHelpers.interopDefault(_newsPage);
+var _projectPage = require("./pages/projectPage/projectPage");
+var _projectPageDefault = parcelHelpers.interopDefault(_projectPage);
 function App() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
         children: [
@@ -27250,32 +27254,8 @@ function App() {
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homePageDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 14,
-                    columnNumber: 34
-                }, void 0)
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 14,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/aboutUs",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutUsPageDefault.default), {}, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 15,
-                    columnNumber: 45
-                }, void 0)
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 15,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/contactUs",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactUsPageDefault.default), {}, void 0, false, {
-                    fileName: "src/App.js",
                     lineNumber: 16,
-                    columnNumber: 47
+                    columnNumber: 34
                 }, void 0)
             }, void 0, false, {
                 fileName: "src/App.js",
@@ -27283,11 +27263,11 @@ function App() {
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/login",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginPageDefault.default), {}, void 0, false, {
+                path: "/aboutUs",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutUsPageDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
                     lineNumber: 17,
-                    columnNumber: 43
+                    columnNumber: 45
                 }, void 0)
             }, void 0, false, {
                 fileName: "src/App.js",
@@ -27295,11 +27275,11 @@ function App() {
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/register",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _registerDefault.default), {}, void 0, false, {
+                path: "/contactUs",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactUsPageDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
                     lineNumber: 18,
-                    columnNumber: 42
+                    columnNumber: 47
                 }, void 0)
             }, void 0, false, {
                 fileName: "src/App.js",
@@ -27307,11 +27287,11 @@ function App() {
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/profile",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileDefault.default), {}, void 0, false, {
+                path: "/news",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newsPageDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
                     lineNumber: 19,
-                    columnNumber: 45
+                    columnNumber: 38
                 }, void 0)
             }, void 0, false, {
                 fileName: "src/App.js",
@@ -27319,21 +27299,69 @@ function App() {
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/:email/verfy/:confirmEmail",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _verfyEmailDefault.default), {}, void 0, false, {
+                path: "/project",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectPageDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
                     lineNumber: 20,
-                    columnNumber: 60
+                    columnNumber: 41
                 }, void 0)
             }, void 0, false, {
                 fileName: "src/App.js",
                 lineNumber: 20,
                 columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                path: "/login",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginPageDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 21,
+                    columnNumber: 43
+                }, void 0)
+            }, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 21,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                path: "/register",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _registerDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 22,
+                    columnNumber: 42
+                }, void 0)
+            }, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 22,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                path: "/profile",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 23,
+                    columnNumber: 45
+                }, void 0)
+            }, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 23,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                path: "/:email/verfy/:confirmEmail",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _verfyEmailDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 24,
+                    columnNumber: 60
+                }, void 0)
+            }, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 24,
+                columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/App.js",
-        lineNumber: 13,
+        lineNumber: 15,
         columnNumber: 7
     }, this);
 }
@@ -27346,7 +27374,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../pages/homaPage/homePage":"iwGWk","../pages/aboutUsPage/aboutUsPage":"isZ4t","../pages/contactUsPage/contactUsPage":"4BkTJ","../pages/login/loginPage":"5R75k","../pages/registerPage/register":"b0YtZ","../pages/profile/profile":"gEuB5","../pages/verfyEmailPage/verfyEmail":"8A2hU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./pages/newsPage/newsPage":"5caNB","./pages/homaPage/homePage":"f2hSN","./pages/aboutUsPage/aboutUsPage":"DKGio","./pages/contactUsPage/contactUsPage":"borIm","./pages/login/loginPage":"6Ow0v","./pages/registerPage/register":"6sZtF","./pages/profile/profile":"92BsB","./pages/verfyEmailPage/verfyEmail":"1BZa9","./pages/projectPage/projectPage":"1h2H8"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.25.0
  *
@@ -34429,1449 +34457,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"iwGWk":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$f210 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$f210.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>HomePage);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _header = require("../../components/header/header");
-var _headerDefault = parcelHelpers.interopDefault(_header);
-var _stylesCss = require("react-slideshow-image/dist/styles.css");
-var _job3Jpg = require("../../public/job3.jpg");
-var _job3JpgDefault = parcelHelpers.interopDefault(_job3Jpg);
-var _footer = require("../../components/footer/footer");
-var _footerDefault = parcelHelpers.interopDefault(_footer);
-var _s = $RefreshSig$();
-function HomePage() {
-    _s();
-    let [show, setShow] = (0, _react.useState)(false);
-    let [counter, setCounter] = (0, _react.useState)(0);
-    const intervalRef = (0, _react.useRef)(null); // Ref to store interval ID
-    const up = (0, _react.useRef)(null);
-    const containerP6 = (0, _react.useRef)(null);
-    (0, _react.useEffect)(()=>{
-        const handleScroll = ()=>{
-            const slt = document.querySelectorAll(".target");
-            slt.forEach((e)=>{
-                let top = e.getBoundingClientRect().top;
-                if (top < 700) e.classList.add("active");
-            });
-            if (containerP6.current?.getBoundingClientRect().top <= 0) setShow(true);
-            else setShow(false);
-        };
-        window.addEventListener("scroll", handleScroll);
-        return ()=>{
-            window.removeEventListener("scroll", handleScroll); // Cleanup on unmount
-        };
-    }, []);
-    (0, _react.useEffect)(()=>{
-        window.scrollTo(0, 0);
-        document.title = "Home";
-    }, []);
-    (0, _react.useEffect)(()=>{
-        slide(); // Run slide on counter update
-    }, [
-        counter
-    ]);
-    // Start auto-slide and reset it if user clicks
-    const startAutoSlide = ()=>{
-        // Clear any existing interval
-        if (intervalRef.current) clearInterval(intervalRef.current);
-        // Set a new interval for auto-slide
-        intervalRef.current = setInterval(()=>{
-            setCounter((prevCounter)=>prevCounter === 5 ? 0 : prevCounter + 1);
-        }, 5000); // Change slide every 5 seconds
-    };
-    (0, _react.useEffect)(()=>{
-        startAutoSlide(); // Start auto-slide on component mount
-        return ()=>{
-            if (intervalRef.current) clearInterval(intervalRef.current); // Clear interval on unmount
-        };
-    }, []);
-    // ...................functions.................//
-    function slide() {
-        let img = document.querySelectorAll(".c");
-        img.forEach((e, index)=>{
-            e.style.left = `${index * 100}%`;
-            e.style.transform = `translateX(-${counter * 100}%)`;
-        });
-    }
-    function handleNextSlide() {
-        setCounter((prevCounter)=>prevCounter === 5 ? 0 : prevCounter + 1);
-        startAutoSlide(); // Reset auto-slide when user clicks
-    }
-    function handlePrevSlide() {
-        setCounter((prevCounter)=>prevCounter === 0 ? 5 : prevCounter - 1);
-        startAutoSlide(); // Reset auto-slide when user clicks
-    }
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "home-page",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "home-page-content",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "container-p1",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
-                            fileName: "pages/homaPage/homePage.jsx",
-                            lineNumber: 93,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "pages/homaPage/homePage.jsx",
-                        lineNumber: 92,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        ref: up,
-                        className: "container-p2 ",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "clickToSlide",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                        onClick: handleNextSlide,
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                            class: "fa-solid fa-chevron-right"
-                                        }, void 0, false, {
-                                            fileName: "pages/homaPage/homePage.jsx",
-                                            lineNumber: 97,
-                                            columnNumber: 47
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 97,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                        onClick: handlePrevSlide,
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                            class: "fa-solid fa-chevron-left"
-                                        }, void 0, false, {
-                                            fileName: "pages/homaPage/homePage.jsx",
-                                            lineNumber: 98,
-                                            columnNumber: 47
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 98,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 96,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "context-1 c",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "img1 image",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                                children: "Benvenuti al Gruppo Danesh"
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 103,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                children: "Siamo un gruppo dedicato all'innovazione e alla conoscenza, offrendo soluzioni avanzate per affrontare le sfide del futuro."
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 104,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 102,
-                                        columnNumber: 15
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "pages/homaPage/homePage.jsx",
-                                    lineNumber: 101,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 100,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "context-2 c",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "img2 image"
-                                    }, void 0, false, {
-                                        fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 111,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                                children: "Esperienza e Innovazione"
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 113,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                children: "Al Gruppo Danesh, uniamo anni di esperienza con le ultime tecnologie per offrirvi soluzioni uniche e personalizzate"
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 114,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 112,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 110,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "context-3 c",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "img3 image"
-                                    }, void 0, false, {
-                                        fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 120,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                                children: "Innovazione nella Progettazione di Impianti"
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 122,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                children: "Al Gruppo Danesh, ci specializziamo nella progettazione e costruzione di impianti elettrici, termotecnici e fotovoltaici, garantendo qualit\xe0 e sostenibilit\xe0."
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 123,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 121,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 119,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "context-4 c",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "img4 image"
-                                    }, void 0, false, {
-                                        fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 129,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                                children: "Progettazione Efficiente"
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 131,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                children: "Sviluppiamo progetti personalizzati per impianti elettrici e termotecnici, ottimizzando risorse e costi."
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 132,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 130,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 128,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "context-5 c",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "img5 image"
-                                    }, void 0, false, {
-                                        fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 138,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                                children: "Gestione Progetti"
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 140,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                children: "Seguiamo ogni fase del progetto con attenzione e professionalit\xe0, garantendo risultati eccellenti."
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 141,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 139,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 137,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "context-6 c",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "img6 image",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                                children: "Soluzioni Personalizzate"
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 149,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                children: "Offriamo soluzioni tailor-made per ogni cliente, adattando i nostri servizi alle vostre esigenze specifiche."
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 150,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 148,
-                                        columnNumber: 15
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "pages/homaPage/homePage.jsx",
-                                    lineNumber: 147,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 146,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "pages/homaPage/homePage.jsx",
-                        lineNumber: 95,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "container-p3 target",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "wrapper",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "content",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "img "
-                                    }, void 0, false, {
-                                        fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 160,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "txt",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                                children: "Progettazione e Costruzione di Impianti"
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 162,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                children: "Nel mondo odierno, la progettazione e la costruzione di impianti elettrici, termotecnici e fotovoltaici rappresentano un pilastro fondamentale per garantire un futuro sostenibile. Al Gruppo Danesh, ci impegniamo a sviluppare soluzioni innovative che soddisfino le esigenze dei nostri clienti, contribuendo al contempo alla salvaguardia dell'ambiente."
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 163,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                children: "La nostra esperienza nel settore ci consente di offrire progetti personalizzati che ottimizzano l'uso delle risorse e riducono i costi. Utilizziamo tecnologie all'avanguardia per garantire impianti efficienti e sostenibili, che non solo soddisfano le normative vigenti, ma superano anche le aspettative dei nostri clienti."
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 166,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                children: "Inoltre, il nostro team di esperti \xe8 composto da professionisti altamente qualificati che seguono ogni fase del progetto con attenzione e dedizione. Dalla progettazione alla costruzione, ci assicuriamo che ogni dettaglio sia curato e che il risultato finale sia di altissima qualit\xe0."
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 169,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 161,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 159,
-                                columnNumber: 13
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "pages/homaPage/homePage.jsx",
-                            lineNumber: 158,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "pages/homaPage/homePage.jsx",
-                        lineNumber: 157,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "container-p4 target",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "shadow"
-                            }, void 0, false, {
-                                fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 177,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "txt2",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                        children: "Innovazione nei Sistemi Energetici"
-                                    }, void 0, false, {
-                                        fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 179,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "progragh",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                            children: "Al Gruppo Danesh, ci dedichiamo a creare impianti elettrici e fotovoltaici all'avanguardia, focalizzandoci su efficienza e rispetto per l'ambiente."
-                                        }, void 0, false, {
-                                            fileName: "pages/homaPage/homePage.jsx",
-                                            lineNumber: 181,
-                                            columnNumber: 15
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 180,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 178,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "pages/homaPage/homePage.jsx",
-                        lineNumber: 176,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "container-p5 target",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "wrapper",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "content gap-35",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "row1 flex-alignCenter-spaceBetween ",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "row1-part1-1 flex-column-center with gap-20",
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                                        class: "fa-solid fa-sitemap"
-                                                    }, void 0, false, {
-                                                        fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 192,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                                        children: "Soluzioni Personalizzate"
-                                                    }, void 0, false, {
-                                                        fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 193,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                        children: "Offriamo progetti su misura per soddisfare le specifiche esigenze dei clienti."
-                                                    }, void 0, false, {
-                                                        fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 194,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 191,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "row1-part1-2 flex-column-center with gap-20",
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                                        class: "fa-solid fa-hand"
-                                                    }, void 0, false, {
-                                                        fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 199,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                                        children: "Qualit\xe0 Garantita"
-                                                    }, void 0, false, {
-                                                        fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 200,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                        children: "Ci impegniamo a mantenere standard elevati in ogni fase del processo."
-                                                    }, void 0, false, {
-                                                        fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 201,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 198,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "row1-part1-3 flex-column-center with gap-20",
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                                        class: "fa-solid fa-fax"
-                                                    }, void 0, false, {
-                                                        fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 206,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                                        children: "Sostenibilit\xe0"
-                                                    }, void 0, false, {
-                                                        fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 207,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                        children: "Le nostre soluzioni sono progettate per essere eco-friendly e ridurre l'impatto ambientale."
-                                                    }, void 0, false, {
-                                                        fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 208,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 205,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 190,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "row2 flex-alignCenter-spaceBetween",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "row1-part2-1 flex-column-center with gap-20",
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                                        class: "fa-solid fa-truck-fast"
-                                                    }, void 0, false, {
-                                                        fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 215,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                                        children: "Assistenza Completa"
-                                                    }, void 0, false, {
-                                                        fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 216,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                        children: "Seguiamo i clienti in ogni fase, dalla progettazione alla realizzazione."
-                                                    }, void 0, false, {
-                                                        fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 217,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 214,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "row1-part2-2 flex-column-center with gap-20",
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                                        class: "fa-solid fa-building"
-                                                    }, void 0, false, {
-                                                        fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 222,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                                        children: "Tecnologia Avanzata"
-                                                    }, void 0, false, {
-                                                        fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 223,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                        children: "Utilizziamo le ultime tecnologie per garantire sistemi efficienti e innovativi."
-                                                    }, void 0, false, {
-                                                        fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 224,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 221,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "row1-part2-3 flex-column-center with gap-20",
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                                        class: "fa-brands fa-cc-visa"
-                                                    }, void 0, false, {
-                                                        fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 229,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                                        children: "Efficienza Energetica"
-                                                    }, void 0, false, {
-                                                        fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 230,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                        children: "I nostri impianti sono progettati per massimizzare l'efficienza e ridurre i consumi energetici."
-                                                    }, void 0, false, {
-                                                        fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 231,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 228,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 213,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 189,
-                                columnNumber: 13
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "pages/homaPage/homePage.jsx",
-                            lineNumber: 188,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "pages/homaPage/homePage.jsx",
-                        lineNumber: 187,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        ref: containerP6,
-                        className: "container-p6 target",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "absolute"
-                            }, void 0, false, {
-                                fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 240,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "mmi",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "p1 ",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "mix",
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                                        className: "z-index",
-                                                        children: "Impianti Termotecnici"
-                                                    }, void 0, false, {
-                                                        fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 244,
-                                                        columnNumber: 17
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                        className: "z-index"
-                                                    }, void 0, false, {
-                                                        fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 245,
-                                                        columnNumber: 17
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 243,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                                className: "z-index",
-                                                children: "Al Gruppo Danesh, progettiamo e costruiamo impianti termotecnici per garantire comfort e efficienza energetica. Le nostre soluzioni personalizzate si adattano alle esigenze specifiche dei clienti, utilizzando tecnologie moderne per ottimizzare il consumo energetico e migliorare il rendimento."
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 247,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 242,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "p2",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "mix",
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                                        className: "z-index",
-                                                        children: "Gestione dei Progetti"
-                                                    }, void 0, false, {
-                                                        fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 253,
-                                                        columnNumber: 17
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                        className: "z-index"
-                                                    }, void 0, false, {
-                                                        fileName: "pages/homaPage/homePage.jsx",
-                                                        lineNumber: 254,
-                                                        columnNumber: 17
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 252,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                                className: "z-index",
-                                                children: "La gestione dei progetti \xe8 fondamentale per il successo delle nostre operazioni. Al Gruppo Danesh, pianifichiamo ogni fase del progetto con attenzione, assicurando che venga rispettato il budget e le tempistiche. La nostra esperienza ci consente di gestire progetti complessi, mantenendo alta la qualit\xe0 e la soddisfazione del cliente."
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 257,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 251,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 241,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "img"
-                            }, void 0, false, {
-                                fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 262,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "pages/homaPage/homePage.jsx",
-                        lineNumber: 239,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "btw  target marginTop-200 ",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "wrapper",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "content flex-column-center gap-20",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                        children: "I Nostri Progetti"
-                                    }, void 0, false, {
-                                        fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 267,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        children: "Al Gruppo Danesh, siamo fieri di presentare alcuni dei nostri progetti. Abbiamo realizzato impianti elettrici e fotovoltaici su misura per soddisfare le esigenze dei nostri clienti. Visitate la nostra galleria per scoprire come possiamo aiutare anche voi!"
-                                    }, void 0, false, {
-                                        fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 268,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 266,
-                                columnNumber: 13
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "pages/homaPage/homePage.jsx",
-                            lineNumber: 265,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "pages/homaPage/homePage.jsx",
-                        lineNumber: 264,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "container-p7 target",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "wrapper2",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "content marginTop-300 flex-Start-spaceBetween gap-50",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "row1 row",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "job1"
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 278,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                                children: "Progetto di Desalinizzazione ad Abadan"
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 279,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                children: "Abbiamo realizzato un impianto di desalinizzazione con una capacit\xe0 di 10.000 metri cubi al giorno ad Abadan. Questo progetto \xe8 stato progettato per fornire acqua potabile a una vasta area, garantendo risorse idriche sostenibili."
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 280,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "appear",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                    children: "\"Abbiamo realizzato un impianto di desalinizzazione ad Abadan con una capacit\xe0 di 10.000 metri cubi di acqua dolce al giorno. Questo progetto \xe8 progettato per fornire acqua potabile sostenibile a una vasta area, garantendo risorse idriche affidabili. Utilizziamo tecnologie avanzate come l'osmosi inversa per trasformare l'acqua di mare in acqua potabile, contribuendo cos\xec al miglioramento della qualit\xe0 della vita e allo sviluppo economico della regione.\""
-                                                }, void 0, false, {
-                                                    fileName: "pages/homaPage/homePage.jsx",
-                                                    lineNumber: 284,
-                                                    columnNumber: 19
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 283,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 277,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "row2 row",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "job2"
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 290,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                                children: "Progetto di Desalinizzazione a Bandar Lange"
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 291,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                children: "Abbiamo completato un impianto di desalinizzazione simile a Bandar Lange, anch'esso con una capacit\xe0 di 10.000 metri cubi al giorno. Questo progetto mira a soddisfare le esigenze idriche locali, contribuendo al benessere della comunit\xe0."
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 292,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "appear",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                    children: "Abbiamo implementato un impianto di desalinizzazione a Bandar Lange, con una capacit\xe0 di 10.000 metri cubi al giorno. Questo progetto mira a soddisfare le esigenze idriche locali e a migliorare il benessere della comunit\xe0. Grazie a tecnologie moderne, il nostro impianto fornisce acqua potabile di alta qualit\xe0, contribuendo al progresso della zona e riducendo l'impatto ambientale."
-                                                }, void 0, false, {
-                                                    fileName: "pages/homaPage/homePage.jsx",
-                                                    lineNumber: 296,
-                                                    columnNumber: 19
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 295,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 289,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "row3 row",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "job3",
-                                                src: (0, _job3JpgDefault.default)
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 302,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                                children: "Costruzione di 140 Unit\xe0 Abitative a Bandar Abbas"
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 303,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                children: "Abbiamo realizzato un progetto residenziale che comprende la costruzione di 140 unit\xe0 abitative a Bandar Abbas. Il progetto include impianti moderni per garantire il comfort e la qualit\xe0 della vita dei residenti."
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 304,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "appear",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                    children: "Abbiamo realizzato un progetto residenziale che include la costruzione di 140 unit\xe0 abitative a Bandar Abbas. Ogni unit\xe0 \xe8 dotata di sistemi moderni per garantire comfort e qualit\xe0 della vita. Questo progetto non solo risponde alle esigenze abitative della comunit\xe0, ma promuove anche lo sviluppo economico locale creando nuove opportunit\xe0 di lavoro."
-                                                }, void 0, false, {
-                                                    fileName: "pages/homaPage/homePage.jsx",
-                                                    lineNumber: 308,
-                                                    columnNumber: 19
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "pages/homaPage/homePage.jsx",
-                                                lineNumber: 307,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "pages/homaPage/homePage.jsx",
-                                        lineNumber: 301,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "pages/homaPage/homePage.jsx",
-                                lineNumber: 276,
-                                columnNumber: 13
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "pages/homaPage/homePage.jsx",
-                            lineNumber: 275,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "pages/homaPage/homePage.jsx",
-                        lineNumber: 274,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "pages/homaPage/homePage.jsx",
-                lineNumber: 91,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
-                fileName: "pages/homaPage/homePage.jsx",
-                lineNumber: 317,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                onClick: ()=>{
-                    up.current?.scrollIntoView({
-                        behavior: "smooth"
-                    });
-                },
-                className: show ? "scroll-top show " : "scroll-top DontShow ",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                    class: "fa-solid fa-up-long"
-                }, void 0, false, {
-                    fileName: "pages/homaPage/homePage.jsx",
-                    lineNumber: 323,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "pages/homaPage/homePage.jsx",
-                lineNumber: 318,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "pages/homaPage/homePage.jsx",
-        lineNumber: 90,
-        columnNumber: 5
-    }, this);
-}
-_s(HomePage, "XRdZFW4ZIx1DNvtJlZwKqsIuVfE=");
-_c = HomePage;
-var _c;
-$RefreshReg$(_c, "HomePage");
-
-  $parcel$ReactRefreshHelpers$f210.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../components/header/header":"HkB1m","react-slideshow-image/dist/styles.css":"c6U5o","../../public/job3.jpg":"rZn1j","../../components/footer/footer":"dtCFD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"HkB1m":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$d1aa = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$d1aa.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>Header);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _headersLogoPng = require("../../public/headers-logo.png");
-var _headersLogoPngDefault = parcelHelpers.interopDefault(_headersLogoPng);
-var _reactRouterDom = require("react-router-dom");
-var _s = $RefreshSig$();
-function Header() {
-    _s();
-    let lastScrollTop = 0;
-    let header = (0, _react.useRef)(null);
-    const [scrollDirection, setScrollDirection] = (0, _react.useState)(null);
-    let [active, setActive] = (0, _react.useState)(false);
-    let [page, setPage] = (0, _react.useState)("");
-    const getTokenFromLocalStorage = localStorage.getItem("token");
-    (0, _react.useEffect)(()=>{
-        window.addEventListener("scroll", function() {
-            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            if (scrollTop > lastScrollTop) setScrollDirection("down");
-            else setScrollDirection("up");
-            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-        });
-        let path = window.location.pathname;
-        setPage(path);
-    }, []);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        ref: header,
-        style: scrollDirection == "down" ? {
-            top: "-150px"
-        } : {
-            top: "0px"
-        },
-        className: "header",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "wrapper",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "header-content flex-alignCenter-spaceBetween ",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "header-logo",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    src: (0, _headersLogoPngDefault.default)
-                                }, void 0, false, {
-                                    fileName: "components/header/header.jsx",
-                                    lineNumber: 43,
-                                    columnNumber: 15
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "components/header/header.jsx",
-                                lineNumber: 42,
-                                columnNumber: 13
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "components/header/header.jsx",
-                            lineNumber: 41,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "header-menu ",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "header-menu-text flex-alignCenter gap-30",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                            className: page == "/" ? "act" : "",
-                                            to: "/",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                                children: "Home"
-                                            }, void 0, false, {
-                                                fileName: "components/header/header.jsx",
-                                                lineNumber: 49,
-                                                columnNumber: 17
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "components/header/header.jsx",
-                                            lineNumber: 48,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                            className: page == "/aboutUs" ? "act" : "",
-                                            to: "/aboutUs",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                                children: "Chi Siamo "
-                                            }, void 0, false, {
-                                                fileName: "components/header/header.jsx",
-                                                lineNumber: 55,
-                                                columnNumber: 17
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "components/header/header.jsx",
-                                            lineNumber: 54,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                            className: page == "/contactUs" ? "act" : "",
-                                            to: "/contactUs",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                                children: "Contatti"
-                                            }, void 0, false, {
-                                                fileName: "components/header/header.jsx",
-                                                lineNumber: 58,
-                                                columnNumber: 17
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "components/header/header.jsx",
-                                            lineNumber: 57,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                            children: "News"
-                                        }, void 0, false, {
-                                            fileName: "components/header/header.jsx",
-                                            lineNumber: 60,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "components/header/header.jsx",
-                                    lineNumber: 47,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    onClick: ()=>{
-                                        setActive(!active);
-                                    },
-                                    className: "header-menu-btn",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
-                                            fileName: "components/header/header.jsx",
-                                            lineNumber: 68,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
-                                            fileName: "components/header/header.jsx",
-                                            lineNumber: 69,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
-                                            fileName: "components/header/header.jsx",
-                                            lineNumber: 70,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "components/header/header.jsx",
-                                    lineNumber: 63,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "components/header/header.jsx",
-                            lineNumber: 46,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "components/header/header.jsx",
-                    lineNumber: 40,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "components/header/header.jsx",
-                lineNumber: 39,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                id: active ? "show" : "dontShow",
-                className: "hambergerMenu",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "hambergerMenu-content",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "hambergerMenu-content-logo",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                    children: "Menu"
-                                }, void 0, false, {
-                                    fileName: "components/header/header.jsx",
-                                    lineNumber: 78,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    id: active ? "normal" : "notNormal",
-                                    onClick: ()=>{
-                                        setActive(false);
-                                    },
-                                    className: "x",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
-                                            fileName: "components/header/header.jsx",
-                                            lineNumber: 85,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
-                                            fileName: "components/header/header.jsx",
-                                            lineNumber: 86,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "components/header/header.jsx",
-                                    lineNumber: 79,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "components/header/header.jsx",
-                            lineNumber: 77,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "hambergerMenu-content-menuItems",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    id: page == "/" && "transform",
-                                    className: "hambergerMenu-content-homePage",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                        to: "/",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                            children: "Home"
-                                        }, void 0, false, {
-                                            fileName: "components/header/header.jsx",
-                                            lineNumber: 92,
-                                            columnNumber: 17
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "components/header/header.jsx",
-                                        lineNumber: 91,
-                                        columnNumber: 15
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "components/header/header.jsx",
-                                    lineNumber: 90,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    id: page == "/aboutUs" && "transform",
-                                    className: "hambergerMenu-content-aboutUsPage",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                        to: "/aboutUs",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                            children: "Chi Siamo"
-                                        }, void 0, false, {
-                                            fileName: "components/header/header.jsx",
-                                            lineNumber: 102,
-                                            columnNumber: 17
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "components/header/header.jsx",
-                                        lineNumber: 101,
-                                        columnNumber: 15
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "components/header/header.jsx",
-                                    lineNumber: 100,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    id: page == "/contactUs" && "transform",
-                                    className: "hambergerMenu-content-contactUsPage",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                        to: "/contactUs",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                            children: "Contatti"
-                                        }, void 0, false, {
-                                            fileName: "components/header/header.jsx",
-                                            lineNumber: 107,
-                                            columnNumber: 17
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "components/header/header.jsx",
-                                        lineNumber: 106,
-                                        columnNumber: 15
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "components/header/header.jsx",
-                                    lineNumber: 105,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "hambergerMenu-content-newsPage",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                        children: "News"
-                                    }, void 0, false, {
-                                        fileName: "components/header/header.jsx",
-                                        lineNumber: 111,
-                                        columnNumber: 15
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "components/header/header.jsx",
-                                    lineNumber: 110,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "components/header/header.jsx",
-                            lineNumber: 89,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "components/header/header.jsx",
-                    lineNumber: 76,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "components/header/header.jsx",
-                lineNumber: 75,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "components/header/header.jsx",
-        lineNumber: 35,
-        columnNumber: 5
-    }, this);
-}
-_s(Header, "H/ttaGcRGHb1mMm/hqUnxmGbm/c=");
-_c = Header;
-var _c;
-$RefreshReg$(_c, "Header");
-
-  $parcel$ReactRefreshHelpers$d1aa.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../public/headers-logo.png":"6ySaZ","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6ySaZ":[function(require,module,exports) {
-module.exports = require("ed813b149378ace9").getBundleURL("bLxZJ") + "headers-logo.928256e4.png" + "?" + Date.now();
-
-},{"ed813b149378ace9":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-}
-// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
 },{}],"km3Ru":[function(require,module,exports) {
 "use strict";
 var Refresh = require("7422ead32dcc1e6b");
@@ -36010,14 +34595,555 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"c6U5o":[function() {},{}],"rZn1j":[function(require,module,exports) {
-module.exports = require("4c90519e7de74b5b").getBundleURL("bLxZJ") + "job3.ac99d17a.jpg" + "?" + Date.now();
-
-},{"4c90519e7de74b5b":"lgJ39"}],"dtCFD":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$921f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"7422ead32dcc1e6b":"786KC"}],"5caNB":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$d48e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$921f.prelude(module);
+$parcel$ReactRefreshHelpers$d48e.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>NewsPage);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _layout = require("../../components/layout/layout");
+var _layoutDefault = parcelHelpers.interopDefault(_layout);
+var _s = $RefreshSig$();
+function NewsPage() {
+    _s();
+    (0, _react.useEffect)(()=>{
+        scrollTo(0, 0);
+        document.title = "news";
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _layoutDefault.default), {
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "newsPage",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "wrapper",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                            class: "featured-news",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
+                                class: "featured-card",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        src: "featured-image.jpg",
+                                        alt: "Featured News Image",
+                                        class: "featured-image"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/newsPage/newsPage.jsx",
+                                        lineNumber: 17,
+                                        columnNumber: 21
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        class: "featured-content",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                                children: "Featured News Headline"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/newsPage/newsPage.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 25
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                children: "Important updates and announcements about our recent developments in the field..."
+                                            }, void 0, false, {
+                                                fileName: "src/pages/newsPage/newsPage.jsx",
+                                                lineNumber: 20,
+                                                columnNumber: 25
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                href: "#",
+                                                class: "read-more",
+                                                children: "Read More"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/newsPage/newsPage.jsx",
+                                                lineNumber: 21,
+                                                columnNumber: 25
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/newsPage/newsPage.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 21
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/newsPage/newsPage.jsx",
+                                lineNumber: 16,
+                                columnNumber: 21
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "src/pages/newsPage/newsPage.jsx",
+                            lineNumber: 15,
+                            columnNumber: 17
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                            class: "categories",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                    children: "Categories"
+                                }, void 0, false, {
+                                    fileName: "src/pages/newsPage/newsPage.jsx",
+                                    lineNumber: 26,
+                                    columnNumber: 3
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    class: "category-scroll-container",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        class: "category-list",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "categoryAnimation",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                        class: "category-button",
+                                                        children: "Technology"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/newsPage/newsPage.jsx",
+                                                        lineNumber: 30,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                        class: "category-button",
+                                                        children: "Environment"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/newsPage/newsPage.jsx",
+                                                        lineNumber: 31,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                        class: "category-button",
+                                                        children: "Business"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/newsPage/newsPage.jsx",
+                                                        lineNumber: 32,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                        class: "category-button",
+                                                        children: "Health"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/newsPage/newsPage.jsx",
+                                                        lineNumber: 33,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                        class: "category-button",
+                                                        children: "Science"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/newsPage/newsPage.jsx",
+                                                        lineNumber: 34,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/newsPage/newsPage.jsx",
+                                                lineNumber: 29,
+                                                columnNumber: 9
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "categoryAnimation",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                        class: "category-button",
+                                                        children: "Technology"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/newsPage/newsPage.jsx",
+                                                        lineNumber: 37,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                        class: "category-button",
+                                                        children: "Environment"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/newsPage/newsPage.jsx",
+                                                        lineNumber: 38,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                        class: "category-button",
+                                                        children: "Business"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/newsPage/newsPage.jsx",
+                                                        lineNumber: 39,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                        class: "category-button",
+                                                        children: "Health"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/newsPage/newsPage.jsx",
+                                                        lineNumber: 40,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                        class: "category-button",
+                                                        children: "Science"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/newsPage/newsPage.jsx",
+                                                        lineNumber: 41,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/newsPage/newsPage.jsx",
+                                                lineNumber: 36,
+                                                columnNumber: 9
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "categoryAnimation",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                        class: "category-button",
+                                                        children: "Technology"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/newsPage/newsPage.jsx",
+                                                        lineNumber: 44,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                        class: "category-button",
+                                                        children: "Environment"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/newsPage/newsPage.jsx",
+                                                        lineNumber: 45,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                        class: "category-button",
+                                                        children: "Business"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/newsPage/newsPage.jsx",
+                                                        lineNumber: 46,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                        class: "category-button",
+                                                        children: "Health"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/newsPage/newsPage.jsx",
+                                                        lineNumber: 47,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                        class: "category-button",
+                                                        children: "Science"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/newsPage/newsPage.jsx",
+                                                        lineNumber: 48,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/newsPage/newsPage.jsx",
+                                                lineNumber: 43,
+                                                columnNumber: 9
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "categoryAnimation",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                        class: "category-button",
+                                                        children: "Technology"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/newsPage/newsPage.jsx",
+                                                        lineNumber: 51,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                        class: "category-button",
+                                                        children: "Environment"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/newsPage/newsPage.jsx",
+                                                        lineNumber: 52,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                        class: "category-button",
+                                                        children: "Business"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/newsPage/newsPage.jsx",
+                                                        lineNumber: 53,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                        class: "category-button",
+                                                        children: "Health"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/newsPage/newsPage.jsx",
+                                                        lineNumber: 54,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                        class: "category-button",
+                                                        children: "Science"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/newsPage/newsPage.jsx",
+                                                        lineNumber: 55,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/newsPage/newsPage.jsx",
+                                                lineNumber: 50,
+                                                columnNumber: 9
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/newsPage/newsPage.jsx",
+                                        lineNumber: 28,
+                                        columnNumber: 5
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/pages/newsPage/newsPage.jsx",
+                                    lineNumber: 27,
+                                    columnNumber: 3
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/pages/newsPage/newsPage.jsx",
+                            lineNumber: 25,
+                            columnNumber: 17
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                            class: "news-section",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
+                                    class: "project-card",
+                                    "data-category": "design",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            src: "project-image2.jpg",
+                                            alt: "Project 2",
+                                            class: "project-image"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/newsPage/newsPage.jsx",
+                                            lineNumber: 62,
+                                            columnNumber: 13
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            class: "project-details",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                    children: "Design Project 2"
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/newsPage/newsPage.jsx",
+                                                    lineNumber: 64,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                    children: "A creative solution that tackled complex challenges with a sustainable approach for long-term success."
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/newsPage/newsPage.jsx",
+                                                    lineNumber: 65,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                    href: "#",
+                                                    class: "project-link",
+                                                    children: "Learn More"
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/newsPage/newsPage.jsx",
+                                                    lineNumber: 66,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/pages/newsPage/newsPage.jsx",
+                                            lineNumber: 63,
+                                            columnNumber: 13
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/newsPage/newsPage.jsx",
+                                    lineNumber: 61,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
+                                    class: "project-card",
+                                    "data-category": "design",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            src: "project-image2.jpg",
+                                            alt: "Project 2",
+                                            class: "project-image"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/newsPage/newsPage.jsx",
+                                            lineNumber: 70,
+                                            columnNumber: 13
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            class: "project-details",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                    children: "Design Project 2"
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/newsPage/newsPage.jsx",
+                                                    lineNumber: 72,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                    children: "A creative solution that tackled complex challenges with a sustainable approach for long-term success."
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/newsPage/newsPage.jsx",
+                                                    lineNumber: 73,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                    href: "#",
+                                                    class: "project-link",
+                                                    children: "Learn More"
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/newsPage/newsPage.jsx",
+                                                    lineNumber: 74,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/pages/newsPage/newsPage.jsx",
+                                            lineNumber: 71,
+                                            columnNumber: 13
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/newsPage/newsPage.jsx",
+                                    lineNumber: 69,
+                                    columnNumber: 9
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
+                                    class: "project-card",
+                                    "data-category": "design",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            src: "project-image2.jpg",
+                                            alt: "Project 2",
+                                            class: "project-image"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/newsPage/newsPage.jsx",
+                                            lineNumber: 78,
+                                            columnNumber: 13
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            class: "project-details",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                    children: "Design Project 2"
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/newsPage/newsPage.jsx",
+                                                    lineNumber: 80,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                    children: "A creative solution that tackled complex challenges with a sustainable approach for long-term success."
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/newsPage/newsPage.jsx",
+                                                    lineNumber: 81,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                    href: "#",
+                                                    class: "project-link",
+                                                    children: "Learn More"
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/newsPage/newsPage.jsx",
+                                                    lineNumber: 82,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/pages/newsPage/newsPage.jsx",
+                                            lineNumber: 79,
+                                            columnNumber: 13
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/newsPage/newsPage.jsx",
+                                    lineNumber: 77,
+                                    columnNumber: 9
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/pages/newsPage/newsPage.jsx",
+                            lineNumber: 60,
+                            columnNumber: 17
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/pages/newsPage/newsPage.jsx",
+                    lineNumber: 14,
+                    columnNumber: 17
+                }, this)
+            }, void 0, false, {
+                fileName: "src/pages/newsPage/newsPage.jsx",
+                lineNumber: 13,
+                columnNumber: 13
+            }, this)
+        }, void 0, false, {
+            fileName: "src/pages/newsPage/newsPage.jsx",
+            lineNumber: 12,
+            columnNumber: 13
+        }, this)
+    }, void 0, false);
+}
+_s(NewsPage, "OD7bBpZva5O2jO+Puf00hKivP7c=");
+_c = NewsPage;
+var _c;
+$RefreshReg$(_c, "NewsPage");
+
+  $parcel$ReactRefreshHelpers$d48e.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../components/layout/layout":"eE8aD","react":"21dqq"}],"eE8aD":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$2704 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$2704.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Layout);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _footer = require("../footer/footer");
+var _footerDefault = parcelHelpers.interopDefault(_footer);
+var _header = require("../header/header");
+var _headerDefault = parcelHelpers.interopDefault(_header);
+function Layout(props) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
+                fileName: "src/components/layout/layout.jsx",
+                lineNumber: 7,
+                columnNumber: 13
+            }, this),
+            props.children,
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
+                fileName: "src/components/layout/layout.jsx",
+                lineNumber: 9,
+                columnNumber: 13
+            }, this)
+        ]
+    }, void 0, true);
+}
+_c = Layout;
+var _c;
+$RefreshReg$(_c, "Layout");
+
+  $parcel$ReactRefreshHelpers$2704.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../footer/footer":"1UV6S","../header/header":"eoRFc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1UV6S":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$7f6f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$7f6f.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -36030,12 +35156,12 @@ function Footer() {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
             children: "This site is owned by Gruppo Danesh. \xa9 All content, and information are   protected by copyright and may not be used without our explicit permission."
         }, void 0, false, {
-            fileName: "components/footer/footer.jsx",
+            fileName: "src/components/footer/footer.jsx",
             lineNumber: 4,
             columnNumber: 7
         }, this)
     }, void 0, false, {
-        fileName: "components/footer/footer.jsx",
+        fileName: "src/components/footer/footer.jsx",
         lineNumber: 3,
         columnNumber: 5
     }, this);
@@ -36044,16 +35170,1521 @@ _c = Footer;
 var _c;
 $RefreshReg$(_c, "Footer");
 
-  $parcel$ReactRefreshHelpers$921f.postlude(module);
+  $parcel$ReactRefreshHelpers$7f6f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"isZ4t":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$8d1b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eoRFc":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$f166 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$8d1b.prelude(module);
+$parcel$ReactRefreshHelpers$f166.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Header);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _headersLogoPng = require("../../../public/headers-logo.png");
+var _headersLogoPngDefault = parcelHelpers.interopDefault(_headersLogoPng);
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
+function Header() {
+    _s();
+    let lastScrollTop = 0;
+    let header = (0, _react.useRef)(null);
+    const [scrollDirection, setScrollDirection] = (0, _react.useState)(null);
+    let [active, setActive] = (0, _react.useState)(false);
+    let [page, setPage] = (0, _react.useState)("");
+    // const getTokenFromLocalStorage = localStorage.getItem('token');
+    (0, _react.useEffect)(()=>{
+        window.addEventListener("scroll", function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) setScrollDirection("down");
+            else setScrollDirection("up");
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+        let path = window.location.pathname;
+        setPage(path);
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        ref: header,
+        style: scrollDirection == "down" ? {
+            top: "-150px"
+        } : {
+            top: "0px"
+        },
+        className: "header",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "wrapper",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "header-content flex-alignCenter-spaceBetween ",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "header-logo",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: (0, _headersLogoPngDefault.default)
+                                }, void 0, false, {
+                                    fileName: "src/components/header/header.jsx",
+                                    lineNumber: 43,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/components/header/header.jsx",
+                                lineNumber: 42,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "src/components/header/header.jsx",
+                            lineNumber: 41,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "header-menu ",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "header-menu-text flex-alignCenter gap-30",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                            className: page == "/" ? "act" : "",
+                                            to: "/",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                children: "Home"
+                                            }, void 0, false, {
+                                                fileName: "src/components/header/header.jsx",
+                                                lineNumber: 49,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "src/components/header/header.jsx",
+                                            lineNumber: 48,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                            className: page == "/aboutUs" ? "act" : "",
+                                            to: "/aboutUs",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                children: "Chi Siamo "
+                                            }, void 0, false, {
+                                                fileName: "src/components/header/header.jsx",
+                                                lineNumber: 55,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "src/components/header/header.jsx",
+                                            lineNumber: 54,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                            className: page == "/contactUs" ? "act" : "",
+                                            to: "/contactUs",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                children: "Contatti"
+                                            }, void 0, false, {
+                                                fileName: "src/components/header/header.jsx",
+                                                lineNumber: 58,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "src/components/header/header.jsx",
+                                            lineNumber: 57,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                            className: page == "/news" ? "act" : "",
+                                            to: "/news",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                children: "News"
+                                            }, void 0, false, {
+                                                fileName: "src/components/header/header.jsx",
+                                                lineNumber: 61,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "src/components/header/header.jsx",
+                                            lineNumber: 60,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                            className: page == "/project" ? "act" : "",
+                                            to: "/project",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                children: "projects"
+                                            }, void 0, false, {
+                                                fileName: "src/components/header/header.jsx",
+                                                lineNumber: 64,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "src/components/header/header.jsx",
+                                            lineNumber: 63,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/header/header.jsx",
+                                    lineNumber: 47,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    onClick: ()=>{
+                                        setActive(!active);
+                                    },
+                                    className: "header-menu-btn",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
+                                            fileName: "src/components/header/header.jsx",
+                                            lineNumber: 73,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
+                                            fileName: "src/components/header/header.jsx",
+                                            lineNumber: 74,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
+                                            fileName: "src/components/header/header.jsx",
+                                            lineNumber: 75,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/header/header.jsx",
+                                    lineNumber: 68,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/header/header.jsx",
+                            lineNumber: 46,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/header/header.jsx",
+                    lineNumber: 40,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "src/components/header/header.jsx",
+                lineNumber: 39,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                id: active ? "show" : "dontShow",
+                className: "hambergerMenu",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "hambergerMenu-content",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "hambergerMenu-content-logo",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                    children: "Menu"
+                                }, void 0, false, {
+                                    fileName: "src/components/header/header.jsx",
+                                    lineNumber: 83,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    id: active ? "normal" : "notNormal",
+                                    onClick: ()=>{
+                                        setActive(false);
+                                    },
+                                    className: "x",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
+                                            fileName: "src/components/header/header.jsx",
+                                            lineNumber: 90,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
+                                            fileName: "src/components/header/header.jsx",
+                                            lineNumber: 91,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/header/header.jsx",
+                                    lineNumber: 84,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/header/header.jsx",
+                            lineNumber: 82,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "hambergerMenu-content-menuItems",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    id: page == "/" && "transform",
+                                    className: "hambergerMenu-content-homePage",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                        to: "/",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                            children: "Home"
+                                        }, void 0, false, {
+                                            fileName: "src/components/header/header.jsx",
+                                            lineNumber: 97,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/components/header/header.jsx",
+                                        lineNumber: 96,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/components/header/header.jsx",
+                                    lineNumber: 95,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    id: page == "/aboutUs" && "transform",
+                                    className: "hambergerMenu-content-aboutUsPage",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                        to: "/aboutUs",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                            children: "Chi Siamo"
+                                        }, void 0, false, {
+                                            fileName: "src/components/header/header.jsx",
+                                            lineNumber: 107,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/components/header/header.jsx",
+                                        lineNumber: 106,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/components/header/header.jsx",
+                                    lineNumber: 105,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    id: page == "/contactUs" && "transform",
+                                    className: "hambergerMenu-content-contactUsPage",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                        to: "/contactUs",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                            children: "Contatti"
+                                        }, void 0, false, {
+                                            fileName: "src/components/header/header.jsx",
+                                            lineNumber: 112,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/components/header/header.jsx",
+                                        lineNumber: 111,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/components/header/header.jsx",
+                                    lineNumber: 110,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    id: page == "/news" && "transform",
+                                    className: "hambergerMenu-content-newsPage",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                        to: "/news",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                            children: "News"
+                                        }, void 0, false, {
+                                            fileName: "src/components/header/header.jsx",
+                                            lineNumber: 117,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/components/header/header.jsx",
+                                        lineNumber: 116,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/components/header/header.jsx",
+                                    lineNumber: 115,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    id: page == "/project" && "transform",
+                                    className: "hambergerMenu-content-projectPage",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                        to: "/news",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                            children: "projects"
+                                        }, void 0, false, {
+                                            fileName: "src/components/header/header.jsx",
+                                            lineNumber: 122,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/components/header/header.jsx",
+                                        lineNumber: 121,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/components/header/header.jsx",
+                                    lineNumber: 120,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/header/header.jsx",
+                            lineNumber: 94,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/header/header.jsx",
+                    lineNumber: 81,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "src/components/header/header.jsx",
+                lineNumber: 80,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/header/header.jsx",
+        lineNumber: 35,
+        columnNumber: 5
+    }, this);
+}
+_s(Header, "H/ttaGcRGHb1mMm/hqUnxmGbm/c=");
+_c = Header;
+var _c;
+$RefreshReg$(_c, "Header");
+
+  $parcel$ReactRefreshHelpers$f166.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../../public/headers-logo.png":"6ySaZ"}],"6ySaZ":[function(require,module,exports) {
+module.exports = require("ed813b149378ace9").getBundleURL("bLxZJ") + "headers-logo.928256e4.png" + "?" + Date.now();
+
+},{"ed813b149378ace9":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"f2hSN":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$37de = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$37de.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>HomePage);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _header = require("../../components/header/header");
+var _headerDefault = parcelHelpers.interopDefault(_header);
+var _stylesCss = require("react-slideshow-image/dist/styles.css");
+var _job3Jpg = require("../../../public/job3.jpg");
+var _job3JpgDefault = parcelHelpers.interopDefault(_job3Jpg);
+var _footer = require("../../components/footer/footer");
+var _footerDefault = parcelHelpers.interopDefault(_footer);
+var _s = $RefreshSig$();
+function HomePage() {
+    _s();
+    let [show, setShow] = (0, _react.useState)(false);
+    let [counter, setCounter] = (0, _react.useState)(0);
+    const intervalRef = (0, _react.useRef)(null); // Ref to store interval ID
+    const up = (0, _react.useRef)(null);
+    const containerP6 = (0, _react.useRef)(null);
+    (0, _react.useEffect)(()=>{
+        const handleScroll = ()=>{
+            const slt = document.querySelectorAll(".target");
+            slt.forEach((e)=>{
+                let top = e.getBoundingClientRect().top;
+                if (top < 700) e.classList.add("active");
+            });
+            if (containerP6.current?.getBoundingClientRect().top <= 0) setShow(true);
+            else setShow(false);
+        };
+        window.addEventListener("scroll", handleScroll);
+        return ()=>{
+            window.removeEventListener("scroll", handleScroll); // Cleanup on unmount
+        };
+    }, []);
+    (0, _react.useEffect)(()=>{
+        window.scrollTo(0, 0);
+        document.title = "Home";
+    }, []);
+    (0, _react.useEffect)(()=>{
+        slide(); // Run slide on counter update
+    }, [
+        counter
+    ]);
+    // Function to start the auto-slide
+    const startAutoSlide = ()=>{
+        // Clear any existing interval
+        if (intervalRef.current) clearInterval(intervalRef.current);
+        // Set a new interval for auto-slide
+        intervalRef.current = setInterval(()=>{
+            setCounter((prevCounter)=>prevCounter === 5 ? 0 : prevCounter + 1);
+        }, 5000); // Change slide every 5 seconds
+    };
+    // Function to pause the auto-slide
+    const pauseAutoSlide = ()=>{
+        if (intervalRef.current) clearInterval(intervalRef.current);
+    };
+    (0, _react.useEffect)(()=>{
+        startAutoSlide(); // Start auto-slide on component mount
+        return ()=>{
+            if (intervalRef.current) clearInterval(intervalRef.current); // Clear interval on unmount
+        };
+    }, []);
+    // ...................functions.................//
+    function slide() {
+        let img = document.querySelectorAll(".c");
+        img.forEach((e, index)=>{
+            e.style.left = `${index * 100}%`;
+            e.style.transform = `translateX(-${counter * 100}%)`;
+        });
+    }
+    function handleNextSlide() {
+        setCounter((prevCounter)=>prevCounter === 5 ? 0 : prevCounter + 1);
+        startAutoSlide(); // Reset auto-slide when user clicks
+    }
+    function handlePrevSlide() {
+        setCounter((prevCounter)=>prevCounter === 0 ? 5 : prevCounter - 1);
+        startAutoSlide(); // Reset auto-slide when user clicks
+    }
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "home-page",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "home-page-content",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "container-p1",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
+                            fileName: "src/pages/homaPage/homePage.jsx",
+                            lineNumber: 99,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/pages/homaPage/homePage.jsx",
+                        lineNumber: 98,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        ref: up,
+                        className: "container-p2 ",
+                        onMouseEnter: pauseAutoSlide,
+                        onMouseLeave: startAutoSlide,
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "clickToSlide",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                        onClick: handleNextSlide,
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                            class: "fa-solid fa-chevron-right"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/homaPage/homePage.jsx",
+                                            lineNumber: 106,
+                                            columnNumber: 47
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                        lineNumber: 106,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                        onClick: handlePrevSlide,
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                            class: "fa-solid fa-chevron-left"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/homaPage/homePage.jsx",
+                                            lineNumber: 107,
+                                            columnNumber: 47
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                        lineNumber: 107,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/homaPage/homePage.jsx",
+                                lineNumber: 105,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "context-1 c",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "img1 image",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "text",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                                children: "Benvenuti al Gruppo Danesh"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 112,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                children: "Siamo un gruppo dedicato all'innovazione e alla conoscenza, offrendo soluzioni avanzate per affrontare le sfide del futuro."
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 113,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                        lineNumber: 111,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/pages/homaPage/homePage.jsx",
+                                    lineNumber: 110,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/pages/homaPage/homePage.jsx",
+                                lineNumber: 109,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "context-2 c",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "img2 image"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                        lineNumber: 120,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "text",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                                children: "Esperienza e Innovazione"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 122,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                children: "Al Gruppo Danesh, uniamo anni di esperienza con le ultime tecnologie per offrirvi soluzioni uniche e personalizzate"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 123,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                        lineNumber: 121,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/homaPage/homePage.jsx",
+                                lineNumber: 119,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "context-3 c",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "img3 image"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                        lineNumber: 129,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "text",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                                children: "Innovazione nella Progettazione di Impianti"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 131,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                children: "Al Gruppo Danesh, ci specializziamo nella progettazione e costruzione di impianti elettrici, termotecnici e fotovoltaici, garantendo qualit\xe0 e sostenibilit\xe0."
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 132,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                        lineNumber: 130,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/homaPage/homePage.jsx",
+                                lineNumber: 128,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "context-4 c",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "img4 image"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                        lineNumber: 138,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "text",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                                children: "Progettazione Efficiente"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 140,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                children: "Sviluppiamo progetti personalizzati per impianti elettrici e termotecnici, ottimizzando risorse e costi."
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 141,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                        lineNumber: 139,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/homaPage/homePage.jsx",
+                                lineNumber: 137,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "context-5 c",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "img5 image"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                        lineNumber: 147,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "text",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                                children: "Gestione Progetti"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 149,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                children: "Seguiamo ogni fase del progetto con attenzione e professionalit\xe0, garantendo risultati eccellenti."
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 150,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                        lineNumber: 148,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/homaPage/homePage.jsx",
+                                lineNumber: 146,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "context-6 c",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "img6 image",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "text",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                                children: "Soluzioni Personalizzate"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 158,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                children: "Offriamo soluzioni tailor-made per ogni cliente, adattando i nostri servizi alle vostre esigenze specifiche."
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 159,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                        lineNumber: 157,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/pages/homaPage/homePage.jsx",
+                                    lineNumber: 156,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/pages/homaPage/homePage.jsx",
+                                lineNumber: 155,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/homaPage/homePage.jsx",
+                        lineNumber: 101,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "container-p3 target",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "wrapper",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "content",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "img "
+                                    }, void 0, false, {
+                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                        lineNumber: 169,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "txt",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                                children: "Progettazione e Costruzione di Impianti"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 171,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                children: "Nel mondo odierno, la progettazione e la costruzione di impianti elettrici, termotecnici e fotovoltaici rappresentano un pilastro fondamentale per garantire un futuro sostenibile. Al Gruppo Danesh, ci impegniamo a sviluppare soluzioni innovative che soddisfino le esigenze dei nostri clienti, contribuendo al contempo alla salvaguardia dell'ambiente."
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 172,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                children: "La nostra esperienza nel settore ci consente di offrire progetti personalizzati che ottimizzano l'uso delle risorse e riducono i costi. Utilizziamo tecnologie all'avanguardia per garantire impianti efficienti e sostenibili, che non solo soddisfano le normative vigenti, ma superano anche le aspettative dei nostri clienti."
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 175,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                children: "Inoltre, il nostro team di esperti \xe8 composto da professionisti altamente qualificati che seguono ogni fase del progetto con attenzione e dedizione. Dalla progettazione alla costruzione, ci assicuriamo che ogni dettaglio sia curato e che il risultato finale sia di altissima qualit\xe0."
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 178,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                        lineNumber: 170,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/homaPage/homePage.jsx",
+                                lineNumber: 168,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "src/pages/homaPage/homePage.jsx",
+                            lineNumber: 167,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/pages/homaPage/homePage.jsx",
+                        lineNumber: 166,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "container-p4 target",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "shadow"
+                            }, void 0, false, {
+                                fileName: "src/pages/homaPage/homePage.jsx",
+                                lineNumber: 186,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "txt2",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                        children: "Innovazione nei Sistemi Energetici"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                        lineNumber: 188,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "progragh",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                            children: "Al Gruppo Danesh, ci dedichiamo a creare impianti elettrici e fotovoltaici all'avanguardia, focalizzandoci su efficienza e rispetto per l'ambiente."
+                                        }, void 0, false, {
+                                            fileName: "src/pages/homaPage/homePage.jsx",
+                                            lineNumber: 190,
+                                            columnNumber: 15
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                        lineNumber: 189,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/homaPage/homePage.jsx",
+                                lineNumber: 187,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/homaPage/homePage.jsx",
+                        lineNumber: 185,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "container-p5 target",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "wrapper",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "content gap-35",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "row1 flex-alignCenter-spaceBetween ",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "row1-part1-1 flex-column-center with gap-20",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                        class: "fa-solid fa-sitemap"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 201,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                                        children: "Soluzioni Personalizzate"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 202,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                        children: "Offriamo progetti su misura per soddisfare le specifiche esigenze dei clienti."
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 203,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 200,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "row1-part1-2 flex-column-center with gap-20",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                        class: "fa-solid fa-hand"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 208,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                                        children: "Qualit\xe0 Garantita"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 209,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                        children: "Ci impegniamo a mantenere standard elevati in ogni fase del processo."
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 210,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 207,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "row1-part1-3 flex-column-center with gap-20",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                        class: "fa-solid fa-fax"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 215,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                                        children: "Sostenibilit\xe0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 216,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                        children: "Le nostre soluzioni sono progettate per essere eco-friendly e ridurre l'impatto ambientale."
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 217,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 214,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                        lineNumber: 199,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "row2 flex-alignCenter-spaceBetween",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "row1-part2-1 flex-column-center with gap-20",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                        class: "fa-solid fa-truck-fast"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 224,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                                        children: "Assistenza Completa"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 225,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                        children: "Seguiamo i clienti in ogni fase, dalla progettazione alla realizzazione."
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 226,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 223,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "row1-part2-2 flex-column-center with gap-20",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                        class: "fa-solid fa-building"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 231,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                                        children: "Tecnologia Avanzata"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 232,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                        children: "Utilizziamo le ultime tecnologie per garantire sistemi efficienti e innovativi."
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 233,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 230,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "row1-part2-3 flex-column-center with gap-20",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                        class: "fa-brands fa-cc-visa"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 238,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                                        children: "Efficienza Energetica"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 239,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                        children: "I nostri impianti sono progettati per massimizzare l'efficienza e ridurre i consumi energetici."
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 240,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 237,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                        lineNumber: 222,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/homaPage/homePage.jsx",
+                                lineNumber: 198,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "src/pages/homaPage/homePage.jsx",
+                            lineNumber: 197,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/pages/homaPage/homePage.jsx",
+                        lineNumber: 196,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        ref: containerP6,
+                        className: "container-p6 target",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "absolute"
+                            }, void 0, false, {
+                                fileName: "src/pages/homaPage/homePage.jsx",
+                                lineNumber: 249,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "mmi",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "p1 ",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "mix",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                                        className: "z-index",
+                                                        children: "Impianti Termotecnici"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 253,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "z-index"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 254,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 252,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                                className: "z-index",
+                                                children: "Al Gruppo Danesh, progettiamo e costruiamo impianti termotecnici per garantire comfort e efficienza energetica. Le nostre soluzioni personalizzate si adattano alle esigenze specifiche dei clienti, utilizzando tecnologie moderne per ottimizzare il consumo energetico e migliorare il rendimento."
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 256,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                        lineNumber: 251,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "p2",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "mix",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                                        className: "z-index",
+                                                        children: "Gestione dei Progetti"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 262,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "z-index"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 263,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 261,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                                className: "z-index",
+                                                children: "La gestione dei progetti \xe8 fondamentale per il successo delle nostre operazioni. Al Gruppo Danesh, pianifichiamo ogni fase del progetto con attenzione, assicurando che venga rispettato il budget e le tempistiche. La nostra esperienza ci consente di gestire progetti complessi, mantenendo alta la qualit\xe0 e la soddisfazione del cliente."
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 266,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                        lineNumber: 260,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/homaPage/homePage.jsx",
+                                lineNumber: 250,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "img"
+                            }, void 0, false, {
+                                fileName: "src/pages/homaPage/homePage.jsx",
+                                lineNumber: 271,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/homaPage/homePage.jsx",
+                        lineNumber: 248,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "btw  target marginTop-200 ",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "wrapper",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "content flex-column-center gap-20",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                        children: "I Nostri Progetti"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                        lineNumber: 276,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        children: "Al Gruppo Danesh, siamo fieri di presentare alcuni dei nostri progetti. Abbiamo realizzato impianti elettrici e fotovoltaici su misura per soddisfare le esigenze dei nostri clienti. Visitate la nostra galleria per scoprire come possiamo aiutare anche voi!"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                        lineNumber: 277,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/homaPage/homePage.jsx",
+                                lineNumber: 275,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "src/pages/homaPage/homePage.jsx",
+                            lineNumber: 274,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/pages/homaPage/homePage.jsx",
+                        lineNumber: 273,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "container-p7 target",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "wrapper2",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "content marginTop-300 flex-Start-spaceBetween gap-50",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "row1 row",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "job1"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 287,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                                children: "Progetto di Desalinizzazione ad Abadan"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 288,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                children: "Abbiamo realizzato un impianto di desalinizzazione con una capacit\xe0 di 10.000 metri cubi al giorno ad Abadan. Questo progetto \xe8 stato progettato per fornire acqua potabile a una vasta area, garantendo risorse idriche sostenibili."
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 289,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "appear",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                    children: "\"Abbiamo realizzato un impianto di desalinizzazione ad Abadan con una capacit\xe0 di 10.000 metri cubi di acqua dolce al giorno. Questo progetto \xe8 progettato per fornire acqua potabile sostenibile a una vasta area, garantendo risorse idriche affidabili. Utilizziamo tecnologie avanzate come l'osmosi inversa per trasformare l'acqua di mare in acqua potabile, contribuendo cos\xec al miglioramento della qualit\xe0 della vita e allo sviluppo economico della regione.\""
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/homaPage/homePage.jsx",
+                                                    lineNumber: 293,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 292,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                        lineNumber: 286,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "row2 row",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "job2"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 299,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                                children: "Progetto di Desalinizzazione a Bandar Lange"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 300,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                children: "Abbiamo completato un impianto di desalinizzazione simile a Bandar Lange, anch'esso con una capacit\xe0 di 10.000 metri cubi al giorno. Questo progetto mira a soddisfare le esigenze idriche locali, contribuendo al benessere della comunit\xe0."
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 301,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "appear",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                    children: "Abbiamo implementato un impianto di desalinizzazione a Bandar Lange, con una capacit\xe0 di 10.000 metri cubi al giorno. Questo progetto mira a soddisfare le esigenze idriche locali e a migliorare il benessere della comunit\xe0. Grazie a tecnologie moderne, il nostro impianto fornisce acqua potabile di alta qualit\xe0, contribuendo al progresso della zona e riducendo l'impatto ambientale."
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/homaPage/homePage.jsx",
+                                                    lineNumber: 305,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 304,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                        lineNumber: 298,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "row3 row",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "job3",
+                                                src: (0, _job3JpgDefault.default)
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 311,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                                children: "Costruzione di 140 Unit\xe0 Abitative a Bandar Abbas"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 312,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                children: "Abbiamo realizzato un progetto residenziale che comprende la costruzione di 140 unit\xe0 abitative a Bandar Abbas. Il progetto include impianti moderni per garantire il comfort e la qualit\xe0 della vita dei residenti."
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 313,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "appear",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                    children: "Abbiamo realizzato un progetto residenziale che include la costruzione di 140 unit\xe0 abitative a Bandar Abbas. Ogni unit\xe0 \xe8 dotata di sistemi moderni per garantire comfort e qualit\xe0 della vita. Questo progetto non solo risponde alle esigenze abitative della comunit\xe0, ma promuove anche lo sviluppo economico locale creando nuove opportunit\xe0 di lavoro."
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/homaPage/homePage.jsx",
+                                                    lineNumber: 317,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "src/pages/homaPage/homePage.jsx",
+                                                lineNumber: 316,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                        lineNumber: 310,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/homaPage/homePage.jsx",
+                                lineNumber: 285,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "src/pages/homaPage/homePage.jsx",
+                            lineNumber: 284,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/pages/homaPage/homePage.jsx",
+                        lineNumber: 283,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/pages/homaPage/homePage.jsx",
+                lineNumber: 97,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
+                fileName: "src/pages/homaPage/homePage.jsx",
+                lineNumber: 326,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                onClick: ()=>{
+                    up.current?.scrollIntoView({
+                        behavior: "smooth"
+                    });
+                },
+                className: show ? "scroll-top show " : "scroll-top DontShow ",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                    class: "fa-solid fa-up-long"
+                }, void 0, false, {
+                    fileName: "src/pages/homaPage/homePage.jsx",
+                    lineNumber: 332,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "src/pages/homaPage/homePage.jsx",
+                lineNumber: 327,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/pages/homaPage/homePage.jsx",
+        lineNumber: 96,
+        columnNumber: 5
+    }, this);
+}
+_s(HomePage, "XRdZFW4ZIx1DNvtJlZwKqsIuVfE=");
+_c = HomePage;
+var _c;
+$RefreshReg$(_c, "HomePage");
+
+  $parcel$ReactRefreshHelpers$37de.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../components/header/header":"eoRFc","react-slideshow-image/dist/styles.css":"c6U5o","../../components/footer/footer":"1UV6S","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../../public/job3.jpg":"rZn1j"}],"c6U5o":[function() {},{}],"rZn1j":[function(require,module,exports) {
+module.exports = require("4c90519e7de74b5b").getBundleURL("bLxZJ") + "job3.ac99d17a.jpg" + "?" + Date.now();
+
+},{"4c90519e7de74b5b":"lgJ39"}],"DKGio":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$2eac = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$2eac.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -36073,6 +36704,7 @@ function AboutUsPage() {
     _s();
     (0, _react.useEffect)(()=>{
         window.scrollTo(0, 0);
+        document.title = "Chi Siamo ";
     }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "aboutUs-page",
@@ -36083,13 +36715,13 @@ function AboutUsPage() {
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "container-p1",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
-                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                            lineNumber: 18,
+                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                            lineNumber: 19,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
-                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                        lineNumber: 17,
+                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                        lineNumber: 18,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36103,15 +36735,15 @@ function AboutUsPage() {
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                             children: " REZA DANESH \u2013 CHI SIAMO "
                                         }, void 0, false, {
-                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                            lineNumber: 23,
+                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                            lineNumber: 24,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                             children: "Mi chiamo Reza Danesh e sono il titolare dello studio \u201CGruppo Danesh\u201D."
                                         }, void 0, false, {
-                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                            lineNumber: 24,
+                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                            lineNumber: 25,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36120,21 +36752,21 @@ function AboutUsPage() {
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                     children: "Vantiamo un\u2019esperienza pluriennale nella costruzione e gestione di impianti civili e industriali e dal 2024 abbiamo avviato la nostra attivit\xe0 anche in Italia."
                                                 }, void 0, false, {
-                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                    lineNumber: 26,
+                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                    lineNumber: 27,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                     children: "Abbiamo competenze nella progettazione, pianificazione e coordinamento di risorse in differenti settori. Uniamo capacit\xe0 di gestione e conoscenze tecniche per offrire soluzioni che rispondano in maniera completa alle esigenze dei nostri clienti."
                                                 }, void 0, false, {
-                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                    lineNumber: 27,
+                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                    lineNumber: 28,
                                                     columnNumber: 15
                                                 }, this)
                                             ]
                                         }, void 0, true, {
-                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                            lineNumber: 25,
+                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                            lineNumber: 26,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36143,8 +36775,8 @@ function AboutUsPage() {
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                                     children: "Nello specifico possiamo occuparci di:"
                                                 }, void 0, false, {
-                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                    lineNumber: 30,
+                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                    lineNumber: 31,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -36153,58 +36785,58 @@ function AboutUsPage() {
                                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                                 children: "Progettazione e costruzione di impianti elettrici, termotecnici, fotovoltaici"
                                                             }, void 0, false, {
-                                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                lineNumber: 33,
+                                                                fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                lineNumber: 34,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
-                                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                            lineNumber: 32,
+                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                            lineNumber: 33,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                                 children: "Certificazioni energetiche (APE)"
                                                             }, void 0, false, {
-                                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                lineNumber: 36,
+                                                                fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                lineNumber: 37,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
-                                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                            lineNumber: 35,
+                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                            lineNumber: 36,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                                 children: "Progettazione e direzione lavori"
                                                             }, void 0, false, {
-                                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                lineNumber: 39,
+                                                                fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                lineNumber: 40,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
-                                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                            lineNumber: 38,
+                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                            lineNumber: 39,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
-                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                    lineNumber: 31,
+                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                    lineNumber: 32,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
-                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                            lineNumber: 29,
+                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                            lineNumber: 30,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                             children: "Lo studio Danesh \xe8 formato da una squadra di persone che pu\xf2 aiutare i clienti a sviluppare le proprie idee e progetti in soluzioni concrete"
                                         }, void 0, false, {
-                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                            lineNumber: 43,
+                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                            lineNumber: 44,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36215,19 +36847,19 @@ function AboutUsPage() {
                                                 to: "/contactUs",
                                                 children: "Contatti"
                                             }, void 0, false, {
-                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                lineNumber: 46,
+                                                fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                lineNumber: 47,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
-                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                            lineNumber: 45,
+                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                            lineNumber: 46,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
-                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                    lineNumber: 22,
+                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                    lineNumber: 23,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36250,21 +36882,21 @@ function AboutUsPage() {
                                                         fontFamily: "Courier New, Courier, monospace"
                                                     }
                                                 }, void 0, false, {
-                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                    lineNumber: 51,
+                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                    lineNumber: 52,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                     children: "Customers"
                                                 }, void 0, false, {
-                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                    lineNumber: 65,
+                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                    lineNumber: 66,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
-                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                            lineNumber: 50,
+                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                            lineNumber: 51,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36284,21 +36916,21 @@ function AboutUsPage() {
                                                         fontFamily: "Courier New, Courier, monospace"
                                                     }
                                                 }, void 0, false, {
-                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                    lineNumber: 68,
+                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                    lineNumber: 69,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                     children: "People"
                                                 }, void 0, false, {
-                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                    lineNumber: 82,
+                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                    lineNumber: 83,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
-                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                            lineNumber: 67,
+                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                            lineNumber: 68,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36318,21 +36950,21 @@ function AboutUsPage() {
                                                         fontFamily: "Courier New, Courier, monospace"
                                                     }
                                                 }, void 0, false, {
-                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                    lineNumber: 85,
+                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                    lineNumber: 86,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                     children: "Project"
                                                 }, void 0, false, {
-                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                    lineNumber: 99,
+                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                    lineNumber: 100,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
-                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                            lineNumber: 84,
+                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                            lineNumber: 85,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36352,45 +36984,45 @@ function AboutUsPage() {
                                                         fontFamily: "Courier New, Courier, monospace"
                                                     }
                                                 }, void 0, false, {
-                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                    lineNumber: 102,
+                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                    lineNumber: 103,
                                                     columnNumber: 15
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                     children: "The projects that are being done"
                                                 }, void 0, false, {
-                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                    lineNumber: 116,
+                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                    lineNumber: 117,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
-                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                            lineNumber: 101,
+                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                            lineNumber: 102,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
-                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                    lineNumber: 49,
+                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                    lineNumber: 50,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
-                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                            lineNumber: 21,
+                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                            lineNumber: 22,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
-                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                        lineNumber: 20,
+                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                        lineNumber: 21,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "container-p3"
                     }, void 0, false, {
-                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                        lineNumber: 121,
+                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                        lineNumber: 122,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36403,38 +37035,38 @@ function AboutUsPage() {
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                         children: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus consequuntur fuga blanditiis esse illo enim"
                                     }, void 0, false, {
-                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                        lineNumber: 125,
+                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                        lineNumber: 126,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt numquam assumenda nemo beatae at voluptatum ullam architecto unde illum! Est ea voluptate quis ullam veritatis, id beatae impedit dignissimos accusantium!"
                                     }, void 0, false, {
-                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                        lineNumber: 129,
+                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                        lineNumber: 130,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                         children: "Leggi la News"
                                     }, void 0, false, {
-                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                        lineNumber: 135,
+                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                        lineNumber: 136,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
-                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                lineNumber: 124,
+                                fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                lineNumber: 125,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
-                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                            lineNumber: 123,
+                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                            lineNumber: 124,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
-                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                        lineNumber: 122,
+                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                        lineNumber: 123,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36449,13 +37081,13 @@ function AboutUsPage() {
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                             children: "Qual \xe8 la differenza tra lavorare con gli altri e lavorare con noi?"
                                         }, void 0, false, {
-                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                            lineNumber: 143,
+                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                            lineNumber: 144,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
-                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                        lineNumber: 142,
+                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                        lineNumber: 143,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36473,25 +37105,25 @@ function AboutUsPage() {
                                                                 },
                                                                 children: "Esperienza e competenza:"
                                                             }, void 0, false, {
-                                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                lineNumber: 148,
-                                                                columnNumber: 21
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                                fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
                                                                 lineNumber: 149,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                                fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
                                                                 lineNumber: 150,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                                fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                lineNumber: 151,
                                                                 columnNumber: 21
                                                             }, this),
                                                             "Lavorare con noi significa collaborare con un team che ha anni di esperienza nel settore e una vasta gamma di competenze tecniche. Questo ci permette di affrontare con successo ogni sfida progettuale, garantendo soluzioni efficaci e ben studiate per i nostri clienti. La nostra esperienza ci consente di prevenire e risolvere problemi prima che diventino ostacoli."
                                                         ]
                                                     }, void 0, true, {
-                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 147,
+                                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                        lineNumber: 148,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -36504,36 +37136,36 @@ function AboutUsPage() {
                                                                     },
                                                                     children: "Innovazione e personalizzazione:"
                                                                 }, void 0, false, {
-                                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 155,
-                                                                    columnNumber: 21
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
                                                                     lineNumber: 156,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
                                                                     lineNumber: 157,
+                                                                    columnNumber: 21
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                    lineNumber: 158,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 "Offriamo soluzioni all'avanguardia, utilizzando le ultime tecnologie e approcci innovativi. Ogni progetto \xe8 unico per noi, quindi adattiamo le nostre soluzioni in base alle esigenze specifiche del cliente. Non proponiamo mai una soluzione standardizzata, ma ci impegniamo a personalizzare ogni fase del progetto per ottenere risultati ottimali."
                                                             ]
                                                         }, void 0, true, {
-                                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                            lineNumber: 154,
+                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                            lineNumber: 155,
                                                             columnNumber: 19
                                                         }, this)
                                                     }, void 0, false, {
-                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 153,
+                                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                        lineNumber: 154,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
-                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                lineNumber: 146,
+                                                fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                lineNumber: 147,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36550,30 +37182,30 @@ function AboutUsPage() {
                                                                         },
                                                                         children: "Qualit\xe0 e sostenibilit\xe0:"
                                                                     }, void 0, false, {
-                                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                        lineNumber: 166,
+                                                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                        lineNumber: 167,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                        lineNumber: 167,
+                                                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                        lineNumber: 168,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                        lineNumber: 168,
+                                                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                        lineNumber: 169,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     "Ci impegniamo a utilizzare materiali di altissima qualit\xe0 e tecnologie sostenibili che rispettano l'ambiente. Questo non solo garantisce la durata nel tempo dei nostri impianti, ma assicura anche che siano efficienti dal punto di vista energetico e rispettosi delle normative ambientali. Con noi, ogni progetto \xe8 realizzato con un occhio alla sostenibilit\xe0."
                                                                 ]
                                                             }, void 0, true, {
-                                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                lineNumber: 165,
+                                                                fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                lineNumber: 166,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
-                                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                            lineNumber: 164,
+                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                            lineNumber: 165,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -36586,30 +37218,30 @@ function AboutUsPage() {
                                                                         },
                                                                         children: "Supporto continuo:"
                                                                     }, void 0, false, {
-                                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                        lineNumber: 174,
+                                                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                        lineNumber: 175,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                        lineNumber: 175,
+                                                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                        lineNumber: 176,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                        lineNumber: 176,
+                                                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                        lineNumber: 177,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     "La nostra assistenza non termina con la consegna del progetto. Offriamo un supporto continuo e siamo sempre disponibili per risolvere eventuali problemi o rispondere a richieste aggiuntive. A differenza di altri, non lasciamo il cliente da solo dopo il completamento del lavoro, ma siamo sempre pronti a intervenire quando necessario."
                                                                 ]
                                                             }, void 0, true, {
-                                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                lineNumber: 173,
+                                                                fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                lineNumber: 174,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
-                                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                            lineNumber: 172,
+                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                            lineNumber: 173,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -36622,63 +37254,63 @@ function AboutUsPage() {
                                                                         },
                                                                         children: "Professionalit\xe0 e trasparenza:"
                                                                     }, void 0, false, {
-                                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                        lineNumber: 182,
+                                                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                        lineNumber: 183,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                        lineNumber: 183,
+                                                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                        lineNumber: 184,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                        lineNumber: 184,
+                                                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                        lineNumber: 185,
                                                                         columnNumber: 21
                                                                     }, this),
                                                                     "Ci impegniamo a mantenere un livello elevato di professionalit\xe0 in ogni fase del progetto. Lavoriamo in modo trasparente, fornendo al cliente aggiornamenti costanti e comunicazioni chiare. Questo garantisce che non ci siano sorprese durante il processo e che ogni passo sia ben compreso dal cliente."
                                                                 ]
                                                             }, void 0, true, {
-                                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                lineNumber: 181,
+                                                                fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                lineNumber: 182,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
-                                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                            lineNumber: 180,
+                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                            lineNumber: 181,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
-                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                    lineNumber: 163,
+                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                    lineNumber: 164,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
-                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                lineNumber: 162,
+                                                fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                lineNumber: 163,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
-                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                        lineNumber: 145,
+                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                        lineNumber: 146,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
-                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                lineNumber: 141,
+                                fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                lineNumber: 142,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
-                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                            lineNumber: 140,
+                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                            lineNumber: 141,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
-                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                        lineNumber: 139,
+                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                        lineNumber: 140,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36694,21 +37326,21 @@ function AboutUsPage() {
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                                 children: "Our prosses"
                                             }, void 0, false, {
-                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                lineNumber: 198,
+                                                fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                lineNumber: 199,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam odit corporis, debitis cumque optio molestias accusantium? Eum non, maiores, dolores provident, eius nemo ducimus mollitia accusamus eligendi commodi eaque omnis!"
+                                                children: "Collaboriamo con i nostri clienti sin dall'inizio per assicurare che ogni progetto sia sviluppato con cura e attenzione ai dettagli. La nostra esperienza ci permette di affrontare qualsiasi sfida con soluzioni mirate e ben pensate."
                                             }, void 0, false, {
-                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                lineNumber: 199,
+                                                fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                lineNumber: 200,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
-                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                        lineNumber: 197,
+                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                        lineNumber: 198,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36722,20 +37354,20 @@ function AboutUsPage() {
                                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
                                                             class: "fa-solid fa-mug-hot"
                                                         }, void 0, false, {
-                                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                            lineNumber: 209,
+                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                            lineNumber: 207,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
-                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 208,
+                                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                        lineNumber: 206,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                         children: "New Project"
                                                     }, void 0, false, {
-                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 212,
+                                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                        lineNumber: 210,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36743,48 +37375,86 @@ function AboutUsPage() {
                                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                                                             children: [
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                                    children: "Lorem ipsum dolor"
-                                                                }, void 0, false, {
-                                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                                            class: "fa-solid fa-circle"
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                            lineNumber: 213,
+                                                                            columnNumber: 27
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                                            children: "Collaborazione fin dall'inizio del progetto"
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                            lineNumber: 213,
+                                                                            columnNumber: 61
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                    lineNumber: 213,
+                                                                    columnNumber: 23
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                                            class: "fa-solid fa-circle"
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                            lineNumber: 214,
+                                                                            columnNumber: 27
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                                            children: "Soluzioni mirate e ben studiate"
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                            lineNumber: 214,
+                                                                            columnNumber: 61
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                    lineNumber: 214,
+                                                                    columnNumber: 23
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                                            class: "fa-solid fa-circle"
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                            lineNumber: 215,
+                                                                            columnNumber: 27
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                                            children: "Esperienza nella gestione delle sfide"
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                            lineNumber: 215,
+                                                                            columnNumber: 61
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
                                                                     lineNumber: 215,
-                                                                    columnNumber: 23
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                                    children: "deserunt mollit anim id"
-                                                                }, void 0, false, {
-                                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 216,
-                                                                    columnNumber: 23
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                                    children: "fugiat nulla pariatur"
-                                                                }, void 0, false, {
-                                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 217,
-                                                                    columnNumber: 23
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                                    children: "cillum dolore eu"
-                                                                }, void 0, false, {
-                                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 218,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
-                                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                            lineNumber: 214,
+                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                            lineNumber: 212,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
-                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 213,
+                                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                        lineNumber: 211,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
-                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                lineNumber: 207,
+                                                fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                lineNumber: 205,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36795,20 +37465,20 @@ function AboutUsPage() {
                                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
                                                             class: "fa-solid fa-hand"
                                                         }, void 0, false, {
-                                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                            lineNumber: 224,
+                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                            lineNumber: 221,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
-                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 223,
+                                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                        lineNumber: 220,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                         children: "Work Friendly"
                                                     }, void 0, false, {
-                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 226,
+                                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                        lineNumber: 223,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36816,48 +37486,86 @@ function AboutUsPage() {
                                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                                                             children: [
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                                    children: "Lorem ipsum dolor"
-                                                                }, void 0, false, {
-                                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 229,
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                                            class: "fa-solid fa-circle"
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                            lineNumber: 226,
+                                                                            columnNumber: 27
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                                            children: "Flessibilit\xe0 nelle soluzioni"
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                            lineNumber: 226,
+                                                                            columnNumber: 61
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                    lineNumber: 226,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                                    children: "deserunt mollit anim id"
-                                                                }, void 0, false, {
-                                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 230,
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                                            class: "fa-solid fa-circle"
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                            lineNumber: 227,
+                                                                            columnNumber: 27
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                                            children: "Approccio amichevole e collaborativo"
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                            lineNumber: 227,
+                                                                            columnNumber: 61
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                    lineNumber: 227,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                                    children: "fugiat nulla pariatur"
-                                                                }, void 0, false, {
-                                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 231,
-                                                                    columnNumber: 23
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                                    children: "cillum dolore eu"
-                                                                }, void 0, false, {
-                                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 232,
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                                            class: "fa-solid fa-circle"
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                            lineNumber: 228,
+                                                                            columnNumber: 27
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                                            children: "Personalizzazione secondo le esigenze del cliente"
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                            lineNumber: 228,
+                                                                            columnNumber: 61
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                    lineNumber: 228,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
-                                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                            lineNumber: 228,
+                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                            lineNumber: 225,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
-                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 227,
+                                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                        lineNumber: 224,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
-                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                lineNumber: 222,
+                                                fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                lineNumber: 219,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36868,20 +37576,20 @@ function AboutUsPage() {
                                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
                                                             class: "fa-solid fa-envelope"
                                                         }, void 0, false, {
-                                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                            lineNumber: 239,
+                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                            lineNumber: 234,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
-                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 238,
+                                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                        lineNumber: 233,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                         children: "Danesh Groupe"
                                                     }, void 0, false, {
-                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 241,
+                                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                        lineNumber: 236,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36889,48 +37597,68 @@ function AboutUsPage() {
                                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                                                             children: [
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                                    children: "Lorem ipsum dolor"
-                                                                }, void 0, false, {
-                                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 244,
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                                            class: "fa-solid fa-circle"
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                            lineNumber: 239,
+                                                                            columnNumber: 27
+                                                                        }, this),
+                                                                        "Uso di materiali e tecnologie di alta qualit\xe0"
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                    lineNumber: 239,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                                    children: "deserunt mollit anim id"
-                                                                }, void 0, false, {
-                                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 245,
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                                            class: "fa-solid fa-circle"
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                            lineNumber: 240,
+                                                                            columnNumber: 27
+                                                                        }, this),
+                                                                        "Impianti sostenibili e durevoli"
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                    lineNumber: 240,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                                    children: "fugiat nulla pariatur"
-                                                                }, void 0, false, {
-                                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 246,
-                                                                    columnNumber: 23
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                                    children: "cillum dolore eu"
-                                                                }, void 0, false, {
-                                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 247,
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                                            class: "fa-solid fa-circle"
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                            lineNumber: 241,
+                                                                            columnNumber: 27
+                                                                        }, this),
+                                                                        "Attenzione alla sostenibilit\xe0 ambientale"
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                    lineNumber: 241,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
-                                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                            lineNumber: 243,
+                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                            lineNumber: 238,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
-                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 242,
+                                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                        lineNumber: 237,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
-                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                lineNumber: 237,
+                                                fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                lineNumber: 232,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36938,26 +37666,23 @@ function AboutUsPage() {
                                                 children: [
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         className: "icons",
-                                                        children: [
-                                                            " ",
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                                                class: "fa-solid fa-scroll"
-                                                            }, void 0, false, {
-                                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                lineNumber: 254,
-                                                                columnNumber: 21
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 252,
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                            class: "fa-solid fa-scroll"
+                                                        }, void 0, false, {
+                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                            lineNumber: 247,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                        lineNumber: 246,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                         children: "Our Company"
                                                     }, void 0, false, {
-                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 257,
+                                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                        lineNumber: 249,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36965,87 +37690,107 @@ function AboutUsPage() {
                                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                                                             children: [
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                                    children: "Lorem ipsum dolor"
-                                                                }, void 0, false, {
-                                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 260,
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                                            class: "fa-solid fa-circle"
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                            lineNumber: 252,
+                                                                            columnNumber: 27
+                                                                        }, this),
+                                                                        "Aggiornamenti continui durante il progetto"
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                    lineNumber: 252,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                                    children: "deserunt mollit anim id"
-                                                                }, void 0, false, {
-                                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 261,
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                                            class: "fa-solid fa-circle"
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                            lineNumber: 253,
+                                                                            columnNumber: 27
+                                                                        }, this),
+                                                                        "Comunicazione trasparente e chiara"
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                    lineNumber: 253,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                                    children: "fugiat nulla pariatur"
-                                                                }, void 0, false, {
-                                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 262,
-                                                                    columnNumber: 23
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                                    children: "cillum dolore eu"
-                                                                }, void 0, false, {
-                                                                    fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                                    lineNumber: 263,
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                                            class: "fa-solid fa-circle"
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                            lineNumber: 254,
+                                                                            columnNumber: 27
+                                                                        }, this),
+                                                                        "Professionalit\xe0 e risultati eccellenti"
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                                    lineNumber: 254,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
-                                                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                            lineNumber: 259,
+                                                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                            lineNumber: 251,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
-                                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                        lineNumber: 258,
+                                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                        lineNumber: 250,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
-                                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                                lineNumber: 251,
+                                                fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                                lineNumber: 245,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
-                                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                        lineNumber: 206,
+                                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                        lineNumber: 204,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
-                                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                                lineNumber: 196,
+                                fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                                lineNumber: 197,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
-                            fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                            lineNumber: 195,
+                            fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                            lineNumber: 196,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
-                        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                        lineNumber: 194,
+                        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                        lineNumber: 195,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
-                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                lineNumber: 16,
+                fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                lineNumber: 17,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
-                fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-                lineNumber: 272,
+                fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+                lineNumber: 263,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
-        fileName: "pages/aboutUsPage/aboutUsPage.jsx",
-        lineNumber: 15,
+        fileName: "src/pages/aboutUsPage/aboutUsPage.jsx",
+        lineNumber: 16,
         columnNumber: 5
     }, this);
 }
@@ -37054,12 +37799,12 @@ _c = AboutUsPage;
 var _c;
 $RefreshReg$(_c, "AboutUsPage");
 
-  $parcel$ReactRefreshHelpers$8d1b.postlude(module);
+  $parcel$ReactRefreshHelpers$2eac.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../components/footer/footer":"dtCFD","../../components/header/header":"HkB1m","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-animated-numbers":"2ZAE7"}],"2ZAE7":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../components/footer/footer":"1UV6S","../../components/header/header":"eoRFc","react-router-dom":"9xmpe","react-animated-numbers":"2ZAE7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2ZAE7":[function(require,module,exports) {
 !function(t1, e) {
     var n, s;
     module.exports = e(require("12d6bebdb78946db"));
@@ -41433,11 +42178,11 @@ function memoize(fn) {
 }
 exports.default = memoize;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4BkTJ":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$48d1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"borIm":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$7079 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$48d1.prelude(module);
+$parcel$ReactRefreshHelpers$7079.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -41450,7 +42195,7 @@ var _headerDefault = parcelHelpers.interopDefault(_header);
 var _stylesCss = require("react-slideshow-image/dist/styles.css");
 var _footer = require("../../components/footer/footer");
 var _footerDefault = parcelHelpers.interopDefault(_footer);
-var _contactPage = require("../../api/contactPage");
+var _contactPage = require("../../services/contactPage");
 var _reduce = require("../../reduceFiles/reduce");
 var _s = $RefreshSig$();
 function ContactUsPage() {
@@ -41536,6 +42281,9 @@ function ContactUsPage() {
     }, [
         state.submit
     ]);
+    (0, _react.useEffect)(()=>{
+        document.title = "contatti";
+    }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "contactUsPage",
         children: [
@@ -41545,13 +42293,13 @@ function ContactUsPage() {
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "container-p1",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
-                            fileName: "pages/contactUsPage/contactUsPage.jsx",
-                            lineNumber: 113,
+                            fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                            lineNumber: 118,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
-                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                        lineNumber: 112,
+                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                        lineNumber: 117,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41562,26 +42310,26 @@ function ContactUsPage() {
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                     children: "Contatti"
                                 }, void 0, false, {
-                                    fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                    lineNumber: 117,
+                                    fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                    lineNumber: 122,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                                     children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod inventore aspernatur quos quaerat asperiores. Libero mollitia impedit iusto nisi dignissimos, deserunt at velit doloribus itaque numquam ratione nesciunt atque?"
                                 }, void 0, false, {
-                                    fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                    lineNumber: 118,
+                                    fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                    lineNumber: 123,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
-                            fileName: "pages/contactUsPage/contactUsPage.jsx",
-                            lineNumber: 116,
+                            fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                            lineNumber: 121,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
-                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                        lineNumber: 115,
+                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                        lineNumber: 120,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41600,22 +42348,22 @@ function ContactUsPage() {
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
                                                         class: "fa-solid fa-phone"
                                                     }, void 0, false, {
-                                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 131,
+                                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                        lineNumber: 136,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                                         children: "cellulare"
                                                     }, void 0, false, {
-                                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 132,
+                                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                        lineNumber: 137,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                         children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod inventore aspernatur quos quaerat asperiores. Libero mollitia impedit iusto nisi dignissimos, deserunt at velit doloribus itaque numquam ratione nesciunt atque?"
                                                     }, void 0, false, {
-                                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 133,
+                                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                        lineNumber: 138,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ol", {
@@ -41624,52 +42372,52 @@ function ContactUsPage() {
                                                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                                     children: "123456789"
                                                                 }, void 0, false, {
-                                                                    fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                                    lineNumber: 141,
+                                                                    fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                                    lineNumber: 146,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             }, void 0, false, {
-                                                                fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                                lineNumber: 140,
+                                                                fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                                lineNumber: 145,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                                     children: "123456789"
                                                                 }, void 0, false, {
-                                                                    fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                                    lineNumber: 144,
+                                                                    fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                                    lineNumber: 149,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             }, void 0, false, {
-                                                                fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                                lineNumber: 143,
+                                                                fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                                lineNumber: 148,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
-                                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 139,
+                                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                        lineNumber: 144,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
-                                                fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                lineNumber: 130,
+                                                fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                lineNumber: 135,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                                 className: "h1Style",
                                                 children: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui fuga officia, distinctio repellendus cupiditate ratione, eius quod voluptas tempore omnis optio ad labore blanditiis iusto modi iste sunt officiis dicta!"
                                             }, void 0, false, {
-                                                fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                lineNumber: 148,
+                                                fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                lineNumber: 153,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
-                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                        lineNumber: 129,
+                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                        lineNumber: 134,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41679,8 +42427,8 @@ function ContactUsPage() {
                                                 className: "h1Style",
                                                 children: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae a, perferendis iure, dolore fugiat quaerat nostrum at harum consequatur enim asperiores, velit repudiandae magnam illo exercitationem doloribus expedita ad nobis!"
                                             }, void 0, false, {
-                                                fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                lineNumber: 156,
+                                                fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                lineNumber: 161,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41689,41 +42437,41 @@ function ContactUsPage() {
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
                                                         class: "fa-brands fa-telegram"
                                                     }, void 0, false, {
-                                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 163,
+                                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                        lineNumber: 168,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                                         children: "Telegram"
                                                     }, void 0, false, {
-                                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 164,
+                                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                        lineNumber: 169,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                         children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod inventore aspernatur quos quaerat asperiores. Libero mollitia impedit iusto nisi dignissimos, deserunt at velit doloribus itaque numquam ratione nesciunt atque?"
                                                     }, void 0, false, {
-                                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 165,
+                                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                        lineNumber: 170,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                                                         children: "@Ranesh-Reza"
                                                     }, void 0, false, {
-                                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 171,
+                                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                        lineNumber: 176,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
-                                                fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                lineNumber: 162,
+                                                fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                lineNumber: 167,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
-                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                        lineNumber: 155,
+                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                        lineNumber: 160,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41735,49 +42483,49 @@ function ContactUsPage() {
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
                                                         class: "fa-solid fa-envelope"
                                                     }, void 0, false, {
-                                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 176,
+                                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                        lineNumber: 181,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                                         children: "Email"
                                                     }, void 0, false, {
-                                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 177,
+                                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                        lineNumber: 182,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                         children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aliquid assumenda alias aspernatur facere, voluptas deleniti minima porro ratione est atque nemo sunt accusantium voluptatum delectus. Quas, molestiae. Rem, soluta!"
                                                     }, void 0, false, {
-                                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 178,
+                                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                        lineNumber: 183,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                                                         children: "Gmail : Raneshreza@gmail.com"
                                                     }, void 0, false, {
-                                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 185,
+                                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                        lineNumber: 190,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
-                                                fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                lineNumber: 175,
+                                                fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                lineNumber: 180,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                                 className: "h1Style",
                                                 children: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam ipsum unde ducimus soluta tempore ea. Error esse quasi qui, corrupti eum reprehenderit quas architecto quia a laboriosam quis ipsa iste!"
                                             }, void 0, false, {
-                                                fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                lineNumber: 187,
+                                                fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                lineNumber: 192,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
-                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                        lineNumber: 174,
+                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                        lineNumber: 179,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41787,8 +42535,8 @@ function ContactUsPage() {
                                                 className: "h1Style",
                                                 children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magnam officia neque blanditiis sunt asperiores ab laudantium sit cumque, harum dolorem atque deleniti architecto dolorum nemo quidem ipsa veniam. Cupiditate!"
                                             }, void 0, false, {
-                                                fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                lineNumber: 195,
+                                                fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                lineNumber: 200,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41797,57 +42545,57 @@ function ContactUsPage() {
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
                                                         class: "fa-brands fa-instagram"
                                                     }, void 0, false, {
-                                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 202,
+                                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                        lineNumber: 207,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                                         children: "Instagram"
                                                     }, void 0, false, {
-                                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 203,
+                                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                        lineNumber: 208,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                         children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aliquid assumenda alias aspernatur facere, voluptas deleniti minima porro ratione est atque nemo sunt accusantium voluptatum delectus. Quas, molestiae. Rem, soluta!"
                                                     }, void 0, false, {
-                                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 204,
+                                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                        lineNumber: 209,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                                                         children: "ID : Danesh_Web"
                                                     }, void 0, false, {
-                                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                        lineNumber: 211,
+                                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                        lineNumber: 216,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
-                                                fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                                lineNumber: 201,
+                                                fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                                lineNumber: 206,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
-                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                        lineNumber: 194,
+                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                        lineNumber: 199,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
-                                fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                lineNumber: 128,
+                                fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                lineNumber: 133,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
-                            fileName: "pages/contactUsPage/contactUsPage.jsx",
-                            lineNumber: 127,
+                            fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                            lineNumber: 132,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
-                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                        lineNumber: 126,
+                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                        lineNumber: 131,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41868,8 +42616,8 @@ function ContactUsPage() {
                                             });
                                         }
                                     }, void 0, false, {
-                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                        lineNumber: 220,
+                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                        lineNumber: 225,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -41883,8 +42631,8 @@ function ContactUsPage() {
                                             });
                                         }
                                     }, void 0, false, {
-                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                        lineNumber: 231,
+                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                        lineNumber: 236,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -41898,8 +42646,8 @@ function ContactUsPage() {
                                             });
                                         }
                                     }, void 0, false, {
-                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                        lineNumber: 242,
+                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                        lineNumber: 247,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -41913,8 +42661,8 @@ function ContactUsPage() {
                                             });
                                         }
                                     }, void 0, false, {
-                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                        lineNumber: 253,
+                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                        lineNumber: 258,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
@@ -41927,8 +42675,8 @@ function ContactUsPage() {
                                             });
                                         }
                                     }, void 0, false, {
-                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                        lineNumber: 264,
+                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                        lineNumber: 269,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -41953,78 +42701,78 @@ function ContactUsPage() {
                                         },
                                         children: "INVIA"
                                     }, void 0, false, {
-                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                        lineNumber: 273,
+                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                        lineNumber: 278,
                                         columnNumber: 15
                                     }, this),
                                     state.showMessage ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                         class: "green",
                                         children: "your message has been sent successfully"
                                     }, void 0, false, {
-                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                        lineNumber: 304,
+                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                        lineNumber: 309,
                                         columnNumber: 17
                                     }, this) : state.error && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                         class: "red",
                                         children: "your message hasnt been sent successfully. check you internet and try again"
                                     }, void 0, false, {
-                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                        lineNumber: 307,
+                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                        lineNumber: 312,
                                         columnNumber: 19
                                     }, this),
                                     state.error2 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                         class: "yellow",
                                         children: "Your message has already been sent. please wait for response"
                                     }, void 0, false, {
-                                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                        lineNumber: 314,
+                                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                        lineNumber: 319,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
-                                fileName: "pages/contactUsPage/contactUsPage.jsx",
-                                lineNumber: 219,
+                                fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                                lineNumber: 224,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
-                            fileName: "pages/contactUsPage/contactUsPage.jsx",
-                            lineNumber: 218,
+                            fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                            lineNumber: 223,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
-                        fileName: "pages/contactUsPage/contactUsPage.jsx",
-                        lineNumber: 217,
+                        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                        lineNumber: 222,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
-                fileName: "pages/contactUsPage/contactUsPage.jsx",
-                lineNumber: 111,
+                fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                lineNumber: 116,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
-                fileName: "pages/contactUsPage/contactUsPage.jsx",
-                lineNumber: 322,
+                fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+                lineNumber: 327,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
-        fileName: "pages/contactUsPage/contactUsPage.jsx",
-        lineNumber: 110,
+        fileName: "src/pages/contactUsPage/contactUsPage.jsx",
+        lineNumber: 115,
         columnNumber: 5
     }, this);
 }
-_s(ContactUsPage, "/YKw5JfM59Bn1vJemXJMCtgm8SA=");
+_s(ContactUsPage, "VtRC85JXN8G1eK9nqFEiPdBdbiI=");
 _c = ContactUsPage;
 var _c;
 $RefreshReg$(_c, "ContactUsPage");
 
-  $parcel$ReactRefreshHelpers$48d1.postlude(module);
+  $parcel$ReactRefreshHelpers$7079.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../components/header/header":"HkB1m","react-slideshow-image/dist/styles.css":"c6U5o","../../components/footer/footer":"dtCFD","../../api/contactPage":"a2iGz","../../reduceFiles/reduce":"eFULo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"c6U5o":[function() {},{}],"a2iGz":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../components/header/header":"eoRFc","react-slideshow-image/dist/styles.css":"c6U5o","../../components/footer/footer":"1UV6S","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../services/contactPage":"fn3sv","../../reduceFiles/reduce":"aitRN"}],"c6U5o":[function() {},{}],"fn3sv":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "contactPage", ()=>contactPage);
@@ -42039,7 +42787,7 @@ async function contactPage(values) {
     });
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eFULo":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aitRN":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "contactUsPage", ()=>contactUsPage);
@@ -42083,11 +42831,11 @@ function contactUsPage(state, action) {
     return state;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5R75k":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$ceed = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6Ow0v":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$9d14 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$ceed.prelude(module);
+$parcel$ReactRefreshHelpers$9d14.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -42098,13 +42846,13 @@ var _reactRouterDom = require("react-router-dom");
 var _layout = require("../../components/layout/layout");
 var _layoutDefault = parcelHelpers.interopDefault(_layout);
 var _react = require("react");
-var _login = require("../../api/login");
+var _login = require("../../services/login");
 var _reactDom = require("react-dom");
-var _registerPng = require("../../public/register.png");
+var _registerPng = require("../../../public/register.png");
 var _registerPngDefault = parcelHelpers.interopDefault(_registerPng);
-var _sendVerfyEmail = require("../../api/sendVerfyEmail");
-var _sendCode = require("../../api/sendCode");
-var _checkCode = require("../../api/checkCode");
+var _verfyEmail = require("../../services/VerfyEmail");
+var _sendCode = require("../../services/sendCode");
+var _checkCode = require("../../services/checkCode");
 var _s = $RefreshSig$();
 function LoginPage() {
     _s();
@@ -42146,7 +42894,7 @@ function LoginPage() {
         password
     ]);
     (0, _react.useEffect)(()=>{
-        if (openPortal) (0, _sendVerfyEmail.verfyEmail)(usernameOremail).then((e)=>{
+        if (openPortal) verfyEmail(usernameOremail).then((e)=>{
             return e.json();
         }).then((e)=>{
             console.log(e);
@@ -42196,22 +42944,22 @@ function LoginPage() {
                                 src: (0, _registerPngDefault.default),
                                 alt: "Register"
                             }, void 0, false, {
-                                fileName: "pages/login/loginPage.jsx",
-                                lineNumber: 109,
+                                fileName: "src/pages/login/loginPage.jsx",
+                                lineNumber: 107,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                 children: " Verify Gmail "
                             }, void 0, false, {
-                                fileName: "pages/login/loginPage.jsx",
-                                lineNumber: 110,
+                                fileName: "src/pages/login/loginPage.jsx",
+                                lineNumber: 108,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: "Email has been sent to your Gmail"
                             }, void 0, false, {
-                                fileName: "pages/login/loginPage.jsx",
-                                lineNumber: 111,
+                                fileName: "src/pages/login/loginPage.jsx",
+                                lineNumber: 109,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -42220,19 +42968,19 @@ function LoginPage() {
                                 },
                                 children: "OK"
                             }, void 0, false, {
-                                fileName: "pages/login/loginPage.jsx",
-                                lineNumber: 112,
+                                fileName: "src/pages/login/loginPage.jsx",
+                                lineNumber: 110,
                                 columnNumber: 29
                             }, this)
                         ]
                     }, void 0, true, {
-                        fileName: "pages/login/loginPage.jsx",
-                        lineNumber: 108,
+                        fileName: "src/pages/login/loginPage.jsx",
+                        lineNumber: 106,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
-                    fileName: "pages/login/loginPage.jsx",
-                    lineNumber: 107,
+                    fileName: "src/pages/login/loginPage.jsx",
+                    lineNumber: 105,
                     columnNumber: 21
                 }, this), document.body) : sendCode && /*#__PURE__*/ (0, _reactDom.createPortal)(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "portal",
@@ -42243,15 +42991,15 @@ function LoginPage() {
                                 src: (0, _registerPngDefault.default),
                                 alt: "Register"
                             }, void 0, false, {
-                                fileName: "pages/login/loginPage.jsx",
-                                lineNumber: 121,
+                                fileName: "src/pages/login/loginPage.jsx",
+                                lineNumber: 119,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                 children: " Enter the code "
                             }, void 0, false, {
-                                fileName: "pages/login/loginPage.jsx",
-                                lineNumber: 122,
+                                fileName: "src/pages/login/loginPage.jsx",
+                                lineNumber: 120,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -42261,15 +43009,15 @@ function LoginPage() {
                                     setCode(e.target.value);
                                 }
                             }, void 0, false, {
-                                fileName: "pages/login/loginPage.jsx",
-                                lineNumber: 123,
+                                fileName: "src/pages/login/loginPage.jsx",
+                                lineNumber: 121,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 children: "Code has been sent to your Gmail"
                             }, void 0, false, {
-                                fileName: "pages/login/loginPage.jsx",
-                                lineNumber: 126,
+                                fileName: "src/pages/login/loginPage.jsx",
+                                lineNumber: 124,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -42282,19 +43030,19 @@ function LoginPage() {
                                 },
                                 children: "check"
                             }, void 0, false, {
-                                fileName: "pages/login/loginPage.jsx",
-                                lineNumber: 127,
+                                fileName: "src/pages/login/loginPage.jsx",
+                                lineNumber: 125,
                                 columnNumber: 29
                             }, this)
                         ]
                     }, void 0, true, {
-                        fileName: "pages/login/loginPage.jsx",
-                        lineNumber: 120,
+                        fileName: "src/pages/login/loginPage.jsx",
+                        lineNumber: 118,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
-                    fileName: "pages/login/loginPage.jsx",
-                    lineNumber: 119,
+                    fileName: "src/pages/login/loginPage.jsx",
+                    lineNumber: 117,
                     columnNumber: 21
                 }, this), document.body),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -42334,22 +43082,22 @@ function LoginPage() {
                                                 setUsernameOremail(e.target.value);
                                             }
                                         }, void 0, false, {
-                                            fileName: "pages/login/loginPage.jsx",
-                                            lineNumber: 165,
+                                            fileName: "src/pages/login/loginPage.jsx",
+                                            lineNumber: 163,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                                             className: errorUsernameOremail && "red",
                                             children: errorUsernameOremail && "fill out the form"
                                         }, void 0, false, {
-                                            fileName: "pages/login/loginPage.jsx",
-                                            lineNumber: 168,
+                                            fileName: "src/pages/login/loginPage.jsx",
+                                            lineNumber: 166,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
-                                    fileName: "pages/login/loginPage.jsx",
-                                    lineNumber: 164,
+                                    fileName: "src/pages/login/loginPage.jsx",
+                                    lineNumber: 162,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -42363,43 +43111,43 @@ function LoginPage() {
                                                 setPassword(e.target.value);
                                             }
                                         }, void 0, false, {
-                                            fileName: "pages/login/loginPage.jsx",
-                                            lineNumber: 171,
+                                            fileName: "src/pages/login/loginPage.jsx",
+                                            lineNumber: 169,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                                             className: errorPassword && "red",
                                             children: errorPassword && "fill out the form"
                                         }, void 0, false, {
-                                            fileName: "pages/login/loginPage.jsx",
-                                            lineNumber: 174,
+                                            fileName: "src/pages/login/loginPage.jsx",
+                                            lineNumber: 172,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
-                                    fileName: "pages/login/loginPage.jsx",
-                                    lineNumber: 170,
+                                    fileName: "src/pages/login/loginPage.jsx",
+                                    lineNumber: 168,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                     children: "Login"
                                 }, void 0, false, {
-                                    fileName: "pages/login/loginPage.jsx",
-                                    lineNumber: 176,
+                                    fileName: "src/pages/login/loginPage.jsx",
+                                    lineNumber: 174,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                     className: "red",
                                     children: LoginError
                                 }, void 0, false, {
-                                    fileName: "pages/login/loginPage.jsx",
-                                    lineNumber: 177,
+                                    fileName: "src/pages/login/loginPage.jsx",
+                                    lineNumber: 175,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
-                            fileName: "pages/login/loginPage.jsx",
-                            lineNumber: 136,
+                            fileName: "src/pages/login/loginPage.jsx",
+                            lineNumber: 134,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -42409,32 +43157,32 @@ function LoginPage() {
                                     to: "/register",
                                     children: "Register"
                                 }, void 0, false, {
-                                    fileName: "pages/login/loginPage.jsx",
-                                    lineNumber: 179,
+                                    fileName: "src/pages/login/loginPage.jsx",
+                                    lineNumber: 177,
                                     columnNumber: 51
                                 }, this),
                                 " Now"
                             ]
                         }, void 0, true, {
-                            fileName: "pages/login/loginPage.jsx",
-                            lineNumber: 179,
+                            fileName: "src/pages/login/loginPage.jsx",
+                            lineNumber: 177,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
-                    fileName: "pages/login/loginPage.jsx",
-                    lineNumber: 135,
+                    fileName: "src/pages/login/loginPage.jsx",
+                    lineNumber: 133,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
-            fileName: "pages/login/loginPage.jsx",
-            lineNumber: 105,
+            fileName: "src/pages/login/loginPage.jsx",
+            lineNumber: 103,
             columnNumber: 13
         }, this)
     }, void 0, false, {
-        fileName: "pages/login/loginPage.jsx",
-        lineNumber: 104,
+        fileName: "src/pages/login/loginPage.jsx",
+        lineNumber: 102,
         columnNumber: 9
     }, this);
 }
@@ -42447,53 +43195,12 @@ _c = LoginPage;
 var _c;
 $RefreshReg$(_c, "LoginPage");
 
-  $parcel$ReactRefreshHelpers$ceed.postlude(module);
+  $parcel$ReactRefreshHelpers$9d14.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../../components/layout/layout":"kDHNM","react":"21dqq","../../api/login":"fyQee","react-dom":"j6uA9","../../public/register.png":"l9eUR","../../api/sendVerfyEmail":"58tI3","../../api/sendCode":"5dMjC","../../api/checkCode":"liKUX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kDHNM":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$d8fd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$d8fd.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>Layout);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _footer = require("../footer/footer");
-var _footerDefault = parcelHelpers.interopDefault(_footer);
-var _header = require("../header/header");
-var _headerDefault = parcelHelpers.interopDefault(_header);
-function Layout(props) {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
-                fileName: "components/layout/layout.jsx",
-                lineNumber: 7,
-                columnNumber: 13
-            }, this),
-            props.children,
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
-                fileName: "components/layout/layout.jsx",
-                lineNumber: 9,
-                columnNumber: 13
-            }, this)
-        ]
-    }, void 0, true);
-}
-_c = Layout;
-var _c;
-$RefreshReg$(_c, "Layout");
-
-  $parcel$ReactRefreshHelpers$d8fd.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","../footer/footer":"dtCFD","../header/header":"HkB1m","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fyQee":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../../components/layout/layout":"eE8aD","react":"21dqq","react-dom":"j6uA9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../services/login":"cO89r","../../../public/register.png":"l9eUR","../../services/checkCode":"6JmjZ","../../services/sendCode":"d0SvN","../../services/VerfyEmail":"2hRgN"}],"cO89r":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "loginUser", ()=>loginUser);
@@ -42509,36 +43216,7 @@ async function loginUser(data) {
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"l9eUR":[function(require,module,exports) {
 module.exports = require("ed6ed0fae19d7c09").getBundleURL("bLxZJ") + "register.ab8dcb4b.png" + "?" + Date.now();
 
-},{"ed6ed0fae19d7c09":"lgJ39"}],"58tI3":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "verfyEmail", ()=>verfyEmail);
-async function verfyEmail(email) {
-    const response = await fetch("https://dnwebapi.liara.run/api/sendEmailVerify", {
-        headers: {
-            "Content-Type": "application/json",
-            "email": email
-        }
-    });
-    return response;
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5dMjC":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "sendCodeForGmail", ()=>sendCodeForGmail);
-async function sendCodeForGmail(props) {
-    return await fetch("https://dnwebapi.liara.run/api/sendCodeToEmail", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-            "Accept": "application/json"
-        },
-        body: JSON.stringify(props)
-    });
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"liKUX":[function(require,module,exports) {
+},{"ed6ed0fae19d7c09":"lgJ39"}],"6JmjZ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "checkCodeForEmail", ()=>checkCodeForEmail);
@@ -42553,11 +43231,40 @@ async function checkCodeForEmail(props) {
     });
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"b0YtZ":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$7210 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"d0SvN":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "sendCodeForGmail", ()=>sendCodeForGmail);
+async function sendCodeForGmail(props) {
+    return await fetch("https://dnwebapi.liara.run/api/sendCodeToEmail", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        },
+        body: JSON.stringify(props)
+    });
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2hRgN":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "verfyEmailAdress", ()=>verfyEmailAdress);
+async function verfyEmailAdress(email, confirmEmail) {
+    return await fetch("https://dnwebapi.liara.run/api/verifyEmail", {
+        headers: {
+            "Content-Type": "application/json",
+            "email": email,
+            "confirmEmail": confirmEmail
+        }
+    });
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6sZtF":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$599b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$7210.prelude(module);
+$parcel$ReactRefreshHelpers$599b.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -42565,12 +43272,12 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>RegisterPage);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
-var _register = require("../../api/register");
+var _register = require("../../services/register");
 var _layout = require("../../components/layout/layout");
 var _layoutDefault = parcelHelpers.interopDefault(_layout);
 var _reactRouterDom = require("react-router-dom");
 var _reactDom = require("react-dom");
-var _registerPng = require("../../public/register.png");
+var _registerPng = require("../../../public/register.png");
 var _registerPngDefault = parcelHelpers.interopDefault(_registerPng);
 var _s = $RefreshSig$();
 function RegisterPage() {
@@ -42679,14 +43386,14 @@ function RegisterPage() {
                                 src: (0, _registerPngDefault.default),
                                 alt: "Register"
                             }, void 0, false, {
-                                fileName: "pages/registerPage/register.jsx",
+                                fileName: "src/pages/registerPage/register.jsx",
                                 lineNumber: 124,
                                 columnNumber: 33
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                 children: "Successfully registered"
                             }, void 0, false, {
-                                fileName: "pages/registerPage/register.jsx",
+                                fileName: "src/pages/registerPage/register.jsx",
                                 lineNumber: 125,
                                 columnNumber: 33
                             }, this),
@@ -42697,7 +43404,7 @@ function RegisterPage() {
                                 },
                                 children: "OK"
                             }, void 0, false, {
-                                fileName: "pages/registerPage/register.jsx",
+                                fileName: "src/pages/registerPage/register.jsx",
                                 lineNumber: 126,
                                 columnNumber: 33
                             }, this),
@@ -42708,18 +43415,18 @@ function RegisterPage() {
                                     " seconds..."
                                 ]
                             }, void 0, true, {
-                                fileName: "pages/registerPage/register.jsx",
+                                fileName: "src/pages/registerPage/register.jsx",
                                 lineNumber: 133,
                                 columnNumber: 33
                             }, this)
                         ]
                     }, void 0, true, {
-                        fileName: "pages/registerPage/register.jsx",
+                        fileName: "src/pages/registerPage/register.jsx",
                         lineNumber: 123,
                         columnNumber: 29
                     }, this)
                 }, void 0, false, {
-                    fileName: "pages/registerPage/register.jsx",
+                    fileName: "src/pages/registerPage/register.jsx",
                     lineNumber: 122,
                     columnNumber: 25
                 }, this), document.body),
@@ -42739,7 +43446,7 @@ function RegisterPage() {
                                             type: "text",
                                             onChange: (e)=>setName(e.target.value)
                                         }, void 0, false, {
-                                            fileName: "pages/registerPage/register.jsx",
+                                            fileName: "src/pages/registerPage/register.jsx",
                                             lineNumber: 141,
                                             columnNumber: 29
                                         }, this),
@@ -42747,13 +43454,13 @@ function RegisterPage() {
                                             className: errorName ? "red" : "ok",
                                             children: errorName && "Please fill out this field"
                                         }, void 0, false, {
-                                            fileName: "pages/registerPage/register.jsx",
+                                            fileName: "src/pages/registerPage/register.jsx",
                                             lineNumber: 147,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
-                                    fileName: "pages/registerPage/register.jsx",
+                                    fileName: "src/pages/registerPage/register.jsx",
                                     lineNumber: 140,
                                     columnNumber: 25
                                 }, this),
@@ -42766,7 +43473,7 @@ function RegisterPage() {
                                             type: "text",
                                             onChange: (e)=>setLastName(e.target.value)
                                         }, void 0, false, {
-                                            fileName: "pages/registerPage/register.jsx",
+                                            fileName: "src/pages/registerPage/register.jsx",
                                             lineNumber: 151,
                                             columnNumber: 29
                                         }, this),
@@ -42774,13 +43481,13 @@ function RegisterPage() {
                                             className: errorLastName ? "red" : "ok",
                                             children: errorLastName && "Please fill out this field"
                                         }, void 0, false, {
-                                            fileName: "pages/registerPage/register.jsx",
+                                            fileName: "src/pages/registerPage/register.jsx",
                                             lineNumber: 157,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
-                                    fileName: "pages/registerPage/register.jsx",
+                                    fileName: "src/pages/registerPage/register.jsx",
                                     lineNumber: 150,
                                     columnNumber: 25
                                 }, this),
@@ -42793,7 +43500,7 @@ function RegisterPage() {
                                             type: "text",
                                             onChange: (e)=>setUsername(e.target.value)
                                         }, void 0, false, {
-                                            fileName: "pages/registerPage/register.jsx",
+                                            fileName: "src/pages/registerPage/register.jsx",
                                             lineNumber: 161,
                                             columnNumber: 29
                                         }, this),
@@ -42801,13 +43508,13 @@ function RegisterPage() {
                                             className: errorUsername ? "red" : "ok",
                                             children: errorUsername && "Please fill out this field"
                                         }, void 0, false, {
-                                            fileName: "pages/registerPage/register.jsx",
+                                            fileName: "src/pages/registerPage/register.jsx",
                                             lineNumber: 167,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
-                                    fileName: "pages/registerPage/register.jsx",
+                                    fileName: "src/pages/registerPage/register.jsx",
                                     lineNumber: 160,
                                     columnNumber: 25
                                 }, this),
@@ -42820,7 +43527,7 @@ function RegisterPage() {
                                             type: "number",
                                             onChange: (e)=>setPhone(e.target.value)
                                         }, void 0, false, {
-                                            fileName: "pages/registerPage/register.jsx",
+                                            fileName: "src/pages/registerPage/register.jsx",
                                             lineNumber: 171,
                                             columnNumber: 29
                                         }, this),
@@ -42828,13 +43535,13 @@ function RegisterPage() {
                                             className: errorPhone ? "red" : "ok",
                                             children: errorPhone && "Please fill out this field"
                                         }, void 0, false, {
-                                            fileName: "pages/registerPage/register.jsx",
+                                            fileName: "src/pages/registerPage/register.jsx",
                                             lineNumber: 177,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
-                                    fileName: "pages/registerPage/register.jsx",
+                                    fileName: "src/pages/registerPage/register.jsx",
                                     lineNumber: 170,
                                     columnNumber: 25
                                 }, this),
@@ -42847,7 +43554,7 @@ function RegisterPage() {
                                             type: "email",
                                             onChange: (e)=>setEmail(e.target.value)
                                         }, void 0, false, {
-                                            fileName: "pages/registerPage/register.jsx",
+                                            fileName: "src/pages/registerPage/register.jsx",
                                             lineNumber: 181,
                                             columnNumber: 29
                                         }, this),
@@ -42855,13 +43562,13 @@ function RegisterPage() {
                                             className: errorEmail ? "red" : "ok",
                                             children: errorEmail && "Please fill out this field"
                                         }, void 0, false, {
-                                            fileName: "pages/registerPage/register.jsx",
+                                            fileName: "src/pages/registerPage/register.jsx",
                                             lineNumber: 187,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
-                                    fileName: "pages/registerPage/register.jsx",
+                                    fileName: "src/pages/registerPage/register.jsx",
                                     lineNumber: 180,
                                     columnNumber: 25
                                 }, this),
@@ -42874,7 +43581,7 @@ function RegisterPage() {
                                             type: "password",
                                             onChange: (e)=>setPassword(e.target.value)
                                         }, void 0, false, {
-                                            fileName: "pages/registerPage/register.jsx",
+                                            fileName: "src/pages/registerPage/register.jsx",
                                             lineNumber: 191,
                                             columnNumber: 29
                                         }, this),
@@ -42882,13 +43589,13 @@ function RegisterPage() {
                                             className: errorPassword ? "red" : "ok",
                                             children: errorPassword && "Please fill out this field"
                                         }, void 0, false, {
-                                            fileName: "pages/registerPage/register.jsx",
+                                            fileName: "src/pages/registerPage/register.jsx",
                                             lineNumber: 197,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
-                                    fileName: "pages/registerPage/register.jsx",
+                                    fileName: "src/pages/registerPage/register.jsx",
                                     lineNumber: 190,
                                     columnNumber: 25
                                 }, this),
@@ -42901,7 +43608,7 @@ function RegisterPage() {
                                             type: "password",
                                             onChange: (e)=>setConfirmPassword(e.target.value)
                                         }, void 0, false, {
-                                            fileName: "pages/registerPage/register.jsx",
+                                            fileName: "src/pages/registerPage/register.jsx",
                                             lineNumber: 201,
                                             columnNumber: 29
                                         }, this),
@@ -42909,13 +43616,13 @@ function RegisterPage() {
                                             className: errorPass || filloutAlert ? "red" : "ok",
                                             children: filloutAlert ? "Please fill out this field" : errorPass && "Passwords do not match"
                                         }, void 0, false, {
-                                            fileName: "pages/registerPage/register.jsx",
+                                            fileName: "src/pages/registerPage/register.jsx",
                                             lineNumber: 207,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
-                                    fileName: "pages/registerPage/register.jsx",
+                                    fileName: "src/pages/registerPage/register.jsx",
                                     lineNumber: 200,
                                     columnNumber: 25
                                 }, this),
@@ -42923,7 +43630,7 @@ function RegisterPage() {
                                     type: "submit",
                                     children: "Register"
                                 }, void 0, false, {
-                                    fileName: "pages/registerPage/register.jsx",
+                                    fileName: "src/pages/registerPage/register.jsx",
                                     lineNumber: 212,
                                     columnNumber: 25
                                 }, this),
@@ -42931,18 +43638,18 @@ function RegisterPage() {
                                     className: "red",
                                     children: existUser
                                 }, void 0, false, {
-                                    fileName: "pages/registerPage/register.jsx",
+                                    fileName: "src/pages/registerPage/register.jsx",
                                     lineNumber: 214,
                                     columnNumber: 39
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                    fileName: "pages/registerPage/register.jsx",
+                                    fileName: "src/pages/registerPage/register.jsx",
                                     lineNumber: 215,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
-                            fileName: "pages/registerPage/register.jsx",
+                            fileName: "src/pages/registerPage/register.jsx",
                             lineNumber: 139,
                             columnNumber: 21
                         }, this),
@@ -42953,31 +43660,31 @@ function RegisterPage() {
                                     to: "/login",
                                     children: "Login"
                                 }, void 0, false, {
-                                    fileName: "pages/registerPage/register.jsx",
+                                    fileName: "src/pages/registerPage/register.jsx",
                                     lineNumber: 218,
                                     columnNumber: 50
                                 }, this),
                                 " now."
                             ]
                         }, void 0, true, {
-                            fileName: "pages/registerPage/register.jsx",
+                            fileName: "src/pages/registerPage/register.jsx",
                             lineNumber: 217,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
-                    fileName: "pages/registerPage/register.jsx",
+                    fileName: "src/pages/registerPage/register.jsx",
                     lineNumber: 138,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
-            fileName: "pages/registerPage/register.jsx",
+            fileName: "src/pages/registerPage/register.jsx",
             lineNumber: 119,
             columnNumber: 13
         }, this)
     }, void 0, false, {
-        fileName: "pages/registerPage/register.jsx",
+        fileName: "src/pages/registerPage/register.jsx",
         lineNumber: 118,
         columnNumber: 9
     }, this);
@@ -42991,12 +43698,12 @@ _c = RegisterPage;
 var _c;
 $RefreshReg$(_c, "RegisterPage");
 
-  $parcel$ReactRefreshHelpers$7210.postlude(module);
+  $parcel$ReactRefreshHelpers$599b.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../api/register":"dMqF5","../../components/layout/layout":"kDHNM","react-router-dom":"9xmpe","react-dom":"j6uA9","../../public/register.png":"l9eUR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dMqF5":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../components/layout/layout":"eE8aD","react-router-dom":"9xmpe","react-dom":"j6uA9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../services/register":"5j2X1","../../../public/register.png":"l9eUR"}],"5j2X1":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "setUser", ()=>setUser);
@@ -43010,11 +43717,11 @@ async function setUser(data) {
     });
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gEuB5":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$ef8f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"92BsB":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$90c7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$ef8f.prelude(module);
+$parcel$ReactRefreshHelpers$90c7.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -43022,7 +43729,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>Profile);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
-var _getusers = require("../../api/getusers");
+var _getusers = require("../../services/getusers");
 var _footer = require("../../components/footer/footer");
 var _footerDefault = parcelHelpers.interopDefault(_footer);
 var _s = $RefreshSig$();
@@ -43050,42 +43757,42 @@ function Profile() {
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                             children: e.name
                         }, void 0, false, {
-                            fileName: "pages/profile/profile.jsx",
+                            fileName: "src/pages/profile/profile.jsx",
                             lineNumber: 30,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                             children: e.email
                         }, void 0, false, {
-                            fileName: "pages/profile/profile.jsx",
+                            fileName: "src/pages/profile/profile.jsx",
                             lineNumber: 31,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                             children: e.password
                         }, void 0, false, {
-                            fileName: "pages/profile/profile.jsx",
+                            fileName: "src/pages/profile/profile.jsx",
                             lineNumber: 32,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                             children: e.phone
                         }, void 0, false, {
-                            fileName: "pages/profile/profile.jsx",
+                            fileName: "src/pages/profile/profile.jsx",
                             lineNumber: 33,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                             children: e.lastname
                         }, void 0, false, {
-                            fileName: "pages/profile/profile.jsx",
+                            fileName: "src/pages/profile/profile.jsx",
                             lineNumber: 34,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                             children: e.username
                         }, void 0, false, {
-                            fileName: "pages/profile/profile.jsx",
+                            fileName: "src/pages/profile/profile.jsx",
                             lineNumber: 35,
                             columnNumber: 21
                         }, this)
@@ -43093,7 +43800,7 @@ function Profile() {
                 }, void 0, true);
             }),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
-                fileName: "pages/profile/profile.jsx",
+                fileName: "src/pages/profile/profile.jsx",
                 lineNumber: 40,
                 columnNumber: 9
             }, this)
@@ -43105,12 +43812,12 @@ _c = Profile;
 var _c;
 $RefreshReg$(_c, "Profile");
 
-  $parcel$ReactRefreshHelpers$ef8f.postlude(module);
+  $parcel$ReactRefreshHelpers$90c7.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../api/getusers":"hk3yi","../../components/footer/footer":"dtCFD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hk3yi":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../components/footer/footer":"1UV6S","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../services/getusers":"fHvhr"}],"fHvhr":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getUsers", ()=>getUsers);
@@ -43124,22 +43831,22 @@ async function getUsers(data) {
     });
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8A2hU":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$194b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1BZa9":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$67e8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$194b.prelude(module);
+$parcel$ReactRefreshHelpers$67e8.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>VerfyEmailPage);
+parcelHelpers.export(exports, "default", ()=>VerifyEmailPage);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactRouterDom = require("react-router-dom");
-var _verfyEmail = require("../../api/VerfyEmail");
+var _verfyEmail = require("../../services/VerfyEmail");
 var _s = $RefreshSig$();
-function VerfyEmailPage() {
+function VerifyEmailPage() {
     _s();
     const [verfyEmail, setVerfyEmail] = (0, _react.useState)("");
     let params = (0, _reactRouterDom.useParams)();
@@ -43155,40 +43862,354 @@ function VerfyEmailPage() {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
             children: verfyEmail
         }, void 0, false, {
-            fileName: "pages/verfyEmailPage/verfyEmail.jsx",
+            fileName: "src/pages/verfyEmailPage/verfyEmail.jsx",
             lineNumber: 25,
             columnNumber: 9
         }, this)
     }, void 0, false);
 }
-_s(VerfyEmailPage, "QOcA0SXxYYSR4fYPwaQJs2qAyUo=", false, function() {
+_s(VerifyEmailPage, "QOcA0SXxYYSR4fYPwaQJs2qAyUo=", false, function() {
     return [
         (0, _reactRouterDom.useParams)
     ];
 });
-_c = VerfyEmailPage;
+_c = VerifyEmailPage;
 var _c;
-$RefreshReg$(_c, "VerfyEmailPage");
+$RefreshReg$(_c, "VerifyEmailPage");
 
-  $parcel$ReactRefreshHelpers$194b.postlude(module);
+  $parcel$ReactRefreshHelpers$67e8.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../api/VerfyEmail":"3dHFy","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3dHFy":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../services/VerfyEmail":"2hRgN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1h2H8":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$2963 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$2963.prelude(module);
+
+try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "verfyEmailAdress", ()=>verfyEmailAdress);
-async function verfyEmailAdress(email, confirmEmail) {
-    return await fetch("https://dnwebapi.liara.run/api/verifyEmail", {
-        headers: {
-            "Content-Type": "application/json",
-            "email": email,
-            "confirmEmail": confirmEmail
-        }
-    });
+parcelHelpers.export(exports, "default", ()=>ProjectPage);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _layout = require("../../components/layout/layout");
+var _layoutDefault = parcelHelpers.interopDefault(_layout);
+var _react = require("react");
+var _s = $RefreshSig$();
+function ProjectPage() {
+    _s();
+    (0, _react.useEffect)(()=>{
+        scrollTo(0, 0);
+        document.title = "projects";
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _layoutDefault.default), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            class: "projects-page",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
+                    class: "page-header",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                            children: "Our Completed Projects"
+                        }, void 0, false, {
+                            fileName: "src/pages/projectPage/projectPage.jsx",
+                            lineNumber: 15,
+                            columnNumber: 9
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: "Take a look at the projects we have successfully completed, showcasing our expertise and commitment to quality."
+                        }, void 0, false, {
+                            fileName: "src/pages/projectPage/projectPage.jsx",
+                            lineNumber: 16,
+                            columnNumber: 9
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/pages/projectPage/projectPage.jsx",
+                    lineNumber: 14,
+                    columnNumber: 5
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                    class: "filter-section",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            class: "filter-button active",
+                            "data-category": "all",
+                            children: "All"
+                        }, void 0, false, {
+                            fileName: "src/pages/projectPage/projectPage.jsx",
+                            lineNumber: 20,
+                            columnNumber: 9
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            class: "filter-button",
+                            "data-category": "technology",
+                            children: "Technology"
+                        }, void 0, false, {
+                            fileName: "src/pages/projectPage/projectPage.jsx",
+                            lineNumber: 21,
+                            columnNumber: 9
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            class: "filter-button",
+                            "data-category": "design",
+                            children: "Design"
+                        }, void 0, false, {
+                            fileName: "src/pages/projectPage/projectPage.jsx",
+                            lineNumber: 22,
+                            columnNumber: 9
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            class: "filter-button",
+                            "data-category": "business",
+                            children: "Business"
+                        }, void 0, false, {
+                            fileName: "src/pages/projectPage/projectPage.jsx",
+                            lineNumber: 23,
+                            columnNumber: 9
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/pages/projectPage/projectPage.jsx",
+                    lineNumber: 19,
+                    columnNumber: 5
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                    class: "projects-gallery",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
+                            class: "project-card",
+                            "data-category": "technology",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: "project-image1.jpg",
+                                    alt: "Project 1",
+                                    class: "project-image"
+                                }, void 0, false, {
+                                    fileName: "src/pages/projectPage/projectPage.jsx",
+                                    lineNumber: 28,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    class: "project-details",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                            children: "Technology Project 1"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/projectPage/projectPage.jsx",
+                                            lineNumber: 30,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: "This project was executed using advanced technologies to optimize and satisfy client needs."
+                                        }, void 0, false, {
+                                            fileName: "src/pages/projectPage/projectPage.jsx",
+                                            lineNumber: 31,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "#",
+                                            class: "project-link",
+                                            children: "Learn More"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/projectPage/projectPage.jsx",
+                                            lineNumber: 32,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/projectPage/projectPage.jsx",
+                                    lineNumber: 29,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/pages/projectPage/projectPage.jsx",
+                            lineNumber: 27,
+                            columnNumber: 9
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
+                            class: "project-card",
+                            "data-category": "design",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: "project-image2.jpg",
+                                    alt: "Project 2",
+                                    class: "project-image"
+                                }, void 0, false, {
+                                    fileName: "src/pages/projectPage/projectPage.jsx",
+                                    lineNumber: 37,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    class: "project-details",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                            children: "Design Project 2"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/projectPage/projectPage.jsx",
+                                            lineNumber: 39,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: "A creative solution that tackled complex challenges with a sustainable approach for long-term success."
+                                        }, void 0, false, {
+                                            fileName: "src/pages/projectPage/projectPage.jsx",
+                                            lineNumber: 40,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "#",
+                                            class: "project-link",
+                                            children: "Learn More"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/projectPage/projectPage.jsx",
+                                            lineNumber: 41,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/projectPage/projectPage.jsx",
+                                    lineNumber: 38,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/pages/projectPage/projectPage.jsx",
+                            lineNumber: 36,
+                            columnNumber: 9
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
+                            class: "project-card",
+                            "data-category": "business",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: "project-image3.jpg",
+                                    alt: "Project 3",
+                                    class: "project-image"
+                                }, void 0, false, {
+                                    fileName: "src/pages/projectPage/projectPage.jsx",
+                                    lineNumber: 46,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    class: "project-details",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                            children: "Business Project 3"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/projectPage/projectPage.jsx",
+                                            lineNumber: 48,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: "Focusing on design and functionality, this project exceeded expectations and set new standards."
+                                        }, void 0, false, {
+                                            fileName: "src/pages/projectPage/projectPage.jsx",
+                                            lineNumber: 49,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "#",
+                                            class: "project-link",
+                                            children: "Learn More"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/projectPage/projectPage.jsx",
+                                            lineNumber: 50,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/projectPage/projectPage.jsx",
+                                    lineNumber: 47,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/pages/projectPage/projectPage.jsx",
+                            lineNumber: 45,
+                            columnNumber: 9
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
+                            class: "project-card",
+                            "data-category": "technology",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: "project-image4.jpg",
+                                    alt: "Project 4",
+                                    class: "project-image"
+                                }, void 0, false, {
+                                    fileName: "src/pages/projectPage/projectPage.jsx",
+                                    lineNumber: 55,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    class: "project-details",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                            children: "Technology Project 4"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/projectPage/projectPage.jsx",
+                                            lineNumber: 57,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: "Advanced analytics that pushed growth and development beyond initial forecasts."
+                                        }, void 0, false, {
+                                            fileName: "src/pages/projectPage/projectPage.jsx",
+                                            lineNumber: 58,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "#",
+                                            class: "project-link",
+                                            children: "Learn More"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/projectPage/projectPage.jsx",
+                                            lineNumber: 59,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/projectPage/projectPage.jsx",
+                                    lineNumber: 56,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/pages/projectPage/projectPage.jsx",
+                            lineNumber: 54,
+                            columnNumber: 9
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/pages/projectPage/projectPage.jsx",
+                    lineNumber: 26,
+                    columnNumber: 5
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/pages/projectPage/projectPage.jsx",
+            lineNumber: 13,
+            columnNumber: 25
+        }, this)
+    }, void 0, false, {
+        fileName: "src/pages/projectPage/projectPage.jsx",
+        lineNumber: 12,
+        columnNumber: 9
+    }, this);
 }
+_s(ProjectPage, "OD7bBpZva5O2jO+Puf00hKivP7c=");
+_c = ProjectPage;
+var _c;
+$RefreshReg$(_c, "ProjectPage");
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["farZc","1xC6H","8lqZg"], "8lqZg", "parcelRequire716c")
+  $parcel$ReactRefreshHelpers$2963.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../components/layout/layout":"eE8aD","react":"21dqq"}]},["farZc","1xC6H","8lqZg"], "8lqZg", "parcelRequire716c")
 
 //# sourceMappingURL=index.975ef6c8.js.map

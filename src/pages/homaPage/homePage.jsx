@@ -3,6 +3,7 @@ import Header from '../../components/header/header';
 import 'react-slideshow-image/dist/styles.css';
 import job3 from '../../../public/job3.jpg';
 import Footer from '../../components/footer/footer';
+import { scrollAnimationLogic } from '../../utils/scrollAnimationLogic/scrollAnimationLogic';
 
 export default function HomePage() {
   let [show, setShow] = useState(false);
@@ -14,12 +15,7 @@ export default function HomePage() {
   useEffect(() => {
     const handleScroll = () => {
       const slt = document.querySelectorAll('.target');
-      slt.forEach((e) => {
-        let top = e.getBoundingClientRect().top;
-        if (top < 700) {
-          e.classList.add('active');
-        }
-      });
+      scrollAnimationLogic(slt)
       if (containerP6.current?.getBoundingClientRect().top <= 0) {
         setShow(true);
       } else {

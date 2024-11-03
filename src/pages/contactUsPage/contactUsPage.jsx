@@ -4,6 +4,7 @@ import 'react-slideshow-image/dist/styles.css';
 import Footer from '../../components/footer/footer';
 import { contactPage } from '../../services/contactPage';
 import { contactUsPage } from '../../reduceFiles/reduce';
+import { scrollAnimationLogic } from '../../utils/scrollAnimationLogic/scrollAnimationLogic';
 
 export default function ContactUsPage() {
   let obj = {
@@ -23,23 +24,9 @@ export default function ContactUsPage() {
     let scroll = document.querySelectorAll('.sameStyle');
     let h1 = document.querySelectorAll('.h1Style');
 
-    scroll.forEach((e) => {
-      window.addEventListener('scroll', () => {
-        let top = e.getBoundingClientRect().top;
-        if (top < 700) {
-          e.classList.add('active');
-        }
-      });
-    });
+    scrollAnimationLogic(scroll)
+    scrollAnimationLogic(h1)
 
-    h1.forEach((e) => {
-      window.addEventListener('scroll', () => {
-        let top = e.getBoundingClientRect().top;
-        if (top < 700) {
-          e.classList.add('active');
-        }
-      });
-    });
     window.scrollTo(0,0);
 
   }, []);

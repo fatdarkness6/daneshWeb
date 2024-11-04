@@ -291,7 +291,15 @@ export default function HomePage() {
                   </p>
                 </div>
               </div>
-              <div className='row2 row'>
+              <article class="project-card" data-category="design">
+            <img src="project-image2.jpg" alt="Project 2" class="project-image"/>
+            <div class="project-details">
+                <h3>Costruzione di 140 Unità Abitative a Bandar Abbas</h3>
+                <p>Abbiamo realizzato un progetto residenziale che comprende la costruzione di 140 unità abitative a Bandar Abbas. Il progetto include impianti moderni per garantire il comfort e la qualità della vita dei residenti.</p>
+                <a href="#" class="project-link">Learn More</a>
+            </div>
+        </article>
+              {/* <div className='row2 row'>
                 <div className='job2' />
                 <h2>Progetto di Desalinizzazione a Bandar Lange</h2>
                 <p>
@@ -302,8 +310,16 @@ export default function HomePage() {
                   Abbiamo implementato un impianto di desalinizzazione a Bandar Lange, con una capacità di 10.000 metri cubi al giorno. Questo progetto mira a soddisfare le esigenze idriche locali e a migliorare il benessere della comunità. Grazie a tecnologie moderne, il nostro impianto fornisce acqua potabile di alta qualità, contribuendo al progresso della zona e riducendo l'impatto ambientale.
                   </p>
                 </div>
-              </div>
-              <div className='row3 row'>
+              </div> */}
+              <article class="project-card" data-category="design">
+            <img src={job3} alt="Project 2" class="project-image"/>
+            <div class="project-details">
+                <h3>Costruzione di 140 Unità Abitative a Bandar Abbas</h3>
+                <p>Abbiamo realizzato un progetto residenziale che comprende la costruzione di 140 unità abitative a Bandar Abbas. Il progetto include impianti moderni per garantire il comfort e la qualità della vita dei residenti.</p>
+                <a href="#" class="project-link">Learn More</a>
+            </div>
+        </article>
+              {/* <div className='row3 row'>
                 <div className='job3' src={job3} />
                 <h2>Costruzione di 140 Unità Abitative a Bandar Abbas</h2>
                 <p>
@@ -314,7 +330,7 @@ export default function HomePage() {
                   Abbiamo realizzato un progetto residenziale che include la costruzione di 140 unità abitative a Bandar Abbas. Ogni unità è dotata di sistemi moderni per garantire comfort e qualità della vita. Questo progetto non solo risponde alle esigenze abitative della comunità, ma promuove anche lo sviluppo economico locale creando nuove opportunità di lavoro.
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

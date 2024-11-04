@@ -36534,43 +36534,50 @@ function HomePage() {
                                         lineNumber: 282,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "row2 row",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
+                                        class: "project-card",
+                                        "data-category": "design",
                                         children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "job2"
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                src: "project-image2.jpg",
+                                                alt: "Project 2",
+                                                class: "project-image"
                                             }, void 0, false, {
                                                 fileName: "src/pages/homaPage/homePage.jsx",
                                                 lineNumber: 295,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                                children: "Progetto di Desalinizzazione a Bandar Lange"
-                                            }, void 0, false, {
-                                                fileName: "src/pages/homaPage/homePage.jsx",
-                                                lineNumber: 296,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                children: "Abbiamo completato un impianto di desalinizzazione simile a Bandar Lange, anch'esso con una capacit\xe0 di 10.000 metri cubi al giorno. Questo progetto mira a soddisfare le esigenze idriche locali, contribuendo al benessere della comunit\xe0."
-                                            }, void 0, false, {
-                                                fileName: "src/pages/homaPage/homePage.jsx",
-                                                lineNumber: 297,
-                                                columnNumber: 17
+                                                columnNumber: 13
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "appear",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                    children: "Abbiamo implementato un impianto di desalinizzazione a Bandar Lange, con una capacit\xe0 di 10.000 metri cubi al giorno. Questo progetto mira a soddisfare le esigenze idriche locali e a migliorare il benessere della comunit\xe0. Grazie a tecnologie moderne, il nostro impianto fornisce acqua potabile di alta qualit\xe0, contribuendo al progresso della zona e riducendo l'impatto ambientale."
-                                                }, void 0, false, {
-                                                    fileName: "src/pages/homaPage/homePage.jsx",
-                                                    lineNumber: 301,
-                                                    columnNumber: 19
-                                                }, this)
-                                            }, void 0, false, {
+                                                class: "project-details",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                        children: "Costruzione di 140 Unit\xe0 Abitative a Bandar Abbas"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 297,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                        children: "Abbiamo realizzato un progetto residenziale che comprende la costruzione di 140 unit\xe0 abitative a Bandar Abbas. Il progetto include impianti moderni per garantire il comfort e la qualit\xe0 della vita dei residenti."
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 298,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                        href: "#",
+                                                        class: "project-link",
+                                                        children: "Learn More"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 299,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "src/pages/homaPage/homePage.jsx",
-                                                lineNumber: 300,
-                                                columnNumber: 17
+                                                lineNumber: 296,
+                                                columnNumber: 13
                                             }, this)
                                         ]
                                     }, void 0, true, {
@@ -36578,49 +36585,55 @@ function HomePage() {
                                         lineNumber: 294,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "row3 row",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
+                                        class: "project-card",
+                                        "data-category": "design",
                                         children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "job3",
-                                                src: (0, _job3JpgDefault.default)
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                src: (0, _job3JpgDefault.default),
+                                                alt: "Project 2",
+                                                class: "project-image"
                                             }, void 0, false, {
                                                 fileName: "src/pages/homaPage/homePage.jsx",
-                                                lineNumber: 307,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                                children: "Costruzione di 140 Unit\xe0 Abitative a Bandar Abbas"
-                                            }, void 0, false, {
-                                                fileName: "src/pages/homaPage/homePage.jsx",
-                                                lineNumber: 308,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                children: "Abbiamo realizzato un progetto residenziale che comprende la costruzione di 140 unit\xe0 abitative a Bandar Abbas. Il progetto include impianti moderni per garantire il comfort e la qualit\xe0 della vita dei residenti."
-                                            }, void 0, false, {
-                                                fileName: "src/pages/homaPage/homePage.jsx",
-                                                lineNumber: 309,
-                                                columnNumber: 17
+                                                lineNumber: 315,
+                                                columnNumber: 13
                                             }, this),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "appear",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                    children: "Abbiamo realizzato un progetto residenziale che include la costruzione di 140 unit\xe0 abitative a Bandar Abbas. Ogni unit\xe0 \xe8 dotata di sistemi moderni per garantire comfort e qualit\xe0 della vita. Questo progetto non solo risponde alle esigenze abitative della comunit\xe0, ma promuove anche lo sviluppo economico locale creando nuove opportunit\xe0 di lavoro."
-                                                }, void 0, false, {
-                                                    fileName: "src/pages/homaPage/homePage.jsx",
-                                                    lineNumber: 313,
-                                                    columnNumber: 19
-                                                }, this)
-                                            }, void 0, false, {
+                                                class: "project-details",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                        children: "Costruzione di 140 Unit\xe0 Abitative a Bandar Abbas"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 317,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                        children: "Abbiamo realizzato un progetto residenziale che comprende la costruzione di 140 unit\xe0 abitative a Bandar Abbas. Il progetto include impianti moderni per garantire il comfort e la qualit\xe0 della vita dei residenti."
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 318,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                        href: "#",
+                                                        class: "project-link",
+                                                        children: "Learn More"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/homaPage/homePage.jsx",
+                                                        lineNumber: 319,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "src/pages/homaPage/homePage.jsx",
-                                                lineNumber: 312,
-                                                columnNumber: 17
+                                                lineNumber: 316,
+                                                columnNumber: 13
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/pages/homaPage/homePage.jsx",
-                                        lineNumber: 306,
+                                        lineNumber: 314,
                                         columnNumber: 15
                                     }, this)
                                 ]
@@ -36647,7 +36660,7 @@ function HomePage() {
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "src/pages/homaPage/homePage.jsx",
-                lineNumber: 322,
+                lineNumber: 338,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36661,12 +36674,12 @@ function HomePage() {
                     class: "fa-solid fa-up-long"
                 }, void 0, false, {
                     fileName: "src/pages/homaPage/homePage.jsx",
-                    lineNumber: 328,
+                    lineNumber: 344,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/pages/homaPage/homePage.jsx",
-                lineNumber: 323,
+                lineNumber: 339,
                 columnNumber: 7
             }, this)
         ]

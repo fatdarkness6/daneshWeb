@@ -33,7 +33,7 @@ export default function AboutUsPage() {
                       <h3>Progettazione e costruzione di impianti elettrici, termotecnici, fotovoltaici</h3>
                   </li>
                   <li>
-                    <h3>Certificazioni energetiche (APE)</h3> 
+                    <h3>Certificazioni </h3> 
                   </li>
                   <li>
                     <h3>Progettazione e direzione lavori</h3>

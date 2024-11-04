@@ -36164,7 +36164,7 @@ function AboutUsPage() {
                                                         }, this),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                                                children: "Certificazioni energetiche (APE)"
+                                                                children: "Certificazioni "
                                                             }, void 0, false, {
                                                                 fileName: "pages/aboutUsPage/aboutUsPage.jsx",
                                                                 lineNumber: 36,

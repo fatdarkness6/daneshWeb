@@ -27247,123 +27247,134 @@ var _newsPage = require("./pages/newsPage/newsPage");
 var _newsPageDefault = parcelHelpers.interopDefault(_newsPage);
 var _projectPage = require("./pages/projectPage/projectPage");
 var _projectPageDefault = parcelHelpers.interopDefault(_projectPage);
+var _plausibleAnalytics = require("./components/PlausibleAnalytics/PlausibleAnalytics");
+var _plausibleAnalyticsDefault = parcelHelpers.interopDefault(_plausibleAnalytics);
 function App() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homePageDefault.default), {}, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 16,
-                    columnNumber: 34
-                }, void 0)
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 16,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/aboutUs",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutUsPageDefault.default), {}, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 17,
-                    columnNumber: 45
-                }, void 0)
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _plausibleAnalyticsDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
                 lineNumber: 17,
-                columnNumber: 9
+                columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/contactUs",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactUsPageDefault.default), {}, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 18,
-                    columnNumber: 47
-                }, void 0)
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homePageDefault.default), {}, void 0, false, {
+                            fileName: "src/App.js",
+                            lineNumber: 19,
+                            columnNumber: 34
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.js",
+                        lineNumber: 19,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/aboutUs",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutUsPageDefault.default), {}, void 0, false, {
+                            fileName: "src/App.js",
+                            lineNumber: 20,
+                            columnNumber: 45
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.js",
+                        lineNumber: 20,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/contactUs",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactUsPageDefault.default), {}, void 0, false, {
+                            fileName: "src/App.js",
+                            lineNumber: 21,
+                            columnNumber: 47
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.js",
+                        lineNumber: 21,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/news",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newsPageDefault.default), {}, void 0, false, {
+                            fileName: "src/App.js",
+                            lineNumber: 22,
+                            columnNumber: 38
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.js",
+                        lineNumber: 22,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/project",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectPageDefault.default), {}, void 0, false, {
+                            fileName: "src/App.js",
+                            lineNumber: 23,
+                            columnNumber: 41
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.js",
+                        lineNumber: 23,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/login",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginPageDefault.default), {}, void 0, false, {
+                            fileName: "src/App.js",
+                            lineNumber: 24,
+                            columnNumber: 43
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.js",
+                        lineNumber: 24,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/register",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _registerDefault.default), {}, void 0, false, {
+                            fileName: "src/App.js",
+                            lineNumber: 25,
+                            columnNumber: 42
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.js",
+                        lineNumber: 25,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/profile",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileDefault.default), {}, void 0, false, {
+                            fileName: "src/App.js",
+                            lineNumber: 26,
+                            columnNumber: 45
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.js",
+                        lineNumber: 26,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/:email/verfy/:confirmEmail",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _verfyEmailDefault.default), {}, void 0, false, {
+                            fileName: "src/App.js",
+                            lineNumber: 27,
+                            columnNumber: 60
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.js",
+                        lineNumber: 27,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "src/App.js",
                 lineNumber: 18,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/news",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newsPageDefault.default), {}, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 19,
-                    columnNumber: 38
-                }, void 0)
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 19,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/project",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectPageDefault.default), {}, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 20,
-                    columnNumber: 41
-                }, void 0)
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 20,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/login",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginPageDefault.default), {}, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 21,
-                    columnNumber: 43
-                }, void 0)
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 21,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/register",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _registerDefault.default), {}, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 22,
-                    columnNumber: 42
-                }, void 0)
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 22,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/profile",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileDefault.default), {}, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 23,
-                    columnNumber: 45
-                }, void 0)
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 23,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/:email/verfy/:confirmEmail",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _verfyEmailDefault.default), {}, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 24,
-                    columnNumber: 60
-                }, void 0)
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 24,
-                columnNumber: 9
+                columnNumber: 7
             }, this)
         ]
-    }, void 0, true, {
-        fileName: "src/App.js",
-        lineNumber: 15,
-        columnNumber: 7
-    }, this);
+    }, void 0, true);
 }
 _c = App;
 var _c;
@@ -27374,7 +27385,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./pages/newsPage/newsPage":"5caNB","./pages/homaPage/homePage":"f2hSN","./pages/aboutUsPage/aboutUsPage":"DKGio","./pages/contactUsPage/contactUsPage":"borIm","./pages/login/loginPage":"6Ow0v","./pages/registerPage/register":"6sZtF","./pages/profile/profile":"92BsB","./pages/verfyEmailPage/verfyEmail":"1BZa9","./pages/projectPage/projectPage":"1h2H8"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./pages/newsPage/newsPage":"5caNB","./pages/homaPage/homePage":"f2hSN","./pages/aboutUsPage/aboutUsPage":"DKGio","./pages/contactUsPage/contactUsPage":"borIm","./pages/login/loginPage":"6Ow0v","./pages/registerPage/register":"6sZtF","./pages/profile/profile":"92BsB","./pages/verfyEmailPage/verfyEmail":"1BZa9","./pages/projectPage/projectPage":"1h2H8","./components/PlausibleAnalytics/PlausibleAnalytics":"11OGh"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.25.0
  *
@@ -44212,6 +44223,42 @@ $RefreshReg$(_c, "ProjectPage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../components/layout/layout":"eE8aD","react":"21dqq"}]},["farZc","1xC6H","8lqZg"], "8lqZg", "parcelRequire716c")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../components/layout/layout":"eE8aD","react":"21dqq"}],"11OGh":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$9062 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9062.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>PlausibleAnalytics);
+var _react = require("react");
+var _s = $RefreshSig$();
+function PlausibleAnalytics() {
+    _s();
+    (0, _react.useEffect)(()=>{
+        const script = document.createElement("script");
+        script.src = "https://plausible.io/js/script.js";
+        script.defer = true;
+        script.setAttribute("data-domain", "dnweb.netlify.app"); // دامنه خودتان را در اینجا قرار دهید
+        document.head.appendChild(script);
+        return ()=>{
+            document.head.removeChild(script); // اسکریپت را هنگام خروج حذف می‌کند
+        };
+    }, []);
+    return null;
+}
+_s(PlausibleAnalytics, "OD7bBpZva5O2jO+Puf00hKivP7c=");
+_c = PlausibleAnalytics;
+var _c;
+$RefreshReg$(_c, "PlausibleAnalytics");
+
+  $parcel$ReactRefreshHelpers$9062.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["farZc","1xC6H","8lqZg"], "8lqZg", "parcelRequire716c")
 
 //# sourceMappingURL=index.975ef6c8.js.map

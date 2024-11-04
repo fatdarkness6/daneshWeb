@@ -8,10 +8,13 @@ import Profile from './pages/profile/profile'
 import VerifyEmailPage from "./pages/verfyEmailPage/verfyEmail";
 import NewsPage from "./pages/newsPage/newsPage";
 import ProjectPage from "./pages/projectPage/projectPage";
+import PlausibleAnalytics from "./components/PlausibleAnalytics/PlausibleAnalytics";
 
 
 export function App() {
     return (
+      <>
+      <PlausibleAnalytics/>
       <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path = "/aboutUs" element = {<AboutUsPage/>}/>
@@ -23,5 +26,6 @@ export function App() {
         <Route path = "/profile" element = {<Profile/>}/>
         <Route path="/:email/verfy/:confirmEmail" element={<VerifyEmailPage />} />
       </Routes>
+      </>
     );
   }

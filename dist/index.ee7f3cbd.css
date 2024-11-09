@@ -70,6 +70,10 @@
   position: relative;
 }
 
+.no-padding {
+  padding: 0 !important;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -880,8 +884,9 @@
   background: #000;
   border: none;
   border-radius: 5px;
-  width: 150px;
-  height: 40px;
+  width: auto;
+  height: auto;
+  padding: 10px;
   font-family: system-ui;
   font-size: 15px;
   transition: all .5s;
@@ -969,6 +974,7 @@
 }
 
 .aboutUs-page .aboutUs-content-p2-card .absolute ul {
+  text-align: left;
   flex-direction: column;
   align-items: start;
   gap: 15px;
@@ -1126,13 +1132,13 @@
 
 .contactUsPage .contactUsPage-container-p3-content-left, .contactUsPage .contactUsPage-container-p3-content-right {
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
   width: 100%;
   margin-bottom: 100px;
   display: flex;
 }
 
-.contactUsPage .contactUsPage-container-p3-content-left h1, .contactUsPage .contactUsPage-container-p3-content-right h1 {
+.contactUsPage .contactUsPage-container-p3-content-left h3, .contactUsPage .contactUsPage-container-p3-content-right h3 {
   width: 50%;
 }
 
@@ -1172,7 +1178,7 @@
   font-size: 1.2rem;
 }
 
-.contactUsPage .contactUsPage-container-p3-content4 :is(h1, h3, h4, i) {
+.contactUsPage .contactUsPage-container-p3-content4 :is(h1, h3, h4, i, a) {
   -webkit-text-fill-color: transparent;
   z-index: 2;
   background: -webkit-linear-gradient(#ffd438, #ee2a7b, #6228d7);
@@ -1180,31 +1186,34 @@
   position: relative;
 }
 
-.contactUsPage .contactUsPage-container-p3-content3 :is(h1, h3, h4, i) {
+.contactUsPage .contactUsPage-container-p3-content3 :is(h1, h3, h4, i, a) {
   -webkit-text-fill-color: transparent;
   z-index: 2;
   background: -webkit-linear-gradient(#3e65cf, #08851b);
   -webkit-background-clip: text;
+  width: 100%;
   position: relative;
 }
 
-.contactUsPage .contactUsPage-container-p3-content2 :is(h1, h3, h4, i) {
+.contactUsPage .contactUsPage-container-p3-content2 :is(h1, h3, h4, i, a) {
   -webkit-text-fill-color: transparent;
   z-index: 2;
   background: #08c;
   -webkit-background-clip: text;
+  width: 100%;
   position: relative;
 }
 
-.contactUsPage .contactUsPage-container-p3-content1 :is(h1, h3, h4, i) {
+.contactUsPage .contactUsPage-container-p3-content1 :is(h1, h3, h4, i, a) {
   -webkit-text-fill-color: transparent;
   z-index: 2;
   background: -webkit-linear-gradient(#527288, #2c3e50);
   -webkit-background-clip: text;
+  width: 100%;
   position: relative;
 }
 
-.contactUsPage .contactUsPage-container-p3-content4:hover :is(h1, h3, h4, i), .contactUsPage .contactUsPage-container-p3-content3:hover :is(h1, h3, h4, i), .contactUsPage .contactUsPage-container-p3-content2:hover :is(h1, h3, h4, i), .contactUsPage .contactUsPage-container-p3-content1:hover :is(h1, h3, h4, i) {
+.contactUsPage .contactUsPage-container-p3-content4:hover :is(h1, h3, h4, i, a), .contactUsPage .contactUsPage-container-p3-content3:hover :is(h1, h3, h4, i, a), .contactUsPage .contactUsPage-container-p3-content2:hover :is(h1, h3, h4, i, a), .contactUsPage .contactUsPage-container-p3-content1:hover :is(h1, h3, h4, i, a) {
   -webkit-text-fill-color: transparent;
   background: #fff;
   -webkit-background-clip: text;
@@ -1278,7 +1287,7 @@
 
 .contactUsPage .h1Style.active {
   opacity: 1;
-  line-height: 55px;
+  line-height: 41px;
   transition-delay: .3s;
   transform: translateY(0);
 }
@@ -1927,6 +1936,11 @@ input::-webkit-inner-spin-button {
   margin-top: 50px;
 }
 
+.projects-page #active {
+  color: #fff;
+  background-color: #ffc218;
+}
+
 @media only screen and (width <= 1650px) {
   .home-page .container-p7.target .content {
     padding: 0 30px;
@@ -2065,20 +2079,25 @@ input::-webkit-inner-spin-button {
   :is(.loginPage .loginPage-content .loginPage-content-form, .registerPage .registerPage-content .registerPage-content-form) .state input {
     width: 70%;
   }
+
+  .no-padding {
+    padding: 0 !important;
+  }
 }
 
-@media only screen and (width <= 1050px) {
-  .aboutUs-page .container-p6 .aboutUs-content-p2 {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
+@media only screen and (width <= 1100px) {
   .aboutUs-page .aboutUs-content-p2-card {
     background-color: #2b2638;
     border-radius: 5px;
-    width: 45%;
+    width: 90%;
   }
 
+  .aboutUs-page .aboutUs-content-p2 {
+    justify-content: center;
+  }
+}
+
+@media only screen and (width <= 1050px) {
   :is(.loginPage .loginPage-content, .registerPage .registerPage-content) {
     text-align: center;
     width: 80%;
@@ -2099,7 +2118,7 @@ input::-webkit-inner-spin-button {
   }
 
   .contactUsPage .h1Style {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .contactUsPage .sameStyle {
@@ -2282,6 +2301,10 @@ input::-webkit-inner-spin-button {
     grid-template-columns: 1fr;
     gap: 10px;
     display: grid;
+  }
+
+  .aboutUs-page .aboutUs-content-p1 h1, .aboutUs-page .aboutUs-content-p1 h2 {
+    font-size: 25px;
   }
 }
 

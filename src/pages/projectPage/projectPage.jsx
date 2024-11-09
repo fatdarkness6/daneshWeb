@@ -5,12 +5,16 @@ import InfoComponent from '../../components/infoComponents/infoComponent'
 import { useSearchParams } from 'react-router-dom'
 
 export default function ProjectPage() {
-  const [projects, setProjects] = useState('all')
-  const [searchParams , setSearchParams] = useSearchParams()
-
+  const [projects, setProjects] = useState('')
+  const [searchParams, setSearchParams] = useSearchParams()
 
   function setDataForFilter(data) {
     setProjects(data)
+  }
+  function setQuery() {
+    if(projects !== "") {
+      setSearchParams(`?category=${projects}`)
+    }
   }
 
   useEffect(() => {
@@ -19,9 +23,9 @@ export default function ProjectPage() {
   }, [])
 
   useEffect(() => {
-    setSearchParams({ category: projects })
-  } , [projects])
-  
+    setQuery()
+  }, [projects])
+
   return (
     <Layout>
       <div className='projects-page'>
@@ -35,13 +39,15 @@ export default function ProjectPage() {
         <section className='filter-section'>
           <button
             onClick={() => setDataForFilter('all')}
-            className='filter-button active'
+            id={searchParams.get('category') === 'all' ? 'active' : ''}
+            className='filter-button '
             data-category='all'
           >
             All
           </button>
           <button
             onClick={() => setDataForFilter('technology')}
+            id={searchParams.get('category') === 'technology' ? 'active' : ''}
             className='filter-button'
             data-category='technology'
           >
@@ -49,6 +55,7 @@ export default function ProjectPage() {
           </button>
           <button
             onClick={() => setDataForFilter('design')}
+            id={searchParams.get('category') === 'design' ? 'active' : ''}
             className='filter-button'
             data-category='design'
           >
@@ -56,6 +63,7 @@ export default function ProjectPage() {
           </button>
           <button
             onClick={() => setDataForFilter('business')}
+            id={searchParams.get('category') === 'business' ? 'active' : ''}
             className='filter-button'
             data-category='business'
           >
@@ -66,7 +74,10 @@ export default function ProjectPage() {
           {console.log(projects)}
           {projectsPageData
             .filter(response => {
-              if (searchParams.get('category') === 'all') {
+              if (
+                searchParams.get('category') === 'all' ||
+                !searchParams.get('category')
+              ) {
                 return response
               } else {
                 return searchParams.get('category') == response.type

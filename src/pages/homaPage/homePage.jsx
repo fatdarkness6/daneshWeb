@@ -100,7 +100,6 @@ export default function HomePage() {
     startAutoSlide()
   }
 
-  // برای موبایل: هندل کردن لمس
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX
   }
@@ -111,9 +110,9 @@ export default function HomePage() {
 
   const handleTouchEnd = () => {
     if (touchStartX.current - touchEndX.current > 50) {
-      handleNextSlide() // حرکت به اسلاید بعدی
+      handleNextSlide() 
     } else if (touchEndX.current - touchStartX.current > 50) {
-      handlePrevSlide() // حرکت به اسلاید قبلی
+      handlePrevSlide() 
     }
   }
 

@@ -59,6 +59,9 @@
     z-index: 9999;
     position: relative;
 }
+.no-padding {
+    padding: 0 !important;
+}
 /* .......................................................................... */
 
 * {
@@ -767,8 +770,8 @@
     font-size: 1.2rem;
 }
 .aboutUs-page .container-p4 .aboutUs-content button {
-    width: 150px;
-    height: 40px;
+    width: auto;
+    height: auto;
     border: none;
     border-radius: 5px;
     background:  #000;
@@ -777,6 +780,7 @@
     cursor: pointer;
     transition: all 0.5s;
     font-family: system-ui;
+    padding: 10px;
 }
 .aboutUs-page .container-p4 .aboutUs-content button:hover {
    box-shadow: 0px 10px 10px 1px #000;
@@ -856,7 +860,7 @@
     flex-direction: column;
     align-items: start;
     gap: 15px;
-
+    text-align: left;
 }
 .aboutUs-page .aboutUs-content-p2-card .absolute ul li  {
     display: flex;
@@ -994,9 +998,9 @@
     justify-content: space-between;
     width: 100%;
     margin-bottom: 100px;
-    align-items: end;
+    align-items: center;
 }
-.contactUsPage .contactUsPage-container-p3-content-left h1 , .contactUsPage .contactUsPage-container-p3-content-right h1 {
+.contactUsPage .contactUsPage-container-p3-content-left h3 , .contactUsPage .contactUsPage-container-p3-content-right h3 {
     width: 50%;
 }
 .contactUsPage .sameStyle {
@@ -1032,35 +1036,38 @@
 .contactUsPage .sameStyle h4 {
     font-size: 1.2rem;
 }
-.contactUsPage .contactUsPage-container-p3-content4 :is(h1 , h3 , h4 , i) {
+.contactUsPage .contactUsPage-container-p3-content4 :is(h1 , h3 , h4 , i , a) {
     background: -webkit-linear-gradient( #ffd438, #ee2a7b ,  #6228d7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
     z-index:2;
 }
-.contactUsPage .contactUsPage-container-p3-content3 :is(h1 , h3 , h4 , i) {
+.contactUsPage .contactUsPage-container-p3-content3 :is(h1 , h3 , h4 , i , a) {
     background: -webkit-linear-gradient( #3e65cf, #08851b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
     z-index:2;
+    width: 100%;
 }
-.contactUsPage .contactUsPage-container-p3-content2 :is(h1 , h3 , h4 , i) {
+.contactUsPage .contactUsPage-container-p3-content2 :is(h1 , h3 , h4 , i , a) {
     background: #0088CC;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
     z-index:2;
+    width: 100%;
 }
-.contactUsPage .contactUsPage-container-p3-content1 :is(h1 , h3 , h4 , i) {
+.contactUsPage .contactUsPage-container-p3-content1 :is(h1 , h3 , h4 , i , a) {
     background: -webkit-linear-gradient( #527288 ,  #2C3E50);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
     z-index:2;
+    width: 100%;
 }
-.contactUsPage .contactUsPage-container-p3-content4:hover :is(h1 , h3 , h4 , i) , .contactUsPage .contactUsPage-container-p3-content3:hover :is(h1 , h3 , h4 , i) , .contactUsPage .contactUsPage-container-p3-content2:hover :is(h1 , h3 , h4 , i) , .contactUsPage .contactUsPage-container-p3-content1:hover :is(h1 , h3 , h4 , i) {
+.contactUsPage .contactUsPage-container-p3-content4:hover :is(h1 , h3 , h4 , i , a) , .contactUsPage .contactUsPage-container-p3-content3:hover :is(h1 , h3 , h4 , i , a) , .contactUsPage .contactUsPage-container-p3-content2:hover :is(h1 , h3 , h4 , i , a) , .contactUsPage .contactUsPage-container-p3-content1:hover :is(h1 , h3 , h4 , i , a) {
     background: none #fff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1130,7 +1137,7 @@
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0.3s;
-    line-height: 55px;
+    line-height: 41px;
 } 
 .contactUsPage .container-p4 {
     height: auto;
@@ -1735,6 +1742,10 @@ input::-webkit-inner-spin-button {
 .home-page .container-p7.target .content {
     margin-top: 50px;
 }
+.projects-page #active {
+  background-color: #ffc218;
+  color: white;
+}
 
 /* .......................responsive........................ */
 
@@ -1852,17 +1863,21 @@ input::-webkit-inner-spin-button {
     :is(.loginPage .loginPage-content .loginPage-content-form, .registerPage .registerPage-content .registerPage-content-form) .state input {
         width: 70%;
     }
-}
-@media only screen and (max-width : 1050px ) {
-    .aboutUs-page .container-p6 .aboutUs-content-p2 {
-        flex-wrap: wrap;
-        justify-content: center;
+    .no-padding {
+        padding: 0 !important;
     }
+}
+@media only screen and (max-width : 1100px ) {
     .aboutUs-page .aboutUs-content-p2-card {
         background-color: #2b2638;
         border-radius: 5px;
-        width: 45%;
+        width: 90%;
     }
+    .aboutUs-page .aboutUs-content-p2 {
+        justify-content: center;
+    }
+}
+@media only screen and (max-width : 1050px ) {
     :is(.loginPage .loginPage-content, .registerPage .registerPage-content) {
         text-align: center;
         width: 80%;
@@ -1879,7 +1894,7 @@ input::-webkit-inner-spin-button {
         font-size: 30px;
     }
     .contactUsPage .h1Style {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .contactUsPage .sameStyle {
         width: 45%;
@@ -2027,7 +2042,12 @@ input::-webkit-inner-spin-button {
         grid-template-columns: 1fr  ;
         gap: 10px;
     }
-    
+    .aboutUs-page .aboutUs-content-p1 h1 {
+        font-size: 25px;
+    }
+    .aboutUs-page .aboutUs-content-p1 h2 {
+        font-size: 25px;
+    }
 } 
 @media only screen and (max-width : 550px ) {
     .home-page .container-p6 .p1 h1,.home-page .container-p6 .p2 h1 {

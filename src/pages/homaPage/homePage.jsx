@@ -9,9 +9,12 @@ import InfoComponent from '../../components/infoComponents/infoComponent'
 export default function HomePage() {
   let [show, setShow] = useState(false)
   let [counter, setCounter] = useState(0)
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 800)
   const intervalRef = useRef(null)
   const up = useRef(null)
   const containerP6 = useRef(null)
+  const touchStartX = useRef(0)
+  const touchEndX = useRef(0)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,6 +42,18 @@ export default function HomePage() {
   useEffect(() => {
     slide()
   }, [counter])
+
+  useEffect(() => {
+    const updateIsMobile = () => {
+      setIsMobile(window.innerWidth < 800)
+    }
+
+    window.addEventListener('resize', updateIsMobile)
+
+    return () => {
+      window.removeEventListener('resize', updateIsMobile)
+    }
+  }, [])
 
   const startAutoSlide = () => {
     if (intervalRef.current) {
@@ -85,6 +100,23 @@ export default function HomePage() {
     startAutoSlide()
   }
 
+  // برای موبایل: هندل کردن لمس
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX
+  }
+
+  const handleTouchMove = (e) => {
+    touchEndX.current = e.touches[0].clientX
+  }
+
+  const handleTouchEnd = () => {
+    if (touchStartX.current - touchEndX.current > 50) {
+      handleNextSlide() // حرکت به اسلاید بعدی
+    } else if (touchEndX.current - touchStartX.current > 50) {
+      handlePrevSlide() // حرکت به اسلاید قبلی
+    }
+  }
+
   return (
     <div className='home-page'>
       <div className='home-page-content'>
@@ -96,6 +128,9 @@ export default function HomePage() {
           className='container-p2 '
           onMouseEnter={pauseAutoSlide}
           onMouseLeave={startAutoSlide}
+          onTouchStart={isMobile ? handleTouchStart : null}
+          onTouchMove={isMobile ? handleTouchMove : null}
+          onTouchEnd={isMobile ? handleTouchEnd : null}
         >
           <div className='clickToSlide'>
             <button onClick={handleNextSlide}>

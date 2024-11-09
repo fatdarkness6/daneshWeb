@@ -166,8 +166,9 @@
     color: #fff;
     z-index: 10; 
     text-align: center;
-    width: 80%;
-    
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 @keyframes animate1 {
     from {
@@ -1950,6 +1951,9 @@ input::-webkit-inner-spin-button {
     .portal .portal-content h1 {
         font-size: 27px;
     }
+    .clickToSlide {
+        display: none;
+    }
 }
 @media (max-width: 768px) {
     .page-header h2 {
@@ -1960,6 +1964,9 @@ input::-webkit-inner-spin-button {
     }
     .project-details p {
         font-size: 0.95rem;
+    }
+    .image {
+        height: 75vh;
     }
 }
 @media only screen and (max-width : 710px ) {
@@ -1996,9 +2003,6 @@ input::-webkit-inner-spin-button {
     .home-page  .container-p4 {
         padding: 100px 1rem;
     }
-    .home-page .text {
-        padding: 10px 30px;
-    }
     .home-page .container-p6 {
         height: 1000px;
     }
@@ -2014,6 +2018,19 @@ input::-webkit-inner-spin-button {
     .header h1 {
         font-size: 1.5rem;
     }
+    .home-page .text h1 {
+        font-size: 1.3rem;
+    }
+    .home-page .text p {
+        font-size: 0.9rem;
+        line-height: 2rem;
+    }
+    .home-page .text {
+        display: grid;
+        grid-template-columns: 1fr  ;
+        gap: 10px;
+    }
+    
 } 
 @media only screen and (max-width : 550px ) {
     .home-page .container-p6 .p1 h1,.home-page .container-p6 .p2 h1 {

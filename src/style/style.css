@@ -1965,9 +1965,6 @@ input::-webkit-inner-spin-button {
     .project-details p {
         font-size: 0.95rem;
     }
-    .image {
-        height: 75vh;
-    }
 }
 @media only screen and (max-width : 710px ) {
     .aboutUs-page .aboutUs-content-p1 h1 {

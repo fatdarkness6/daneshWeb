@@ -178,7 +178,9 @@
   z-index: 10;
   text-align: center;
   background-color: #0000;
-  width: 80%;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2187,6 +2189,10 @@ input::-webkit-inner-spin-button {
   .portal .portal-content h1 {
     font-size: 27px;
   }
+
+  .clickToSlide {
+    display: none;
+  }
 }
 
 @media (width <= 768px) {
@@ -2200,6 +2206,10 @@ input::-webkit-inner-spin-button {
 
   .project-details p {
     font-size: .95rem;
+  }
+
+  .image {
+    height: 75vh;
   }
 }
 
@@ -2243,10 +2253,6 @@ input::-webkit-inner-spin-button {
     padding: 100px 1rem;
   }
 
-  .home-page .text {
-    padding: 10px 30px;
-  }
-
   .home-page .container-p6 {
     height: 1000px;
   }
@@ -2265,6 +2271,21 @@ input::-webkit-inner-spin-button {
 
   .header h1 {
     font-size: 1.5rem;
+  }
+
+  .home-page .text h1 {
+    font-size: 1.3rem;
+  }
+
+  .home-page .text p {
+    font-size: .9rem;
+    line-height: 2rem;
+  }
+
+  .home-page .text {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    display: grid;
   }
 }
 

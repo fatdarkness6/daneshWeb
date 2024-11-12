@@ -1,10 +1,10 @@
-import { useEffect, useReducer } from 'react';
-import Header from '../../components/header/header';
-import 'react-slideshow-image/dist/styles.css';
-import Footer from '../../components/footer/footer';
-import { contactPage } from '../../services/contactPage';
-import { contactUsPage } from '../../reduceFiles/reduce';
-import { scrollAnimationLogic } from '../../utils/scrollAnimationLogic/scrollAnimationLogic';
+import { useEffect, useReducer } from 'react'
+import Header from '../../components/header/header'
+import 'react-slideshow-image/dist/styles.css'
+import Footer from '../../components/footer/footer'
+import { contactPage } from '../../services/contactPage'
+import { contactUsPage } from '../../reduceFiles/reduce'
+import { scrollAnimationLogic } from '../../utils/scrollAnimationLogic/scrollAnimationLogic'
 
 export default function ContactUsPage() {
   let obj = {
@@ -17,22 +17,21 @@ export default function ContactUsPage() {
     showMessage: false,
     error: false,
     error2: false,
-  };
-  let [state, dispatch] = useReducer(contactUsPage, obj);
+  }
+  let [state, dispatch] = useReducer(contactUsPage, obj)
 
   useEffect(() => {
-    let scroll = document.querySelectorAll('.sameStyle');
-    let h1 = document.querySelectorAll('.h1Style');
+    let scroll = document.querySelectorAll('.sameStyle')
+    let h1 = document.querySelectorAll('.h1Style')
 
     scrollAnimationLogic(scroll)
     scrollAnimationLogic(h1)
 
-    window.scrollTo(0,0);
-
-  }, []);
+    window.scrollTo(0, 0)
+  }, [])
 
   useEffect(() => {
-    let getItem = localStorage.getItem('wait');
+    let getItem = localStorage.getItem('wait')
 
     let values = {
       name: state.name,
@@ -40,63 +39,63 @@ export default function ContactUsPage() {
       phonNumber: state.phone,
       email: state.email,
       message: state.message,
-    };
+    }
     if (
       (state.name && state.username && state.email && state.message) !== '' &&
       getItem !== 'true'
     ) {
       contactPage(values)
-        .then((e) => {
+        .then(e => {
           if (e.status == 200) {
             dispatch({
               type: 'email',
               payload: '',
-            });
+            })
             dispatch({
               type: 'name',
               payload: '',
-            });
+            })
 
             dispatch({
               type: 'username',
               payload: '',
-            });
+            })
 
             dispatch({
               type: 'message',
               payload: '',
-            });
+            })
 
             dispatch({
               type: 'phone',
               payload: '',
-            });
+            })
             dispatch({
               type: 'showMessage',
               payload: true,
-            });
+            })
             setTimeout(() => {
               dispatch({
                 type: 'showMessage',
                 payload: false,
-              });
-            }, 3000);
+              })
+            }, 3000)
 
-            localStorage.setItem('wait', 'true');
+            localStorage.setItem('wait', 'true')
           }
         })
         .catch(() => {
           dispatch({
             type: 'error',
             payload: true,
-          });
-        });
+          })
+        })
     }
-  }, [state.submit]);
+  }, [state.submit])
 
   useEffect(() => {
     document.title = 'contatti'
-  } , [])
+  }, [])
 
   return (
     <div className='contactUsPage'>
@@ -108,10 +107,11 @@ export default function ContactUsPage() {
           <div className='absolute-h1'>
             <h1>Contatti</h1>
             <h4>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-              inventore aspernatur quos quaerat asperiores. Libero mollitia
-              impedit iusto nisi dignissimos, deserunt at velit doloribus itaque
-              numquam ratione nesciunt atque?
+              Contattaci per qualsiasi domanda, dubbio o richiesta. Puoi
+              chiamarci al numero sottostante, inviarci un'email per ricevere
+              una risposta rapida, oppure compilare il modulo di contatto e ti
+              risponderemo nel più breve tempo possibile. Siamo sempre pronti a
+              darti il miglior supporto.
             </h4>
           </div>
         </div>
@@ -121,46 +121,68 @@ export default function ContactUsPage() {
               <div className='contactUsPage-container-p3-content-left '>
                 <div className='contactUsPage-container-p3-content1 sameStyle'>
                   <i class='fa-solid fa-phone'></i>
-                  <h1>cellulare</h1>
+                  <h1>Contattaci</h1>
                   <h3>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quod inventore aspernatur quos quaerat asperiores. Libero
-                    mollitia impedit iusto nisi dignissimos, deserunt at velit
-                    doloribus itaque numquam ratione nesciunt atque?
+                    Siamo sempre pronti a rispondere alle tue domande e
+                    necessità. Per qualsiasi richiesta o consulenza, puoi
+                    contattarci telefonicamente. Risponderemo il più presto
+                    possibile.
                   </h3>
                   <ol>
                     <li>
-                      <h3>123456789</h3>
-                    </li>
-                    <li>
-                      <h3>123456789</h3>
+                      <a
+                        style={{ fontSize: '18px' }}
+                        href='tel:+39 351 974 2579'
+                      >
+                        Numero di contatto: +39 351 974 2579
+                      </a>
                     </li>
                   </ol>
                 </div>
-                <h1 className='h1Style'>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
-                  fuga officia, distinctio repellendus cupiditate ratione, eius
-                  quod voluptas tempore omnis optio ad labore blanditiis iusto
-                  modi iste sunt officiis dicta!
-                </h1>
+                <h3 className='h1Style'>
+                  Se hai domande, richieste o necessiti di assistenza, siamo qui
+                  per aiutarti! Puoi contattarci facilmente tramite il nostro
+                  Numero di contatto: +39 351 974 2579. Il
+                  nostro team è pronto a rispondere a tutte le tue esigenze e a
+                  fornirti il supporto necessario nel più breve tempo possibile.
+                  In alternativa, puoi chiamarci direttamente al nostro numero
+                  telefonico: [inserisci il numero di telefono]. Siamo sempre
+                  disponibili per risolvere ogni tua richiesta e garantirti un
+                  servizio professionale e tempestivo. Non esitare a
+                  contattarci, siamo a tua disposizione!
+                </h3>
               </div>
               <div className='contactUsPage-container-p3-content-right'>
-                <h1 className='h1Style'>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
-                  a, perferendis iure, dolore fugiat quaerat nostrum at harum
-                  consequatur enim asperiores, velit repudiandae magnam illo
-                  exercitationem doloribus expedita ad nobis!
-                </h1>
+                <h3 className='h1Style'>
+                  Per qualsiasi comunicazione che richieda attenzione immediata
+                  o un trattamento professionale specifico, vi invitiamo a
+                  contattarci tramite il nostro indirizzo email speciale:
+                  reza.danesh@ingpec.eu. Questo indirizzo è riservato
+                  esclusivamente per le comunicazioni ufficiali e professionali,
+                  garantendo che ogni richiesta venga gestita con la massima
+                  serietà e riservatezza. Utilizzare questa email significa
+                  entrare in contatto diretto con il nostro team esperto, pronto
+                  a fornirvi un supporto mirato e di alta qualità. Siamo
+                  impegnati a rispondere a tutte le vostre richieste con
+                  prontezza e precisione.
+                </h3>
                 <div className='contactUsPage-container-p3-content2 sameStyle'>
-                  <i class='fa-brands fa-telegram'></i>
-                  <h1>Telegram</h1>
+                  <i class='fa-solid fa-square-envelope'></i>
+                  <h1>Email ufficiale</h1>
                   <h3>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quod inventore aspernatur quos quaerat asperiores. Libero
-                    mollitia impedit iusto nisi dignissimos, deserunt at velit
-                    doloribus itaque numquam ratione nesciunt atque?
+                    Per qualsiasi domanda o richiesta formale, ti invitiamo a
+                    contattarci tramite il nostro indirizzo email ufficiale.
+                    Siamo a tua completa disposizione per offrirti supporto
+                    professionale e rispondere alle tue esigenze nel minor tempo
+                    possibile.
                   </h3>
-                  <h4>@Ranesh-Reza</h4>
+                  <a
+                    href='https://mail.google.com/mail/?view=cm&fs=1&to=reza.danesh@ingpec.eu'
+                    target='_blank'
+                    style={{ fontSize: '18px' }}
+                  >
+                    Indirizzo email ufficiale: reza.danesh@ingpec.eu
+                  </a>
                 </div>
               </div>
               <div className='contactUsPage-container-p3-content-left'>
@@ -168,28 +190,42 @@ export default function ContactUsPage() {
                   <i class='fa-solid fa-envelope'></i>
                   <h1>Email</h1>
                   <h3>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Omnis aliquid assumenda alias aspernatur facere, voluptas
-                    deleniti minima porro ratione est atque nemo sunt
-                    accusantium voluptatum delectus. Quas, molestiae. Rem,
-                    soluta!
+                    Per qualsiasi domanda, richiesta o supporto, non esitare a
+                    contattarci tramite il nostro indirizzo email:
+                    Ing.reza.danesh@gmail.com. Siamo sempre disponibili a
+                    rispondere alle tue esigenze e a fornirti l’assistenza
+                    necessaria per risolvere ogni tua domanda nel più breve
+                    tempo possibile. La tua soddisfazione è la nostra priorità e
+                    ci impegniamo a garantire che ogni comunicazione venga
+                    trattata con attenzione e professionalità.
                   </h3>
-                  <h4>Gmail : Raneshreza@gmail.com</h4>
+                  <a
+                    href='https://mail.google.com/mail/?view=cm&fs=1&to=Ing.reza.danesh@gmail.com'
+                    target='_blank'
+                    style={{ fontSize: '18px' }}
+                  >
+                    Indirizzo email: reza.danesh@ingpec.eu
+                  </a>
                 </div>
-                <h1 className='h1Style'>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Numquam ipsum unde ducimus soluta tempore ea. Error esse quasi
-                  qui, corrupti eum reprehenderit quas architecto quia a
-                  laboriosam quis ipsa iste!
-                </h1>
+                <h3 className='h1Style'>
+                  Per qualsiasi richiesta, domanda o assistenza, vi invitiamo a
+                  contattarci via il nostro indirizzo email ufficiale:
+                  Ing.reza.danesh@gmail.com. Questo indirizzo è destinato a
+                  garantire una risposta tempestiva e professionale a tutte le
+                  vostre esigenze, permettendoci di fornirvi il supporto
+                  necessario in modo rapido ed efficiente. Se avete domande o
+                  necessitate di ulteriori informazioni, non esitate a
+                  scriverci. Siamo sempre a vostra disposizione per aiutarvi nel
+                  miglior modo possibile.
+                </h3>
               </div>
               <div className='contactUsPage-container-p3-content-right'>
-                <h1 className='h1Style'>
+                <h3 className='h1Style'>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Tempore magnam officia neque blanditiis sunt asperiores ab
                   laudantium sit cumque, harum dolorem atque deleniti architecto
                   dolorum nemo quidem ipsa veniam. Cupiditate!
-                </h1>
+                </h3>
                 <div className='contactUsPage-container-p3-content4 sameStyle'>
                   <i class='fa-brands fa-instagram'></i>
                   <h1>Instagram</h1>
@@ -213,58 +249,59 @@ export default function ContactUsPage() {
                 type='text'
                 placeholder='nome e cognome'
                 value={state.name}
-                onChange={(event) => {
+                onChange={event => {
                   dispatch({
                     type: 'name',
                     payload: event.target.value,
-                  });
+                  })
                 }}
               />
               <input
                 type='text'
                 placeholder='nome utente'
                 value={state.username}
-                onChange={(event) => {
+                onChange={event => {
                   dispatch({
                     type: 'username',
                     payload: event.target.value,
-                  });
+                  })
                 }}
               />
               <input
                 type='number'
                 value={state.phone}
                 placeholder='cellulare'
-                onChange={(event) => {
+                onChange={event => {
                   dispatch({
                     type: 'phone',
                     payload: event.target.value,
-                  });
+                  })
                 }}
               />
               <input
                 type='email'
                 placeholder='email'
                 value={state.email}
-                onChange={(event) => {
+                onChange={event => {
                   dispatch({
                     type: 'email',
                     payload: event.target.value,
-                  });
+                  })
                 }}
               />
               <textarea
                 placeholder='messaggio'
                 value={state.message}
-                onChange={(e) => {
+                onChange={e => {
                   dispatch({
                     type: 'message',
                     payload: e.target.value,
-                  });
-                }}></textarea>
+                  })
+                }}
+              ></textarea>
               <button
                 onClick={() => {
-                  let getItem = localStorage.getItem('wait');
+                  let getItem = localStorage.getItem('wait')
                   if (
                     (state.email && state.name && state.message) !== '' &&
                     getItem !== 'true'
@@ -272,7 +309,7 @@ export default function ContactUsPage() {
                     dispatch({
                       type: 'submit',
                       payload: true,
-                    });
+                    })
                   } else if (
                     getItem == 'true' &&
                     (state.email && state.name && state.message) !== ''
@@ -280,16 +317,17 @@ export default function ContactUsPage() {
                     dispatch({
                       type: 'error2',
                       payload: true,
-                    });
+                    })
 
                     setTimeout(() => {
                       dispatch({
                         type: 'error2',
                         payload: false,
-                      });
-                    }, 5000);
+                      })
+                    }, 5000)
                   }
-                }}>
+                }}
+              >
                 INVIA
               </button>
               {state.showMessage ? (
@@ -313,5 +351,5 @@ export default function ContactUsPage() {
       </div>
       <Footer />
     </div>
-  );
+  )
 }

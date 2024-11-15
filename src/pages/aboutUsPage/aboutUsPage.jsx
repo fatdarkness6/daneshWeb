@@ -150,7 +150,9 @@ export default function AboutUsPage() {
                 sviluppi nei nostri progetti, eventi speciali e traguardi
                 importanti.
               </p>
+              <Link to="/news">
               <button>Leggi la News</button>
+              </Link>
             </div>
           </div>
         </div>

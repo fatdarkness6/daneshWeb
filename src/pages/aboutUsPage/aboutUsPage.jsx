@@ -51,7 +51,7 @@ export default function AboutUsPage() {
                     <h3>Certificazioni </h3>
                   </li>
                   <li>
-                    <h3>Progettazione e direzione lavori</h3>
+                    <h3>Direzione lavori</h3>
                   </li>
                 </ul>
               </div>

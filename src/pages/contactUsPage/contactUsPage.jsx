@@ -134,7 +134,7 @@ export default function ContactUsPage() {
                         style={{ fontSize: '18px' }}
                         href='tel:+39 351 974 2579'
                       >
-                        Numero di contatto: +39 351 974 2579
+                        Numero di Cellulare: +39 351 974 2579
                       </a>
                     </li>
                   </ol>
@@ -168,7 +168,7 @@ export default function ContactUsPage() {
                 </h3>
                 <div className='contactUsPage-container-p3-content2 sameStyle'>
                   <i class='fa-solid fa-square-envelope'></i>
-                  <h1>Email ufficiale</h1>
+                  <h1>PEC</h1>
                   <h3>
                     Per qualsiasi domanda o richiesta formale, ti invitiamo a
                     contattarci tramite il nostro indirizzo email ufficiale.
@@ -181,7 +181,7 @@ export default function ContactUsPage() {
                     target='_blank'
                     style={{ fontSize: '18px' }}
                   >
-                    Indirizzo email ufficiale: reza.danesh@ingpec.eu
+                    PEC: reza.danesh@ingpec.eu
                   </a>
                 </div>
               </div>
@@ -204,7 +204,7 @@ export default function ContactUsPage() {
                     target='_blank'
                     style={{ fontSize: '18px' }}
                   >
-                    Indirizzo email: reza.danesh@ingpec.eu
+                    Indirizzo email: ing.reza.danesh@gmail.com
                   </a>
                 </div>
                 <h3 className='h1Style'>

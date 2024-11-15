@@ -1746,6 +1746,15 @@ input::-webkit-inner-spin-button {
   background-color: #ffc218;
   color: white;
 }
+.empty-alert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
 
 /* .......................responsive........................ */
 

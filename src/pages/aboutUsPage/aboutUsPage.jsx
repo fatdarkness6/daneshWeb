@@ -3,6 +3,7 @@ import Footer from '../../components/footer/footer'
 import Header from '../../components/header/header'
 import { Link } from 'react-router-dom'
 import AnimatedNumbers from 'react-animated-numbers'
+import AboutUsContainer from '../../components/aboutUsContainer/aboutUsContainer'
 
 export default function AboutUsPage() {
   useEffect(() => {
@@ -150,7 +151,9 @@ export default function AboutUsPage() {
                 sviluppi nei nostri progetti, eventi speciali e traguardi
                 importanti.
               </p>
-              <button>Leggi la News</button>
+              <Link to='/news'>
+                <button>Leggi la News</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -264,95 +267,10 @@ export default function AboutUsPage() {
                 </p>
               </div>
               <div className='aboutUs-content-p2'>
-                <div className='aboutUs-content-p2-card'>
-                  <div className='icons'>
-                    <i class='fa-solid fa-mug-hot'></i>
-                  </div>
-
-                  <h3>New Project</h3>
-                  <div className='absolute'>
-                    <ul>
-                      <li>
-                        <i class='fa-solid fa-circle'></i>
-                        <p>Collaborazione fin dall'inizio del progetto</p>
-                      </li>
-                      <li>
-                        <i class='fa-solid fa-circle'></i>
-                        <p>Soluzioni mirate e ben studiate</p>
-                      </li>
-                      <li>
-                        <i class='fa-solid fa-circle'></i>
-                        <p>Esperienza nella gestione delle sfide</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className='aboutUs-content-p2-card'>
-                  <div className='icons'>
-                    <i class='fa-solid fa-hand'></i>
-                  </div>
-                  <h3>Work Friendly</h3>
-                  <div className='absolute'>
-                    <ul>
-                      <li>
-                        <i class='fa-solid fa-circle'></i>
-                        <p>Flessibilità nelle soluzioni</p>
-                      </li>
-                      <li>
-                        <i class='fa-solid fa-circle'></i>
-                        <p>Approccio amichevole e collaborativo</p>
-                      </li>
-                      <li>
-                        <i class='fa-solid fa-circle'></i>
-                        <p>Personalizzazione secondo le esigenze del cliente</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className='aboutUs-content-p2-card'>
-                  <div className='icons'>
-                    <i class='fa-solid fa-envelope'></i>
-                  </div>
-                  <h3>Danesh Groupe</h3>
-                  <div className='absolute'>
-                    <ul>
-                      <li>
-                        <i class='fa-solid fa-circle'></i>Uso di materiali e
-                        tecnologie di alta qualità
-                      </li>
-                      <li>
-                        <i class='fa-solid fa-circle'></i>Impianti sostenibili e
-                        durevoli
-                      </li>
-                      <li>
-                        <i class='fa-solid fa-circle'></i>Attenzione alla
-                        sostenibilità ambientale
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className='aboutUs-content-p2-card'>
-                  <div className='icons'>
-                    <i class='fa-solid fa-scroll'></i>
-                  </div>
-                  <h3>Our Company</h3>
-                  <div className='absolute'>
-                    <ul>
-                      <li>
-                        <i class='fa-solid fa-circle'></i>Aggiornamenti continui
-                        durante il progetto
-                      </li>
-                      <li>
-                        <i class='fa-solid fa-circle'></i>Comunicazione
-                        trasparente e chiara
-                      </li>
-                      <li>
-                        <i class='fa-solid fa-circle'></i>Professionalità e
-                        risultati eccellenti
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+                <AboutUsContainer subject={"New Project"} title1={"Collaborazione fin dall'inizio del progetto"} title2={"Soluzioni mirate e ben studiate"} title3={"Esperienza nella gestione delle sfide"} />
+                <AboutUsContainer subject={"Work Friendly"} title1={"Flessibilità nelle soluzioni"} title2={"Approccio amichevole e collaborativo"} title3={"Personalizzazione secondo le esigenze del cliente"}/>
+                <AboutUsContainer subject={"Danesh Groupe"} title1={"Uso di materiali e tecnologie di alta qualità"} title2={"Impianti sostenibili e durevoli"} title3={"Attenzione alla sostenibilità ambientale"}/>
+                <AboutUsContainer subject={"Our Company"} title1={"Aggiornamenti continui durante il progetto"} title2={"Comunicazione trasparente e chiara"} title3={"Supporto continuo dopo la consegna del progetto"}/>
               </div>
             </div>
           </div>

@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import projectsPageData from '../../jsons/projectsPageData/projectsPageData.json'
 import InfoComponent from '../../components/infoComponents/infoComponent'
 import { useSearchParams } from 'react-router-dom'
+import EmptyAlert from '../../components/emptyAlert/emptyAlert'
 
 export default function ProjectPage() {
   const [projects, setProjects] = useState('')
@@ -11,6 +12,7 @@ export default function ProjectPage() {
   function setDataForFilter(data) {
     setProjects(data)
   }
+
   function setQuery() {
     if(projects !== "") {
       setSearchParams(`?category=${projects}`)
@@ -25,6 +27,21 @@ export default function ProjectPage() {
   useEffect(() => {
     setQuery()
   }, [projects])
+
+  const data = projectsPageData
+  .filter(response => {
+    if (
+      searchParams.get('category') === 'all' ||
+      !searchParams.get('category')
+    ) {
+      return response
+    } else {
+      return searchParams.get('category') == response.type
+    }
+  })
+  .map(e => {
+    return <InfoComponent key={e.id} data={e} />
+  })
 
   return (
     <Layout>
@@ -71,21 +88,8 @@ export default function ProjectPage() {
           </button>
         </section>
         <section className='projects-gallery'>
-          {console.log(projects)}
-          {projectsPageData
-            .filter(response => {
-              if (
-                searchParams.get('category') === 'all' ||
-                !searchParams.get('category')
-              ) {
-                return response
-              } else {
-                return searchParams.get('category') == response.type
-              }
-            })
-            .map(e => {
-              return <InfoComponent key={e.id} data={e} />
-            })}
+            {data}
+            {data.length <=0 && <EmptyAlert/>}
         </section>
       </div>
     </Layout>

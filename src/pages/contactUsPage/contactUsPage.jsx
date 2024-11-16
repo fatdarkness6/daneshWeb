@@ -101,6 +101,7 @@ export default function ContactUsPage() {
     <div className='contactUsPage'>
       <div className='contactUsPage-content'>
         <div className='container-p1'>
+          
           <Header />
         </div>
         <div className='container-p2'>
@@ -221,10 +222,7 @@ export default function ContactUsPage() {
               </div>
               <div className='contactUsPage-container-p3-content-right'>
                 <h3 className='h1Style'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Tempore magnam officia neque blanditiis sunt asperiores ab
-                  laudantium sit cumque, harum dolorem atque deleniti architecto
-                  dolorum nemo quidem ipsa veniam. Cupiditate!
+                Noi del Gruppo Danesh siamo sempre pronti a rispondere alle vostre domande e soddisfare le vostre esigenze. Attraverso la nostra pagina Instagram, potete entrare in contatto con il nostro team e rimanere aggiornati sulle ultime novità e progetti. Inoltre, potete condividere con noi i vostri commenti e suggerimenti. Siamo ansiosi di sentirvi!
                 </h3>
                 <div className='contactUsPage-container-p3-content4 sameStyle'>
                   <i class='fa-brands fa-instagram'></i>
@@ -242,7 +240,7 @@ export default function ContactUsPage() {
             </div>
           </div>
         </div>
-        <div className='container-p4'>
+        {/* <div className='container-p4'>
           <div className='wrapper'>
             <div className='submit'>
               <input
@@ -329,8 +327,8 @@ export default function ContactUsPage() {
                 }}
               >
                 INVIA
-              </button>
-              {state.showMessage ? (
+              </button> */}
+              {/* {state.showMessage ? (
                 <h3 class='green'>your message has been sent successfully</h3>
               ) : (
                 state.error && (
@@ -345,9 +343,9 @@ export default function ContactUsPage() {
                   Your message has already been sent. please wait for response
                 </h3>
               )}
-            </div>
-          </div>
-        </div>
+            </div> */}
+          {/* </div> */}
+        {/* </div> */}
       </div>
       <Footer />
     </div>

@@ -737,12 +737,103 @@
   line-height: 40px;
 }
 
+.footer a, .footer {
+  color: #d4af37;
+}
+
 .footer {
-  color: #fff;
-  text-align: center;
-  background-color: #000;
+  background: #111;
   margin-top: 100px;
-  padding: 50px 30px;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.footer-logo, .footer-links, .footer-contact {
+  flex: 200px;
+  margin: 10px;
+}
+
+.footer-logo img {
+  max-width: 120px;
+  margin-bottom: 10px;
+}
+
+.footer-logo h3 {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+.footer-links h4, .footer-contact h4 {
+  border-bottom: 2px solid #d4af37;
+  margin-bottom: 15px;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.footer-links ul, .footer-contact ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links ul li, .footer-contact ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer-links ul li a {
+  color: #d4af37;
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  color: #fff;
+}
+
+.footer-contact ul li i {
+  color: #d4af37;
+  width: 17px;
+  margin-right: 10px;
+}
+
+.footer-logo p {
+  width: 60%;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 30px;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.footer-social-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-social {
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+  display: flex;
+}
+
+.footer-social a {
+  color: #d4af37;
+  font-size: 24px;
+  transition: all .3s;
+}
+
+.footer-social a:hover {
+  color: #fff;
 }
 
 .scroll-top {
@@ -1183,6 +1274,7 @@
   z-index: 2;
   background: -webkit-linear-gradient(#ffd438, #ee2a7b, #6228d7);
   -webkit-background-clip: text;
+  width: 100%;
   position: relative;
 }
 
@@ -1217,6 +1309,7 @@
   -webkit-text-fill-color: transparent;
   background: #fff;
   -webkit-background-clip: text;
+  width: 100%;
 }
 
 .contactUsPage .contactUsPage-container-p3-content4:after {
@@ -1277,6 +1370,7 @@
 
 .contactUsPage .contactUsPage-container-p3-content4:hover:after, .contactUsPage .contactUsPage-container-p3-content3:hover:after, .contactUsPage .contactUsPage-container-p3-content2:hover:after, .contactUsPage .contactUsPage-container-p3-content1:hover:after {
   opacity: 1;
+  width: 100%;
 }
 
 .contactUsPage .h1Style {
@@ -2235,6 +2329,21 @@ input::-webkit-inner-spin-button {
 
   .project-details p {
     font-size: .95rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo, .footer-links, .footer-contact {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-social {
+    flex-direction: column;
+    gap: 10px;
   }
 }
 

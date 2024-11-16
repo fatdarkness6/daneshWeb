@@ -2323,6 +2323,13 @@ input::-webkit-inner-spin-button {
     font-size: 2rem;
   }
 
+  .footer-logo {
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    display: flex;
+  }
+
   .project-details h3 {
     font-size: 1.3rem;
   }
@@ -2342,7 +2349,6 @@ input::-webkit-inner-spin-button {
   }
 
   .footer-social {
-    flex-direction: column;
     gap: 10px;
   }
 }
@@ -2424,6 +2430,10 @@ input::-webkit-inner-spin-button {
 
   .aboutUs-page .aboutUs-content-p1 h1, .aboutUs-page .aboutUs-content-p1 h2 {
     font-size: 25px;
+  }
+
+  .img1 {
+    background-image: url("img1SM.c08abd3b.jpg");
   }
 }
 

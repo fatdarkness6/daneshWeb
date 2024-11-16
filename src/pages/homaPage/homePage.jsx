@@ -127,9 +127,9 @@ export default function HomePage() {
           className='container-p2 '
           onMouseEnter={pauseAutoSlide}
           onMouseLeave={startAutoSlide}
-          onTouchStart={isMobile ? handleTouchStart : null}
-          onTouchMove={isMobile ? handleTouchMove : null}
-          onTouchEnd={isMobile ? handleTouchEnd : null}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
         >
           <div className='clickToSlide'>
             <button onClick={handleNextSlide}>

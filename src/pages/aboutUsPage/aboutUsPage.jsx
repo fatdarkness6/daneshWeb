@@ -267,10 +267,10 @@ export default function AboutUsPage() {
                 </p>
               </div>
               <div className='aboutUs-content-p2'>
-                <AboutUsContainer subject={"New Project"} title1={"Collaborazione fin dall'inizio del progetto"} title2={"Soluzioni mirate e ben studiate"} title3={"Esperienza nella gestione delle sfide"} />
-                <AboutUsContainer subject={"Work Friendly"} title1={"Flessibilità nelle soluzioni"} title2={"Approccio amichevole e collaborativo"} title3={"Personalizzazione secondo le esigenze del cliente"}/>
-                <AboutUsContainer subject={"Danesh Groupe"} title1={"Uso di materiali e tecnologie di alta qualità"} title2={"Impianti sostenibili e durevoli"} title3={"Attenzione alla sostenibilità ambientale"}/>
-                <AboutUsContainer subject={"Our Company"} title1={"Aggiornamenti continui durante il progetto"} title2={"Comunicazione trasparente e chiara"} title3={"Supporto continuo dopo la consegna del progetto"}/>
+                <AboutUsContainer subject={"New Project"} title1={"Collaborazione fin dall'inizio del progetto"} title2={"Soluzioni mirate e ben studiate"} title3={"Esperienza nella gestione delle sfide"} icon={'fa-solid fa-diagram-project'} />
+                <AboutUsContainer subject={"Work Friendly"} title1={"Flessibilità nelle soluzioni"} title2={"Approccio amichevole e collaborativo"} title3={"Personalizzazione secondo le esigenze del cliente"} icon={`fa-solid fa-user-check`}/>
+                <AboutUsContainer subject={"Danesh Groupe"} title1={"Uso di materiali e tecnologie di alta qualità"} title2={"Impianti sostenibili e durevoli"} title3={"Attenzione alla sostenibilità ambientale"} icon ={'fa-solid fa-building-shield'}/>
+                <AboutUsContainer subject={"Our Company"} title1={"Aggiornamenti continui durante il progetto"} title2={"Comunicazione trasparente e chiara"} title3={"Supporto continuo dopo la consegna del progetto"} icon={'fa-solid fa-building'}/>
               </div>
             </div>
           </div>

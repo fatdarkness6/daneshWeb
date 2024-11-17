@@ -359,7 +359,7 @@ export default function HomePage() {
           <div className='wrapper2'>
             <div className='content projects-gallery'>
               {homePageProjectsData.map((e) => {
-                return <InfoComponent data={e} />
+                return <InfoComponent data={e}  />
               })}
             </div>
           </div>

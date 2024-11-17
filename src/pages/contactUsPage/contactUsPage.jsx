@@ -135,7 +135,8 @@ export default function ContactUsPage() {
                         style={{ fontSize: '18px' }}
                         href='tel:+39 351 974 2579'
                       >
-                        Numero di Cellulare: +39 351 974 2579
+                        <span>Numero di Cellulare:</span>
+                        <span>+39 351 974 2579</span>
                       </a>
                     </li>
                   </ol>
@@ -182,7 +183,8 @@ export default function ContactUsPage() {
                     target='_blank'
                     style={{ fontSize: '18px' }}
                   >
-                    PEC: reza.danesh@ingpec.eu
+                    <span>PEC:</span>
+                    <span>reza.danesh@ingpec.eu</span>
                   </a>
                 </div>
               </div>
@@ -205,7 +207,8 @@ export default function ContactUsPage() {
                     target='_blank'
                     style={{ fontSize: '18px' }}
                   >
-                    Indirizzo email: ing.reza.danesh@gmail.com
+                    <span>Indirizzo email:</span>
+                    <span>ing.reza.danesh@gmail.com</span>
                   </a>
                 </div>
                 <h3 className='h1Style'>

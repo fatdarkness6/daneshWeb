@@ -1305,6 +1305,16 @@
   position: relative;
 }
 
+:is(.contactUsPage .contactUsPage-container-p3-content1, .contactUsPage .contactUsPage-container-p3-content2, .contactUsPage .contactUsPage-container-p3-content3, .contactUsPage .contactUsPage-container-p3-content4) a {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  display: flex;
+  font-size: 20px !important;
+}
+
 .contactUsPage .contactUsPage-container-p3-content4:hover :is(h1, h3, h4, i, a), .contactUsPage .contactUsPage-container-p3-content3:hover :is(h1, h3, h4, i, a), .contactUsPage .contactUsPage-container-p3-content2:hover :is(h1, h3, h4, i, a), .contactUsPage .contactUsPage-container-p3-content1:hover :is(h1, h3, h4, i, a) {
   -webkit-text-fill-color: transparent;
   background: #fff;
@@ -2444,7 +2454,12 @@ input::-webkit-inner-spin-button {
   }
 
   .aboutUs-page .aboutUs-content-p1 h1 {
-    text-align: center;
+    text-align: start;
+    font-size: 20px;
+  }
+
+  .aboutUs-page .aboutUs-content-p1 h2 {
+    font-size: 18px;
   }
 
   .header-menu-btn {
@@ -2505,6 +2520,10 @@ input::-webkit-inner-spin-button {
 
   .project-details p {
     font-size: .9rem;
+  }
+
+  :is(.contactUsPage .contactUsPage-container-p3-content1, .contactUsPage .contactUsPage-container-p3-content2, .contactUsPage .contactUsPage-container-p3-content3, .contactUsPage .contactUsPage-container-p3-content4) a {
+    font-size: 17px !important;
   }
 }
 /*# sourceMappingURL=index.ee7f3cbd.css.map */

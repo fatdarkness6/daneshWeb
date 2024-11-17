@@ -2,7 +2,7 @@ export default function AboutUsContainer(props) {
     return (
         <div className='aboutUs-content-p2-card'>
                   <div className='icons'>
-                    <i class='fa-solid fa-mug-hot'></i>
+                    <i class={props.icon}></i>
                   </div>
                   <h3>{props.subject}</h3>
                   <div className='absolute'>

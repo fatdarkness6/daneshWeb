@@ -231,11 +231,7 @@ export default function ContactUsPage() {
                   <i class='fa-brands fa-instagram'></i>
                   <h1>Instagram</h1>
                   <h3>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Omnis aliquid assumenda alias aspernatur facere, voluptas
-                    deleniti minima porro ratione est atque nemo sunt
-                    accusantium voluptatum delectus. Quas, molestiae. Rem,
-                    soluta!
+                  Noi del Gruppo Danesh siamo sempre pronti a rispondere alle vostre domande e soddisfare le vostre esigenze. Attraverso la nostra pagina Instagram, potete rimanere in contatto con il nostro team, scoprire le ultime novità e progetti e condividere con noi i vostri commenti e suggerimenti.
                   </h3>
                   <h4>ID : Danesh_Web</h4>
                 </div>

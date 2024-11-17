@@ -2055,6 +2055,10 @@ input::-webkit-inner-spin-button {
   display: flex;
 }
 
+.empty-alert i {
+  font-size: 110px;
+}
+
 @media only screen and (width <= 1650px) {
   .home-page .container-p7.target .content {
     padding: 0 30px;
@@ -2361,6 +2365,10 @@ input::-webkit-inner-spin-button {
   .footer-social {
     gap: 10px;
   }
+
+  .empty-alert i {
+    font-size: 80px;
+  }
 }
 
 @media only screen and (width <= 710px) {
@@ -2510,6 +2518,10 @@ input::-webkit-inner-spin-button {
 
   .header-content.flex-alignCenter-spaceBetween {
     justify-content: space-between;
+  }
+
+  .empty-alert i {
+    font-size: 60px;
   }
 }
 

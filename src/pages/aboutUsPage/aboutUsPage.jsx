@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import Footer from '../../components/footer/footer'
 import Header from '../../components/header/header'
 import { Link } from 'react-router-dom'
+import { scrollAnimationLogic } from '../../utils/scrollAnimationLogic/scrollAnimationLogic'
 import AnimatedNumbers from 'react-animated-numbers'
 import AboutUsContainer from '../../components/aboutUsContainer/aboutUsContainer'
 
@@ -9,6 +10,8 @@ export default function AboutUsPage() {
   useEffect(() => {
     window.scrollTo(0, 0)
     document.title = 'Chi Siamo '
+    let scroll = document.querySelectorAll('.target')
+    scrollAnimationLogic(scroll)
   }, [])
 
   return (
@@ -19,7 +22,7 @@ export default function AboutUsPage() {
         </div>
         <div className='container-p2'>
           <div className='wrapper-aboutUs'>
-            <div className='aboutUs-content-p1 no-padding'>
+            <div className='aboutUs-content-p1 no-padding '>
               <h1> REZA DANESH – CHI SIAMO </h1>
               <h2>
                 Mi chiamo Reza Danesh e sono il titolare dello studio “Gruppo
@@ -143,7 +146,7 @@ export default function AboutUsPage() {
         <div className='container-p3'></div>
         <div className='container-p4'>
           <div className='wrapper'>
-            <div className='aboutUs-content'>
+            <div className='aboutUs-content target'>
               <h1>Rimani aggiornato con le ultime notizie!</h1>
               <p>
                 Condividiamo sempre con te le informazioni più aggiornate del

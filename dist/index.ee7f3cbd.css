@@ -878,13 +878,28 @@
   padding: 200px 20px;
 }
 
+@keyframes fadeIn {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .aboutUs-page .aboutUs-content-p1 {
   text-align: start;
+  opacity: 0;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   gap: 40px;
   padding-top: 100px;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
   display: flex;
 }
 
@@ -950,12 +965,20 @@
 .aboutUs-page .container-p4 .aboutUs-content {
   text-align: center;
   text-align: center;
+  opacity: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 40px;
   padding: 200px 0;
+  transition: all 1s .1s;
   display: flex;
+  transform: translateY(-100px);
+}
+
+.aboutUs-page .container-p4 .aboutUs-content.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .aboutUs-page .container-p4 .aboutUs-content h1 {

@@ -26,6 +26,7 @@ export default function Footer() {
           <li><i class="fas fa-envelope"></i> <span>Email: reza.danesh@ingpec.eu</span> </li>
           <li><i class="fas fa-envelope"></i> <span>Alternate Email: ing.reza.danesh@gmail.com</span></li>
           <li><i class="fas fa-map-marker-alt"></i> <span>Address: Via Verrocchio n.2, Mirano (VE)</span></li>
+          <li><i class="fa-solid fa-user-tie"></i> <span>P.IVA: 04863560274</span></li>
           <li><i class="fas fa-clock"></i> Working Hours: Mon-Fri, 9:00 AM - 6:00 PM</li>
         </ul>
       </div>

@@ -1966,6 +1966,7 @@ input::-webkit-inner-spin-button {
     }
     .home-page .container-p6 .img {
         clip-path: inset(0 0 50% 0);
+        background-image: url(../../public/backgroundImage2-res.jpg);
     }
     .home-page .btw .content {
         padding: 0 20px;
@@ -2179,6 +2180,7 @@ input::-webkit-inner-spin-button {
     }
     .home-page .container-p6 {
         height: 1000px;
+        background-image: url(../../public/imageForProjectManagement-res.jpg);
     }
     .portal .portal-content img {
         width: 100px;

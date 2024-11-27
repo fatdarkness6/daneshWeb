@@ -2178,6 +2178,7 @@ input::-webkit-inner-spin-button {
 
   .home-page .container-p6 .img {
     clip-path: inset(0 0 50%);
+    background-image: url("backgroundImage2-res.3af0e7c5.jpg");
   }
 
   .home-page .btw .content {
@@ -2435,6 +2436,7 @@ input::-webkit-inner-spin-button {
   }
 
   .home-page .container-p6 {
+    background-image: url("imageForProjectManagement-res.79934065.jpg");
     height: 1000px;
   }
 
